@@ -35,5 +35,6 @@
     <orderEntry type="library" name="commons-logging-1.2" level="project" />
     <orderEntry type="library" name="spring-jdbc-4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="spring-web-4.2.4.RELEASE" level="project" />
+    <orderEntry type="library" name="standard" level="project" />
   </component>
 </module>

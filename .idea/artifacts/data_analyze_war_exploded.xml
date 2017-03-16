@@ -19,6 +19,7 @@
           <element id="library" level="project" name="mysql-connector-java-5.1.26-bin" />
           <element id="library" level="project" name="spring-jdbc-4.2.4.RELEASE" />
           <element id="library" level="project" name="spring-web-4.2.4.RELEASE" />
+          <element id="library" level="project" name="standard" />
         </element>
       </element>
     </root>

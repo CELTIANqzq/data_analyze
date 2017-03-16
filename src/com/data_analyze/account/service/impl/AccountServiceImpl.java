@@ -1,0 +1,55 @@
+package com.data_analyze.account.service.impl;
+
+import com.data_analyze.account.dao.AccountMapper;
+import com.data_analyze.account.entity.Account;
+import com.data_analyze.account.service.AccountService;
+import com.data_analyze.core.entity.Page;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+/**
+ * Created by liujie on 2017/3/16.
+ */
+
+@Service("accountService")
+public class AccountServiceImpl implements AccountService{
+
+
+    @Autowired
+    private AccountMapper accountMapper;
+
+    @Override
+    public int insertAccount(Account account) {
+        return accountMapper.insertAccount(account);
+    }
+
+    @Override
+    public int insert(Account entity) throws Exception {
+        return accountMapper.insertAccount(entity);
+    }
+
+    @Override
+    public int update(Account entity) throws Exception {
+        return 0;
+    }
+
+    @Override
+    public int delete(Account entity) throws Exception {
+        return 0;
+    }
+
+    @Override
+    public Account select(Account entity) throws Exception {
+        return null;
+    }
+
+    @Override
+    public Page<Account> selectPage(Page<Account> page) {
+        return null;
+    }
+
+    @Override
+    public Page<Account> selectPageUseDyc(Page<Account> page) {
+        return null;
+    }
+}

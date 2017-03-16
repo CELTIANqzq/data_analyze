@@ -17,14 +17,21 @@
 
 		<!--<package name="com.cxspace.test.entity"/>-->
 		<!--&lt;!&ndash;<package name="com.cxspace.supplier.entity"/>&ndash;&gt;-->
-		<!--&lt;!&ndash;<typeAlias type="com.cxspace.test.entity.Dept" alias="Dept"/>&ndash;&gt;-->
-		<!--<package name="com.cxspace.account.entity"/>-->
+
+
+		<typeAlias type="com.data_analyze.account.entity.Account" alias="Account"/>
+
+		<typeAlias type="com.data_analyze.test.entity.Dept" alias="Dept"/>
+
 
 	</typeAliases>
 
 
-	<!--<mappers>-->
-		<!--<mapper resource="com/cxspace/entity/DeptMapper.xml"/>-->
-	<!--</mappers>-->
+	<mappers>
+
+		<!--<mapper resource="com/data_analyze/account/dao/AccountMapper.xml"/>-->
+
+		<!--<mapper resource="com/data_analyze/test/dao/DeptMapper.xml"/>-->
+	</mappers>
 
 </configuration>
