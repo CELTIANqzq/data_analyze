@@ -13,10 +13,9 @@
  
 # 项目分层
 
-- dao
+- dao and entity
 
-sql语句，orm映射配置
-
+sql语句，orm映射配置，数据库基本操作
 - service
 
 具体业务逻辑
