@@ -7,6 +7,19 @@
         <element id="directory" name="classes">
           <element id="module-output" name="data_analyze" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="aopalliance-1.0" />
+          <element id="library" level="project" name="asm-4.2" />
+          <element id="library" level="project" name="c3p0-0.9" />
+          <element id="library" level="project" name="commons-logging-1.2" />
+          <element id="library" level="project" name="ehcache-core-2.6.5" />
+          <element id="library" level="project" name="jackson-annotations-2.6.0-rc4" />
+          <element id="library" level="project" name="jstl-1.2" />
+          <element id="library" level="project" name="junit4.4" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.26-bin" />
+          <element id="library" level="project" name="spring-jdbc-4.2.4.RELEASE" />
+          <element id="library" level="project" name="spring-web-4.2.4.RELEASE" />
+        </element>
       </element>
     </root>
   </artifact>

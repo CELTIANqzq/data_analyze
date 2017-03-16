@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="spring-jdbc-4.2.4.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spring4.2.4-persistence/spring-jdbc-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring4.2.4-persistence/spring-tx-4.2.4.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring4.2.4-persistence/spring-orm-4.2.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
