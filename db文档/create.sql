@@ -6,9 +6,8 @@
 # 2. 两个单词之间用'_'隔开
 # 3. 老师信息表中籍贯改为hometown
 # 4. 在老师信息表中岗状态改为on_status
-# 5. 删去了教师信息表中的 时间 字段 (不知到这到底是什么时间)
-# 6. 对除了教师信息表的其他表中多加了_id字段
-# 7. 增加了varchar的长度
+# 5. 对除了教师信息表的其他表中多加了_id字段
+# 6. 增加了varchar的长度
 ########################################
 
 
@@ -88,6 +87,7 @@ CREATE TABLE teachers
   join_reason varchar(100) NULL,
   attendance_category varchar(20) NULL,
   job_level varchar(30) NULL,
+  time_get_rank datetime NULL,
   administrative_post varchar(30) NULL,
   prof_and_tech_post varchar(30) NULL,
   special_experience varchar(100) NULL,
@@ -98,7 +98,7 @@ CREATE TABLE teachers
   subject varchar(40) NULL,
   remark varchar(100) NULL,
   mentor_type varchar(30) NULL,
-  mayjor varchar(50) NULL,
+  major varchar(50) NULL,
   PRIMARY KEY (salary_id)
 ) ENGINE=InnoDB;
 
