@@ -20,12 +20,12 @@ public class AccountServiceImpl implements AccountService{
 
     @Override
     public int insertAccount(Account account) {
-        return accountMapper.insertAccount(account);
+        return accountMapper.insert(account);
     }
 
     @Override
     public int insert(Account entity) throws Exception {
-        return accountMapper.insertAccount(entity);
+        return accountMapper.insert(entity);
     }
 
     @Override

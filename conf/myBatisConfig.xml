@@ -18,6 +18,7 @@
 		<!--<package name="com.cxspace.test.entity"/>-->
 		<!--&lt;!&ndash;<package name="com.cxspace.supplier.entity"/>&ndash;&gt;-->
 
+		<typeAlias type="com.data_analyze.teacher.entity.Teacher" alias="Teacher"/>
 
 		<typeAlias type="com.data_analyze.account.entity.Account" alias="Account"/>
 

@@ -36,5 +36,6 @@
     <orderEntry type="library" name="spring-jdbc-4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="spring-web-4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="standard" level="project" />
+    <orderEntry type="library" name="poi-3.11-20141221" level="project" />
   </component>
 </module>

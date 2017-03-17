@@ -8,6 +8,4 @@ import com.data_analyze.core.dao.BaseMapper;
  */
 public interface AccountMapper extends BaseMapper<Account>{
 
-    public int insertAccount(Account account);
-
 }
