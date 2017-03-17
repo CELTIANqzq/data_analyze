@@ -7,7 +7,5 @@ import com.data_analyze.teacher.entity.Teacher;
  * Created by liujie on 2017/3/17.
  */
 public interface TeacherMapper extends BaseMapper<Teacher> {
-
-
-
+    String getSalaryIdFromName(String name);
 }

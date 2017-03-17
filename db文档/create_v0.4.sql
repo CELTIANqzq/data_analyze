@@ -22,13 +22,13 @@ CREATE TABLE papers2015
 (
   _id        INT         NOT NULL AUTO_INCREMENT,
   salary_id  VARCHAR(10) NOT NULL,
-  ids_num    VARCHAR(20) NULL,
+  ids_num    VARCHAR(100) NULL,
   year       DATE        NULL,
   author     VARCHAR(15) NULL,
   level      VARCHAR(10) NULL,
-  department VARCHAR(50) NULL,
+  department VARCHAR(100) NULL,
   age        INT         NULL,
-  title      VARCHAR(50) NULL,
+  title      VARCHAR(300) NULL,
   PRIMARY KEY (_id)
 ) ENGINE=InnoDB;
 
@@ -36,13 +36,13 @@ CREATE TABLE papers2016
 (
   _id        INT         NOT NULL AUTO_INCREMENT,
   salary_id  VARCHAR(10) NOT NULL,
-  ids_num    VARCHAR(20) NULL,
+  ids_num    VARCHAR(100) NULL,
   year       DATE        NULL,
   author     VARCHAR(15) NULL,
   level      VARCHAR(10) NULL,
-  department VARCHAR(50) NULL,
+  department VARCHAR(100) NULL,
   age        INT         NULL,
-  title      VARCHAR(50) NULL,
+  title      VARCHAR(300) NULL,
   PRIMARY KEY (_id)
 ) ENGINE=InnoDB;
 

@@ -38,19 +38,30 @@ public class DateTimeHelper {
     }
 
     /**
-     * 把YYYYMM或YYYYMMDD格式的
-     * @param ordinaryString 6位或8位字符串
+     * 把YYYYMM或YYYYMMDD或YYYY格式的
+     * @param ordinaryString 4位6位或8位字符串
      * @return 转化成的timestamp
      */
     public static Timestamp ordinaryStringToTimestamp(String ordinaryString) {
-        int numberOfString = Integer.valueOf(ordinaryString);
-        int year, month, day;
-        if(ordinaryString.length()>6) {
-            day = numberOfString%100;
-            numberOfString/=100;
-        } else {
-            day = 1;
+
+        if("".equals(ordinaryString)) {
+            return null;
         }
+        int numberOfString = Integer.valueOf(ordinaryString.trim());
+
+        if(numberOfString<1000){
+            return null;
+        }
+        if(numberOfString<100000){
+            numberOfString*=10000;
+            numberOfString+=101;
+        } else if(numberOfString < 10000000) {
+            numberOfString *= 100;
+            numberOfString += 1;
+        }
+        int year, month, day;
+        day = numberOfString%100;
+        numberOfString /= 100;
         month = numberOfString%100;
         year = numberOfString/100;
         return YMDToTimestamp(year, month, day);

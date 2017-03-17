@@ -19,6 +19,8 @@ import java.io.File;
 @RequestMapping("/teacher")
 public class TeacherAction {
 
+    private static int count = 1;
+
     @Resource
     private TeacherService teacherService;
 
@@ -26,10 +28,15 @@ public class TeacherAction {
     public String insert() throws Exception {
 
 
-        File teacherTable = new File("/Users/liujie/Desktop/data_analyze/conf/teacher_table.xlsx");
+        if (count == 1) {
 
-        teacherService.importTeacherTable(teacherTable,".xlsx");
+            File teacherTable = new File("/Users/liujie/Desktop/data_analyze/conf/teacher_table.xlsx");
 
+            teacherService.importTeacher(teacherTable, ".xlsx");
+
+            count++;
+
+        }
         System.out.println("insert_ok!!!");
 
         return "forward:/main.jsp";

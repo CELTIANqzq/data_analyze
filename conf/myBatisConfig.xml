@@ -24,6 +24,7 @@
 
 		<typeAlias type="com.data_analyze.test.entity.Dept" alias="Dept"/>
 
+		<typeAlias type="com.data_analyze.paper.entity.Paper" alias="Paper"/>
 
 	</typeAliases>
 

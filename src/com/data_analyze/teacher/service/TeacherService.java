@@ -15,4 +15,7 @@ public interface TeacherService extends BaseService<Teacher>{
 
     public void importTeacherTable(File excel , String fileType);
 
+
+    public void importTeacher(File excel , String fileType);
+
 }
