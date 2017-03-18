@@ -91,6 +91,7 @@ public class PaperServiceImpl implements PaperService {
                 String salaryId = teacherMapper.getSalaryIdFromName(name);
                 // 可能无法找到salaryId 如果找不到salaryId则跳过
                 if(salaryId == null){
+                    System.out.println("\ncan't find "+name+'\n');
                     continue;
                 }
                 paper.setSalary_id(salaryId);

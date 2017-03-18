@@ -12,17 +12,19 @@
      http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
      http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-4.0.xsd">
 
+    <!-- 读取配置文件 -->
+    <context:property-placeholder location="classpath:db.properties"/>
+
      <!-- 采用c3p0连接池，预先把c3p0的jar包复制到工程目录下 -->
-     
      <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
           
-          <property name="driverClass" value="com.mysql.jdbc.Driver" />
+          <property name="driverClass" value="com.mysql.jdbc.Driver"/>
       
           <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/data_analyze?characterEncoding=utf8"/>
           
           <property name="user" value="root"/>
           
-          <property name="password" value="root"/>
+          <property name="password" value="123hjc"/>
 
      </bean>
 
@@ -30,10 +32,10 @@
      <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 
          <!-- dataSource要指定用到的连接池 -->
-         <property name="dataSource" ref="dataSource"></property>
+         <property name="dataSource" ref="dataSource"/>
 
          <!-- configLocation指定mybatis核心配置文件路径 -->
-         <property name="configLocation" value="classpath:myBatisConfig.xml"></property>
+         <property name="configLocation" value="classpath:myBatisConfig.xml"/>
 
          <!-- 所有mapper文件 -->
          <property name="mapperLocations">

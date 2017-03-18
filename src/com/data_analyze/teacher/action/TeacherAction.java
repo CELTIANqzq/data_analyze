@@ -30,7 +30,7 @@ public class TeacherAction {
 
         if (count == 1) {
 
-            File teacherTable = new File("/Users/liujie/Desktop/data_analyze/conf/teacher_table.xlsx");
+            File teacherTable = new File("/home/jiacheng/IdeaProjects/data_analyze/conf/teacher_table.xlsx");
 
             teacherService.importTeacher(teacherTable, ".xlsx");
 
