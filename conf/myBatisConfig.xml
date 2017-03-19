@@ -29,6 +29,10 @@
 		<typeAlias type="com.data_analyze.publication.entity.Publication" alias="Publication"/>
 
         <typeAlias type="com.data_analyze.project.entity.Project" alias="Project"/>
+
+		<typeAlias type="com.data_analyze.teach.entity.Teach" alias="Teach"/>
+
+		<typeAlias type="com.data_analyze.teachsum.entity.Teachsum" alias="Teachsum"/>
 	</typeAliases>
 
 

@@ -9,7 +9,7 @@ public class Teach {
     private String name ;
     private String rank;
     private String duty ;
-    private String theory_fs;
+    private Float theory_fs;
     private Float profession_fs;
     private Float ready_fs;
     private Float guide_fs;
@@ -21,13 +21,38 @@ public class Teach {
     private Float guide_ss ;
     private Float graduation_ss ;
     private Float second_sum ;
-    private Float remark_job ;
+    private String remark_job ;
     private Float year_sum ;
     private Float second_etc ;
     private Float innovative_course;
     private Float college_workload ;
 
     public Teach() {
+    }
+
+    public Teach(Integer _id, String salary_id, String name, String rank, String duty, Float theory_fs, Float profession_fs, Float ready_fs, Float guide_fs, Float graduation_fs, Float first_sum, Float theory_ss, Float profession_ss, Float ready_ss, Float guide_ss, Float graduation_ss, Float second_sum, String remark_job, Float year_sum, Float second_etc, Float innovative_course, Float college_workload) {
+        this._id = _id;
+        this.salary_id = salary_id;
+        this.name = name;
+        this.rank = rank;
+        this.duty = duty;
+        this.theory_fs = theory_fs;
+        this.profession_fs = profession_fs;
+        this.ready_fs = ready_fs;
+        this.guide_fs = guide_fs;
+        this.graduation_fs = graduation_fs;
+        this.first_sum = first_sum;
+        this.theory_ss = theory_ss;
+        this.profession_ss = profession_ss;
+        this.ready_ss = ready_ss;
+        this.guide_ss = guide_ss;
+        this.graduation_ss = graduation_ss;
+        this.second_sum = second_sum;
+        this.remark_job = remark_job;
+        this.year_sum = year_sum;
+        this.second_etc = second_etc;
+        this.innovative_course = innovative_course;
+        this.college_workload = college_workload;
     }
 
     public Integer get_id() {
@@ -70,11 +95,11 @@ public class Teach {
         this.duty = duty;
     }
 
-    public String getTheory_fs() {
+    public Float getTheory_fs() {
         return theory_fs;
     }
 
-    public void setTheory_fs(String theory_fs) {
+    public void setTheory_fs(Float theory_fs) {
         this.theory_fs = theory_fs;
     }
 
@@ -166,11 +191,11 @@ public class Teach {
         this.second_sum = second_sum;
     }
 
-    public Float getRemark_job() {
+    public String getRemark_job() {
         return remark_job;
     }
 
-    public void setRemark_job(Float remark_job) {
+    public void setRemark_job(String remark_job) {
         this.remark_job = remark_job;
     }
 
@@ -214,7 +239,7 @@ public class Teach {
                 ", name='" + name + '\'' +
                 ", rank='" + rank + '\'' +
                 ", duty='" + duty + '\'' +
-                ", theory_fs='" + theory_fs + '\'' +
+                ", theory_fs=" + theory_fs +
                 ", profession_fs=" + profession_fs +
                 ", ready_fs=" + ready_fs +
                 ", guide_fs=" + guide_fs +
@@ -226,7 +251,7 @@ public class Teach {
                 ", guide_ss=" + guide_ss +
                 ", graduation_ss=" + graduation_ss +
                 ", second_sum=" + second_sum +
-                ", remark_job=" + remark_job +
+                ", remark_job='" + remark_job + '\'' +
                 ", year_sum=" + year_sum +
                 ", second_etc=" + second_etc +
                 ", innovative_course=" + innovative_course +

@@ -18,19 +18,9 @@ import java.io.File;
 public class TestPOI {
 
 
-    @Before
-    public void prev(){
-
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-
-    }
 
     @Test
     public void testPOI(){
-
-        File teacherTable = new File("/Users/liujie/Desktop/data_analyze/conf/teacher_table.xlsx");
-
-        ImportExcel.importTeacher(teacherTable,".xlsx");
 
     }
 
