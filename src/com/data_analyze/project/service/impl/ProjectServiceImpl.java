@@ -48,7 +48,7 @@ public class ProjectServiceImpl implements ProjectService {
             Workbook workbook = is03Excel ? new HSSFWorkbook(fileInputStream) : new XSSFWorkbook(fileInputStream);
             Sheet sheet = workbook.getSheetAt(0);
             Project project = new Project();
-            for(int j=1; j<sheet.getPhysicalNumberOfRows(); ++j){
+            for(int j=1; j<((year==2015)?132:98); ++j){
                 Row row = sheet.getRow(j);
                 String name = row.getCell(1).getStringCellValue().trim();
                 String salary_id = teacherMapper.getSalaryIdFromName(name);
@@ -61,22 +61,26 @@ public class ProjectServiceImpl implements ProjectService {
                         row.getCell(i).setCellType(Cell.CELL_TYPE_STRING);
                     }
                 }
-                System.out.println("set all type");
                 project.setSalary_id(salary_id);
                 project.setName(name);
                 String budget_in_acc = row.getCell(2).getStringCellValue();
                 if(budget_in_acc == null || "".equals(budget_in_acc)){
+                    System.out.println(year + name + "budget_in_all null");
                     continue;
                 }
                 project.setBudget_in_acc(Float.valueOf(budget_in_acc));
                 String V_or_H = row.getCell(3).getStringCellValue();
-                project.setV_or_H((V_or_H==null||"".equals(V_or_H))?null:Boolean.valueOf(V_or_H));
+                System.out.println("get v_or_h "+V_or_H );
+                int v_or_h_num = Integer.valueOf(V_or_H);
+                project.setV_or_H(v_or_h_num==0?Boolean.FALSE:Boolean.TRUE);
+                System.out.println(project);
                 if (year == 2015){
                     projectMapper.insert2015(project);
                 } else {
                     projectMapper.insert2016(project);
                 }
             }
+            System.out.println(year + "ok");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

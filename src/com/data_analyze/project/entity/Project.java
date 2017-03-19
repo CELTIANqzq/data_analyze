@@ -7,8 +7,8 @@ public class Project {
     private Integer _id ;
     private String salary_id ;
     private String name ;
-    Boolean V_or_H ;
-    Float budget_in_acc ;
+    private Boolean V_or_H ;
+    private Float budget_in_acc ;
 
     public Project() {
     }
