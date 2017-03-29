@@ -24,7 +24,7 @@
           
           <property name="user" value="root"/>
           
-          <property name="password" value="123hjc"/>
+          <property name="password" value="root"/>
 
      </bean>
 
@@ -37,12 +37,6 @@
          <!-- configLocation指定mybatis核心配置文件路径 -->
          <property name="configLocation" value="classpath:myBatisConfig.xml"/>
 
-         <!-- 所有mapper文件 -->
-         <property name="mapperLocations">
-             <list>
-                 <value>classpath:com/data_analyze/account/dao/AccountMapper.xml</value>
-             </list>
-         </property>
 
      </bean>
 
@@ -72,8 +66,6 @@
     <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
-
-    <!--<context:component-scan base-package="com.cxspace"/>-->
 
     <!-- 自动扫描组件，要把controller去除，它是在spring-mvc.xml中配置，如果不去除会影响事务管理。 -->
     <!--扫描com.cxspace下所有类,但是不扫Controller-->

@@ -24,8 +24,6 @@
 
         </mvc:annotation-driven>
 
-        <!--<context:component-scan base-package="com.cxspace"></context:component-scan>-->
-
         <!--扫描所有controller,但是不扫描service-->
         <context:component-scan base-package="com.data_analyze">
 
@@ -34,6 +32,8 @@
             <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
 
         </context:component-scan>
+
+
 
 
  </beans>           

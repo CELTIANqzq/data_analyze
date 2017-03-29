@@ -40,5 +40,6 @@
     <orderEntry type="library" name="standard" level="project" />
     <orderEntry type="library" name="poi-3.11-20141221" level="project" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="annotations-api" level="application" />
   </component>
 </module>

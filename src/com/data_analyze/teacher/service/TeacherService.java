@@ -18,4 +18,8 @@ public interface TeacherService extends BaseService<Teacher>{
 
     public void importTeacher(File excel , String fileType);
 
+    public String getSalaryIdFromName(String name);
+
+
+
 }

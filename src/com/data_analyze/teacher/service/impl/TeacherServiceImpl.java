@@ -233,4 +233,9 @@ public class TeacherServiceImpl implements TeacherService {
 
 
     }
+
+    @Override
+    public String getSalaryIdFromName(String name) {
+        return teacherMapper.getSalaryIdFromName(name);
+    }
 }

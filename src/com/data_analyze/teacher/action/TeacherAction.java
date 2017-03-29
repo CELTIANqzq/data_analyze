@@ -6,6 +6,7 @@ import com.data_analyze.teacher.service.TeacherService;
 import com.data_analyze.utils.ImportExcel;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import java.io.File;
@@ -19,27 +20,23 @@ import java.io.File;
 @RequestMapping("/teacher")
 public class TeacherAction {
 
-    private static int count = 1;
-
     @Resource
     private TeacherService teacherService;
 
-    @RequestMapping(value = "/insert")
-    public String insert() throws Exception {
+    @RequestMapping(value = "/getSalaryIdByName")
+    public ModelAndView getSalaryIdByName() {
 
+        ModelAndView modelAndView = new ModelAndView();
 
-        if (count == 1) {
+        String name = "方娜";
 
-            File teacherTable = new File("/home/jiacheng/IdeaProjects/data_analyze/conf/teacher_table.xlsx");
+        String id = teacherService.getSalaryIdFromName(name);
 
-            teacherService.importTeacher(teacherTable, ".xlsx");
+        modelAndView.addObject("id",id);
 
-            count++;
+        modelAndView.setViewName("/main.jsp");
 
-        }
-        System.out.println("insert_ok!!!");
-
-        return "forward:/main.jsp";
+        return modelAndView;
     }
 
 
