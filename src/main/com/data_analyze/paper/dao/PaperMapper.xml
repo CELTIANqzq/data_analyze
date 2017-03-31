@@ -5,25 +5,15 @@
 <mapper namespace="com.data_analyze.paper.dao.PaperMapper">
 
 	<resultMap id="paperResultMap" type="Paper">
-
 		<id property="_id" column="_id"/>
-
 		<result property="salary_id"  column="salary_id"/>
-
 		<result property="ids_num" column="ids_num"/>
-
 		<result property="year" column="year"/>
-
 		<result property="author" column="author"/>
-
 		<result property="level" column="level"/>
-
 		<result property="department" column="department"/>
-
 		<result property="age" column="age"/>
-
 		<result property="title" column="title"/>
-
 	</resultMap>
 
 	<!--<select id="selectAccount" parameterType="Integer" resultMap="accountResultMap">-->
@@ -47,5 +37,7 @@
 		values(#{salary_id},#{ids_num},#{year},#{author},#{level},#{department},#{age},#{title});
 
     </insert>
+
+	<insert id="insert" parameterType=""
 
 </mapper>
