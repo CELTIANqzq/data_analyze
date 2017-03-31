@@ -12,9 +12,20 @@ public class Paper {
     private Timestamp year;
     private String author;
     private String level;
-    private String department;
-    private int age;
     private String title;
+
+    public Paper() {
+    }
+
+    public Paper(Integer _id, String salary_id, String ids_num, Timestamp year, String author, String level, String title) {
+        this._id = _id;
+        this.salary_id = salary_id;
+        this.ids_num = ids_num;
+        this.year = year;
+        this.author = author;
+        this.level = level;
+        this.title = title;
+    }
 
     public Integer get_id() {
         return _id;
@@ -64,42 +75,11 @@ public class Paper {
         this.level = level;
     }
 
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public String getTitle() {
         return title;
     }
 
     public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public Paper() {
-    }
-
-    public Paper(Integer _id, String salary_id, String ids_num, Timestamp year, String author, String level, String department, int age, String title) {
-        this._id = _id;
-        this.salary_id = salary_id;
-        this.ids_num = ids_num;
-        this.year = year;
-        this.author = author;
-        this.level = level;
-        this.department = department;
-        this.age = age;
         this.title = title;
     }
 
@@ -112,8 +92,6 @@ public class Paper {
                 ", year=" + year +
                 ", author='" + author + '\'' +
                 ", level='" + level + '\'' +
-                ", department='" + department + '\'' +
-                ", age=" + age +
                 ", title='" + title + '\'' +
                 '}';
     }

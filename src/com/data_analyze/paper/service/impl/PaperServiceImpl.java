@@ -99,10 +99,8 @@ public class PaperServiceImpl implements PaperService {
                 );
                 paper.setAuthor(name);
                 paper.setLevel(row.getCell(6).getStringCellValue().trim());
-                paper.setDepartment(row.getCell(7).getStringCellValue().trim());
                 String gotAge = row.getCell(3).getStringCellValue().trim();
                 System.out.println(gotAge);
-                paper.setAge(gotAge.equals("")?null:(Integer.valueOf(gotAge))); //valueof 之前要判空
                 paper.setTitle(row.getCell(4).getStringCellValue().trim());
 //                System.out.println(paper);
                 if(year == 2015){

@@ -238,4 +238,9 @@ public class TeacherServiceImpl implements TeacherService {
     public String getSalaryIdFromName(String name) {
         return teacherMapper.getSalaryIdFromName(name);
     }
+
+    @Override
+    public void hello() {
+        System.out.println("hello");
+    }
 }

@@ -21,5 +21,6 @@ public interface TeacherService extends BaseService<Teacher>{
     public String getSalaryIdFromName(String name);
 
 
+    public void hello();
 
 }
