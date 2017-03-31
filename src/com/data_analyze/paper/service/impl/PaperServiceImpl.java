@@ -5,8 +5,6 @@ import com.data_analyze.paper.dao.PaperMapper;
 import com.data_analyze.paper.entity.Paper;
 import com.data_analyze.paper.service.PaperService;
 import com.data_analyze.teacher.dao.TeacherMapper;
-import com.data_analyze.teacher.entity.Teacher;
-import com.data_analyze.teacher.service.TeacherService;
 import com.data_analyze.utils.DateTimeHelper;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;

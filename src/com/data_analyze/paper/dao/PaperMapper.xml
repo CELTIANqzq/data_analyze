@@ -38,6 +38,5 @@
 
     </insert>
 
-	<insert id="insert" parameterType=""
 
 </mapper>

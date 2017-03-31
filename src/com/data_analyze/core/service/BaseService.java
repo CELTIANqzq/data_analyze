@@ -2,8 +2,6 @@ package com.data_analyze.core.service;
 
 import com.data_analyze.core.entity.Page;
 
-import java.util.List;
-
 /**
  * Created by cx on 2016/12/05.
  */

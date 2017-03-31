@@ -1,6 +1,5 @@
 package com.data_analyze.teach.action;
 
-import com.data_analyze.teach.entity.Teach;
 import com.data_analyze.teach.service.TeachService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

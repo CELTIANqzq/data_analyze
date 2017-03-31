@@ -8,7 +8,7 @@
 	<typeAliases>
 		<typeAlias type="com.data_analyze.teacher.entity.Teacher" alias="Teacher"/>
 		<typeAlias type="com.data_analyze.account.entity.Account" alias="Account"/>
-		<typeAlias type="test.entity.Dept" alias="Dept"/>
+		<!--<typeAlias type="test.entity.Dept" alias="Dept"/>-->
 		<typeAlias type="com.data_analyze.paper.entity.Paper" alias="Paper"/>
 		<typeAlias type="com.data_analyze.publication.entity.Publication" alias="Publication"/>
         <typeAlias type="com.data_analyze.project.entity.Project" alias="Project"/>
