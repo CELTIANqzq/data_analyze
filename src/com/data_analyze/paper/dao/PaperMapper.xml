@@ -11,8 +11,6 @@
 		<result property="year" column="year"/>
 		<result property="author" column="author"/>
 		<result property="level" column="level"/>
-		<result property="department" column="department"/>
-		<result property="age" column="age"/>
 		<result property="title" column="title"/>
 	</resultMap>
 
@@ -22,21 +20,21 @@
 	<!--</select>-->
 
 
-	<insert id="insert2015" parameterType="Paper">
+	<!--<insert id="insert2015" parameterType="Paper">-->
 
-		insert into papers2015(salary_id,ids_num,year,author,level,department,age,title)
+		<!--insert into papers2015(salary_id,ids_num,year,author,level,title)-->
 
-		values(#{salary_id},#{ids_num},#{year},#{author},#{level},#{department},#{age},#{title});
+		<!--values(#{salary_id},#{ids_num},#{year},#{author},#{level},#{title});-->
 
-	</insert>
+	<!--</insert>-->
 
-	<insert id="insert2016" parameterType="Paper">
+	<!--<insert id="insert2016" parameterType="Paper">-->
 
-		insert into papers2016(salary_id,ids_num,year,author,level,department,age,title)
+		<!--insert into papers2016(salary_id,ids_num,year,author,level,department,age,title)-->
 
-		values(#{salary_id},#{ids_num},#{year},#{author},#{level},#{department},#{age},#{title});
+		<!--values(#{salary_id},#{ids_num},#{year},#{author},#{level},#{department},#{age},#{title});-->
 
-    </insert>
+    <!--</insert>-->
 
 
 </mapper>

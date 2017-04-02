@@ -7,18 +7,18 @@ public class Project {
     private Integer _id ;
     private String salary_id ;
     private String name ;
-    private Boolean V_or_H ;
+    private Boolean type ;
     private Float budget_in_acc ;
 
-    public Project() {
-    }
-
-    public Project(Integer _id, String salary_id, String name, Boolean v_or_H, Float budget_in_acc) {
+    public Project(Integer _id, String salary_id, String name, Boolean type, Float budget_in_acc) {
         this._id = _id;
         this.salary_id = salary_id;
         this.name = name;
-        V_or_H = v_or_H;
+        this.type = type;
         this.budget_in_acc = budget_in_acc;
+    }
+
+    public Project() {
     }
 
     public Integer get_id() {
@@ -45,12 +45,12 @@ public class Project {
         this.name = name;
     }
 
-    public Boolean getV_or_H() {
-        return V_or_H;
+    public Boolean getType() {
+        return type;
     }
 
-    public void setV_or_H(Boolean v_or_H) {
-        V_or_H = v_or_H;
+    public void setType(Boolean type) {
+        this.type = type;
     }
 
     public Float getBudget_in_acc() {
@@ -67,7 +67,7 @@ public class Project {
                 "_id=" + _id +
                 ", salary_id='" + salary_id + '\'' +
                 ", name='" + name + '\'' +
-                ", V_or_H=" + V_or_H +
+                ", type=" + type +
                 ", budget_in_acc=" + budget_in_acc +
                 '}';
     }

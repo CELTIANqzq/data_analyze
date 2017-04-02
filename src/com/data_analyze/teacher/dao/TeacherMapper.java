@@ -10,5 +10,4 @@ public interface TeacherMapper extends BaseMapper<Teacher> {
 
     public String getSalaryIdFromName(String name);
 
-
 }

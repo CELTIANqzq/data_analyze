@@ -5,6 +5,7 @@ import com.data_analyze.teacher.dao.TeacherMapper;
 import com.data_analyze.teachsum.dao.TeachsumMapper;
 import com.data_analyze.teachsum.entity.Teachsum;
 import com.data_analyze.teachsum.service.TeachsumService;
+import org.apache.ibatis.annotations.Param;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -18,6 +19,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by jiacheng on 17-3-19.
@@ -42,6 +44,11 @@ public class TeachsumServiceImpl implements TeachsumService {
     @Override
     public int delete(Teachsum entity) throws Exception {
         return 0;
+    }
+
+    @Override
+    public Teachsum selectDynamic(@Param("tableName") String table, @Param("items") Teachsum entity) {
+        return null;
     }
 
     @Override
@@ -110,5 +117,30 @@ public class TeachsumServiceImpl implements TeachsumService {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public int insertDynamic(@Param("teach") Teachsum entity, @Param("tableName") String tableName) {
+        return 0;
+    }
+
+    @Override
+    public Page<Teachsum> selectPageListDynamic(@Param("pages") Page<Teachsum> page, @Param("tableName") String tableName) {
+        return null;
+    }
+
+    @Override
+    public int selectPageCountDynamic(@Param("tableName") String tableName) {
+        return 0;
+    }
+
+    @Override
+    public int deleteDynamic(@Param("tablesName") String tableName, @Param("items") Teachsum entity) {
+        return 0;
+    }
+
+    @Override
+    public int updateDynamic(@Param("tableName") String tableName, @Param("items") Teachsum entity) {
+        return 0;
     }
 }

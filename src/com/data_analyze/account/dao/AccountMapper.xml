@@ -16,15 +16,16 @@
 
 	</resultMap>
 
-	<!--<select id="selectAccount" parameterType="Integer" resultMap="accountResultMap">-->
 
+	<select id="login" parameterType="Account" resultMap="accountResultMap">
 
-	<!--</select>-->
+		SELECT * FROM account WHERE acc_login = #{acc_login} AND acc_pass = #{acc_pass};
 
+	</select>
 
 	<insert id="insert" parameterType="Account">
 
-		insert into account(acc_id,acc_login,acc_name,acc_pass) values(#{acc_id},#{acc_login},#{acc_name},#{acc_pass});
+		insert into account(acc_login,acc_name,acc_pass) values(#{acc_login},#{acc_name},#{acc_pass});
 
     </insert>
 

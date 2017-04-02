@@ -2,9 +2,11 @@ package com.data_analyze.teacher.service.impl;
 
 import com.data_analyze.core.entity.Page;
 import com.data_analyze.teacher.dao.TeacherMapper;
+import com.data_analyze.teacher.dao.TeacherSysMapper;
 import com.data_analyze.teacher.entity.Teacher;
 import com.data_analyze.teacher.service.TeacherService;
 import com.data_analyze.utils.DateTimeHelper;
+import org.apache.ibatis.annotations.Param;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import org.apache.poi.ss.usermodel.Row;
@@ -19,6 +21,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by liujie on 2017/3/17.
@@ -33,7 +36,7 @@ public class TeacherServiceImpl implements TeacherService {
 
     @Override
     public int insert(Teacher entity) throws Exception {
-        return teacherMapper.insert(entity);
+        return 0;
     }
 
     @Override
@@ -55,6 +58,7 @@ public class TeacherServiceImpl implements TeacherService {
     public Teacher select(Teacher entity) throws Exception {
         return null;
     }
+
 
     @Override
     public Page<Teacher> selectPage(Page<Teacher> page) {
@@ -121,6 +125,10 @@ public class TeacherServiceImpl implements TeacherService {
 
     }
 
+    @Override
+    public Teacher selectDynamic(@Param("tableName") String table, @Param("items") Teacher entity) {
+        return null;
+    }
 
     public void importTeacher(File excel , String fileType){
 
@@ -242,5 +250,30 @@ public class TeacherServiceImpl implements TeacherService {
     @Override
     public void hello() {
         System.out.println("hello");
+    }
+
+    @Override
+    public int insertDynamic(@Param("teach") Teacher entity, @Param("tableName") String tableName) {
+        return 0;
+    }
+
+    @Override
+    public Page<Teacher> selectPageListDynamic(@Param("pages") Page<Teacher> page, @Param("tableName") String tableName) {
+        return null;
+    }
+
+    @Override
+    public int selectPageCountDynamic(@Param("tableName") String tableName) {
+        return 0;
+    }
+
+    @Override
+    public int deleteDynamic(@Param("tablesName") String tableName, @Param("items") Teacher entity) {
+        return 0;
+    }
+
+    @Override
+    public int updateDynamic(@Param("tableName") String tableName, @Param("items") Teacher entity) {
+        return 0;
     }
 }

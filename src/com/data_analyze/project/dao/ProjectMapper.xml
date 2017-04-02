@@ -7,7 +7,7 @@
         <id property="_id" column="_id"/>
         <result property="salary_id"  column="salary_id"/>
         <result property="name" column="name"/>
-        <result property="V_or_H" column="V_or_H"/>
+        <result property="type" column="V_or_H"/>
         <result property="budget_in_acc" column="budget_in_acc"/>
     </resultMap>
 
@@ -18,12 +18,12 @@
 
     <insert id="insert2015" parameterType="Project">
         INSERT INTO projects2015(salary_id, name, V_or_H, budget_in_acc)
-        VALUES (#{salary_id}, #{name}, #{V_or_H}, #{budget_in_acc});
+        VALUES (#{salary_id}, #{name}, #{type}, #{budget_in_acc});
     </insert>
 
     <insert id="insert2016" parameterType="Project">
         INSERT INTO projects2016(salary_id, name, V_or_H, budget_in_acc)
-        VALUES (#{salary_id}, #{name}, #{V_or_H}, #{budget_in_acc});
+        VALUES (#{salary_id}, #{name}, #{type}, #{budget_in_acc});
     </insert>
 
 </mapper>

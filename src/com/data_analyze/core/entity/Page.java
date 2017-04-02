@@ -24,9 +24,20 @@ public class Page <T> implements Serializable{
 
     private Integer start;  //开始标号
 
+    private Integer totalPage;
+
+    public Integer getTotalPage() {
+        return totalPage;
+    }
+
+    public void setTotalPage(Integer totalPage) {
+        this.totalPage = totalPage;
+    }
+
     private Map<String , Object> pageMap = new HashMap<String , Object>();
 
     public Integer getPage() {
+
         return page;
     }
 
@@ -42,9 +53,6 @@ public class Page <T> implements Serializable{
         this.rows = rows;
     }
 
-//    public Integer getTotalRecord() {
-//        return totalRecord;
-//    }
 
     public void setTotalRecord(Integer totalRecord) {
 
@@ -52,9 +60,9 @@ public class Page <T> implements Serializable{
         this.totalRecord = totalRecord;
     }
 
-//    public List<T> getList() {
-//        return list;
-//    }
+    public List<T> getList() {
+        return list;
+    }
 
     public void setList(List<T> list) {
 
@@ -96,6 +104,10 @@ public class Page <T> implements Serializable{
 //        this.pageMap = pageMap;
 //    }
 
+
+    public Integer getTotalRecord() {
+        return totalRecord;
+    }
 
     @Override
     public String toString() {

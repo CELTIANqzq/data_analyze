@@ -6,6 +6,7 @@ import com.data_analyze.publication.entity.Publication;
 import com.data_analyze.publication.service.PublicationService;
 import com.data_analyze.teacher.dao.TeacherMapper;
 import com.data_analyze.utils.DateTimeHelper;
+import org.apache.ibatis.annotations.Param;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -19,6 +20,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by jiacheng on 17-3-18.
@@ -110,5 +112,35 @@ public class PublicationServiceImpl implements PublicationService {
     @Override
     public Page<Publication> selectPageUseDyc(Page<Publication> page) {
         return null;
+    }
+
+    @Override
+    public int insertDynamic(@Param("teach") Publication entity, @Param("tableName") String tableName) {
+        return 0;
+    }
+
+    @Override
+    public Page<Publication> selectPageListDynamic(@Param("pages") Page<Publication> page, @Param("tableName") String tableName) {
+        return null;
+    }
+
+    @Override
+    public int selectPageCountDynamic(@Param("tableName") String tableName) {
+        return 0;
+    }
+
+    @Override
+    public int deleteDynamic(@Param("tablesName") String tableName, @Param("items") Publication entity) {
+        return 0;
+    }
+
+    @Override
+    public Publication selectDynamic(@Param("tableName") String table, @Param("items") Publication entity) {
+        return null;
+    }
+
+    @Override
+    public int updateDynamic(@Param("tableName") String tableName, @Param("items") Publication entity) {
+        return 0;
     }
 }

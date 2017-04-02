@@ -395,103 +395,103 @@ CREATE TABLE teach2010
 #####################
 # 信息工程学院2016年研究生教学工作量统计表 teachsum2016
 #####################
-# CREATE TABLE teachsum2016
-# (
-#   _id             INT         NOT NULL AUTO_INCREMENT,
-#   department      VARCHAR(20) NULL,
-#   salary_id       VARCHAR(10) NOT NULL,
-#   name            VARCHAR(10) NOT NULL,
-#   year            INT(4)      NULL,
-#   teach_workload  FLOAT(9, 5) NULL,
-#   mentor_load     FLOAT(9, 5) NULL,
-#   reform_workload FLOAT(9, 5) NULL,
-#   sum_workload    FLOAT(9, 5) NULL,
-#   PRIMARY KEY (_id)
-# );
-#
-# CREATE TABLE teachsum2015
-# (
-#   _id             INT         NOT NULL AUTO_INCREMENT,
-#   department      VARCHAR(20) NULL,
-#   salary_id       VARCHAR(10) NOT NULL,
-#   name            VARCHAR(10) NOT NULL,
-#   year            INT(4)      NULL,
-#   teach_workload  FLOAT(9, 5) NULL,
-#   mentor_load     FLOAT(9, 5) NULL,
-#   reform_workload FLOAT(9, 5) NULL,
-#   sum_workload    FLOAT(9, 5) NULL,
-#   PRIMARY KEY (_id)
-# );
-#
-# CREATE TABLE teachsum2014
-# (
-#   _id             INT         NOT NULL AUTO_INCREMENT,
-#   department      VARCHAR(20) NULL,
-#   salary_id       VARCHAR(10) NOT NULL,
-#   name            VARCHAR(10) NOT NULL,
-#   year            INT(4)      NULL,
-#   teach_workload  FLOAT(9, 5) NULL,
-#   mentor_load     FLOAT(9, 5) NULL,
-#   reform_workload FLOAT(9, 5) NULL,
-#   sum_workload    FLOAT(9, 5) NULL,
-#   PRIMARY KEY (_id)
-# );
-#
-# CREATE TABLE teachsum2013
-# (
-#   _id             INT         NOT NULL AUTO_INCREMENT,
-#   department      VARCHAR(20) NULL,
-#   salary_id       VARCHAR(10) NOT NULL,
-#   name            VARCHAR(10) NOT NULL,
-#   year            INT(4)      NULL,
-#   teach_workload  FLOAT(9, 5) NULL,
-#   mentor_load     FLOAT(9, 5) NULL,
-#   reform_workload FLOAT(9, 5) NULL,
-#   sum_workload    FLOAT(9, 5) NULL,
-#   PRIMARY KEY (_id)
-# );
-#
-# CREATE TABLE teachsum2012
-# (
-#   _id             INT         NOT NULL AUTO_INCREMENT,
-#   department      VARCHAR(20) NULL,
-#   salary_id       VARCHAR(10) NOT NULL,
-#   name            VARCHAR(10) NOT NULL,
-#   year            INT(4)      NULL,
-#   teach_workload  FLOAT(9, 5) NULL,
-#   mentor_load     FLOAT(9, 5) NULL,
-#   reform_workload FLOAT(9, 5) NULL,
-#   sum_workload    FLOAT(9, 5) NULL,
-#   PRIMARY KEY (_id)
-# );
-#
-# CREATE TABLE teachsum2011
-# (
-#   _id             INT         NOT NULL AUTO_INCREMENT,
-#   department      VARCHAR(20) NULL,
-#   salary_id       VARCHAR(10) NOT NULL,
-#   name            VARCHAR(10) NOT NULL,
-#   year            INT(4)      NULL,
-#   teach_workload  FLOAT(9, 5) NULL,
-#   mentor_load     FLOAT(9, 5) NULL,
-#   reform_workload FLOAT(9, 5) NULL,
-#   sum_workload    FLOAT(9, 5) NULL,
-#   PRIMARY KEY (_id)
-# );
-#
-# CREATE TABLE teachsum2010
-# (
-#   _id             INT         NOT NULL AUTO_INCREMENT,
-#   department      VARCHAR(20) NULL,
-#   salary_id       VARCHAR(10) NOT NULL,
-#   name            VARCHAR(10) NOT NULL,
-#   year            INT(4)      NULL,
-#   teach_workload  FLOAT(9, 5) NULL,
-#   mentor_load     FLOAT(9, 5) NULL,
-#   reform_workload FLOAT(9, 5) NULL,
-#   sum_workload    FLOAT(9, 5) NULL,
-#   PRIMARY KEY (_id)
-# );
+ CREATE TABLE teachsum2016
+ (
+   _id             INT         NOT NULL AUTO_INCREMENT,
+   department      VARCHAR(20) NULL,
+   salary_id       VARCHAR(10) NOT NULL,
+   name            VARCHAR(10) NOT NULL,
+   year            INT(4)      NULL,
+   teach_workload  FLOAT(9, 5) NULL,
+   mentor_load     FLOAT(9, 5) NULL,
+   reform_workload FLOAT(9, 5) NULL,
+   sum_workload    FLOAT(9, 5) NULL,
+   PRIMARY KEY (_id)
+ );
+
+ CREATE TABLE teachsum2015
+ (
+   _id             INT         NOT NULL AUTO_INCREMENT,
+   department      VARCHAR(20) NULL,
+   salary_id       VARCHAR(10) NOT NULL,
+   name            VARCHAR(10) NOT NULL,
+   year            INT(4)      NULL,
+   teach_workload  FLOAT(9, 5) NULL,
+   mentor_load     FLOAT(9, 5) NULL,
+   reform_workload FLOAT(9, 5) NULL,
+   sum_workload    FLOAT(9, 5) NULL,
+   PRIMARY KEY (_id)
+ );
+
+ CREATE TABLE teachsum2014
+ (
+   _id             INT         NOT NULL AUTO_INCREMENT,
+   department      VARCHAR(20) NULL,
+   salary_id       VARCHAR(10) NOT NULL,
+   name            VARCHAR(10) NOT NULL,
+   year            INT(4)      NULL,
+   teach_workload  FLOAT(9, 5) NULL,
+   mentor_load     FLOAT(9, 5) NULL,
+   reform_workload FLOAT(9, 5) NULL,
+   sum_workload    FLOAT(9, 5) NULL,
+   PRIMARY KEY (_id)
+ );
+
+ CREATE TABLE teachsum2013
+ (
+   _id             INT         NOT NULL AUTO_INCREMENT,
+   department      VARCHAR(20) NULL,
+   salary_id       VARCHAR(10) NOT NULL,
+   name            VARCHAR(10) NOT NULL,
+   year            INT(4)      NULL,
+   teach_workload  FLOAT(9, 5) NULL,
+   mentor_load     FLOAT(9, 5) NULL,
+   reform_workload FLOAT(9, 5) NULL,
+   sum_workload    FLOAT(9, 5) NULL,
+   PRIMARY KEY (_id)
+ );
+
+ CREATE TABLE teachsum2012
+ (
+   _id             INT         NOT NULL AUTO_INCREMENT,
+   department      VARCHAR(20) NULL,
+   salary_id       VARCHAR(10) NOT NULL,
+   name            VARCHAR(10) NOT NULL,
+   year            INT(4)      NULL,
+   teach_workload  FLOAT(9, 5) NULL,
+   mentor_load     FLOAT(9, 5) NULL,
+   reform_workload FLOAT(9, 5) NULL,
+   sum_workload    FLOAT(9, 5) NULL,
+   PRIMARY KEY (_id)
+ );
+
+ CREATE TABLE teachsum2011
+ (
+   _id             INT         NOT NULL AUTO_INCREMENT,
+   department      VARCHAR(20) NULL,
+   salary_id       VARCHAR(10) NOT NULL,
+   name            VARCHAR(10) NOT NULL,
+   year            INT(4)      NULL,
+   teach_workload  FLOAT(9, 5) NULL,
+   mentor_load     FLOAT(9, 5) NULL,
+   reform_workload FLOAT(9, 5) NULL,
+   sum_workload    FLOAT(9, 5) NULL,
+   PRIMARY KEY (_id)
+ );
+
+ CREATE TABLE teachsum2010
+ (
+   _id             INT         NOT NULL AUTO_INCREMENT,
+   department      VARCHAR(20) NULL,
+   salary_id       VARCHAR(10) NOT NULL,
+   name            VARCHAR(10) NOT NULL,
+   year            INT(4)      NULL,
+   teach_workload  FLOAT(9, 5) NULL,
+   mentor_load     FLOAT(9, 5) NULL,
+   reform_workload FLOAT(9, 5) NULL,
+   sum_workload    FLOAT(9, 5) NULL,
+   PRIMARY KEY (_id)
+ );
 
 
 ##########################################################################################
@@ -616,6 +616,23 @@ CREATE TABLE teach2010
 # --   PRIMARY KEY (_id)
 # -- ) ENGINE=InnoDB;
 
+
+/*============================*/
+/* Table: 管理员表结构 		  */
+/*============================*/
+create table account
+(
+   /* 管理员编号,自动增长 */
+   acc_id                  int not null auto_increment,
+   /* 管理员登录名  */
+   acc_login               varchar(20),
+   /* 管理员姓名  */
+   acc_name                varchar(20),
+   /* 管理员密码 */
+   acc_pass                varchar(20),
+   /* 设置编号为主键 */
+   primary key (acc_id)
+);
 
 
 

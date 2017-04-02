@@ -1,6 +1,7 @@
 package com.data_analyze.core.dao;
 
 import com.data_analyze.core.entity.Page;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -34,5 +35,17 @@ public interface BaseMapper<T> {
 
     //通过关键字查询分页数据,返回总记录数，多条件
     public Integer selectPageCountUseDyc(Page<T> page);
+
+    public int insertDynamic(@Param("items")T entity , @Param("tableName")String tableName);
+
+    public List<T> selectPageListDynamic(@Param("pages") Page<T> page , @Param("tableName")String tableName);
+
+    public int selectPageCountDynamic(@Param("tableName")String tableName);
+
+    public int deleteDynamic(@Param("tableName")String tableName , @Param("items") T entity);
+
+    public int updateDynamic(@Param("tableName")String tableName , @Param("items") T entity);
+
+    public T selectDynamic(@Param("tableName")String table,@Param("items")T entity);
 
 }

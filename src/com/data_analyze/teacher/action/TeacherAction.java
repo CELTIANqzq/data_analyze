@@ -1,5 +1,6 @@
 package com.data_analyze.teacher.action;
 
+import com.data_analyze.teacher.entity.Teacher;
 import com.data_analyze.teacher.service.TeacherService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,6 +34,24 @@ public class TeacherAction {
         modelAndView.setViewName("/main.jsp");
 
         return modelAndView;
+    }
+
+    @RequestMapping(value = "insert")
+    public String insert(){
+
+        Teacher teacher = new Teacher();
+
+        teacher.setSalary_id("11223");
+
+        teacher.setName("小二");
+
+        try {
+            teacherService.insert(teacher);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return "/main.jsp";
     }
 
 

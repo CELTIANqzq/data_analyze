@@ -6,6 +6,7 @@ import java.sql.Timestamp;
  * Created by liujie on 2017/3/17.
  */
 public class Paper {
+
     private Integer _id;
     private String salary_id;
     private String ids_num;

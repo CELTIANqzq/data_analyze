@@ -6,6 +6,7 @@ import com.data_analyze.paper.entity.Paper;
 import com.data_analyze.paper.service.PaperService;
 import com.data_analyze.teacher.dao.TeacherMapper;
 import com.data_analyze.utils.DateTimeHelper;
+import org.apache.ibatis.annotations.Param;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -18,6 +19,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by liujie on 2017/3/17.
@@ -54,10 +56,7 @@ public class PaperServiceImpl implements PaperService {
         return null;
     }
 
-    @Override
-    public Page<Paper> selectPage(Page<Paper> page) {
-        return null;
-    }
+
 
     @Override
     public Page<Paper> selectPageUseDyc(Page<Paper> page) {
@@ -122,5 +121,40 @@ public class PaperServiceImpl implements PaperService {
             e.printStackTrace();
         }
 
+    }
+
+    @Override
+    public Page<Paper> selectPage(Page<Paper> page) {
+        return null;
+    }
+
+    @Override
+    public int insertDynamic(@Param("teach") Paper entity, @Param("tableName") String tableName) {
+        return 0;
+    }
+
+    @Override
+    public Page<Paper> selectPageListDynamic(@Param("pages") Page<Paper> page, @Param("tableName") String tableName) {
+        return null;
+    }
+
+    @Override
+    public int selectPageCountDynamic(@Param("tableName") String tableName) {
+        return 0;
+    }
+
+    @Override
+    public int deleteDynamic(@Param("tablesName") String tableName, @Param("items") Paper entity) {
+        return 0;
+    }
+
+    @Override
+    public Paper selectDynamic(@Param("tableName") String table, @Param("items") Paper entity) {
+        return null;
+    }
+
+    @Override
+    public int updateDynamic(@Param("tableName") String tableName, @Param("items") Paper entity) {
+        return 0;
     }
 }

@@ -12,5 +12,10 @@
   </head>
   <body>
   $END$
+
+  <%
+     response.sendRedirect(request.getContextPath()+"/account/loginUI.do");
+  %>
+
   </body>
 </html>

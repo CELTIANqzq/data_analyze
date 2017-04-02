@@ -8,127 +8,65 @@ import java.sql.Timestamp;
  */
 public class Teacher {
 
-//    salary_id  varchar(10)  NOT NULL,
-
     private String salary_id;
-
-//    name  varchar(15)  NOT NULL,
 
     private String name;
 
-//    gender bool NOT NULL,
-
     private Boolean gender;
-
-//    office varchar(50) NULL,  ##科室
 
     private String office;
 
-//    birthday Datetime NULL,
-
     private Timestamp birthday;
-
-//    race varchar(10) NULL,   ##名族
 
     private String race;
 
-//    identity varchar(50) NULL,  ##身份
-
     private String identity;
-
-//    hometown varchar(20) NULL,  ##籍贯
 
     private String hometown;
 
-//    politics_status varchar(10) NULL, ##政治面貌
-
     private String politics_status;
-
-//    join_time datetime NULL,  ##加入时间
 
     private Timestamp join_time;
 
-//    join_sclool_time datetime NULL, ##入校时间
-
     private Timestamp join_school_time;
-
-//    join_job_time date NULL,
 
     private Timestamp join_job_time;
 
-//    job varchar(50) NULL,
-
     private String job;
-
-//    job_status varchar(20) NULL,
 
     private String job_status;
 
-//    authorized bool NULL,
-
     private Boolean authorized;
-
-//    on_status varchar(20) NULL,
 
     private String on_status;
 
-//    department varchar(50) NULL,
-
     private String department;
-
-//    join_reason varchar(100) NULL,
 
     private String join_reason;
 
-//    attendance_category varchar(20) NULL,
-
     private String attendance_category;
-
-//    job_level varchar(30) NULL,
 
     private String job_level;
 
-//    administrative_post varchar(30) NULL,
-
     private String administrative_post;
-
-//    prof_and_tech_post varchar(30) NULL,
 
     private String prof_and_tech_post;
 
-//    special_experience varchar(100) NULL,
-
     private String special_experience;
-
-//    last_edu_background varchar(40) NULL,
 
     private String last_edu_background;
 
-//    degree varchar(15) NULL,
-
     private String degree;
-
-//    degree_time datetime NULL,
 
     private Timestamp degree_time;
 
-//    last_degree varchar(15) NULL,
-
     private String last_degree;
-
-//    subject varchar(40) NULL,
 
     private String subject;
 
-//    remark varchar(100) NULL,
-
     private String remark;
 
-//    mentor_type varchar(30) NULL,
-
     private String mentor_type;
-
-//    major varchar(50) NULL,
 
     private String major;
 
