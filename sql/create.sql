@@ -1,3 +1,5 @@
+# create database data_analyze default character set utf8;
+
 ####################################################################################
 # 1.老师信息表 teachers
 ####################################################################################
@@ -39,6 +41,7 @@ CREATE TABLE teachers
 
 ###################################################################################
 # 2.论文表 papers
+# ids_num	salary_id	author	age	title	year	level	department
 ###################################################################################
 # 吴建华 肖霖 王时胜 陈恳 李鸣 在总表里没有
 CREATE TABLE papers2016
@@ -48,7 +51,7 @@ CREATE TABLE papers2016
   ids_num    VARCHAR(100) NULL, # 收录号
   year       DATE         NULL, # 年份
   author     VARCHAR(15)  NULL, # 作者姓名
-  level      VARCHAR(10)  NULL, # 刊物级别
+  level      VARCHAR(100)  NULL, # 刊物级别
   title      VARCHAR(300) NULL, # 论文题目
   PRIMARY KEY (_id)
 ) ENGINE=InnoDB;
@@ -60,7 +63,7 @@ CREATE TABLE papers2015
   ids_num   VARCHAR(100) NULL,
   year      DATE         NULL,
   author    VARCHAR(15)  NULL,
-  level     VARCHAR(10)  NULL,
+  level     VARCHAR(100)  NULL,
   title     VARCHAR(300) NULL,
   PRIMARY KEY (_id)
 ) ENGINE=InnoDB;
@@ -72,7 +75,7 @@ CREATE TABLE papers2014
   ids_num   VARCHAR(100) NULL,
   year      DATE         NULL,
   author    VARCHAR(15)  NULL,
-  level     VARCHAR(10)  NULL,
+  level     VARCHAR(100)  NULL,
   title     VARCHAR(300) NULL,
   PRIMARY KEY (_id)
 ) ENGINE=InnoDB;
@@ -84,7 +87,7 @@ CREATE TABLE papers2013
   ids_num   VARCHAR(100) NULL,
   year      DATE         NULL,
   author    VARCHAR(15)  NULL,
-  level     VARCHAR(10)  NULL,
+  level     VARCHAR(100)  NULL,
   title     VARCHAR(300) NULL,
   PRIMARY KEY (_id)
 ) ENGINE=InnoDB;
@@ -96,7 +99,7 @@ CREATE TABLE papers2012
   ids_num   VARCHAR(100) NULL,
   year      DATE         NULL,
   author    VARCHAR(15)  NULL,
-  level     VARCHAR(10)  NULL,
+  level     VARCHAR(100)  NULL,
   title     VARCHAR(300) NULL,
   PRIMARY KEY (_id)
 ) ENGINE=InnoDB;
@@ -108,7 +111,7 @@ CREATE TABLE papers2011
   ids_num   VARCHAR(100) NULL,
   year      DATE         NULL,
   author    VARCHAR(15)  NULL,
-  level     VARCHAR(10)  NULL,
+  level     VARCHAR(100)  NULL,
   title     VARCHAR(300) NULL,
   PRIMARY KEY (_id)
 ) ENGINE=InnoDB;
@@ -120,7 +123,7 @@ CREATE TABLE papers2010
   ids_num   VARCHAR(100) NULL,
   year      DATE         NULL,
   author    VARCHAR(15)  NULL,
-  level     VARCHAR(10)  NULL,
+  level     VARCHAR(100)  NULL,
   title     VARCHAR(300) NULL,
   PRIMARY KEY (_id)
 ) ENGINE=InnoDB;
@@ -207,26 +210,26 @@ CREATE TABLE teach2016
 (
   _id               INT         NOT NULL AUTO_INCREMENT,
   salary_id         VARCHAR(10) NOT NULL,
-  name              VARCHAR(10) NOT NULL, # 教师
-  rank              VARCHAR(30) NULL, # 职称
-  duty              VARCHAR(30) NULL, # 职务
-  theory_fs         FLOAT(15, 6) NULL, # 理论课折合学时(上半年)
-  profession_fs     FLOAT(7, 3) NULL, # 专业技术人员兼职补贴学时
-  ready_fs          FLOAT(7, 3) NULL, # 准备实验学时
-  guide_fs          FLOAT(7, 3) NULL, # 指导实验学时
-  graduation_fs     FLOAT(7, 3) NULL, # 毕业论文、设计学时；实习、课程设计、社会调查学时
-  first_sum         FLOAT(7, 3) NULL, # 上半年合计
-  theory_ss         FLOAT(7, 3) NULL, # 理论课折合学时(下半年)
-  profession_ss     FLOAT(7, 3) NULL, # 专业技术人员兼职补贴学时
-  ready_ss          FLOAT(7, 3) NULL, # 准备实验学时
-  guide_ss          FLOAT(7, 3) NULL, # 指导实验学时
-  graduation_ss     FLOAT(7, 3) NULL, # 毕业论文、设计学时；实习、课程设计、社会调查学时
-  second_sum        FLOAT(7, 3) NULL, # 下半年合计
-  remark_job        VARCHAR(15) NULL, # 备注(关键岗)
-  year_sum          FLOAT(7, 3) NULL, # 全年度合计
-  second_etc        FLOAT(7, 3) NULL, # 二类通识课，重修班，个性课单独开班课程工作量
-  innovative_course FLOAT(7, 3) NULL, # 创新课程工作量
-  college_workload  FLOAT(7, 3) NULL, # 学院算岗贴工作量
+  name              VARCHAR(10) NOT NULL, # 教师 a
+  rank              VARCHAR(30) NULL, # 职称 b
+  duty              VARCHAR(30) NULL, # 职务c
+  theory_fs         FLOAT(15, 6) NULL, #d 理论课折合学时(上半年)
+  profession_fs     FLOAT(7, 3) NULL, #e 专业技术人员兼职补贴学时d
+  ready_fs          FLOAT(7, 3) NULL, #f 准备实验学时e
+  guide_fs          FLOAT(7, 3) NULL, #g 指导实验学时
+  graduation_fs     FLOAT(7, 3) NULL, #h 毕业论文、设计学时；实习、课程设计、社会调查学时
+  first_sum         FLOAT(7, 3) NULL, #i 上半年合计
+  theory_ss         FLOAT(7, 3) NULL, #j 理论课折合学时(下半年)
+  profession_ss     FLOAT(7, 3) NULL, #k 专业技术人员兼职补贴学时
+  ready_ss          FLOAT(7, 3) NULL, #l 准备实验学时
+  guide_ss          FLOAT(7, 3) NULL, #m 指导实验学时
+  graduation_ss     FLOAT(7, 3) NULL, #n 毕业论文、设计学时；实习、课程设计、社会调查学时
+  second_sum        FLOAT(7, 3) NULL, #o 下半年合计
+  remark_job        VARCHAR(15) NULL, #p 备注(关键岗)
+  year_sum          FLOAT(7, 3) NULL, #q 全年度合计
+  second_etc        FLOAT(7, 3) NULL, #r 二类通识课，重修班，个性课单独开班课程工作量
+  innovative_course FLOAT(7, 3) NULL, #s 创新课程工作量
+  college_workload  FLOAT(7, 3) NULL, #t 学院算岗贴工作量
   PRIMARY KEY (_id)
 );
 

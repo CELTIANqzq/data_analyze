@@ -222,6 +222,7 @@ public class TeacherServiceImpl implements TeacherService {
                 insert(teacher);
 
                 System.out.println(teacher);
+                teacherMapper.insert(teacher);
 
                 System.out.println(j);
 

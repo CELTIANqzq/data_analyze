@@ -1,0 +1,1368 @@
+salary_id,ids_num,year,author,level,title
+,ISTP,2010,黄劭刚,三大检索（仅供认领作者选择）,Study on Doubly-fed Hybrid Poles Permanent Magnet Synchronous Machine
+,ISTP,2010,魏庆国,三大检索（仅供认领作者选择）,A research combining spatial filter with autoregressive model for EEG feature extraction
+,EI,2010,曾雪强,三大检索（仅供认领作者选择）,Fast Model Selection for Partial Least Squares Based Dimension Reduction
+,ISTP,2010,王平,三大检索（仅供认领作者选择）,A Cooperative Location Method Based on Chan and Taylor Algorithms
+,EI,2010,周南润,三大检索（仅供认领作者选择）,An improved mechanism for four-way handshake procedure  in ieee802.11i
+,EI,2010,周南润,三大检索（仅供认领作者选择）,An encryption scheme for single-channel color images
+,EI,2010,杨胡萍,三大检索（仅供认领作者选择）,Reactive Power Optimization of Power System based on Interior Point Method and branch-bound method
+,EI,2010,杨胡萍,三大检索（仅供认领作者选择）,Virtual Instrument Design based on Gray Theory Long-term Load Forecasting
+,EI,2010,杨胡萍,三大检索（仅供认领作者选择）,Analysis on Fault Voltage and Secondary Arc Current of Single Phase refusing-Shut of the 500kV Extra
+,EI,2010,杨胡萍,三大检索（仅供认领作者选择）,Active-Disturbance Rejection Control and Its Application to Solar PV DC-DC Converter
+,EI,2010,魏萍,三大检索（仅供认领作者选择）,DSP-controlled three-phase brushiess DC motor-driven power system for electric vehicle
+,EI,2010,钟云,三大检索（仅供认领作者选择）,Simulation of vector control and variable frequency regulating system of asynchronous machine based on MATLAB
+,EI,2010,徐敏,三大检索（仅供认领作者选择）,The application of negative angle protective pin in reducing lightning shielding failure on overhead transmission line in a mountainous area
+,EI,2010,徐敏,三大检索（仅供认领作者选择）,State Assessment System of Power Transformer Equipments Based on Data Mining and Fuzzy Theory
+,EI,2010,胡奕涛,三大检索（仅供认领作者选择）,Research on distribution network reconfiguration
+,EI,2010,黄玉水,三大检索（仅供认领作者选择）,Analysis and optimization design of M57959L module-based IGBT drive circuit
+,EI,2010,戴文进,三大检索（仅供认领作者选择）,Shunt Active Power Filtier and Its Application
+,EI,2010,刘爱国,三大检索（仅供认领作者选择）,Distribution network structure planning based on ant algorithm
+,EI,2010,曾明如,三大检索（仅供认领作者选择）,The development of intelligent pressure transmitter based on HART protocol
+,EI,2010,肖倩华,三大检索（仅供认领作者选择）,Research on Frequency Tracking Capacitive PWM of Induction Heating Power Supply
+,EI,2010,曾明如,三大检索（仅供认领作者选择）,State feedback control of networked control system with random delay
+,EI,2010,万晓凤,三大检索（仅供认领作者选择）,The data communication of 485 serial on VxWorks and Modbus
+,EI,2010,万晓凤,三大检索（仅供认领作者选择）,Vector control speed of AC motor based on TM320LF2407A
+,EI,2010,万晓凤,三大检索（仅供认领作者选择）,The smart battery managements system
+,EI,2010,万晓凤,三大检索（仅供认领作者选择）,A Self-tuning Controller Based on Particle Swarm Optimization
+,EI,2010,刘小平,三大检索（仅供认领作者选择）,Efficient collision detection based on AABB trees and sort algorithm
+,EI,2010,洪弘,三大检索（仅供认领作者选择）,Analysis and implementation of the city conflagration automatic alarm network monitoring system
+,EI,2010,王玉皞,三大检索（仅供认领作者选择）,A Wireless Cellular Network Optimization Platform based on Inversion Propagation model and GIS
+,EI,2010,王玉皞,三大检索（仅供认领作者选择）,A New Indoor Localization Method Based on Inversion Propagation Model
+,EI,2010,王玉皞,三大检索（仅供认领作者选择）,Performance Evaluation of Routing Protocol in VANET with Vehicle-node Density
+,EI,2010,王玉皞,三大检索（仅供认领作者选择）,A hybrid client/server and browser/server mode-based universal mobile ticketing system
+,EI,2010,王玉皞,三大检索（仅供认领作者选择）,Smart Sensing Strategy for Wireless Channel based on Sequence Characterizes Matching Method
+,EI,2010,王玉皞,三大检索（仅供认领作者选择）,Statistical Properties Evaluation on Rayleigh VANET Fading Channels
+,EI,2010,王玉皞,三大检索（仅供认领作者选择）,An Integrated Propagation Model for VANET in Urban Scenario
+,EI,2010,黄涛,三大检索（仅供认领作者选择）,Fault diagnosis of rolling bearing based on the energy operator demoduiation approach
+,SCI,2010,王玉皞,三大检索（仅供认领作者选择）,A NOVEL INVERSION METHOD FOR OUTDOOR COVERAGE PREDICTION IN WIRELESS CELLULAR NETWORK
+,ISTP,2010,陈瑛,三大检索（仅供认领作者选择）,Current Detection Simulate for STATCOM Dynamic Compensation System
+,ISTP,2010,程结晶,三大检索（仅供认领作者选择）,The Study on Digital Service System of Community Educational Resources Based on Distributed Technology
+,SCI,2010,郑朝丹,三大检索（仅供认领作者选择）,EFFECTS OF DEPOLARIZATION FIELD AND INTERFACIAL COUPLING ON THE POLARIZATION OF FERROELECTRIC BILAYERS - ART. NO. 017702
+,EI,2010,张威,三大检索（仅供认领作者选择）,Strong Cache Consistency in Integration Systems
+,SCI,2010,周南润,三大检索（仅供认领作者选择）,SELECTIVE AUTOMATIC REPEAT QUANTUM SYNCHRONOUS COMMUNICATION PROTOCOL BASED ON QUANTUM ENTANGLEMENT
+,SCI,2010,周南润,三大检索（仅供认领作者选择）,NOVEL QUANTUM DETERMINISTIC KEY DISTRIBUTION PROTOCOLS WITH ENTANGLED STATES
+,SCI,2010,周南润,三大检索（仅供认领作者选择）,NOVEL IMAGE ENCRYPTION ALGORITHM-BASED ON MULTIPLE-PARAMETER DISCRETE FRACTIONAL RANDOM TRANSFORM
+,SCI,2010,周南润,三大检索（仅供认领作者选择）,QUANTUM DETERMINISTIC KEY DISTRIBUTION PROTOCOLS BASED ON THE AUTHENTICATED ENTANGLEMENT CHANNEL - ART. NO. 045009
+,ISTP,2010,肖倩华,三大检索（仅供认领作者选择）,Research on Soft Switching Power Supply with High Power Factor Based on Boost Converter
+,EI,2010,张忠会,三大检索（仅供认领作者选择）,A new design of online detection system in power system based on GPRS
+,EI,2010,邱桃荣,三大检索期刊源,Granular computing approach to finding association rules in relational database
+,EI,2010,肖美华,三大检索（仅供认领作者选择）,On formal analysis of cryptographic protocols and supporting tool
+,EI,2010,段荣行,三大检索（仅供认领作者选择）,Intelligent fault diagnosis method based on dynamic fault tree analysis
+,ISTP,2010,刘春年,三大检索（仅供认领作者选择）,A Study on Key Technologies of Digital Library Information Service and their Application Prospect in China
+,ISTP,2010,刘春年,三大检索（仅供认领作者选择）,Models of Agriculture Risk Management with Agriculture Ontology
+,ISTP,2010,曾群,三大检索（仅供认领作者选择）,Comparative Study on Cooperation Status and Cases of Information Literacy Education Between Chinese and Foreign University
+,SCI,2010,吴建华,三大检索（仅供认领作者选择）,IMAGE ENCRYPTION BASED ON THE MULTIPLE-ORDER DISCRETE FRACTIONAL COSINE TRANSFORM
+,ISTP,2010,龙伟,"国际会议文集,国际会议文集",Monitoring System of Silkworm Incubation Based on predictive Compensation with Gain Self-Adaptive
+,ISTP,2010,程结晶,三大检索（仅供认领作者选择）,Research on Digital Resources Directory Services System
+,ISTP,2010,李迟生,三大检索（仅供认领作者选择）,A New Multi-Modulus Blind Equalization Algorithm for QAM Signals
+,ISTP,2010,龙伟,三大检索（仅供认领作者选择）,Development & Application of Reactive Power Optimization Software for Regional Power Network
+,EI,2010,卢淋芗,三大检索（仅供认领作者选择）,Fault Diagnosis of Ball Bearing Bearing on Energy Feature and Research of Intelligent Classification Method
+,EI,2010,黄劭刚,三大检索（仅供认领作者选择）,Study on doubly-fed hybrid poles permanent magnet synchronous machine
+,EI,2010,黄劭刚,三大检索（仅供认领作者选择）,Research on voltage regulator in brushless double-fed hybrid poles permanent generator
+,EI,2010,黄劭刚,三大检索（仅供认领作者选择）,Research on field regulation range of synchronous/permanent magnet hybrid motor
+,EI,2010,杨选辉,三大检索（仅供认领作者选择）,The operation mode analysis and optimizer platform of Pinke website
+,,2010,杨选辉,国际会议文集,The operation mode analysis and optimizer platform of Pinke website
+,EI,2010,虞贵财,三大检索（仅供认领作者选择）,Research on Spectrum Detection Algorithms Based on Data Fusion in Cognitive Radio Systems
+,EI,2010,夏瑞华,三大检索（仅供认领作者选择）,An Image Segmentation Method for Quasi-circular Immune Cell
+,EI,2010,曾雪强,三大检索（仅供认领作者选择）,Gene Selection by Using an Improved Fast Correlation-Based Filter
+,EI,2010,周南润,三大检索（仅供认领作者选择）,New concurrent digital signature scheme based on the computational Diffie-Hellman problem
+,,2010,刘晔,三大检索（仅供认领作者选择）,research on TDOA measurement of active RFID real time location system
+,,2010,刘晔,三大检索（仅供认领作者选择）,an enhanced location estimation approach based on fingerprinting technique
+,,2010,魏庆国,三大检索（仅供认领作者选择）,An unweigted exhaustive diagonalization based multi- class common spatial pattern algorithm in brain-computer interfaces
+,,2010,戴文进,国际会议文集,Pre-Distorted Design Method for Coupled Resonator Filter and Multiplexer
+,,2010,程结晶,三大检索（仅供认领作者选择）,the theoretical research on digital educational information  resources service system
+,,2010,程结晶,三大检索（仅供认领作者选择）,the study on management and serivice of digital archives in web 2.0
+,,2010,程结晶,三大检索（仅供认领作者选择）,the study on theories and practices of educational resource service of digital community in jiangxi province
+,,2010,程结晶,三大检索（仅供认领作者选择）,the study on the construction of community educational resources in jiangxi province based on the distributed technology
+,EI,2010,周明建,三大检索（仅供认领作者选择）,Development of Knowledge Management Based on Task Circumstance
+,,2010,周南润,三大检索（仅供认领作者选择）,单通道彩色图像加密方案(EI)
+,,2010,赵庆敏,三大检索（仅供认领作者选择）,Shortwave Memory Power Amplifier Linearization Based on Multi-Directional Search Algorithm  Predistorter
+,,2010,夏瑞华,三大检索（仅供认领作者选择）,One Kind of Macrophages Images Edge Detection Method
+,,2010,陈轶,三大检索（仅供认领作者选择）,Research and Implementation of Multiserving-oriented Mobile Application Based on eLML
+,,2010,程结晶,三大检索期刊源,O2.Preliminary Study on the Construction of College Digital Educational Resources Based on Web2.0
+,,2010,陈利民,三大检索（仅供认领作者选择）,Symbol Timing and Carrier Frequency United Estimation for MPSK Signals
+,,2010,张肃宇,三大检索（仅供认领作者选择）,Intelligent setting method of load-pattems
+,,2010,张忠会,三大检索（仅供认领作者选择）,Matlab-based permanent magnet synchronous motor vector control simulation
+,,2010,张忠会,三大检索（仅供认领作者选择）,The Research of Fault Location of Transmission Line Based on Bergeron Model
+,,2010,张忠会,三大检索（仅供认领作者选择）,Study of Wattless Compensate of Electric power System Based on Fuzzy Control
+,,2010,张忠会,三大检索（仅供认领作者选择）,Simulation of substation voltage and reactive contr ol based on fuzzy theory
+,,2010,李安,三大检索（仅供认领作者选择）,Outage behavior of improving DF relaying in dissimilar Rayleigh fading channels
+,,2010,李迟生,三大检索（仅供认领作者选择）,A novel calibration approach based on recurrent neural network for vehicle weigh-in-motion system
+,,2010,李迟生,三大检索（仅供认领作者选择）,An efficient recognition algorithm between analog and digital signals at  low SNR
+,,2010,徐少平,三大检索（仅供认领作者选择）,An improved realistic mass-spring model for surgery simulation1
+,,2010,徐苏,三大检索（仅供认领作者选择）,Improved Algoritm of pattern matching for Intrusion Detection
+,,2010,徐苏,三大检索（仅供认领作者选择）,An improved p2p architecture for federated D-IDS
+,,2010,胡凌燕,三大检索（仅供认领作者选择）,The wave-variable teleoperator with improved trajectory tracking
+,,2010,魏庆国,三大检索（仅供认领作者选择）,A least-squares approach for extending common spatial pattern algorithm to multi-class in brain-computer interfaces.
+,,2010,王玉皞,三大检索（仅供认领作者选择）,Client/Service Framework-Based Passenger Line Ticket System Using 2-D Barcode on Mobile Phone
+,,2010,李赣平,三大检索（仅供认领作者选择）,Design of an Embedded Control and Acquisition System for Industrial Local Area Networks Based on ARM
+,,2010,李赣平,三大检索（仅供认领作者选择）,Inverse Model-Based and Feedback-Assisted Iterative Learning Control for a Class of Batch Processes
+,,2010,戴文进,三大检索（仅供认领作者选择）,"DSTATCOM Iverse System PI Controller, 《Key Engineering Materials》,"
+,,2010,黄涛,三大检索（仅供认领作者选择）,Research on Three-level and Quad-multiplex STATCOM Voltage Inverter
+,,2010,黄涛,三大检索（仅供认领作者选择）,Car fault diagnosis system based on FNN and rule-based inference
+,,2010,王时胜,国际会议文集,The Simulation of Single-Phase Earthed Fault in Neutral Ineffective Grounding System Based on MATLAB
+,,2010,李力,三大检索（仅供认领作者选择）,Ant-colony optimization based on cluster routing protocol of ad hoc(1)
+,EI,2010,郑超美,三大检索（仅供认领作者选择）,A streaming media congestion control mechanism based on UDP
+,EI,2010,李姗,国际会议文集,An Adaptive Method Preventing Database from SQL Injection Attacks
+,,2010,张烨,三大检索（仅供认领作者选择）,Potential function agglomeration clustering algorithm for sparse component analysis
+,,2010,王时胜,三大检索（仅供认领作者选择）,The Design of ECG Signals Dually Filtering Based on FPGA
+,,2010,张烨,三大检索（仅供认领作者选择）,A Robust K-plane Clustering Algorithm for Blind Separation of Underdetermined Mixtures of Sparse Sources
+,,2010,李文2,三大检索（仅供认领作者选择）,Hierarchical text classification model based on blocking priori knowledge
+,,2010,李文2,三大检索（仅供认领作者选择）,Hierarchical Rough Decision Theoretic Framework for Texts Classificaiton
+,,2010,黄水源,三大检索（仅供认领作者选择）,how to develop and use loadvars a foundational class of Flash in Ria
+,,2010,王淳,三大检索（仅供认领作者选择）,"Photovoltaic technology research and prospects,"
+,,2010,王淳,三大检索（仅供认领作者选择）,Improved Ecology Evolutionary Algorithm of Food Chain and its application in Transmission Network Expansion Planning
+,,2010,周绍梅,三大检索（仅供认领作者选择）,The application of the improved hybrid ant colony algorithm in vehicle routing optimization problem
+,,2010,石永革,国际会议文集,An Improved Apriori Algorithm（EI）
+,,2010,陈萌,三大检索（仅供认领作者选择）,Extension of rough set theory based on strict similarity relation(EI)
+,ISTP,2010,程结晶,三大检索（仅供认领作者选择）,On the Application of Educational Information Resource Based on Cloud Computing
+,",EI",2010,程结晶,三大检索（仅供认领作者选择）,On digital archives management and service system based on web 2.0
+,",EI",2010,程结晶,三大检索（仅供认领作者选择）,The study on theories and practices of educational resource service of digital community in Jiangxi Province
+,",EI",2010,程结晶,三大检索（仅供认领作者选择）,The theoretical research on digital educational information resources service system
+,,2010,程结晶,三大检索期刊源,The study on digital service system of community educational resources based on distributed technology
+,",EI",2010,程结晶,三大检索（仅供认领作者选择）,The study on the construction of community educational resources in Jiangxi province based on the distributed technology
+,,2010,程结晶,三大检索（仅供认领作者选择）,On the application of educational information resource in Jiangxi province based on cloud computing
+,",EI",2010,程结晶,三大检索期刊源,The study on management and service of digital archives in web 2.0
+,,2010,刘明萍,三大检索（仅供认领作者选择）,ELECTRON ACCELERATION AND BUNCH GENERATION BY INTENSE FEMTOSECOND LASER-PULSE IN PREPLASMA OF A TARGET
+,EI,2010,刘小东,三大检索期刊源,The Application Research of Network in Embedded Intelligent Detection
+,EI,2010,饶泓,国际会议文集,Research on Hydraulic Control System Fault Diagnosis Method Based on Rough  Set Theroy
+,,2010,邱桃荣,国际会议文集,An approach to information hiding based on rough set
+,EI,2010,何俊（信）,三大检索（仅供认领作者选择）,Feature Extraction in Speechreading
+,EI,2010,何俊（信）,三大检索（仅供认领作者选择）,Lipreading Recognition Based on SVM and DTAK
+,,2010,王时胜,国际会议文集,The Design of ECG Signals dually Filtering Based on FPGA
+,,2010,王时胜,国际会议文集,The Simulation of Single-Phase Earthed Fault in Neutral Ineffective Grounding System Based on MATLAB
+,,2010,杨晓辉,国际会议文集,Control Experiment of the Inverted Pendulum Using Adaptive Neural- Fuzzy Controller
+,,2010,徐敏,三大检索期刊源,Study on Line-break Ferroresonance Over-voltage of 35kV Power System and Its Suppression Methods
+,,2010,徐少平,三大检索（仅供认领作者选择）,An improved realistic mass-spring model for surgery simulation1
+,,2010,戴文进,国际会议文集,DSTATCOM Iverse System PI Controller
+,ISTP,2010,戴文进,三大检索（仅供认领作者选择）,Pre-Distorted Design Method for Coupled Resonator Filter and Multiplexer
+,,2010,戴文进,国际会议文集,Shunt Active Power Filtier and Its Application
+,,2010,胡奕涛,国际会议文集,Research on distribution network reconfiguration
+,,2010,张西碧,省级及省级以上刊物,浅谈实验电路板的设计
+,,2010,李荣鑫,国际会议文集,基于语义的数据广播调度模型与算法研究
+,,2010,段荣行,国际会议文集,A New Fault Diagnosis Method Based on Fault Tree and Bayesian Networks
+,,2010,程结晶,国内权威,云计算环境中数字档案馆服务与管理初探
+,EI,2010,李安,三大检索期刊源,Whisper Communication: Power Control Based Distributed Transmit Beamforming
+,,2010,戴文进,国际会议文集,Research on Negative-Sequence Electric Current Examination Method
+,EI,2010,刘斓,国际会议文集,A Scalable Rule-based Reasoning Algorithm for Fault Diagnosis
+,,2010,廖晓锋,,基于主题模型的图片检索结果语义聚类
+,,2010,龚花萍,,基于因子分析的江西现代信息服务业绩效评估
+,"SCIE,SCI",2010,魏庆国,",国外刊物",Channel Selection for Optimizing Feature Extraction in an Electrocorticogram-Based Brain-Computer Interface
+,,2010,李文2,,Hierarchical Rough Decision Theoretic Framework for Text Classificaiton
+,EI,2010,李文2,"CSCD核心库,三大检索期刊源,",基于阻塞先验知识的文本层次分类模型
+,EI,2010,魏庆国,国际会议文集,An unweighted exhaustive diagnoalization based multi-class common spatial pattern algorithm in brain-computer interface
+,,2010,杨胡萍,,Active-Disturbance Rejection Control and Its Application to Solar PV DC-DC Converter
+,,2010,杨胡萍,,Reach on Reactive Power Power Optimization of Regional Gird
+,,2010,杨胡萍,,Combination Forecasting Model in the Long Term Load Forecasting Model Prediction
+,,2010,杨胡萍,,The Analysis of The A[[;ocation of Copper Plated Steel Material in Substation Grounding Project
+,,2010,杨胡萍,,The Development  of Medium-long Term Lorecasting Software Based on LabVIEW
+,,2010,周绍梅,,The Application of The Improved Hybrid Ant Colony Algorithm in Vehicle Routing Optimization Problem
+,,2010,姚力文,"三大检索期刊源,三大检索期刊源",基于灰理论的电力负荷预测模型
+,EI,2010,戴文进,国外刊物,Research on Control Strategy of Maximum Power Point Tracking of VSCFWind Generation
+,EI,2010,戴文进,国外刊物,Signal Collection and Analysis on CO2 Arc Welding Based on DSP
+,EI,2010,戴文进,国外刊物,A new impulse grounding resistance measuring instrument
+,,2010,戴文进,,Single-phase APF harmonic and reactive current detection method
+,,2010,戴文进,,TCSC impedance control method of fuzzy PID
+,EI,2010,戴文进,"国外刊物,",Research on Control Strategy of Maximum Power Point Tracking of VSCF Wind Generation
+,EI,2010,戴文进,"国外刊物,",Signal Collection and Analysis on CO2 Arc Welding Based on DSP
+,EI,2010,戴文进,"国外刊物,",A new impulse grounding resistance measuring instrument
+,EI,2010,戴文进,"国外刊物,",DSTATCOM Iverse System PI Controller
+,EI,2010,戴文进,"国外刊物,",Pre-Distorted Design Method for Coupled Resonator Filter and Multiplexer
+,,2010,戴文进,,Shunt Active Power Filtier and Its Application
+,,2010,黄玉水,,Intelligent Community System Based on LonWorks Technology
+,,2010,黄玉水,,The Modified Strategy of Active Power Filter Base on One-cyce Control
+,,2010,黄玉水,,The Simulation of the Noise Eliminated based on Artificial Neural Network
+,,2010,黄玉水,,analysis and optimization design of M57959L module-based IGBTdrive circuit
+,,2010,江智军,,Design of Digital Speed Control System of Brushless DC Motor Based on the MCS-80C196KC
+,,2010,江智军,,Research of Pump-selection in Pressure-superposed Water Supply
+,,2010,江智军,,Design of DC/DC Converter Based on Fuzzy Self-adaptive Adjusting of PID Control
+,,2010,江智军,,The Road Information Video Capure and Processing Research for Smart Car Based on CMOS Camera
+,EI,2010,江智军,,The video capture and processing research on smart car road information based on OV7620 camera
+,,2010,江智军,,The Design and Comparison of DC Motor Drive Circuit in Smart Car Compertition
+,,2010,江智军,,The Algorithm and Simulation Research of MTTP Using FSVM for PV System
+,,2010,江智军,,The Character Study of Dynamic Matrix Control
+,,2010,江智军,,Research on Soft Starter with Pump Function
+,,2010,江智军,,Simulation study of heavy motor soft starter based on discrete variable frequency
+,,2010,江智军,,A method of speed measurement without sensor in motor soft starting control system
+,,2010,黄劭刚,,Research on field regulation range of Synchronous/Permanent Magnet Hybrid Motor
+,,2010,黄劭刚,,Research on Voltage Regulator in Brushless Double-fed Hybrid Poles Permanent Generator
+,,2010,杨晓辉,,高温超导氧化物YBCO掺锆酸钡薄膜的制备及其结构分析
+,,2010,刘建国,,The Design of the Hardware and the Data Processing Technology of Interbus
+,EI,2010,刘建国,,An algorithm based on Ad-Hoc energy conservation in wireless sensor network
+,,2010,刘建国,,基于傅里叶分解原理的同步发电机三次谐波磁场分析
+,,2010,肖倩华,,Fuzzy Adaptive PID Control Tank Level
+,,2010,肖倩华,,On TCSC improving the capacity of low voltage crossing of the wind farm
+,,2010,肖倩华,,Research on Frequency Tracking Capacitive PWM of Induction Heating Power Supply
+,,2010,肖倩华,,Research on Soft Switchich Power Supply with High Power Factor Based on Boost Converter
+,,2010,陈瑛,,Analysis for TCSC  Steady-state Characteristics
+,,2010,陈瑛,,The research based on TCSC Impedance control mode
+,ISTP,2010,陈瑛,,Current Detection Simulate for STATCOM Dynamic Compensation System
+,,2010,胡奕涛,,Research on Distribution Network Reconfiguration
+,,2010,张忠会,,The Research of Fault Location of Transmission Line Based on Bergeron Model
+,,2010,张忠会,,Matlab-based permanent magnet synchronous motor vector control simulation
+,,2010,张忠会,,Simulation of substation voltage and reactive control based on fuzzy theory
+,,2010,刘爱国,,基于人工鱼群算法的静态电压稳定评估
+,,2010,刘爱国,,基于蚁群算法的配电网规划
+,,2010,徐敏,,Study on Line-break Ferroresonance Over-voltage of 35kV Power System and Its Suppression Methods
+,,2010,徐敏,,State Assessment System of Power Transformer Equipments Based on Data Mining and Fuzzy Theory
+,,2010,徐敏,,The application of Negative Angle Protective Pin in Reducing Lightning Shielding Failure on Overhead Transmission Line in a Mountainous Area
+,,2010,钟云,,Simulation of vector control and variable frequency regulating system of asynchronous machine based on MATLAB
+,,2010,王淳,,Ecology evolutionary algorithm of food chain for reconfiguration distribution network
+,,2010,王淳,,Plant growth simulation algorithm for the optimal multistage transmission network planning
+,,2010,王淳,,Photovoltaic technology research and prospects
+,,2010,王淳,,Improved Ecology Evolutionary Algorithm of Food Chain and its application in Transmission Network Expansion Planning
+,,2010,王淳,,基于链式遗传-模拟退火混合算法的电网扩展规划
+,,2010,张肃宇,,Intelligent Setting method of load-pattewrns
+,,2010,张肃宇,,A Non-linear Aproximation of the Sigmoid Function based FPGA
+,,2010,武和雷,,An Engineering Solution to Taylor Series Expansion Coefficients based on BP Neural Network
+,,2010,,,当前高校辅导员队伍建设问题、原因、对策
+,"ISTP,ISTP",2010,万晓凤,,The data communication of 485 serial on VxWorks and Modbus
+,,2010,万晓凤,,A  Self-tuning Controller Based on  Particle Swarm Optimization
+,EI,2010,万晓凤,,Vector control speed of AC motor based on TM320LF2407A
+,,2010,王时胜,,心率诊断的FPGA硬件实现及仿真[J
+,,2010,王时胜,,The Design of ECG Signals dually Filtering Based on FPGA
+,,2010,王时胜,,The Simulation of Single-Phase Earthed Fault in Neutral Ineffective Grounding SystemBased on MATLAB
+,,2010,卢淋芗,,Fault Diagnosis of Ball Bearing Bearing on Energy Feature and Research of Intelligent Classification Method
+,,2010,胡凌燕,,The wave-variable teleoperator with improved trajectory tracking
+,,2010,胡凌燕,三大检索期刊源,线性二次最优算法的倒立摆系统仿真与实时控制
+,,2010,曾明如,,The Development of Intelligent Pressure Transmitter based on HART Protocol
+,EI,2010,曾明如,,State Feedback Control of Networked Control System with Random Delay
+,,2010,彭杰,,PROFINET工业以太网技术分析
+,,2010,彭杰,,VLAN技术对工业Ethernet实时性影响分析
+,,2010,陈恳,,大型工矿企业总降接地网设计机辅分析
+,,2010,王时胜,三大检索期刊源,基于模糊产生式规则的企业供电网谐振故障诊断研究与仿真
+,,2010,黄玉水,,运用于交流电机矢量控制的遗传算法参数辨识?
+,,2010,徐敏,,ＭＡＴＬＡＢ在＜电力系统分析＞教学中的应用
+,EI,2010,张忠会,"三大检索期刊源,",基于GPRS的一种新型电力系统在线检测系统的设计
+,,2010,万汉伟,CSCD核心库,神经网络预测控制在分段台车式电阻炉温度控制中的应用
+,,2010,龙伟,三大检索期刊源,LNG气化储配站自控系统
+,,2010,武和雷,,基于C8051F340的直流电压与纹波测量系统
+,,2010,刘爱国,,基于神经网络模型的电压稳定裕度评估
+,,2010,王振,省级及省级以上刊物,基于ANSOFT的永磁同步电机有限元分析
+,,2010,刘建国,,凸极与轴向叠片（ALA）磁阻式无刷双馈电机电磁场对比分析
+,,2010,黄劭刚,,双馈电机数学模型及运行性能比对分析
+,,2010,曾群,,The  Design of Individual Knowledge Sharing Platform Based on Blog for online information literacy Education
+,,2010,曾群,,Comparative Study on Cooperation Status and Cases of Information Literacy Education Between Chinese and Foreign University
+,,2010,屈文建,,Regional Higher Education Resource Allocation Pareto Equilibrium analysis
+,,2010,屈文建,,An analysis for IT Adotion Behavior and Satisfaction in University
+,,2010,刘春年,,A Study on Key Technologies of Digital Library Information Service and their Application Prospect in China
+,,2010,刘春年,,Models of Agriculture Risk Management with Agriculture Ontology
+,,2010,刘春年,,
+,,2010,刘春年,,
+,,2010,施文,,Research on Chinese Comprehensive university Electronic Commerce Specialty Construction
+,,2010,曾伟忠,省级及省级以上刊物,基于在线学习效率提高导向的网络信息资源整合研究
+,,2010,江耘,,网络商业信用的价值：基于淘宝网交易评价的实证分析
+,,2010,廖晓锋,,基于主题模型的图片检索结果语义聚类
+,,2010,刘春年,,网络环境下区域图书馆信息服务联盟功能、实效与产业化发展分析
+,CSSCI,2010,曾伟忠,省级及省级以上刊物,在线学习效率提高导向的学生信息素养培养研究?
+,,2010,曾伟忠,三大检索期刊源,国内外档案开放目录研究和建设比较及我们的建设思路
+,,2010,曾伟忠,三大检索期刊源,数字时代国家档案开放目录体系建设研究
+,,2010,曾伟忠,三大检索期刊源,数字时代古籍目录学的发展研究?
+,,2010,曾伟忠,三大检索期刊源,试论目录学的动力因素和发展方向?
+,,2010,龚花萍,,以竞争情报提升供应链的竞争力
+,,2010,龚花萍,,旅游电子商务企业CRM实施策略?
+,,2010,龚花萍,,竞争情报与江西企业竞争情报系统建设
+,,2010,龚花萍,,制造商与供应商信息共享程度评价研究
+,,2010,龚花萍,,江西企业竞争情报系统建设研究
+,,2010,刘春年,,基于向量空间模型的研究型学习教学系统设计与实现
+,,2010,秦勤,,网站构建中开源软件许可分析
+,,2010,刘春年,,基于信息构建的多媒体教学课件设计研究?
+,,2010,刘春年,,基于企业创新驱动的区域图书馆信息服务研究
+,,2010,沈扬,,我国中部地区高校科普人才培养现状、问题与建议
+,,2010,沈扬,,我国中部地区高校科普人才培养现状、问题与建议
+,,2010,刘小东,省级及省级以上刊物,基于ZigBee技术的树状无线传感器监测系统
+,,2010,陈炼,,OLAP中文本文件建模
+,,2010,涂荣军,,Study on Reusable Machining Control Model of Wire-electrode Cutting Numerical Control System
+,,2010,涂荣军,,Modeling and Developing of Wire-electrode Cutting Numerical Control System  Based on Windows
+,,2010,涂荣军,,Modeling of Product Development Management in Virtual Enterprise Based on Unified Modeling Language
+,,2010,涂荣军,,A Study of Virtual Enterprise Modeling Based on Domain Specific Software Architecture
+,,2010,李力,,Ant-colony optimization based on cluster routing protocol of Ad Hoc
+,,2010,李力,,An intrusion detection model orienting towards encrypted conversation
+,,2010,李力,,Introduction and analysis of an authentication protocol based on WLAN
+,,2010,喻国平,,Design and Implementation of SIP Video Conferencing System in Public Security
+,,2010,邱睿韫,,医学图像三维重构的关键技术浅议
+,,2010,邱睿韫,,电子商务营销网站的设计
+,,2010,曾雪强,,Gene Selection by Using an Improved Fast Correlation-Based Filter
+,"EI,EI",2010,曾雪强,,Fast model selection for Partial Least Squares based Dimension Reduction
+,,2010,曾雪强,,基于偏最小二乘降维的分类模型比较
+,,2010,魏少峰,,数据库安全维护技术浅析
+,,2010,魏少峰,,入侵检测技术对数据库系统中的作用
+,,2010,李致勋,,遗传算法用于规律行为获取的研究
+,,2010,李致勋,,关联规则在网络异常检测中的应用
+,,2010,肖美华,,基于SPIN的安全协议SSL3.0模型检测
+,,2010,肖美华,,增强网络安全的分类算法评估
+,,2010,肖美华,省级及省级以上刊物,基于JPF的Java程序验证
+,,2010,肖美华,CSCD核心库,安全协议验证模型的高效自动生成
+,SCI,2010,肖美华,,On Formal Analysis of Cryptographic Protocols and Supporting Tool
+,,2010,黄水源,,hou to develop and use loadvars a foundational class of Flash in Ria
+,EI,2010,郑超美,,基于UDP的流媒体拥塞控制机制
+,,2010,胡军,,基于.NET的电信工单业务系统设计与实施
+,,2010,范蔚文,,数据挖掘在电信领域中的应用研究
+,,2010,范蔚文,,浅谈通信运营企业"一卡充"的支撑管理
+,,2010,李姗,,An Adaptive Method Preventing Database from SQL Injection Attacks
+,,2010,李姗,,Safety Evaluation Method of Lifting Applications Based on BP Neural Networks
+,,2010,饶泓,,Realization of Fault Diagnosis Rule Extraction System Based on Rough Set Theory
+,,2010,饶泓,,Research on Hydraulic Control System Fault Diagnosis Method Based on Rough  Set Theroy
+,,2010,林仲达,,Research on Mining For Mass RFID Data
+,,2010,伍军云,,design of image retrieval algorithm  based on important wavelet coefficient and color clustering table
+,,2010,伍军云,,IPv6过渡技术研究 ?
+,,2010,周石林,,基于邻接矩阵的最短路径算法?
+,,2010,段隆振,,一种基于动态模糊Kohonen网络的聚类模型及应用（已录用）
+,,2010,段隆振,,基于SDO的社会保险数据整合平台研究
+,,2010,段隆振,,一种基于项目推荐候选集的协同过滤算法
+,,2010,段隆振,,商品层次填充协同过滤算法
+,,2010,林振荣,,ASP.NET用户控件技术在新闻列表页面中的研究与应用 ?
+,,2010,林振荣,,基于AJAX的网站流量分析系统?
+,,2010,唐祎玲,,基于OHCI的USB主机控制器驱动设计
+,,2010,刘韬,三大检索期刊源,一种基于相容粒计算模型的文章相似度计算方法
+,,2010,李向军,,Research of Routing System which applied in ASP NET MVC Application
+,ISTP,2010,李向军,,The Application of Fuzzy C-Means Clustering in Macro-Economic Forecast
+,ISTP,2010,李向军,,Research of Enterprise Competitive Intelligence Collection System Based On Cross-Language Information Retrieval
+,,2010,李向军,,Ontology Building From Incomplete Information Systems Based on Granular Computing
+,,2010,李向军,,FM／DEA模型及其在实验室综合评价中的应用
+,,2010,白似雪,省级及省级以上刊物,M-distinct算法改进:面向动态数据集重发布的隐私保护算法
+,,2010,白小明,省级及省级以上刊物,基于模糊综合决策的任务优先级研究与实现
+,,2010,白小明,三大检索期刊源,A Task Priority Research and Implement Based on Fuzzy Integrated Decision making
+,,2010,江顺亮,,自变量为整数的映射函数生成算法
+,,2010,江顺亮,,流体动力学的SPH模型面向对象设计及其实施
+,,2010,赵黎黎,,Finite Element Simulation of Temperature Field in Fused Deposition Modeling
+,,2010,赵黎黎,,高温超导氧化物YBCO掺锆酸钡薄膜的制备及其结构分析
+,,2010,曾庆鹏,,网络教学平台中问答系统的关键技术研究
+,,2010,于海雯,,基于Web的校园远程VOD系统的实现及其应用
+,,2010,于海雯,,浅析远程开放式网络实验平台下的网络实践教学
+,,2010,任燕,,基于不规则路径聚类算法的用户访问模式挖掘
+,,2010,陈萌,,基于WebService的CRM接口设计与实现
+,,2010,陈萌,,Extension of rough set theory based on strict similarity relation
+,,2010,石永革,,An improved apriori algorithm
+,,2010,徐少平,,An improved realistic mass-spring model for surgery simulation
+,,2010,徐少平,省级及省级以上刊物,基于混合编程的真实感图形生成课件?
+,,2010,徐少平,CSCD核心库,虚拟手术中软组织实时形变模型的研究进展
+,,2010,张乐,省级及省级以上刊物,基于模糊综合决策的任务优先级研究与实现
+,,2010,张乐,,多核程序设计课程建设的探索
+,,2010,邱桃荣,,基于多层次相容粒度的图像分类
+,,2010,邱桃荣,,基于粗糙集和蚁群优化算法的特征选择方法
+,,2010,邱桃荣,,An approach to information hiding based on rough set
+,,2010,邱桃荣,,Granular Computing Approach to Finding Association Rules in Relational Database
+,,2010,邱桃荣,,一种基于粒计算的知识隐藏方法
+,,2010,周明建,,Knowledge Push Technology Based on Group Characteristics
+,,2010,周明建,,Development of Knowledge Management Based on Task Circumstance
+,,2010,周明建,,Linux虚拟文件系统分析
+,,2010,周明建,,数据流挖掘方法研究
+,,2010,徐苏,,Research on Detector Generating Algorithm based on Artificial Immune
+,,2010,徐苏,,An improved p2p architecture for federated D-IDS
+,,2010,王命延,,method of chinese text categorization based on variable precision rough set
+,,2010,王命延,,The desigon and implementation of passwords management system based
+,,2010,王命延,,继电保护测试系统组态软件的应用?
+,,2010,蔡志勇,,弹性分组环中的队列长度分析?
+,,2010,洪弘,,Analysis and implementation of the city conflagration automatic alarm network monitoring system
+,,2010,洪弘,,Research and Implementation of Long-Distance Urban Fire Monitoring System
+,,2010,黄涛,,based on constrained least squares wavelet transform improved image denoising method
+,,2010,李赣平,,Design of an Embedded Control and Acquisition System for Industrial Local Area Networks Based on ARM
+,,2010,涂志军,,开展综合性、设计性实验提高学生的实践能力和创新精神
+,,2010,涂志军,,基于DSP的参数自适应电机励磁控制系统的实现
+,,2010,涂志军,,金属探测器中控制系统的AD采样新设计
+,SCI,2010,刘明萍,,Electron Acceleration and Bunch Generation by Intense Femtosecond Laser Pulse in Preplasma of a Target
+,,2010,何俊,,Lipreading recognition based on SVM and DTAK
+,EI,2010,何俊,,Feature extraction in speechreading
+,",",2010,黄涛,,Car fault diagnosis system based on FNN and rule-based inference
+,,2010,黄涛,,Fault diagnosis of rolling bearing based on the energy operator demoduiation approach
+,SCI,2010,郑朝丹,"国外刊物,",Effects of Depolarization Field and Interfacial Coupling on the Polarization of Ferroelectric Bilayers
+,,2010,汪庆年,,基于DSP的参数自适应电机励磁控制系统的实现
+,,2010,李迟生,,基于单片机的智能小区防盗系统研究与设计?
+,,2010,李迟生,,传感器网络中基于多维标度定位算法的改进
+,,2010,陈利民,国外刊物,Inspection of Rail Surface Defect Based on Machine Vision System
+,,2010,陈利民,国外刊物,Symbol Timing and Carrier Frequency United Estimation for MPSK Signals
+,,2010,王艳庆,,PC104在焊接机器人中的应用
+,,2010,虞礼贞,,Optimization of collision detection algorithm based on OBB
+,,2010,刘晔,,An enhanced location estimation approach based on fingerprinting technique
+,,2010,刘晔,,Research on the TDOA measurement of active RFID real time location system
+,,2010,李迟生,,A novel calibration approach based on recurrent neural network for vehicle weigh-in-motion system
+,,2010,李迟生,,An efficient recognition algorithm between analog and digital signals at low SNR
+,EI,2010,周南润,"三大检索期刊源,",单通道彩色图像加密方案
+,EI,2010,周南润,,New concurrent digital signature scheme based on the Computational Diffie-Hellman problem
+,SCI,2010,周南润,"国外刊物,",Novel quantum deterministic key distribution protocols with entanglement
+,SCI,2010,周南润,"国外刊物,",Novel image encryption algorithm based on multiple-parameter discrete fractional random transform
+,SCI,2010,周南润,"国外刊物,",Quantum deterministic key distribution protocols based on the authenticated entanglement channel
+,SCI,2010,周南润,,基于纠缠的选择重传ARQ量子同步通信协议
+,,2010,周辉林,,Ultra-thin asphalt pavement layer interface detection and time delay estimation based on MUSIC
+,,2010,周辉林,,Illumination invariant enhancement and threshold segmentation algorithm for asphalt pavement crack image
+,,2010,夏瑞华,,An Image Segmentation Method for Quasi-circular Immune Cells
+,,2010,夏瑞华,,One Kind of Macrophages Images Edge Detection Method
+,ISTP,2010,魏庆国,,Application of Quadratic Optimization to Multi-class Common Spatial Pattern Algorithm in Brain-computer Interfaces
+,,2010,魏庆国,,Independent component analysis for spatial filtering and feature extraction in a four-task brain-computer interface
+,,2010,魏庆国,,A least-squares approach for extending common spatial pattern algorithm to multi-class in brain-computer interfaces
+,,2010,魏庆国,,A research combineing spatial pattern with autoregressive model for EEG feature extraction
+,,2010,吴建华,,A POCS super-resolution image reconstruction based on the projection residue
+,,2010,王静,省级及省级以上刊物,基于四元数小波变换的纹理分类
+,SCI,2010,吴建华,"国外刊物,",Image encryption based on the multiple-order discrete fractional cosine transform
+,,2010,吴建华,,A marked bounding box method for image data reduction and reconstruction of sole patterns
+,,2010,王艳庆,,The Innovation Research and Practice of University Student's Graduate Project Management
+,,2010,赵庆敏,,Classification of sole patterns from a 3-Dimensional shoe model.
+,,2010,赵庆敏,,Shortwave Memory Power Amplifier Linearization Based on Multi-Directional Search Algorithm  Predistorter
+,ISTP,2010,陈荣伶,,The Practice of Network-assisted Teaching on the EDA Course
+,,2010,罗斌,,Design and Budget Analysis of RF Receiver of 5.8GHz ETC Reader
+,,2010,王玉皞,,A Wireless Cellular Network Optimization Platform based on Inversion Propagation model and GIS
+,,2010,王玉皞,,A New Indoor Localization Method Based on Inversion Propagation Model
+,,2010,王玉皞,,Performance Evaluation of Routing Protocol in VANET with Vehicle-node Density
+,,2010,王玉皞,,Client/Server Framework-Based Passenger Line Ticket System Using 2-D Barcode on Mobile Phone
+,,2010,王玉皞,,A hybrid client/server and browser/server mode-based universal mobile ticketing system
+,,2010,王玉皞,,Smart Sensing Strategy for Wireless Channel based on Sequence Characterizes Matching Method
+,,2010,王玉皞,,Statistical Properties Evaluation on Rayleigh VANET Fading Channels
+,,2010,王玉皞,,An Integrated Propagation Model for VANET in Urban Scenario
+,,2010,王玉皞,,A Novel Inversion Method for Outdoor Coverage Prediction in Wireless Cellular Network
+,,2010,虞贵财,,Research on Spectrum Detection Algorithms Based on Data Fusion in Cognitive Radio Systems
+,,2010,张烨,,Potential Function Agglomeration Clustering Algorithm for Sparse Component Analysis
+,,2010,张烨,,A robust K-plane clustering algorithm for blind separation of underdetermined mixtures of sparse sources
+,,2010,李安,,Outage Behavior of Improving DF Relaying in Dissimilar Rayleigh Fading Channels
+,,2010,段荣行,,Intelligent Fault Diagnosis Method Based on Dynamic Fault Tree Analysis
+,,2010,刘小平,,An improved realistic mass-spring model for surgery simulation
+,,2010,刘小平,,The wave-variable teleoperator with improved trajectory tracking
+,,2010,刘小平,,Efficient collision detection based on AABB trees and sort algorithm
+,,2010,衷卫声,,膜生物反应器（MBR）中溶解氧的模糊－预测控制
+,EI,2011,江耘,三大检索（仅供认领作者选择）,Commercial Credit Value Evaluation and Illustration Analysis on Internet
+,EI,2011,黄玉水,三大检索（仅供认领作者选择）,The simulation of the noise eliminated based on artificial neural network.
+,EI,2011,黄玉水,国际会议文集,Design of controlling system of higher layer elevator.
+,EI,2011,喻国平,三大检索（仅供认领作者选择）,Design and implementation of the SIP video conferenceing system in public security
+,ISTP,2011,陈荣伶,三大检索（仅供认领作者选择）,The Practice of Network-assisted Teaching on the EDA Course
+,ISTP,2011,邱桃荣,三大检索（仅供认领作者选择）,An Approach to Feature Selection Based on Ant Colony Optimization and Rough Set
+,EI,2011,李春泉,三大检索（仅供认领作者选择）,Design and Implementation of a haptic interface device with auto-regulation gravity compensation
+,EI,2011,武和雷,三大检索（仅供认领作者选择）,An engineering solution to Taylor series expansion coefficients based on BP neural network
+,ISTP,2011,陶凌,三大检索（仅供认领作者选择）,Design and Implementation of the Control System for an ARM9-based biochemical Analyzer
+,EI,2011,武和雷,三大检索（仅供认领作者选择）,Decision fusion for block linear regression classification based on confidence index
+,ISTP,2011,齐影虹,三大检索（仅供认领作者选择）,A New Wavelet-based Digital Watermarking Algorithm
+,EI,2011,王晋华,三大检索（仅供认领作者选择）,Computer Network Security of University and Preventive Strategy
+,EI,2011,王晋华,三大检索（仅供认领作者选择）,Tentative Discussion on Network Security based on Data Encryption
+,EI,2011,王晋华,三大检索（仅供认领作者选择）,On the Security Issues of E-Government System of Public Sectors
+,EI,2011,伍军云,国际会议文集,Knowledge granulation in incomplete information systems
+,EI,2011,冯豫华,三大检索（仅供认领作者选择）,Research on social insurance system based on DW
+,EI,2011,冯豫华,三大检索（仅供认领作者选择）,Research about Web personalizing service system
+,EI,2011,伍军云,国际会议文集,A image retrieval method based on color histogram
+,EI,2011,刘小东,三大检索（仅供认领作者选择）,The application research of neural network in embedded intelligent detection
+,EI,2011,陈炼,三大检索（仅供认领作者选择）,A Kind of Improved Attribute Reduction Algorithm in Intrusion Detection Application Research Based on Rough Sets Theory
+,ISTP,2011,王平,三大检索（仅供认领作者选择）,Research and Implementation of Conglutinated Macrophage Image Segmentation Based on Improved Watershed Algorithm
+,EI,2011,黄劭刚,三大检索（仅供认领作者选择）,Research on speed governing system of synchronous/permanent magnet hybrid motor
+,EI,2011,黄劭刚,三大检索（仅供认领作者选择）,Analysis of biaxial excitation generator/motor for automobiles using tooth flux method
+,EI,2011,李安,三大检索（仅供认领作者选择）,Whisper communication: power control based distributed transmit beamforming
+,EI,2011,周兴斌,三大检索（仅供认领作者选择）,Research and application of mutiple pattern fusion on decorative pattern
+,EI,2011,王炜立,三大检索（仅供认领作者选择）,A self-index GML storage approach based on element coding
+,EI,2011,李荣鑫,三大检索（仅供认领作者选择）,Study of Power-Aware Routing Protocal in Wireless Sensor Networks
+,EI,2011,魏庆国,三大检索（仅供认领作者选择）,Binary multi-objective particle swarm optimization for channel selection in motor imagery based multi-class brain-computer interfaces
+,EI,2011,魏庆国,三大检索（仅供认领作者选择）,Wavelet packet coefficients weighted for frequency optimization in motor imagery based brain-computer interfaces
+,EI,2011,魏庆国,三大检索（仅供认领作者选择）,A comparative study of canonical correlation analysis for SSVEP detection
+,ISTP,2011,龙伟,三大检索（仅供认领作者选择）,The Application of Implicit Generalized Predictive Self-Tuning Algorithm for Liquefied Natural Gas Storage Station
+,ISTP,2011,龙伟,三大检索（仅供认领作者选择）,Design and realization of thermal printing system based on SC32442 and WinCE 5.0
+,EI,2011,曾明如,三大检索（仅供认领作者选择）,Surface fitting compensation research of diffusible silicon pressure transducer
+,,2011,李向军,国际会议文集,A Novel Approach to the Image Clustering Based on Rough Set and Ant Colony Algorithms
+,,2011,李向军,国际会议文集,A novel algorithm of computing similarity degree between Chinese articles based on tolerance granular computing model
+,ISTP,2011,陈瑛,三大检索（仅供认领作者选择）,SPWM Inverter Closed-loop PID Control System
+,EI,2011,陈瑛,三大检索（仅供认领作者选择）,Analysis for TCSC Steady-state Characteristics
+,EI,2011,陈瑛,三大检索（仅供认领作者选择）,SPWM Inverter Closed-loop PID Control System
+,EI,2011,陈瑛,三大检索（仅供认领作者选择）,Finite Element Method Analysis of Surface-Inserted Permament Magnets Synchronous Generator
+,EI,2011,刘小平,三大检索（仅供认领作者选择）,A novel haptic rendering algorithm based on vector median filter
+,EI,2011,胡凌燕,三大检索（仅供认领作者选择）,A force feedback algorithm for the wave-variable teleoperator with high stability
+,EI,2011,陈萌,三大检索（仅供认领作者选择）,A new combination rule of D-S theory(EI)
+,EI,2011,陈萌,三大检索（仅供认领作者选择）,An itinerary for data fusion in distributed sensor network(EI)
+,EI,2011,陈萌,三大检索（仅供认领作者选择）,An extended rough set model based on a new characteristic relation(EI)
+,EI,2011,段隆振,三大检索（仅供认领作者选择）,The Web Classification Based on ROUGH-GA-BP
+,EI,2011,屈文建,三大检索（仅供认领作者选择）,An Analysis for Demand Forecast and Dynamic Balance of Supply and Demand in higher education
+,EI,2011,杨选辉,三大检索（仅供认领作者选择）,Analysis and design of MIS on draduates feedback
+,EI,2011,王淳,三大检索（仅供认领作者选择）,Improved ecology evolutionary algorithm of food chain and its application in power transmission network planning
+,EI,2011,杨选辉,三大检索（仅供认领作者选择）,AHP-based evaluation index system of information literacy research and appliction
+,EI,2011,彭杰,三大检索（仅供认领作者选择）,Industrial control system security
+,EI,2011,王平,三大检索（仅供认领作者选择）,A Method of Quasi-circular Objects Detection
+,,2011,杨选辉,国际会议文集,Analysis and design of MIS on draduates feedback
+,EI,2011,聂晓华,三大检索（仅供认领作者选择）,A New Improved Perturbation and Observation MPPT Control Algorithm in Photovoltaic System
+,ISTP,2011,杨莉,三大检索（仅供认领作者选择）,Analysis of Single-phase APF Overtone and Idle Current Examination
+,EI,2011,吴毅强,三大检索（仅供认领作者选择）,The measurement and analysis for complex permitivity of microwave dielectric based on cozxizl measurement system
+,EI,2011,吴毅强,三大检索（仅供认领作者选择）,An accurate equivalend circuit method of open ended coaxial probe for measuring the permittivity of materials
+,EI,2011,周石林,三大检索（仅供认领作者选择）,Accurate curvature approximation of 3-Dimension discrete points
+,EI,2011,王俐,三大检索（仅供认领作者选择）,A Calculation Method for Series Lagging Correction Based on Root Locus
+,EI,2011,虞贵财,三大检索（仅供认领作者选择）,Research on Energy Detection Algorithm in Cognitive Radio Systems
+,EI,2011,虞贵财,三大检索（仅供认领作者选择）,A Novel Energy Detection Scheme to Improve Detection Sensitivity in Cognitive Radio Systems
+,EI,2011,邱桃荣,三大检索（仅供认领作者选择）,Acquiring Hierarchical Concepts Based on Granular Computing
+,EI,2011,李文2,三大检索（仅供认领作者选择）,A comparative study on Chinese sentiment classification
+,EI,2011,江媛,三大检索（仅供认领作者选择）,An approach to wireless sensor network security assessment with fuzzy number intuitionistic fuzzy information
+,EI,2011,郭路生,三大检索（仅供认领作者选择）,A time-optimization algorithm for soccer robot
+,,2011,衷卫声,三大检索期刊源,Research of data acquisition controller for DO based on FPGA
+,,2011,衷卫声,三大检索期刊源,Design of automobile intelligence security control system based on microcontroller AT89C51
+,,2011,段隆振,三大检索期刊源,The Web Classification Based on ROUGH-GA-BP
+,,2011,于海雯,省级及省级以上刊物,远程开放式网络实验环境下的智能电源管理
+,,2011,于海雯,省级及省级以上刊物,远程开放式网络实验环境下的安全防护简介
+,EI,2011,江媛,三大检索（仅供认领作者选择）,Model for evaluating the security of Wireless Sensor Network with triangular fuzzy information
+,,2011,胡凌燕,三大检索期刊源,A force feedback algorithm for the wave-variable teleoperator with high stability
+,SCIE,2011,胡凌燕,三大检索（仅供认领作者选择）,Trajectory tracking compensation for teleoperation with transmission delays
+,EI,2011,周辉林,三大检索（仅供认领作者选择）,Evolving fuzzy neural network for highway subsurface condition evaluation using ground penetrating radar
+,ISTP,2011,程结晶,三大检索（仅供认领作者选择）,02.Preliminary Study on the Construction of College Digital Educational Resources Based on Web2.0
+,ISTP,2011,程结晶,三大检索（仅供认领作者选择）,The Study on Education Resources Construction of Digital Community Based on Distributed Technology
+,,2011,周石林,国际会议文集,Accurate curvature approximation of 3-Dimension discrete points
+,,2011,罗穗,三大检索期刊源,Study of Association Text Classification base on rough set
+,SCI,2011,龚黎华,三大检索（仅供认领作者选择）,NOVEL SINGLE-CHANNEL COLOR IMAGE ENCRYPTION ALGORITHM-BASED ON CHAOS AND FRACTIONAL FOURIER-TRANSFORM
+,EI,2011,刘春年,三大检索（仅供认领作者选择）,Web intelligence analysis in the semantic web based on domain ontology
+,ISTP,2011,刘春年,三大检索（仅供认领作者选择）,Construction and Development of CRM Technology and Industry Chain in China
+,ISTP,2011,刘春年,三大检索（仅供认领作者选择）,A Study on Technology Architecture and Serving Approaches of Electronic Government System
+,SCI,2011,周南润,三大检索（仅供认领作者选择）,IMAGE ENCRYPTION ALGORITHM-BASED ON THE MULTI-ORDER DISCRETE FRACTIONAL MELLIN TRANSFORM
+,SCIE,2011,周南润,三大检索（仅供认领作者选择）,Dissipation of a two-mode squeezed vacuum state in the single-mode amplitude damping channel
+,SCI,2011,周南润,三大检索（仅供认领作者选择）,QUANTUM DETERMINISTIC KEY DISTRIBUTION PROTOCOLS BASED ON TELEPORTATION AND ENTANGLEMENT SWAPPING
+,SCI,2011,周南润,三大检索（仅供认领作者选择）,NOVEL OPTICAL-IMAGE ENCRYPTION SCHEME BASED ON FRACTIONAL MELLIN TRANSFORM
+,SCI,2011,周南润,三大检索（仅供认领作者选择）,WEYL CORRESPONDENCE FORMALISM FOR DESCRIBING ELECTRON UNDER UNIFORM MAGNETIC-FIELD STUDIED BY VIRTUE OF THE ENTANGLED STATE REPRESENTATION
+,ISTP,2011,王玉皞,三大检索（仅供认领作者选择）,Experimental Characterization of Packet-level for Vehicular Wireless Network in Urban
+,EI,2011,王玉皞,三大检索（仅供认领作者选择）,A new integral propagation model for radio coverage prediction in indoor environments
+,SCIE,2011,文喜,三大检索（仅供认领作者选择）,Common fixed point theorem under contractions in partial metric spaces
+,EI,2011,李安,三大检索（仅供认领作者选择）,Whisper communication: Power control based distributed beamforming with statistical CSI
+,EI,2011,张文全,三大检索（仅供认领作者选择）,Optical image encryption algorithm combining anamorphic FrFT with linear congruence
+,SCI,2011,徐少平,三大检索（仅供认领作者选择）,A NONLINEAR VISCOELASTIC TENSOR-MASS VISUAL MODEL FOR SURGERY SIMULATION
+,SCI,2011,徐少平,三大检索（仅供认领作者选择）,A NEW HYBRID SOFT-TISSUE MODEL FOR VISIO-HAPTIC SIMULATION
+,EI,2011,段荣行,三大检索（仅供认领作者选择）,Optimal sensor placement for fault diagnosis based on diagnosis cost specifications
+,,2011,曾明如,三大检索期刊源,Surface fitting compensation research of diffusible silicon pressure transducer
+,,2011,周绍梅,国际会议文集,THE APPLICATION OF THE MULTI-OBJECTIVE PARTICLE SWARM OPTMIZATION ALGORITHM IN LOGISTICS DISTRIBUTION(2)
+,,2011,罗穗,三大检索期刊源,The Research on Regional Library Information Service Alliance under the promoting of the national strategies -take the case of Poyang Lake City Circle
+,,2011,曾伟忠,国内权威,试论国家级档案开放目录体系建设特点、不足和完善对策
+,,2011,江媛,三大检索期刊源,An approach to wireless sensor network security assessment with fuzzy number intuitionistic fuzzy information
+,,2011,李向军,三大检索（仅供认领作者选择）,The Model of Thunderstorms Forecast based on Rough Set
+,,2011,段隆振,国外刊物,methof of flexible thought assembling saas service
+,,2011,段隆振,国际会议文集,research of algorithm based on improved self-organization neural network of fuzzy clustering
+,,2011,陈萌,国际会议文集,An extended rough set model based on a new characteristic relation
+,,2011,陈萌,国际会议文集,An itinerary for data fusion in distributed
+,,2011,戴文进,国际会议文集,A PLL Control Based on Algorithm of BP Neural Network
+,,2011,江智军,省级及省级以上刊物,电流型光伏并网逆变器的关键技术研究
+,,2011,刘小平,省级及省级以上刊物,虚拟焊接仿真系统研究进展?
+,,2011,张明辉,国际会议文集,Cortical surface and volume extraction through two-phase fast marching method
+,,2011,万晓凤,三大检索期刊源,TPMS design and application based on MLX91801
+,,2011,伍军云,国际会议文集,A Image Retrieval Method Based on Color Histogram
+,,2011,万晓凤,三大检索期刊源,CAN总线在纯电动汽车整车控制及电池管理系统中的应用
+,,2011,刘春年,三大检索期刊源,Research on Decision Support System based on Agricultural Risk Management Ontology
+,,2011,刘春年,国际会议文集,江西教育信息化产业链竞争优势分析—基于波特竞争理论
+,,2011,刘春年,国际会议文集,教育信息资源全生命周期管理模型比较与关键问题分析
+,,2011,李春泉,国际会议文集,Design and Implementation of a haptic interface device with auto-regulation gravity compensation
+,,2011,冯豫华,"国际会议文集,国际会议文集",Research on social insurance system based on DW
+,,2011,夏永洪,CSCD核心库,齿谐波励磁的混合励磁永磁同步发电机
+,,2011,夏永洪,三大检索期刊源,齿谐波绕组感应电动势波形快速计算
+,,2011,任燕,国际会议文集,An optimized collaborative filtering approach with item hierachy-interestingness
+,,2011,李向军,国际会议文集,The Model of Thunderstorms Forecast based on Rough Set
+,,2011,李向军,国际会议文集,A MG Method Applied to Control Software Quality for Exiting Test Phase
+,,2011,王时胜,三大检索（仅供认领作者选择）,Design of Data Abandoned Dual-port RAM Based on FPGA and Application in High-speed Data Sampling System
+,,2011,伍军云,",国际会议文集",Study and Design of the Tunnel System Based on NAT
+,,2011,戴文进,国外刊物,Study on Single-phase Hybird Power Filter in Electrified Railway Power Supply System
+,,2011,戴文进,国外刊物,A Small Power SMP Based TOPSwitch
+,,2011,杨莉,国外刊物,Monitor System of Low-Voltage Power Distribution Based on MODBUS Communication Protocol
+,,2011,杨莉,国外刊物,Control for 3-phase 4-wire Active Power Filter Based on Synchronous Reference Frame
+,,2011,王命延,国际会议文集,Ontology-baesd legal knowledge modeling and reasoning
+,,2011,王命延,国际会议文集,Research on approach of automatical contruction of law ontology
+,,2011,伍军云,国际会议文集,Knowledge Granulation in Incomplete Information Systems
+,,2011,段隆振,国际会议文集,The Web Classification Based on ROUGH-GA-BP
+,,2011,王平,三大检索期刊源,A Method of Quasi-circular Objects Detection
+,,2011,周辉林,国际会议文集,An Ann-based inverse scattering approach to estimate thickness and permittivity of multi-layered
+,,2011,周辉林,三大检索期刊源,Evolving fuzzy neural network for highway subsurface condition evaluation using ground penetrating radar
+,,2011,周辉林,三大检索期刊源,Improved Stolt migration algorithm for GPR imaging using segmentation velocity model
+,,2011,万国金,国际会议文集,REAL-TIME SPEECH CODING AND DECODING FOR GSM SYSTEM AND ITS IMPLEMENT IN VC
+,,2011,王平,三大检索期刊源,Research and implementation of conglutinated macrophage image segmentation based on improved watershed algorithm
+,,2011,程结晶,三大检索期刊源,On the Construction of Digital Archive Ecosystem
+,,2011,程结晶,三大检索期刊源,The Construction of Sharing System for Regional Digital Educational Resources
+,,2011,程结晶,三大检索期刊源,The study on education resources construction of digital community based on distributed technology
+,,2011,程结晶,三大检索期刊源,Study on Information Resources Integration of Livelihood Archives For The People
+,,2011,刘捷,国际会议文集,Efficient search scheme in mobile peer to peer network
+,,2011,江智军,核心刊物,电流型光伏并网逆变器的关键技术研究
+,,2011,管春,国际会议文集,An Improved ID3 Based on Weighted Modified Information Gain
+,,2011,王晋华,三大检索期刊源,On the Security Issues of E-Government System of Public Sectors
+,,2011,周绍梅,国际会议文集,THE APPLICATION OF THE MULTI-OBJECTIVE PARTICLE SWARM OPTMIZATION ALGORITHM IN LOGISTICS DISTRIBUTION
+,,2011,王晋华,三大检索期刊源,Tentative Discussion on Network Security based on Data Encryption
+,,2011,齐影虹,国际会议文集,A NEW WATERMARKING ALGORITHM OF COLOR IMAGE BASED ON INTEGER WAVELET TRANSFORM
+,,2011,王炜立,国际会议文集,A self-index GML storage approach based on element coding
+,,2011,王炜立,国际会议文集,GML Data Management: Framework and Prototype
+,,2011,龙承志,国际会议文集,Range-free localization algorithms in wireless sensor networks
+,,2011,龙承志,国际会议文集,Research on the strategy of nodes cooperative transmission in wireless sensor networks
+,,2011,龙承志,国际会议文集,The Routing Protocol for Wireless Sensor Networks
+,,2011,龙承志,三大检索期刊源,An Efficient VMIMO Scheduling Scheme Wireless Sensor Networks
+,,2011,王晋华,三大检索期刊源,Computer Network Security of University and Preventive Strategy
+,,2011,江顺亮,"国际会议文集,国际会议文集",The simulation and implementation of discrete particle system based on CUDA
+,,2011,刘小平,核心刊物,基于ANSYS模拟不同参数对20钢焊接温度场的影响
+,,2011,江顺亮,核心刊物,基于CUDA的离散粒子系统模拟仿真及其实现
+,,2011,胡凌燕,核心刊物,PI控制的有时延遥操作系统仿真平台的建立
+,,2011,胡凌燕,三大检索期刊源,Trajectory tracking compensation for teleoperation with transmission delays
+,,2011,刘小平,国际会议文集,A Novel Haptic Rendering Algorithm Based on Vector Median Filter
+,,2011,黄劭刚,三大检索期刊源,Analysis of biaxial excitation generator/motor for automobiles using tooth flux method
+,,2011,黄劭刚,三大检索期刊源,Research on speed governing system of synchronous/permanent magnet hybrid motor
+,,2011,龚花萍,省级及省级以上刊物,中部地区现代信息服务业成长上限基模分析及管理对策
+,,2011,龚花萍,省级及省级以上刊物,大学生阅读现状调研与分析
+,,2011,龚花萍,省级及省级以上刊物,中外物流管理专业教学模式比较与创新人才培养
+,,2011,龚花萍,核心刊物,我国在线旅游增长机制研究
+,,2011,龚花萍,核心刊物,数字化学习与学习型社会构建策略
+,,2011,龚花萍,国外刊物,基于BP神经网络的制造商与供应商信息共享程度评价研究
+,,2011,周兴斌,国际会议文集,Research and application of mutiple pattern fusion on decorative pattern
+,,2011,龚花萍,国外刊物,Customer Relationship Management Adoption of E-tourism Corporations
+,,2011,龚花萍,国外刊物,我国中部地区城镇居民信息消费调研
+,,2011,赵庆敏,核心刊物,记忆功放的预失真线性化方案
+,,2011,徐敏,核心刊物,采用气象信息的神经网络应用于短期风力发电功率预测
+,,2011,赵庆敏,国际会议文集,Analysis of computer simulation and virtual biology modeling
+,,2011,吴建华,国际会议文集,A new pixel contractible visual secret sharing scheme
+,,2011,吴建华,国际会议文集,Color image encryption based on the Multiple-order discrete fractional cosine transform and chaos in YCbCr space
+,,2011,郭路生,国际会议文集,A Time-optimization Algorithm for Soccer Robot’s Path-planning in Dynamic Environment
+,,2011,刘斓,CSCD核心库,一种基于微粒群技术的实时烟雾扩散模拟的研究
+,,2011,杨选辉,国际会议文集,AHP-based evaluation index system of information literacy research and application
+,,2011,胡凌燕,国际会议文集,A Force Feedback Algorithm For the Wave-Variable Teleoperator With High Stability
+,,2011,周石林,国际会议文集,curvature approximation of 3-dimension dicrete points and application
+,,2011,王时胜,核心刊物,基于CAN总线的配电网故障选线数据采样机的设计
+,,2011,江耘,CSSCI,公民有序网络参与机制分析
+,,2011,陈萌,国际会议文集,A new combination rule of D-S theory
+,EI,2011,黄玉水,国际会议文集,The simulation of the noise eliminated based on artificial neural network
+,EI,2011,王艳庆,国际会议文集,Shock response analysis for a propulsion shaft system in time domain
+,EI,2011,王艳庆,国际会议文集,A stable tracking control method for an Autonomous Welding Mobile Robot
+,EI,2011,王艳庆,国际会议文集,Remote Data Acquisition Based on the EDGE
+,,2011,王俐,核心刊物,基于GSM短消息的远程电影自动放映系统
+,,2011,王俐,核心刊物,电影自动放映系统通用开发平台
+,,2011,王俐,国外刊物,A Calculation Method for Series Lagging Correction Based on Root Locus
+,,2011,杨晓辉,三大检索期刊源,An Adaptive Teleoperation Based On Predictive Control
+,,2011,王艳庆,CSCD核心库,激光视觉传感器对不连续焊缝的识别
+,,2011,王淳,三大检索期刊源,考虑不确定因素的逐步倒推法电网规划
+,,2011,王淳,三大检索期刊源,食物链生态进化算法的改进及其在输电网络规划中的应用
+,,2011,杨胡萍,核心刊物,粒子群优化的灰色模型在中长期负荷预测中的应用
+,,2011,杨莉,国际会议文集,Analysis of Single-phase APF overtone and idle current examination
+,,2011,龚黎华,国际会议文集,Quantum secret sharing based on parallel teleportation
+,,2011,沈玖玖,三大检索期刊源,Game Analysis of Purchasers and Suppliers’ strategic Cooperation Strategy
+,,2011,沈玖玖,核心刊物,基于替代原理的外包决策模型
+,,2011,龚黎华,三大检索期刊源,Novel single-channel color image encryption algorithm based on chaos and fractional Fourier transform
+,,2011,周南润,国际会议文集,Spectrum analysis on Mellin transform and fractional Mellin transform
+,,2011,周南润,三大检索期刊源,Identity-based key management scheme with provable security for wireless sensor networks
+,,2011,周南润,三大检索期刊源,Image encryption algorithm based on the multi-order discrete fractional Mellin transform
+,,2011,周南润,三大检索期刊源,Dissipation of a two-mode squeezed vacuum state in the single-mode amplitude damping channel
+,,2011,周南润,三大检索期刊源,Quantum deterministic key distribution protocols based on teleportation and entanglement swapping
+,,2011,周南润,三大检索期刊源,Novel optical image encryption scheme based on fractional Mellin transform
+,,2011,周南润,三大检索期刊源,Weyl correspondence formalism for describing electron under uniform magnetic field studied by virtue of the entangled state representation
+,,2011,衷卫声,核心刊物,基于FPGA的通信协议芯片的设计
+,,2011,衷卫声,核心刊物,多总线在水质监测中的应用
+,,2011,衷卫声,核心刊物,基于遗传算法的FNN-PID控制技术在溶解氧控制中的应用
+,,2011,衷卫声,核心刊物,溶解氧模糊控制器的FPGA设计与实现
+,,2011,衷卫声,核心刊物,IIC总线在化学需氧量监测系统中的应用
+,,2011,梁声灼,国际会议文集,Multi-object Vehicles Detection Algorithm Based on Computer Vision
+,,2011,虞贵财,国际会议文集,Research on Dynamic Threshold Based Energy Detection in Cognitive Radio Systems
+,,2011,虞贵财,国际会议文集,Detection Sensitivity Based on Energy Detection in Cognitive Radio Systems
+,ISTP,2011,虞贵财,国际会议文集,A Novel Energy Detection Scheme to Improve Detection Sensitivity in Cognitive Radio Systems
+,,2011,虞贵财,国际会议文集,An Improved Energy Detection Algorithm in Cognitive Radio Systems
+,,2011,虞贵财,国际会议文集,Research on Energy Detection Algorithm in Cognitive Radio Systems
+,,2011,李建华,CSCD核心库,多优先级自适应片上网络路由算法设计
+,ISTP,2011,陶凌,国际会议文集,Design and Implementation of the Control System for an ARM9-based Biochemical Analyzer
+,,2011,陈炼,国际会议文集,A Kind of Improved Attribute Reduction Algorithm in Intrusion Detection Application Research Based on Rough Sets Theory
+,,2011,齐影虹,国际会议文集,A NEW WAVELET -BASED DIGITAL WATERMARKING ALGORITHM
+,,2011,李迟生,国际会议文集,AN IMPROVED VITERBI EQUALIZATION ALGORITHM BASED ON THE MAXIMUM LIKELIHOOD SEQUENCE ESTIMATION IN GSM SYSTEM
+,,2011,李迟生,国际会议文集,AN IMPROVED ALGORITHM OF SYNCHRONIZATION BASED ON MAXIMUM CORRELATION FOR GSM SIGNALS
+,,2011,李迟生,国际会议文集,A NOVEL MODULATION CLASSIFICATION FOR PSK AND QAM SIGNALS IN WIRELESS COMMUNICATION
+,EI,2011,黄玉水,国际会议文集,Design of controlling system of higher layer elevator
+,,2011,胡军,省级及省级以上刊物,农村电子商务环境下物流管理系统的设计与分析?
+,,2011,赵俊,国际会议文集,Design of a Switching Control Scheme for Uncertain Objects based on PID-Type FNN and LS_SVMs
+,,2011,刘晔,国际会议文集,A Multi-level Framed Slotted ALOHA Algorithm for RFID
+,,2011,邱睿韫,省级及省级以上刊物,医学图像的提取关键技术浅议
+,,2011,吴毅强,核心刊物,超宽频单极子陶瓷介质谐振器天线设计与仿真
+,,2011,吴毅强,国际会议文集,An Accurate Equivalent Circuit Method of Open Ended Coaxial Probe for Measuring the Permittivity of Materials
+,,2011,吴毅强,国际会议文集,The Measurement and Analysis for Complex Permittivity of Microwave Dielectric Based on Coaxial Measurement System
+,,2011,王玉皞,三大检索期刊源,Extended Sum-of-Sinusoids-Based Simulation for Rician Fading Channels in Vehicular Ad Hoc Networks
+,,2011,屈文建,三大检索期刊源,The Synergy of Higher Education and Economic Development in China
+,,2011,屈文建,三大检索期刊源,An Analysis for Demand Forecast and Dynamic Balance of Supply and Demand in Higher Education
+,,2011,戴文进,国际会议文集,Analysis for TCSC in single phase power system simulation
+,,2011,戴文进,国际会议文集,The Development of Economizing-Energy Illumination System
+,,2011,戴文进,国际会议文集,Study on a New Type Protective Method of Arc Grounding in Power System
+,,2011,王玉皞,国外刊物,Uniticket: A Third Party Universal E-Ticket System Based on Mobile Phone
+,,2011,王玉皞,国外刊物,Performance Study of Multi-path in VANETs and Their Impact on Routing Protocols
+,,2011,王玉皞,核心刊物,基于反演传播模型和相邻几何约束的定位方法
+,,2011,王玉皞,三大检索期刊源,A Hybrid MAC Mechanism for Multiple Load Intelligent Vehicle Transportation Network
+,,2011,王玉皞,三大检索期刊源,A Channel Cognitive Method for Local Fading Characteristics using Variable-Order Markov Model
+,,2011,王玉皞,三大检索期刊源,Experimental Characterization of Packet-level for Vehicular Wireless Network in Urban
+,,2011,王玉皞,三大检索期刊源,A New Integral Propagation Model for Radio Coverage Prediction in Indoor Environments
+,,2011,廖晓锋,省级及省级以上刊物,P2P安全内容监管系统技术研究
+,,2011,龙伟,国际会议文集,The Application of Implicit Generalized Predictive Self-Tuning Algorithm for Liquefied Natural Gas Storage Station
+,,2011,龙伟,国际会议文集,Design and realization of thermal printing system based on SC32442 and WinCE 5.0
+,,2011,李赣平,国际会议文集,Constrained Batch-to-Batch Optimal Control for Batch Process Based on Support Vector Regression Model With Batchwise Error Feedback
+,,2011,李赣平,",国际会议文集",Iterative Learning Control for Batch Processes Based on Support Vector Regression Model with Batchwise Error Feedback
+,,2011,刘春年,国外刊物,Domain ontology and semantic web applications for study of web competitive intelligence analysis system
+,,2011,李荣鑫,国际会议文集,A Survey of Power-Aware Routing Mechanism in Mobile Ad Hoc Networks
+,,2011,李荣鑫,国际会议文集,Study of Power-Aware Routing Protocal in Wireless Sensor Networks
+,,2011,陈瑛,三大检索期刊源,Finite Element Method Analysis of Surface-Inserted Permament Magnets Synchronous Generator
+,,2011,陈瑛,三大检索期刊源,SPWM Inverter Closed-loop PID Control System
+,,2011,陈瑛,三大检索期刊源,Analysis for TCSC Steady-state Characteristics
+,EI,2011,刘云根,三大检索期刊源,基于人体姿势编码的运动数据检索
+,,2011,周明建,国际会议文集,Knowledge View Based on Rough Set and Similarity
+,,2011,周明建,国际会议文集,An Outlier Mining Algorithm Based On Dissimilarity
+,,2011,周明建,国际会议文集,An Outlier Mining Algorithm Based on Attribute Entropy
+,,2011,周明建,国际会议文集,A Framework for Ontology-Based Knowledge Management
+,,2011,周明建,CSCD核心库,基于属性相似度的知识推送
+,,2011,江耘,三大检索期刊源,Commercial credit value evaluation and illustration analysis on internet
+,,2011,黄涛,国际会议文集,Based on the PLL the investigation of noise
+,,2011,郑超美,国际会议文集,A Blind Watermarking Algorithm Based on Block DCT for Dual Color Images
+,,2011,郑超美,国际会议文集,Research on J2ME Based Mobile Payment System
+,,2011,范蔚文,省级及省级以上刊物,通信企业电子渠道系统的应用?
+,,2011,张忠会,省级及省级以上刊物,输配电价测算方法的研究
+,,2011,魏庆国,国际会议文集,Cultural-based Multi-Objective Particle Swarm Optimization for EEG Channel Reduction in Motor Imagery Based Multi-class BCI
+,,2011,魏庆国,国际会议文集,A Comparative Study of Canonical Correlation Analysis and Power Spectral Density Analysis for SSVEP Detection
+,,2011,魏庆国,国际会议文集,Wavelet Packet Coefficients Weighted for Frequency Optimization in Motor Imagery Based Brain-Computer Interfaces
+,,2011,魏庆国,三大检索期刊源,Binary Multi-Objective Particle Swarm Optimization for Channel Selection in Motor Imagery Based Multi-class Brain-Computer Interfaces
+,,2011,聂晓华,国际会议文集,A New Improved Perturbation and Observation MPPT Control Algorithm in Photovoltaic System
+,EI,2011,江媛,三大检索期刊源,The security assessment method of wireless sensor network with interval grey linguistic variables
+,,2011,徐少平,三大检索期刊源,A new hybrid soft tissue model for visio-haptic simulation
+,,2011,戴伟华,核心刊物,考虑静态电压稳定的有功出力方式优化综述?
+,,2011,李文2,国际会议文集,A comparative study on Chinese sentiment classification
+,EI,2011,邱桃荣,国际会议文集,An approximate retrieval of uncertain data in data sources
+,ISTP,2011,邱桃荣,国际会议文集,An Approach to Feature Selection Based on Ant Colony Optimization and Rough Set
+,SCIE,2011,邱桃荣,三大检索期刊源,Acquiring Hierarchical Concepts Based on Granular Computing
+,,2011,李文2,三大检索期刊源,Two-level hierarchical combination method for text classification
+,,2011,段荣行,国际会议文集,基于可靠性分析的实时故障诊断框架
+,,2011,段荣行,国外刊物,Optimal sensor placement for fault diagnosis based on diagnosis cost specifications
+,,2011,文喜,三大检索期刊源,Common fixed point theorem under contractions in partial metric spaces
+,,2011,曾明如,国际会议文集,Surface fitting compensation research of diffusible silicon pressure transducer
+,,2011,刘春年,三大检索期刊源,Web Intelligence Analysis in the Semantic Web Based on Domain Ontology
+,,2011,刘春年,国际会议文集,Educational Information Resources Planning——New Approach of Educational Informatization
+,,2011,刘春年,国内权威,基于企业架构的区域文化信息资源规划与管理研究——以鄱阳湖生态经济区为例
+,,2011,刘春年,核心刊物,农业教育信息化建设中信息资源规划与管理研究
+,,2011,刘春年,CSSCI,国家战略推动下的区域性图书馆文化信息服务联盟研究——以鄱阳湖城市圈为例?
+,,2011,刘春年,国际会议文集,Construction and Development of CRM Technology and Industry Chain in China
+,,2011,刘春年,国际会议文集,A Study on Technology Architecture and Serving Approaches of Electronic Government System
+,,2011,徐少平,三大检索期刊源,A nonlinear viscoelastic tensor-mass visual model for surgery simulation
+,,2011,曾伟忠,CSSCI,数字时代政府信息公开目录服务体系建设研究
+,,2011,冯豫华,三大检索期刊源,Research about Web personalizing service system
+,,2011,曾明如,核心刊物,扩散硅压力变送器的曲面拟合补偿
+,,2011,曾伟忠,国内权威,我国政府信息公开目录服务体系存在的问题及完善措施研究
+,,2011,曾伟忠,核心刊物,试论信息组织学教学和研究存在的问题和对策
+,,2011,魏少峰,国际会议文集,Application of least squares support vector regression trained by genetic algorithm in reliability prediction of LAN/WLAN integration network
+,,2011,程结晶,核心刊物,基于民生指数的民生档案服务途径创新
+,,2011,程结晶,其他刊物,网络环境下个性化信息资源服务途径初探
+,,2011,程结晶,其他刊物,学科知识门户发展的四维视觉探讨
+,,2011,程结晶,CSSCI,公共档案馆用户价值的创新战略及实施途径
+,,2011,程结晶,CSSCI,区域性数字化教育资源共享途径研究
+,,2011,程结晶,CSSCI,以公民文化权利为基础的档案馆服务体系研究
+,,2011,程结晶,国内权威,用户感知价值导向的公共档案馆核心能力的建构
+,,2011,程结晶,国际会议文集,西南地区公共图书馆举办读者活动的调查分析
+,,2011,程结晶,CSSCI,云南省高校图书馆学位论文数据库使用现状的调查与思考
+,,2011,程结晶,CSSCI,西南地区公共图书馆服务管理存在的问题与对策
+,,2011,程结晶,CSSCI,学科知识门户的发展路径探析
+,EI,2011,李安,三大检索期刊源,Whisper communication: power control based distributed beamforming with statistical CSI
+,,2011,李安,CSCD核心库,基于硅压阻式压力传感器的TPMS无线传感器节点设计
+,,2011,程结晶,核心刊物,云计算环境中的数字档案馆服务与管理
+,,2011,程结晶,CSSCI,区域性数字化教育资源共享的途径与创新思维
+,,2011,彭杰,国际会议文集,Industrial control system security
+,,2011,彭杰,核心刊物,一种智能照明系统的设计?
+,,2011,彭杰,核心刊物,基于Lonworks的小区监控系统设计
+,EI,2011,张文全,CSCD核心库,基于变形FrFT和线性同余的光学图像加密算法
+,,2011,曾群,核心刊物,网络环境下高校信息素质教育合作模式探析
+,,2011,张烨,国际会议文集,Fire time series forecasting based on Markov-SVR model
+,,2012,王平,三大检索期刊源,A  Macrophages Image Segmentation  Algorithm Based on  Adaptive  Region  Merging  and  Watershed
+,,2012,王平,三大检索期刊源,A Hybrid Approach for Separation of the Strong Adhesion Macrophages
+,,2012,冯豫华,三大检索期刊源,Analysis on algorithm and application of cluster in data mining
+,,2012,张文全,三大检索期刊源,基于随机分数梅林变换的非线性图像加密算法
+,EI,2012,张文全,三大检索（仅供认领作者选择）,Multiple-image encryption algorithm based on asymmetric cryptosystem
+,EI,2012,张文全,三大检索（仅供认领作者选择）,Double-color image encryption based on discrete fractional random transform
+,,2012,曾伟忠,CSSCI,美国国家档案馆网站档案目录检索工具探微
+,,2012,曾伟忠,核心刊物,美国版权法图书馆复制权研究——第108条解读和启示
+,,2012,廖晓锋,三大检索（仅供认领作者选择）,基于LDA主题模型的安全漏洞分类
+,,2012,王平,核心刊物,基于DM642的多姿态人脸检测实时系统
+,,2012,王平,省级及省级以上刊物,基于种子点的粘连巨噬细胞图像的分割方法
+,,2012,曾庆鹏,国外刊物,Web application integration framework based on OSGi
+,,2012,曾庆鹏,国外刊物,Using semantic constraints for question answering
+,,2012,曾庆鹏,国外刊物,A SaaS development platform based on cloud computing
+,,2012,徐少平,国际会议文集,An improved switching vector median filter for image-based haptic texture generation
+,,2012,周南润,三大检索期刊源,基于中国剩余定理和LU矩阵的传感器网络密钥预分配方案
+,,2012,虞贵财,三大检索期刊源,An improved energy detection algorithm in cognitive radio systems
+,,2012,虞贵财,三大检索期刊源,Cooperative spectrum sensing based on energy detection in cognitive radio systems
+,,2012,徐少平,CSCD核心库,基于区域特征分析的快速FCM图像分割改进算法
+,,2012,徐少平,国外刊物,An Improved Image-Based Haptic Texture Rendering Approach
+,,2012,肖霖,三大检索期刊源,OFDM双向中继网络中基于网络编码的资源分配策略
+,,2012,冯豫华,国外刊物,Research about China's logistics distribution
+,,2012,方安安,三大检索期刊源,Research of on-line monitoring system for malfunction in distribution network
+,,2012,方安安,三大检索期刊源,Design of high-speed electric power network data acquisition system based on ARM and embedded ethernet
+,,2012,方安安,三大检索期刊源,Hardware design of precision injection molding machine temperature control circuit
+,,2012,龙承志,三大检索期刊源,An energy-efficient clustering scheme based on improved agent in heterogeneous WSNs
+,,2012,张烨,CSCD核心库,基于集合经验模式分解的火灾时间序列预测
+,,2012,肖霖,核心刊物,OFDMA 网络中基于用户协作的负载均衡机制
+,,2012,肖霖,国际会议文集,Traffic-aware Adaptive Discontinuous Receiving Scheme for Power saving in Cellular Networks
+,,2012,肖霖,三大检索期刊源,Adaptive power saving scheduling based on dynamic MBMS frame structure for MBSFN
+,,2012,肖霖,三大检索期刊源,Local Gaussian process with random projection trees
+,,2012,,核心刊物,一种具有自适应参数的基于密度加权的粗糙Ｋ－均值算法
+,EI,2012,杨胡萍,三大检索（仅供认领作者选择）,Combination forecasting model in the long term load forecasting model prediction
+,EI,2012,杨胡萍,三大检索（仅供认领作者选择）,The analysis of the application of copper plated steel material in substation grounding project
+,EI,2012,杨胡萍,三大检索（仅供认领作者选择）,The development of medium-long term load forecasting software based on LabVIEW
+,EI,2012,李迟生,三大检索（仅供认领作者选择）,An improved viterbi equalization algorithm based on the maximum likelihood sequence estimation in gsm system
+,EI,2012,李迟生,三大检索（仅供认领作者选择）,A novel modulation classification for psk and qam signals in wireless communication
+,EI,2012,李迟生,三大检索（仅供认领作者选择）,An improved algorithm of synchronization based on maximum correlation for gsm signals
+,,2012,吴建华,三大检索期刊源,single-channel color image encryption based on the multiple-order discrete fractional transform and chaotic scrambling
+,,2012,江媛,国际会议文集,The aspect-oriented Object-Z to specifying web service composition
+,,2012,江媛,国际会议文集,The application of IaCLA model to adaptive image quantization
+,,2012,叶小丽,三大检索期刊源,A Method of Segmentation and Organization of Multi-section Video Data
+,,2012,陶凌,国际会议文集,The Development of Multifunctional Inverter Power
+,,2012,王玉皞,三大检索期刊源,Characterization of Packet-level Measurements for Vehicular Wireless Networks
+,,2012,段隆振,国际会议文集,Method of Desing and Implementaton Cloud Service
+,,2012,段隆振,国际会议文集,collaborative Filtering with Improved Item Prediction Approach for Enhancing the Accuracy of Recommendation
+,,2012,胡军,省级及省级以上刊物,猪肉产品流通追溯中的一维编码技术比较研究
+,,2012,李春泉,三大检索期刊源,A modified Simple Particle Swarm optimization algorithm
+,,2012,李春泉,三大检索期刊源,Stock price prediction based on general regression neural network and fly optimization algorithm
+,,2012,李春泉,三大检索期刊源,A novel modified fly optimization algorithm for designing the self-tuning proportional integral derivative controller
+,,2012,李春泉,三大检索期刊源,Stock prediction on basis of General Regression Neural Network optimized with Modified simple particle swarm optimization
+,,2012,李春泉,三大检索期刊源,PID controller tuning using a Modified Simple Particle Swarm Optimization algorithm
+,,2012,龙伟,国际会议文集,Design and Implementation of Blood Analyzer Control System Based on the Fluid Flow Aperture Device
+,,2012,龙伟,国际会议文集,Design and Implementation of Integrated Management Information System in Auto Factory Stamping Process
+,,2012,龙伟,国际会议文集,Reliable Guaranteed Cost Control for Uncertain Time-lag Systems of Actuator Failures
+,,2012,杨选辉,核心刊物,基于本体的自然灾害应急物流领域知识表示
+,,2012,谢军,国际会议文集,The Research of Agile Web Development Process and Quality Model
+,,2012,段隆振,三大检索期刊源,Intrusion Detection based on ant colony algorithm of Fuzzy clustering
+,,2012,段隆振,三大检索期刊源,Method of flexible thought assembling Saas service
+,,2012,段隆振,国际会议文集,Research of algorithm based on improved self-organization neural network of fuzzy clustering
+,,2012,于海雯,省级及省级以上刊物,浅析木马捆绑伪装的多种方式
+,,2012,段荣行,三大检索期刊源,A New Fault Diagnosis Method Based on Fault Tree and Bayesian Networks
+,,2012,于海雯,省级及省级以上刊物,浅析病毒木马等危险程序的几种测试环境搭建方法
+,,2012,黎晓贞,国际会议文集,The design of interference generator for grid based on 89S52
+,,2012,黎晓贞,国际会议文集,Intelligent digital voltage meter design and implement based on AD7715
+,,2012,黎晓贞,国际会议文集,Smart car design and implement based on SCM AT89C55 application
+,,2012,曾明如,国际会议文集,The design of control system for temperature and humidity of the incubation chamber based on artificial intelligence
+,,2012,龚花萍,三大检索期刊源,Research on the Campus Card
+,,2012,龚花萍,国外刊物,The Teaching Norm of TAC Majoring in Logistics Management
+,,2012,龚花萍,核心刊物,文物信息资源分类体系与开发利用机制研究
+,,2012,龚花萍,核心刊物,文物信息资源元数据建设原则、模型与方案探讨
+,,2012,龚花萍,省级及省级以上刊物,基于CiteSpace的学科知识门户研究演进路径分析
+,ISTP,2012,曾雪强,三大检索（仅供认领作者选择）,Redundant Feature Elimination by Using Approximate Markov Blanket Based on Discriminative Contribution
+,,2012,万晓凤,核心刊物,基于LabVIEW的车用电机控制器调试系统
+,,2012,万晓凤,核心刊物,纯电动汽车三相异步电机矢量控制
+,,2012,杨晓辉,三大检索期刊源,Optimize track design and its simulation based on Simulated Annealing algorithm
+,,2012,廖庆洪,三大检索期刊源,Entropy squeezing of atom and the generation of Schrodinger-cat states in the three-photon Jaynes–Cummings model
+,,2012,廖晓锋,三大检索期刊源,基于LDA主题模型的安全漏洞分类
+,,2012,龙承志,三大检索期刊源,Research on the Ant Colony Optimization Algorithm for Load Balance in WSN
+,,2012,龙承志,三大检索期刊源,Study on Target Tracking Technology Based on the Improved Least Square Filter
+,,2012,龙承志,三大检索期刊源,Optimal cluster Head Cooperative Deployment in Heterogeneou Wireless Sensor Networks
+,,2012,刘韬,核心刊物,基于属性约简和动态模糊依赖关系的企业绩效评价方法
+,,2012,梁声灼,国际会议文集,An Assessment System of Interview Based on Fuzzy Comprehensive Evaluation
+,,2012,薛侠,核心刊物,基于分数傅里叶变换和小波分解的彩色图像分级加密
+,,2012,赵庆敏,三大检索期刊源,Multiple and color images compression-encryption schemes with balanced qualities based on the multiple-order discrete fractional cosine transform
+,,2012,赵庆敏,三大检索期刊源,基于修正霍夫模型的双曲线拟合及目标尺寸反演
+,,2012,何宏,省级及省级以上刊物,配电网无功补偿
+,,2012,何宏,省级及省级以上刊物,GRS同步时钟在电力系统中的应用
+,,2012,何宏,省级及省级以上刊物,改进遗传算法在电力系统无功优化中的应用
+,,2012,何宏,省级及省级以上刊物,采用USB接口的虚拟示波器的研制
+,,2012,魏庆国,三大检索期刊源,Classification of EEG signals using filter bank common spatial pattern based on Fisher and Laplacian criteria
+,,2012,魏庆国,三大检索期刊源,Cultural-based multi-objective particle swarm optimization for EEG channel reduction in multi-class brain-computer interfaces
+,,2012,魏庆国,三大检索期刊源,Feature Extraction by Combining Wavelet Packet Transform and Common Spatial Pattern in Brain-Computer Interfaces
+,,2012,武和雷,国际会议文集,A new image registration method based on frame and gray information
+,,2012,武和雷,CSCD核心库,基于识别信心决策融合的分块PCA方法
+,,2012,周石林,省级及省级以上刊物,小波变换边界提取的一个补充条件
+,,2012,赵俊,国际会议文集,Design of a switching control scheme for uncertain objects based on PID-type FNN and LS_SVMs
+,,2012,冯豫华,三大检索期刊源,ANALYSIS ON ALGORITHM AND APPLICATION OF CLUSTER IN DATA MINING
+,,2012,李建华,三大检索期刊源,Disign of an UDP Protocol Stack IP for Internet Commuinication
+,,2012,曾明如,核心刊物,基于元胞自动机的移动机器人路径规划
+,,2012,杨晓辉,三大检索期刊源,Chaos Analysis and extended adaptive chaos control of Permanent Magnet Synchronous Motors
+,,2012,杨晓辉,三大检索期刊源,Transient stability of complex multi-machine systems based on NSDE
+,,2012,杨晓辉,三大检索期刊源,Research of autoreclosure transient stability
+,,2012,杨晓辉,核心刊物,基于永磁同步电机反推方法混沌运动的同步控制
+,,2012,杨晓辉,核心刊物,基于逐点比较法的特殊曲线磨削算法的研究
+,,2012,王淳,核心刊物,基于食物链生态进化算法的多阶段输电网络规划
+,,2012,王淳,三大检索期刊源,基于化学反应算法的配电网重构
+,,2012,伍军云,国际会议文集,Study and analyze on feature selection in text categorization for engineering domain
+,,2012,张文全,CSCD核心库,基于相位恢复和混沌图的多图像并行加密算法
+,,2012,张文全,CSCD核心库,基于非对称密码系统的多图像加密算法
+,,2012,张文全,CSCD核心库,基于离散分数随机变换的双彩色图像加密算法
+,,2012,杨晓辉,核心刊物,基于电磁感应探测法地下管道测量的仿真
+,,2012,杨晓辉,核心刊物,基于永磁同步电动机中混沌运动状态观测器的同步控制
+,,2012,杨晓辉,核心刊物,永磁同步电机的鲁棒滑模变结构混沌同步控制
+,,2012,杨晓辉,核心刊物,基于模拟退火和遗传算法的神经网络在精确施肥中的研究
+,,2012,黄水源,国际会议文集,E-commerce Recommendation Algorithm Based on Multi-level Association Rules
+,,2012,程结晶,国外刊物,西南地区图书馆古籍文献保护的现状调查与分析
+,,2012,程结晶,三大检索期刊源,档案馆形象塑造现状的调查分析
+,,2012,程结晶,核心刊物,从可持续发展角度看区域图书馆服务体系的服务对象
+,,2012,程结晶,CSSCI,区域图书馆均衡发展存在的问题及其对策——以贵州省为例
+,,2012,程结晶,CSSCI,省级公共图书馆为企业提供信息服务的调查与分析
+,,2012,程结晶,核心刊物,鄱阳湖生态经济区图书馆服务体系建设存在的问题与策略
+,EI,2012,杨胡萍,国际会议文集,The Mechanism of Power Generation Rights Trade and it’s Impacts on Power Company
+,,2012,江耘,核心刊物,《电子商务案例分析》课程案例教学改革与实践
+,,2012,江耘,核心刊物,基于因子分析与聚类分析的团购网站研究
+,,2012,李向军,三大检索期刊源,Rough Set-based Feature Weighted Kernels for Support Vector Machine
+,,2012,李向军,三大检索期刊源,Outlier detection using the information entropy of neighborhood rough sets
+,,2012,李向军,三大检索期刊源,An rough entropy based approach to outlier detection
+,,2012,廖庆洪,三大检索期刊源,孤立原子和双模腔内原子之间的纠缠突然死亡研究
+,,2012,廖庆洪,三大检索期刊源,三个两能级原子与数态场相互作用的纠缠特性
+,,2012,廖庆洪,三大检索期刊源,单光子和双光子Jaynes-Cummings模型中原子间纠缠突然死亡的研究
+,,2012,廖庆洪,三大检索期刊源,两原子与数态场相互作用系统中纠缠的调控
+,SCI,2012,廖庆洪,三大检索期刊源,陆续通过一个双模腔的两原子之间纠缠的突然产生和调控
+,,2012,龚黎华,CSCD核心库,基于频谱切割和二维Arnold变换的彩色图像加密算法
+,,2012,龚黎华,CSCD核心库,结合分数Hartley变换和复用技术的图像加密算法
+,,2012,龚黎华,三大检索期刊源,New secret sharing protocol via parallel teleportation
+,EI,2012,龚黎华,三大检索期刊源,Analyses on IPv6 evolution technologies
+,,2012,龚黎华,三大检索期刊源,New approach for obtaining the time-evolution law of chaotic light field in damping-gaining process
+,,2012,邓娟,CSCD核心库,信噪比对不同EIT图像重建算法的影响研究及评价
+,EI,2012,陈炼,三大检索期刊源,A Concentrated-grant-based Bandwidth Allocation Algorithm for Ethernet Passive Optical Networks
+,,2012,李春泉,CSCD扩展库,实时倒立摆系统的设计与实现
+,,2012,杨胡萍,核心刊物,基于相空间重构和Chebyshev正交基神经网络的短期负荷预测
+,EI,2012,杨胡萍,三大检索期刊源,The development of medium-long term load forecasting software based on LabVIEW
+,EI,2012,杨胡萍,三大检索期刊源,The analysis of the application of copper plated steel material in substation grounding project
+,EI,2012,杨胡萍,三大检索期刊源,Combination forecasting model in the long term load forecasting model prediction
+,,2012,衷卫声,CSCD扩展库,SBR曝气控制的FPGA设计
+,,2012,衷卫声,核心刊物,PROFIBUS-DP水质监测中冗余网络的FPGA逻辑设计
+,,2012,衷卫声,CSCD扩展库,嵌入式Web Server在远程数据采集系统中的应用
+,,2012,衷卫声,CSCD核心库,SOPC技术在DCS系统语音报警中的应用
+,,2012,刘明萍,国际会议文集,Electron acceleration in the bubble regime with plasma wall during the mode transition from laser wakefield to plasma wakefield accelerator
+,SCI,2012,刘明萍,三大检索期刊源,Effects of Relativistic and Ponderomotive Nonlinearities on an Intense
+,,2012,周南润,三大检索期刊源,基于LU矩阵的传感器网络密钥预分配方案
+,,2012,周南润,CSCD核心库,分簇式传感器网络多项式密钥预分配改进方案
+,,2012,周南润,三大检索期刊源,Three-party stop-wait quantum communication protocol for data link layer based on GHZ state
+,,2012,周南润,三大检索期刊源,基于连续变量量子远程通信的量子确定性密钥分配协议
+,,2012,周南润,三大检索期刊源,基于GHZ态的三方量子确定性密钥分配协议
+,,2012,周南润,三大检索期刊源,Novel color image encryption algorithm based on the reality preserving fractional Mellin transform
+,,2012,夏永洪,核心刊物,混合磁极式的混合励磁永磁同步发电机
+,,2012,夏永洪,三大检索期刊源,励磁电流脉动对电枢绕组空载电压波形的影响
+,,2012,夏永洪,三大检索期刊源,混合磁极式的混合励磁永磁同步发电机仿真
+,,2012,黄玉水,国际会议文集,A modified MPPT method for photovoltaic system
+,,2012,徐敏,核心刊物,基于改进粒子群优化算法的短期风电功率预测
+,,2012,徐敏,核心刊物,基于支持向量机的短期风电功率预测
+,,2012,周辉林,三大检索期刊源,Generalized hough transform and ANN for subsurface cylindrical object location and parameters inversion from GPR data
+,,2012,周辉林,三大检索期刊源,An automatic algorithm for multi-defect classification inside tunnel using SVM
+,,2012,周辉林,三大检索期刊源,An Automatic Framework using Space-Time Processing and TR-MUSIC for Subsurface imaging
+,,2012,周辉林,三大检索期刊源,An Automatic Framework Using Space-Time Processing and TR-MUSIC for Subsurface and Through-Wall Multitarget Imaging
+,,2012,廖庆洪,全国会议文集、国家学会文集,耗散腔中原子和场之间的纠缠转移以及动力学特性研究
+,,2012,杨选辉,省级及省级以上刊物,建立毕业生回访制度促进高校教学改革——以电子商务专业为例
+,,2012,徐少平,三大检索期刊源,Similarity measures for content-based image retrieval based on intuitionistic fuzzy set theory
+,,2012,饶泓,三大检索期刊源,A novel method to realize the many-to-many mapping in lifting appliances
+,,2012,饶泓,三大检索期刊源,Design and implementation of bridge structural health monitoring system
+,,2012,饶泓,CSCD核心库,采用熵权和模糊集的特征评价方法及应用
+,,2012,徐少平,国外刊物,An Improved Switching Vector Median Filter For Image-based Haptic Texture Generation
+,,2012,徐少平,国外刊物,Approximation to Conic Sections with Hermite Curves
+,,2012,刘斓,CSCD核心库,基于微粒群优化的烟雾扩散的实时研究
+,,2012,曾群,核心刊物,基于3G手机图书馆的移动学习平台探究
+,,2012,曾群,三大检索期刊源,The design of knowledge-sharing platform system based on Blog
+,,2012,曾群,三大检索期刊源,The design of power assisted characteristic curve for electric power steering system
+,,2012,刘晔,CSCD核心库,一种基于码距反演的RFID防碰撞算法
+,,2012,赵庆敏,核心刊物,车载动力电池振动特性分析
+,,2012,刘晔,三大检索期刊源,Image Encryption Based on Cat Map and Fractional Fourier Transform
+,,2012,刘晔,三大检索期刊源,Improved DV-Hop Localization Algorithm Based on the Ratio of Distance and Path Length
+,,2012,刘晔,三大检索期刊源,Improvement of hierarchical routing algorithm for heterogeneous wireless sensor networks
+,,2012,吴毅强,核心刊物,一种改进的U型槽超宽带微带天线研究
+,,2012,吴毅强,核心刊物,共面波导馈电超宽带研究
+,,2012,吴毅强,核心刊物,一种新型超宽带单极子天线的设计与仿真
+,,2012,吴毅强,核心刊物,基于射频芯片A7105的航模无线收发系统的设计
+,,2012,吴毅强,CSCD核心库,基于曲面拟合无损测量复介电常数方法
+,,2012,吴毅强,CSCD核心库,超宽带单极子加载介质谐振器天线的设计
+,,2012,吴毅强,CSCD核心库,基于探头导纳模型的复介电常数测量技术
+,,2012,邱睿韫,省级及省级以上刊物,关于人工髋关节置换术中应力研究的三维重建技术探析
+,,2012,徐少平,CSCD核心库,基于状态空间预计算的软组织实时形变模型
+,,2012,徐少平,CSCD核心库,基于无网格的软组织切割模型的研究进展
+,,2012,徐少平,CSCD核心库,基于图像特征的力反馈渲染改进算法
+,,2012,徐少平,核心刊物,均匀B样条1次升降多阶的矩阵表示
+,,2012,李赣平,国际会议文集,Constrained Batch-to-Batch Optimal Control for Batch Process Based on Kernel Principal Component Regression Model
+,,2012,聂晓华,核心刊物,独立光伏LED照明系统主电路设计与实现
+,,2012,聂晓华,核心刊物,递推最小二乘估计在光伏系统MPPT中的应用研究
+,,2012,聂晓华,CSCD核心库,Kalman估计在光伏系统MPPT中的应用研究
+,,2012,聂晓华,核心刊物,基于EKF估计的光伏MPPT控制策略
+,,2012,魏少峰,省级及省级以上刊物,模糊数学理论在计算机图像处理中的应用
+,,2012,魏少峰,省级及省级以上刊物,对计算机数据库备份与恢复技术的研究
+,,2012,魏少峰,省级及省级以上刊物,对计算机图像处理技术应用研究
+,,2012,李春泉,CSCD核心库,基于ARM的码激励线性预测编解码系统的实现
+,,2012,彭杰,国际会议文集,Cyber security of Industrial Control
+,,2012,彭杰,国际会议文集,Retrofit For the Experimental System based on FF HES/H1
+,,2012,彭杰,核心刊物,一种管线泄漏实验平台的改进设计
+,,2012,王时胜,省级及省级以上刊物,基于FPGA的数据遗弃式双口RAM的设计及其在数据采样中的应用
+,,2012,王时胜,三大检索期刊源,A Line-selection Method of Data Fusion Based on Neural Network
+,,2012,王时胜,核心刊物,测量电感与高频电压方法的研究
+,,2012,张烨,国际会议文集,Using Gaussian Potential Function for Underdeter-mined Blind Sources Separation Based on DUET
+,EI,2012,张烨,国际会议文集,A Cauchy Potential Function Method for Underdetermined Blind Source Separation
+,,2012,罗斌,三大检索期刊源,A Novel Split Cylindrical Dielectric Resonator Antenna For Ultra Wideband Application
+,,2012,邱桃荣,三大检索期刊源,A Rough Set Model for Incomplete and Multi-Valued Information Systems
+,,2012,邱桃荣,国际会议文集,An improved rough K-means algorithm with weighted distance measure
+,,2012,邱桃荣,三大检索期刊源,The Difference Degree of Condition Attributes and Its Application in the Reduction of Attributes
+,,2012,朱启标,省级及省级以上刊物,基于Delphi的DICOM图像显示系统的设计与实现
+,,2012,邱桃荣,核心刊物,非分类关系学习的粒计算模型研究
+,,2012,曾雪强,国外刊物,Redundant Gene Elimination by Shuffled Frog Leaping Optimization
+,,2012,廖晓锋,省级及省级以上刊物,一种领域专家文献自动收集系统
+,,2012,李文2,三大检索期刊源,Heterogeneous Ensemble Learning for Chinese Sentiment Classification
+,,2012,李文2,三大检索期刊源,Fine-Grained Sentiment Classification based on HowNet
+,,2012,李文2,三大检索期刊源,Multi-label Text Classification based on Minimum Decision Cost
+,,2012,谢军,核心刊物,项目驱动法在计算机教学中的运用
+,,2012,虞贵财,三大检索期刊源,Detection sensitivity based on energy detection in cognitive radio systems
+,,2012,虞贵财,三大检索期刊源,Research on dynamic threshold based energy detection in cognitive radio systems
+,,2012,虞贵财,三大检索期刊源,A novel energy detection scheme based on dynamic threshold in cognitive radio systems
+,,2012,虞贵财,三大检索期刊源,An improved energy detection algorithm in cognitive radio systems
+,,2012,虞贵财,三大检索期刊源,A novel energy detection scheme based on dynamic threshold in cognitive radio systems
+,,2012,虞贵财,三大检索期刊源,A novel spectrum detection scheme based on dynamic threshold in cognitive radio systems
+,,2012,李姗,国际会议文集,Fusion Assessment Methods For Bridge Health State Based On Two Step Neural Networks Ensemble
+,,2012,李姗,核心刊物,人工外耳支架的三维重构和个性化设计
+,,2012,刘春年,国际会议文集,A study on disaster management information service consortia based on SOA
+,,2012,沈玖玖,国际会议文集,Research on factors influencing individual decision:a structural equation model appproach
+,,2012,曾伟忠,CSSCI,数字时代目录学的历史使命和未来发展的思考
+,,2012,何俊（信）,三大检索期刊源,一种基于LDAO的唇读特征提取算法
+,,2012,何俊（信）,国际会议文集,唇读技术中的LDAO算法研究
+,,2012,沈玖玖,核心刊物,江西省企业创新信息服务发展对策
+,,2012,李致勋,省级及省级以上刊物,张量投票在MR脑图像边界提取中的应用
+,,2012,李致勋,省级及省级以上刊物,基于张量投票的脑CT图像去噪算法研究
+,,2012,公慧玲,省级及省级以上刊物,基于ADO的竞赛系统的设计与研究
+,,2012,公慧玲,省级及省级以上刊物,SAP系统架构浅析
+,,2012,戴伟华,三大检索期刊源,负荷增长方式不确定条件下有功出力方式优化
+,,2012,王玉皞,三大检索期刊源,Characterization of Packet-level Measurements for Vehicular Wireless Networks
+,,2012,王玉皞,三大检索期刊源,Extended Sum-of-Sinusoids-Based Simulation for Rician Fading Channels in Vehicular Ad Hoc Networks
+,,2012,王玉皞,三大检索期刊源,An Experimental Vehicular Wireless System and Link Performance Analysis
+,,2012,刘春年,CSSCI,基于EA的区域农业灾害应急信息资源规划研究——以鄱阳湖生态经济区为例
+,,2012,刘春年,CSSCI,突发灾害情况下虚拟社区信息沟通与交流研究
+,,2012,刘春年,CSSCI,信息生态视域下教育信息资源共享的多维视角
+,,2012,刘春年,CSSCI,灾害应急联动管理中的信息共享和协调研究:基于不同视角的思考
+,,2012,刘春年,核心刊物,基于EA架构的公共图书馆文化信息资源规划研究
+,,2012,刘春年,三大检索期刊源,Construction of the agricultural emergency logistics information service system based on the enterprise architecture
+,,2012,刘春年,三大检索期刊源,Optimization research on distribution of emergency supplies and minimize save points based on grey correlation analysis
+,,2012,刘春年,三大检索期刊源,Knowledge representation in the field of natural disaster emergency logistics based on ontology
+,,2012,刘春年,三大检索期刊源,Research on construction and application of agricultural risk knowledge based on ontology
+,,2012,刘春年,"三大检索期刊源,三大检索期刊源",A Study on Agriculture Moral Risk Model Based on Asymmetric Information Gaming
+,,2012,刘春年,三大检索期刊源,Rural Information Poverty and Farmers’ Information Right—Take China’s Western Rural Areas for Example
+,,2012,徐晓芳,CSSCI,微博在图书营销中的运用
+,,2012,刘爱国,三大检索期刊源,计及负荷动态特性的在线电压稳定性研究
+,EI光盘版,2013,龚花萍,,Research on the Campus Card's Network Depositing Platform Construction - As Nanchang University for Example
+,,2013,江耘,三大检索期刊源（EI期刊）,Research on Information Self-organization Complex Computer Simulation of Network Affairs
+,,2013,江耘,三大检索期刊源（EI期刊）,Modeling and Formal Analysis of Communication protocols based on Game
+,,2013,江耘,三大检索论文（会议论文）,Group Buy Website Studies Based on Factor Analysis and Closter Analysis
+,,2013,廖晓锋,"北大中文核心,CSCD",基于协方差的高斯混合模型参数学习算法
+,,2013,廖晓锋,省级,一种基于Web访问模型的网络隐蔽通道
+,,2013,屈文建,CSSCI核心,网络学术论坛信息可信度的灰度分析
+,,2013,曾伟忠,北大中文核心,美国版权法图书馆复制权研究——第108条解读和启示
+,,2013,曾伟忠,国内权威,美国国家档案馆网站档案目录检索工具探微
+,,2013,龚花萍、,CSSCI；核心,基于行为模式的大学生搜商塑造与培养
+,,2013,龚花萍、,CSSCI；核心,文物信息资源元数据模型、实施标准与架构方式研究
+,,2013,龚花萍、,北大中文核心,文物信息资源建设现状、问题与对策分析
+,ISSHP,2013,龚花萍,北大中文核心,关于政府信息资源规划的研究和思考
+,,2013,程结晶,权威,云技术中数字档案资源共享与管理体系的构建
+,,2013,程结晶,国际学术会议论文集 核心,Study on Digital Resources Sharing and Management System Integration in Cloud Environment
+,,2013,程结晶,北大中文核心,基于服务质量差距模型的数字图书馆服务质量分析
+,,2013,刘春年,CSSCI扩展版,自组织理论视野下文物的分类与编码研究
+,,2013,刘春年,正式出版的国际会议论文集,Diversified ways of integrated dissemination for agricultural disaster information: the case of flood disasters in the middle and lower Yangtze Valley Plain
+,,2013,刘春年,正式出版的国际会议论文集,EA and ontology to use - a study of disaster emergency information resource catalog system (DEIRCS) for resources integration
+,,2013,刘春年,正式出版的国际会议论文集,The Metrological Study of Disaster Education Status based on the Co-Word Analysis in China 
+,,2013,刘春年,正式出版的国际会议论文集,Quantitative Analysis on Digital Disaster Education in Central China 
+,,2013,刘春年,正式出版的国际会议论文集,Information Lifecycle-Oriented Process Reorganization and Optimization for Disaster Emergency: the Case of Hail 
+,EI光盘版,2013,曾群,CSSCI源刊,泛在网络环境下高校知识共享平台设计
+,,2013,曾群,CSSCI源刊,泛在网络环境下高校知识共享平台资源建设研究
+,,2013,洪弘,三大检索论文,Binary Adaptive Ant Colony Optimization in Reactive Power Optimization
+,,2013,洪弘,省级,专利权与技术标准结合：反垄断司法审查视角
+,,2013,刘明萍,三大检索期刊源,Effects of Higher-Order Relativistic Nonlinearity and Wakefield During a Moderately Intense Laser Pulse Propagation in a Plasma Channel
+,,2013,刘明萍,三大检索期刊源,"Electron acceleration during the mode transition from laser wakefeld to plasma wakefeld acceleration with a dense-Plasma wall
+"
+,,2013,刘明萍,三大检索期刊源,Generation of double quasimonoenergetic electron bunches in the wakefield during the laser-plasma interaction
+,,2013,刘明萍,北大中文核心,在激光尾场加速中电子密度和初始动量对其自注入及加速的影响
+,,2013,何俊,北大中文核心,一种基于LDAO的唇读特征提取算法
+,,2013,魏少峰,省级,基于安全计算机平台的无线闭塞中心仿真研究刍议
+,,2013,魏少峰,省级,信息传输中计算机证据安全保护措施经验谈
+,,2013,魏少峰,省级,Strand空间中基于安全密钥概念的证明思路之我见
+,EI,2013,曾雪强,国际会议,Dimension Reduction for p53 Protein Recognition by using Incremental Partial Least Squares
+,,2013,曾雪强,EI源期刊,Covariance Free Incremental Principal Component Analysis with Exact Mean Update
+,,2013,李荣鑫,三大检索期刊源,Study on Power-Aware Routing Mechanism in MANET
+,,2013,李文,三大检索期刊源,Blocking distribution based hierarchical reconstruction for text categorization
+,,2013,柴凌,三大检索期刊源,Blocking distribution based hierarchical reconstruction for text categorization
+,,2013,陶俊才,国际会议,research and desingn of embedded multi-function CNC platform based on ARM
+,,2013,柴凌,三大检索期刊源,Adaptive image de-noising algorithm in intersecting cortical model
+,,2013,周兴斌,北大中文核心,Aop对软件复杂度的影响分析及应用
+,,2013,夏永洪,三大检索期刊源,混合励磁永磁电机齿谐波绕组特性计算与分析
+,,2013,胡从立（学生）; 陈金平（学生）; 徐敏,北大中文核心,基于改进蚁群算法的含分布式电源的配电网重构
+,EI检索,2013,胡凌燕,三大检索期刊源,The teleoperator with wave impedance and environment impedance matched
+,,2013,胡凌燕,北大中文核心,两轮机器人自平衡行走控制系统设计
+,,2013,胡凌燕,三大检索论文,The model for teleoperators in rigid environment and stability analysis of teleoperation system
+,,2013,胡凌燕,,Professional Course Reforms According North American University Teaching
+,,2013,聂晓华,北大中文核心,强跟踪UKF算法在光伏系统MPPT中的应用
+,,2013,聂晓华,北大中文核心,一种应用于电动汽车的异步电动机矢量控制方法
+,,2013,龙伟,CSCD核心,一种高精度分光光度计系统的设计与应用
+,,2013,龙伟,北大中文核心,一种高精度光谱信号采集系统的设计及应用
+,,2013,龙伟,北大中文核心,高精度高可靠步进电机控制系统的设计及应用
+,,2013,魏萍,北大中文核心,基于Buck电路的矩阵式变换器
+,,2013,魏萍,北大中文核心,基于矩阵变换器的异步电机容错控制的研究
+,,2013,万晓凤,,纯电动汽车实时数据采集与显示系统的设计
+,,2013,万晓凤,CSCD核心,动液面远程自动连续测量装置实现
+,,2013,万晓凤,CSCD核心,基于车速反馈的AMT离合器起步接合控制
+,,2013,万晓凤,北大中文核心,基于嵌入式的纯电动汽车CAN总线通信及实现
+,,2013,王时胜,,小波神经网络在配电网故障定位中的应用
+,,2013,李菁,三大检索期刊源,Building recognition using local oriented features
+,,2013,余运俊,CSCD，中文核心,配电网安装新型节能变压器的CDM项目效益研究
+,,2013,余运俊,CSSCI，中文核心,中国光伏发电CDM项目案例分析
+,,2013,余运俊,北大中文核心,基于TSM320F28335的三相并网型光伏逆变器设计
+,SCI、EI源刊,2013,江智军,,S变换在孤岛检测中的应用
+,EI源刊,2013,江智军,,光伏发电系统并网点谐波电压波动特征孤岛检测法
+,EI源刊,2013,王淳,国际权威,"Determination of Power Distribution
+Network Configuration Using Non-Revisiting
+Genetic Algorithm"
+,,2013,王淳,国内权威/CSCD核心,无重访遗传算法及其在输电网络规划中的应用
+,,2013,王淳,CSCD核心,基于生物地理学优化算法的输电网络规划
+,,2013,王淳,CSCD扩展,动态输电网络规划的组合编码遗传算法
+,,2013,王淳,北大中文核心,基于解析优化二分法的配电网分布式电源准入容量计算
+,,2013,王淳,北大中文核心,基于生物地理学优化算法的电力系统无功优化
+,SCI光盘版,2013,杨晓辉,北大中文核心,基于自适应滑膜变结构控制参数不确定永磁同步电机混沌控制
+,SCI光盘版,2013,杨晓辉,EI,Fuzzy sliding-mode control of chaos in permanent magnet synchronous motor
+,,2013,黄伟,三大检索期刊源,A Novel Similarity Learning Method via Relative Comparison for Content-Based Medical Image Retrieval
+,,2013,黄伟,三大检索期刊源,Region-based nasopharyngeal carcinoma lesion segmentation from MRI using clustering- and classification-based methods with learning
+,,2013,黄伟,北大中文核心,基于连续肯德尔相关系数学习相似度函数的图像检索方法
+,,2013,黄伟,北大中文核心,基于稀疏分解和支持向量机的医学影像追踪法
+,,2013,白小明,正式出版的国际会议论文集,"Research on Optimization Algorithm of Network Resources  and Paths Based on Ant Colony
+"
+,,2013,白小明,正式出版的国际会议论文集,"Resarch of MobileTerminal QOS Analysis Model Based on Time And Location
+"
+,,2013,武友新,北大中文核心,基于流程驱动的数据比对的研究与应用
+,,2013,武友新,EI检索,"E-government application adaptation and optimization based on the
+domestic foundational software"
+,,2013,段隆振,CSSCI核心,改进的Apriori算法在高校图书推荐服务中的应用研究
+,,2013,段隆振,CSCD核心,基于柔性思想装配云服务的研究
+,,2013,段隆振,三大检索期刊源,Multi-level association rule mining based on clustering partition
+,,2013,段隆振,三大检索期刊源,Method of design and implementation cloud service
+,,2013,李向军,北大中文核心,基于基数排序及属性约简的雷电预报因子提取方法
+,,2013,梁声灼,北大中文核心,一种改进的1-v-1 SVM多类分类算法
+,,2013,邱桃荣,北大中文核心,基于基数排序及属性约简的雷电预报因子提取方法
+,,2013,邱桃荣,昌大学报,一种基于粗糙集属性重要度和密度聚集的匿名化方法
+,,2013,邱桃荣,CSCD核心,基于哈夫曼树的雷电数据采样算法
+,,2013,邱桃荣,北大中文核心,基于规则格网的雷电信息等值线生成方法
+,,2013,邱桃荣,昌大学报,基于多线程的文件推送系统的设计与实现
+,,2013,曾庆鹏,外文刊物,Using semantic constraints for question answering
+,国内权威期刊,2013,曾庆鹏,外文刊物,Web application integration framework based on OSGi
+,国内权威期刊,2013,曾庆鹏,外文刊物,A SaaS development platform based on cloud computing
+,,2013,徐少平,CSCD核心,基于LBP值对空间统计特征的纹理描述符
+,,2013,徐少平,CSCD核心,一种改进的颜色共生矩阵纹理描述符
+,,2013,徐少平,北大中文核心,3次Hermite曲线逼近Conic曲线段有关性质
+,,2013,徐少平,CSCD核心,基于稠密局部自相似特征流的图像配准算法
+,,2013,徐少平,CSCD核心,基于区域最大相似度的快速图像分割算法
+,,2013,徐少平,三大检索期刊源,A Cluster Number Adaptive Fuzzy c-means Algorithm for Image Segmentation
+,,2013,唐祎玲,省级,《计算机导论》实验教学的改革与探索
+,,2013,唐祎玲,省级,基于兴趣培养的计算机导论课程教学改革研究
+,,2013,刘萍,外文期刊,The Study on the Model of Thunderstorm Forecast Based on RS-SVM
+,,2013,叶发茂,国际会议,Multiscale Edge Detection Based on Particle Filter
+,,2013,李安,北大中文核心,通信工程国家级特色专业虚拟实验室建设与实践
+,,2013,周南润,北大中文核心,通信工程国家级特色专业虚拟实验室建设与实践
+,,2013,王玉皞,北大中文核心,通信工程国家级特色专业虚拟实验室建设与实践
+,EI源刊,2013,王平,北大中文核心,基于DM642的多姿态人脸检测实时系统
+,,2013,陈荣伶,北大中文核心,基于标签分组的RFID防碰撞算法
+,,2013,罗斌,三大检索论文,磁谐振耦合式单中继线圈无线功率接力传输系统的建模与分析
+,EI,2013,段荣行,三大检索期刊源,Fault diagnosis strategy for train-ground communication system of urban mass transit using reliability analysis
+,EI,2013,段荣行,三大检索期刊源,A Novel Framework for Real-Time Fault Diagnosis Based on Dynamic Fault Tree Analysis
+,EI,2013,魏庆国,三大检索论文,Classification of EEG Signals using Filter Bank Common Spatial Pattern Based on Fisher and Laplacian Criteria
+,EI,2013,魏庆国,三大检索论文,Cultural-based multi-objective particle swarm optimization for EEG channel reduction in multi-class brain-computer interfaces
+,EI,2013,魏庆国,三大检索论文,Feature Extraction by Combining Wavelet Packet Transform and Common Spatial Pattern in Brain-Computer Interfaces
+,,2013,魏庆国,三大检索论文,Implementation of an Intelligent Telephone Dialing System Based on the Control of Steady-State Visual Evoked Potentials
+,,2013,魏庆国,三大检索论文,Regularized Common Spatial Pattern with Incomplete Generic Learning for EEG Classification in Small Sample Setting
+,,2013,赵庆敏,北大中文核心,基于第二代曲波的人脸识别算法研究
+,,2013,赵庆敏,北大中文核心,Curvelet变换在人脸识别中的应用研究
+,,2013,赵庆敏,三大检索期刊源,基于避免拥塞的优先级退避算法
+,,2013,吴毅强,CSCD扩展,一种共面波导馈电的超宽频天线研究
+,,2013,吴毅强,CSCD扩展,一种共面波导馈电的超宽频天线研究(英文)
+,,2013,吴毅强,CSCD扩展,一种新型的超宽频天线的设计
+,SCIE,2013,吴毅强,CSCD扩展,宽频带技术天线的设计与研究
+,,2013,吴毅强,北大中文核心,一种新型的超宽带天线的研究
+,,2013,刘晔,三大检索期刊源,Single-channel color image encryption algorithm based on fractional Hartley transform and vector operation
+,,2013,邓娟,CSCD核心,测量分辨率对不同EIT算法影响的仿真研究
+,,2013,邓娟,CSCD核心,三维电阻抗断层成像仿真研究及图像重建质量评价
+,,2013,廖庆洪,CSCD核心,运动原子和不同初始场相互作用系统中熵和纠缠的研究
+,,2013,廖庆洪,CSCD扩展版,三纠缠原子与双模腔场相互作用系统的纠缠演化特性
+,,2013,廖庆洪,CSCD核心,克尔介质中k光子Jaynes-Cummings模型的量子特性研究
+,,2013,廖庆洪,三大检索期刊源,The entanglement dynamics of two atoms in a double two-photon Jaynes–Cummings model
+,EI收录,2013,廖庆洪,三大检索期刊源,Entropy squeezing of atom and the generation of Schr?dinger-cat states in the three-photon Jaynes-Cummings model
+,,2013,廖庆洪,三大检索期刊源,Entanglement between charge and flux qubits
+,,2013,龙承志,三大检索期刊源,Improved routing protocol for large-scale heterogeneous wireless sensor networks
+,,2013,张烨,,Human Mouth-Type Recognition Via Learned Dictionary and Sparse Representation
+,,2013,张烨,三大检索论文,Subset Pursuit for Analysis Dictionary Learning
+,,2013,张烨,三大检索论文,K-plane clustering algorithm for analysis dictionary learning
+,,2013,周辉林,CSCD核心,基于SVM的高速公路路基病害自动检测算法
+,,2013,周辉林,三大检索期刊源,GPR evaluation of the Damaoshan highway tunnel: A case study
+,,2013,周辉林,三大检索期刊源,Joint Wall Reflection Suppression and Parameters Estimation for MIMO TWR Imaging
+,,2013,喻嵘,CSCD核心,用于水质硝酸盐浓度在线检测的电磁传感器设计
+,,2013,"刘且根(Liu, Qiegen)",三大检索期刊源,Augmented lagrangian-based sparse representation method with dictionary updating for image deblurring
+,,2013,"刘且根(Liu, Qiegen)",三大检索期刊源,Highly Undersampled magnetic resonance image reconstruction using two-level Bregman method with dictionary updating
+,北大中文核心,2013,刘且根,三大检索期刊源,Adaptive dictionary learning in sparse gradient domain for image recovery
+,北大中文核心,2013,徐晓玲,SCI,P2X7 inhibition in stellate ganglia prevents the increased sympathoexcitatory reflex viasensory-sympathetic coupling induced by myocardial ischemicinjury
+,北大中文核心,2013,方安安,CSCD核心,新型Smith预估控制在ATP伺服系统中的应用
+,中文核心,2013,方安安,CSCD核心,新型二自由度 Smith预估控制在 ATP 伺服系统中的应用
+,中文核心,2013,方安安,CSCD核心,二自由度Smith预估控制在伺服系统中的应用
+,,2013,方安安,CSCD核心,一种改进的高速可见光通信系统信道均衡算法
+,,2013,方安安,CSCD核心,无线粮情远程监测系统
+,,2013,周南润,三大检索期刊源,Continuous Variable Quantum Secret Sharing via Quantum Teleportation
+,,2013,周南润,三大检索期刊源,Image encryption scheme based on fractional Mellin transform and phase retrieval technique in fractional Fourier domain
+,,2013,周南润,三大检索期刊源,Secure communication via artificial noise from relay in amplify-and-forward two-way relay networks
+,,2013,周南润,三大检索期刊源,Secure Quantum Dialogue Protocol Based on W States Without Information Leakage
+,EI期刊,2013,周南润,三大检索期刊源,Three-Party Stop-Wait Quantum Communication Protocol for Data Link Layer Based on GHZ State
+,,2013,周南润,三大检索期刊源,Color image encryption algorithm combining compressive sensing with arnold transform
+,,2013,周南润,三大检索论文,Image encryption scheme based on fractional Mellin transform and phase retrieval technique in fractional Fourier domain
+,,2013,周南润,三大检索期刊源,Relay selection for physical layer security in decode-and-forward two-way relay networks
+,,2013,周南润,三大检索期刊源,Flexible multiple-image encryption algorithm based on log-polar transform and double random phase encoding technique
+,,2013,周南润,三大检索期刊源,Novel Quantum Virtual Private Network Scheme for PON via Quantum Secure Direct Communication
+,,2013,龚黎华,三大检索期刊源,Novel Quantum Virtual Private Network Scheme for PON via Quantum Secure Direct Communication
+,,2013,龚黎华,三大检索期刊源,Flexible multiple-image encryption algorithm based on log-polar transform and double random phase encoding technique
+,北大中文核心,2013,龚黎华,三大检索期刊源,Properties of fractional Mellin transform
+,,2013,赖青梧,三大检索期刊源,Secure communication via artificial noise from relay in amplify-and-forward two-way relay networks
+,,2013,张文全,CSCD核心,基于随机分数梅林变换的非线性图像加密算法
+,,2013,王平,北大中文核心,基于DM642的多姿态人脸检测实时系统
+,,2013,王平,EI期刊,A Hybrid Approach for Separation of the Strong Adhesion Macrophages
+,EI期刊,2013,吴建华,三大检索期刊源,Single-Channel Color Image Encryption Using the Reality-Preserving Fractional Discrete Cosine Transform in YCbCr Space
+,EI期刊,2013,吴建华,三大检索期刊源,Image Encryption Based on Reality-preserving Fractional Discrete Cosine Transform and Chaos-based Generating Sequence
+,SCIE期刊,2013,吴建华,三大检索论文,A Cauchy potential function method for underdetermined blind source separation
+,EI期刊,2013,吴建华,三大检索论文,"Four-image encryption method based on spectrum truncation, chaos and the MODFrFT"
+,EI期刊,2013,肖霖,三大检索期刊源,Research on achievable rate of interference channel with cooperative transimission
+, 北大中文核心,2013,杨鼎成,三大检索期刊源,A multi-cell coordinated scheduling algorithm based on delta-CQI for CoMP network systems
+,SCIE期刊,2013,杨鼎成,三大检索期刊源,MIMO双向中继网络的预编码设计与功控策略
+,EI期刊,2013,杨鼎成,CSCD核心,多小区MU-MIMO系统中基于泄露干扰的分布式块对角化预编码设计
+,SCI期刊,2013,杨鼎成,三大检索期刊源,Joint power control and relay selection scheme for cognitive two-way relay networks
+,EI期刊,2013,王玉皞,三大检索期刊源,A multi-bit identification protocol for RFID tag reading
+,SCI期刊,2013,王玉皞,三大检索期刊源,A novel feature-level data fusion method for indoor autonomous localization
+,ISSN期刊,2013,王玉皞,三大检索期刊源,A novel sonar ranging method using discrete tent-map chaotic phase modulated signal
+,EI期刊,2013,王玉皞,三大检索期刊源,A segment collision inversion protocol for RFID tag reading
+,EI期刊,2013,王玉皞,三大检索期刊源,"Cluster-based Routing Performance Optimization Constraint of Energy, Delay and Connectivity Metrics in Wireless Sensor Network"
+,,2013,王玉皞,三大检索期刊源,The Inversion-based Coverage Prediction Tool for Cellular Networks-Real City Experiments
+,,2013,王玉皞,三大检索期刊源,A Hybrid MAC Protocol based on Incompletely Cooperative Game in Vehicular Ad Hoc Networks
+,,2013,蒋品,省级,高校辅导员介入大学生人文素质教育新途径研究
+,EI,2013,舒芬,省级,大学生思想政治教育工作测评体系研究
+,EI,2013,涂荣军,中文核心,数控系统族的可复用参考体系结构建模
+,EI,2013,伍军云,外文期刊,An improved algorithm of concept extraction in ontology learning
+,,2013,伍军云,外文期刊,Improvement of method of concept extraction based on bootstrapping in ontology learning
+,中文核心,2013,伍军云,外文期刊,Research on ontology construction automatically in the law field
+,EI期刊源,2013,伍军云,外文期刊,research of image retrieval algorithm based on importtant wavelet coefficient and color clustering table
+,期刊源,2014,柴凌,文章,不均匀节点分布下WSN均衡算法仿真
+,中文核心,2014,饶泓,期刊文章,Evaluation index system and method for lifting appliances safety information and their 
+,SCI源期刊,2014,李姗,会议文章,Fuzzy comprehensive evaluation method of experimental teaching quality based on AHP
+,SCI源期刊,2014,周兴斌,文章,牛顿插值与分块算法对自适应支持度的研究
+,期刊源,2014,曾雪强,文章,Incremental partial least squares analysis of big streaming data
+,EI期刊,2014,曾雪强,文章,Supervised Redundant Feature Detection for Tumor Classification
+,EI期刊,2014,李致勋,文章,A Robust Denoising Algorithm Based on Tensor Voting for Brain CT Images
+,CSCD,2014,陈炼,文章,An Attribute Reduction Algorithm Based on Rough Set Theory and an Improved Genetic Algorithm
+,中文核心,2014,陈炼,文章,An Improved Attribute Reduction Algorithm and Its Application in Agriculture
+,中文核心,2014,刘明萍,文章,强激光脉冲在部分离化等离子体中的传播特性
+,中文核心,2014,刘明萍,文章,自注入电子束的加速及其对激光尾场的影响
+,CSCDE,2014,涂志军,文章,自注入电子束的加速及其对激光尾场的影响
+,CSCD,2014,曹晔,文章,自注入电子束的加速及其对激光尾场的影响
+,CSCDE,2014,万晓凤,文章,基于滑模变结构控制的级联式双向DC/DC变换器
+,CSCDE,2014,万晓凤,文章,基于改进蚁群算法的机器人路径规划研究
+,中文核心,2014,万晓凤,文章,基于多传感器数据融合的四旋翼飞行器的姿态解算
+,CSCDE,2014,万晓凤,文章,光伏水泵系统研究进展
+,中文核心,2014,万晓凤,文章,基于Android智能手机平台的AMT监测系统的设计
+,中文核心,2014,万晓凤,文章,光伏电池工程数学模型的比较研究
+,中文核心,2014,黄玉水,文章,三相光伏并网与有源滤波的统一控制仿真研究
+,中文核心,2014,黄玉水,文章,电磁导航式智能车的设计与实现
+,期刊源,2014,黄玉水,文章,一种改进的低压微电网逆变器控制技术的研究
+,期刊源,2014年3期,王俐,文章,基于缺陷特征的三角形网孔模型自动修复算法
+,CSCD,2014,胡凌燕,文章,FORCE FEEDBACK AND CONTROL FOR WAVE-VARIABLE TELEOPERATION SYSTEMS WITH TIME DELAYS
+,中文核心,2014,胡凌燕,文章,Professional Course Reforms According North American University Teaching
+,CSCD,2014,龙伟,文章,HHT和神经网络结合的血细胞识别算法
+,CSCD,2014,龙伟,文章,专家系统在汽车厂压力机故障诊断中的应用
+,CSCD,2014,龙伟,文章,血细胞特性曲线拟合方法的研究
+,CSCD,2014,龙伟,文章,基于概念格的关联规则在排产管理的应用
+,中文核心,2014,龙伟,文章,一种高灵敏度液面探测系统的设计及其临床应用
+,中文核心,2014,龙伟,文章,新型液面探测系统的设计与应用
+,中文核心,2014,王时胜,文章,基于DSP和ARM的配电网故障选线系统设计
+,CSCD,2014,王时胜,文章,一种谐振接地系统电弧高阻接地故障选线新方法及仿真
+,CSCD,2014,王时胜,学报文章,基于概率神经网络的配电网接地故障选线方法
+,中文核心,2014,武和雷,文章,基于MNN改进粒子滤波的指纹库定位算法研究
+,中文核心,2014,郭杭,文章,基于MNN改进粒子滤波的指纹库定位算法研究
+,中文核心,2014,余运俊,文章,电动汽车电池荷电状态估计研究综述
+,中文核心,2014,余运俊,学报文章,一种光伏发电组合式升压DC-DC变换电路研究
+,EI期刊,2014,余运俊,文章,三相光伏逆变器并网时故障状态仿真分析
+,EI期刊,2014,余运俊,文章,光伏微网主动式孤岛检测方法综述
+,中文核心,2014,余运俊,文章,A New Type of Hybrid Learning Algorithm for Three-layered Feed-forward Neural Networks
+,EI期刊源,2014,余运俊,文章,A photovoltaic soft switching boost circuit
+,EI期刊源,2014,余运俊,文章,电导增量法光伏发电MPPT研究综述
+,期刊源,2014,余运俊,文章,An autonomous decision making algorithm applied for the evaluation of power quality
+,期刊源,2014,余运俊,文章,Short Short-Term photovoltaic system power forecasting based on  ECSVM optimized by GA 
+,EI会议,2014,李菁,文章,Building recognition in urban environments: A survey of state-of-the-art and future challenges
+,中文核心,2014,李菁,文章,Classifying Normal and Abnormal Status Based on Video Recordings of Epileptic Patients
+,中文核心,2014,李菁,文章,A Human-oriented Mutual Assistive Framework Using Collaborative Filtering Towards Disasters
+,中文核心,2014,张忠会,文章,基于设备运行风险等级的检修策略研究
+,中文核心,2014,张忠会,文章,基于多因素元件停运模型的电网失负荷计算
+,中文核心,2014,张忠会,文章,基于风险理论的电压薄弱节点研究
+,中文核心,2014,张忠会,文章,计及光伏出力随机性的电网运行风险评估
+,中文核心,2014,张忠会,文章,模态分析技术在系统薄弱环节分析中的应用
+,中文核心,2014,张忠会,文章,基于风险理论的电力系统脆弱线路辨识
+,中文核心,2014,张忠会,文章,计及风光系统出力随机性的电压风险评估
+,中文核心,2014,张忠会,文章,基于风险评估的电力变压器检修策略研究
+,中文核心,2014,徐敏,学报文章,"基于规则推理的继电保护动作行为评价的新方法研究
+"
+,中文核心,2014,徐敏,文章,"电力数据的注释式持久化技术及其重构
+"
+,CSCD,2014,徐敏,文章,权值法冲突解决策略的研究及其在保护动作行为分析中的应用
+,中文核心,2014,徐敏,文章,基于状态反馈精确线性化的汽门调节
+,期刊源,2014,杨胡萍,文章,碳排放约束下考虑静态电压稳定的发电权交易优化
+,国内权威刊物论文,2014,杨胡萍,文章,基于C#的继电保护整定系统关键技术研究
+,CSCD,2014,杨胡萍,会议文章,Research of "foreign electricity to enter jiangxi" ensure electricity supply
+,中文核心,2014,王淳,文章,采用最优模糊C均值聚类和改进化学反应算法的配电网络动态重构
+,中文核心,2014,王淳,文章,基于概率统计的含间歇性分布式发电的配电网无功优化
+,中文核心,2014,王淳,文章,基于含衰老和竞争机制的粒子群算法的配电网重构
+,国内权威核心刊物,2014,黄劭刚,文章,基于DSP的电机转速MRAS矢量控制系统的设计
+,中文核心,2014,黄劭刚,文章,内置式永磁电动机的饱和参数与矢量控制分析
+,中文核心,2014,夏永洪,文章,齿谐波绕组电流对电枢绕组空载电压波形的影响
+,EI检索源刊（还没检索）CSCD核心 中文核心,2014,聂晓华,文章,非线性UKF估计在光伏MPPT中应用研究
+,中文核心,2014,聂晓华,文章,龙门刨床双闭环直流控制系统仿真研究
+,中文核心,2014,聂晓华,文章,局部阴影下光伏阵列全局最大功率点跟踪控制方法综述
+,核心,2014,杨晓辉,文章,基于滑模变结构永磁同步电机混沌跟踪控制
+,期刊源,2014,魏萍,论文,基于矩阵变换器驱动的PMSM容错补救措施
+,期刊源,2014,魏萍,论文,基于有限元法的低成本空调压缩机的设计研究
+,中文核心,2014,熊剑,文章,A two-position SINS initial alignment method based on gyro information
+,CSCD,2014,熊剑,学报论文,GNSS/INS/VKM Vehicle Integrated Navigation System
+,,2014,熊剑,文章,四轮车辆导航中的惯性/运动学模型组合方法
+,SCIE,2014,李鸣；李赣平,文章,核独立元分析的非线性多元回归方法研究
+,期刊源,2014,李鸣等,文章,Research On the Simultaneous Desulfurization and Denitrification of fumes by Combining Ozone Oxidation and the Double Alkali Method
+,CSCD,2014,廖庆洪,文章,Entanglement dynamics and quasiprobability distribution for the degenerate Raman process
+,CSCD,2014,廖庆洪,文章,Entanglement dynamics and quasiprobability distribution for the degenerate Raman process
+,EI期刊,2014,廖庆洪,文章,通过量子噪声信道之后Werner态的纠缠特性研究
+,SCI光盘版（JCR 2区）,2014,陶凌,文章,基于希尔伯特-黄变换的白细胞信号分析
+,期刊源,2014,陶凌,文章,Blood Cell Signal Classification via? Hilbert-Huang Transform Combined with Information Entropy
+,中文核心,2014,鄢秋荣,文章,Multi-bit quantum random number generation by measuring positions of arrival photons
+,中文核心,2014,李迟生,学报论文,A Novel Symbol Rate Estimation Algorithm for Phase Modulating Signals in Wireless Communications
+,中文核心,2014,李迟生,文章,基于同步头的短波突发波形初始相位估计研究
+,中文核心,2014,李迟生,文章,基于PN序列的短波3G-ALE信号识别研究
+,EI期刊,2014,李迟生,文章,非整数倍采样情况下的符号定时同步研究
+,中文核心,2014,李迟生,文章,一种适用于正交振幅调制（QAM）信号的符号定时同步算法
+,中文核心,2014,刘晔,文章,Multiple-image Encryption Algorithm Based on Discrete Quaternion Fourier Transform and Chaos
+,中文核心,2014,刘晔,文章,基于Android的嵌入式加密视频监控系统研究应用
+,中文核心,2014,吴毅强,文章,具有带阻特性的新型超宽带天线研究
+,EI期刊 已收录,2014,吴毅强,文章,具有双阻带特性的新型超宽带天线研究
+,EI期刊 已收录,2014,吴毅强,文章,一种新型的具有带阻特性的超宽带天线
+,SCIE,2014,洪向共,文章,Based on improved CAN PKI trust model
+,SCIE,2014,洪向共,文章,Roberts edge detection algorithm based on GPU
+,EI期刊,2014,段荣行,文章,DIAGNOSIS STRATEGY FOR MICRO-COMPUTER CONTROLLED STRAIGHT ELECTRO-PNEUMATIC BRAKING SYSTEM USING FUZZY SET AND DYNAMIC FAULT TREE
+,SCIE,2014,段荣行,文章,Reliability Evaluation of Data Communication System Based on Dynamic Fault Tree under Epistemic Uncertainty
+,期刊源,2014,段荣行,文章,A novel diagnosis strategy for braking system of urban rail transit based on fuzzy set and dynamic fault tree
+,期刊源,2014,吴建华,文章,Triple color images encryption algorithm based on scrambling and the reality-preserving fractional discrete cosine transform
+,期刊源,2014,万国金,会议文章,Joint optimization of PAPR and ICI for the OFDM system based on the fractional fourier transform
+,SCI源期刊,2014,万国金,期刊文章,Online digital blind non-linear post-compensator of time-varying channel and broadband rf front-end
+,中文核心,2014,陈利民,期刊文章,Online digital blind non-linear post-compensator of time-varying channel and broadband rf front-end
+,SCIE,2014,罗斌,文章,Flexible Design Method for Multi-Repeater Wireless Power Transfer System Based on Coupled Resonator Bandpass Filter Model
+,SCIE,2014,罗斌,文章,双负载无线充电系统中的交叉耦合及补偿方法
+,EI会议,2014,张烨,文章,An Analysis Dictionary Learning Algorithm under a Noisy Data Model with Orthogonality Constraint
+,EI会议,2014,张烨,文章,Audio-Visual Underdetermined Blind Source Separation Algorithm Based on Gaussian Potential Function
+,EI源刊,2014,张烨,会议论文,An analysis dictionary learning algorithm based on recursive least square
+,EI期刊,2014,张烨,会议论文,An online adaptive algorithm for underdetermined blind sources separation
+,EI期刊,2014,张烨,文章,A Recursive Least Squares Algorithm for Analysis Dictionary Learning
+,EI期刊,2014,龙承志,文章,Improved LEACH multi-hop algorithm based on residual energy and region distribution
+,SCI光盘版（JCR 2区）,2014,龙承志,文章,An improved LEACH multi-hop routing protocol based on Genetic Algorithm for heterogeneous wireless sensor networks
+,中文核心,2014,龙承志,文章,An improved LEACH multi-hop routing protocol based on intelligent ant colony algorithm for wireless sensor networks
+,CSCD,2014,鄢秋荣,文章,Multi-bit quantum random number generation by measuring positions of arrival photons
+,EI源刊,2014,赵庆敏,文章,考虑分级调度思维的传感网络通信优化仿真
+,EI源刊,2014,王平,文章,一种强粘连与畸变巨噬细胞图像的分割方法
+,CSCD,2014,王平,文章,A  Macrophages Image Segmentation Algorithm Based on  Adaptive  Region  Merging  and  Watershed.
+,SCIE,2014,王平,文章,A Hybrid Approach for Separation of the Strong Adhesion Macrophages.
+,EI期刊,2014,张文全,文章,基于随机分数梅林变换的光学图像加密
+,EI期刊,2014,刘且根,文章,Adaptive sparse norm and nonlocal total variation methods for image smoothing
+,EI期刊,2014,魏庆国,文章,Design and implementation of a mental telephone system based on steady-state visual evoked potential
+,EI会议,2014,魏庆国,文章,Kernel Based CSP Algorithm for Classifying Multi-class EEG Data by Combining K-means Clustering and Nystrom Approximation
+,EI会议,2014,魏庆国,文章,Channel extension uniting information theoretic feature extraction based multiclass common spatial pattern used in BCI
+,中文核心,2014,魏庆国,文章,Optimal Frequency Band Selection Based on Filter Banks and Wavelet Packet Decomposition in Multi-class Brain-Computer Interfaces
+,期刊源,2014,魏庆国,文章,Channel Reduction by Cultural-based Multi- Objective Particle Swarm Optimization Based on Filter Bank in Brain-Computer Interfaces 
+,期刊源,2014,魏庆国,文章,基于时间段和频带联合选择的多类运动想象脑电数据分类
+,期刊源,2014,周辉林,文章,Subsurface cylindrical object location and material inversion from GPR data-based online SVR
+,期刊源,2014,周南润,文章,Secrecy Rate of Two-Hop AF Relaying Networks with an Untrusted Relay
+,期刊源,2014,周南润,文章,Three-Party Quantum Network Communication Protocols Based on Quantum Teleportation
+,期刊源,2014,周南润,文章,Three-party remote state preparation schemes based on entanglement
+,期刊源,2014,周南润,文章,Single-Photon Secure Quantum Dialogue Protocol Without Information Leakage
+,期刊源,2014,张烨,文章,Single-Photon Secure Quantum Dialogue Protocol Without Information Leakage
+,期刊源,2014,周南润,文章,Novel hybrid image compression-encryption algorithm based on compressive sensing
+,国内权威刊物论文,2014,周南润,文章,Novel image compression-encryption hybrid algorithm based on key-controlled measurement matrix in compressive sensing
+,期刊源,2014,周南润,文章,Quantum image encryption algorithm based on image correlation decomposition
+,期刊源,2014,龚黎华,文章,集体噪声信道上带身份认证的无信息泄露的量子对话协议
+,期刊源,2014,龚黎华,文章,A continuous variable quantum deterministic key distribution based on two-mode squeezed states
+,CSCD,2014,陈燕彬,文章,Study the coupled-cavity waveguides photonic crystal power splitter
+,中文核心,2014,陈燕彬,文章,Key agreement protocol based on Chebyshev polynomials for wireless sensor network
+,EI期刊,2014,陈燕彬,文章,不同模数对材料热电性能的影响
+,期刊源,2014,陈燕彬,文章,光子晶体共振耦合波分复用器的设计与研究
+,CSCD,2014,冯豫华,文章,Analysis on algorithm and application of cluster in data mining
+,CSCD,2014,"Xu, Shao-Ping",文章,AN UNSUPERVISED COLOR-TEXTURE SEGMENTATION USING TWO-STAGE FUZZY c-MEANS ALGORITHM
+,国际会议,2014,徐少平,文章,信息量加权的梯度显著度图像质量评价
+,国际会议,2014,徐少平,文章,基于噪声估计的自适应开关型中值滤波器
+,期刊源,2014,叶发茂,文章,Automatic Extraction of Power Lines by Particle Filtering From Aerial Images
+,期刊源,2014,叶发茂,文章,Design and Realization of Hadoop Cluster Monitoring System in Jiangxi Telecom
+,中文核心,2014,周明建,文章,Based on 3G mobile ECG monitoring and analysis system design
+,CSSCI(中文核心）,2014,邱桃荣,学报文章,A Community Detecting Algorithm Based on Granular Computing
+,CSSCI(中文核心）,2014,刘萍,文章,基于粗糙集的数据发布多约束匿名保护方法
+,CSSCI(中文核心）,2014,段隆振,文章,数字图书馆联盟中基于情境感知的个性化推荐服务研究
+,CSSCI(中文核心）,2014,段隆振,文章,QR码技术在高校图书馆中的应用调查研究
+,ISTP,2014,段隆振,文章,移动情境感知服务系统研究
+,ISTP,2014,段隆振,文章,国外开放存取的国家层面政策进展评述
+,SCIE,"NOV 10-11, 2012",白小明,文章,Resarch of Mobile Terminal QOS Analysis Model Based on Time And Location
+,SCIE,"NOV 10-11, 2012",白小明,文章,Research on Optimization Algorithm of Network Resources and Paths Based on Ant Colony
+,中文核心,2014,黄伟,文章,Region-Based Nasopharyngeal Carcinoma Lesion Segmentation from MRI Using Clustering- and Classification-Based Methods with Learning
+,EI期刊,2014,黄伟,文章,A Novel Similarity Learning Method via Relative Comparison for Content-Based Medical Image Retrieval
+,SCIE & EI期刊,2014,黄伟,文章,一种基于k-means聚类和半监督学习的医学图像分割算法
+,,2014,李向军,文章,Radix sort and attribute reduction-based lightning forecast factor extraction
+,,2014,刘韬,文章,An Approach to Achieving K-partition for Preserving Privacy by Using Multi-constraint Anonymous Parameter Based on Rough Sets

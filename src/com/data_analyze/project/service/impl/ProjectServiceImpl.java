@@ -2,15 +2,13 @@ package com.data_analyze.project.service.impl;
 
 import com.data_analyze.core.entity.Page;
 import com.data_analyze.project.dao.ProjectMapper;
+import com.data_analyze.project.dao.ProjectSysMapper;
 import com.data_analyze.project.entity.Project;
 import com.data_analyze.project.service.ProjectService;
 import com.data_analyze.teacher.dao.TeacherMapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,11 +24,14 @@ import java.util.List;
  */
 @Service("projectService")
 public class ProjectServiceImpl implements ProjectService {
-//    @Autowired
-//    private TeacherMapper teacherMapper;
+    @Autowired
+    private TeacherMapper teacherMapper;
 
     @Autowired
     private ProjectMapper projectMapper;
+
+    @Autowired
+    private ProjectSysMapper projectSysMapper;
 
     @Override
     public int insert(Project entity) throws Exception {
@@ -44,50 +45,45 @@ public class ProjectServiceImpl implements ProjectService {
 
     @Override
     public void importProject(File excel, String fileType, int year) {
-//        try {
-//            FileInputStream fileInputStream = new FileInputStream(excel);
-//            boolean is03Excel = fileType.equals("xls");
-//            Workbook workbook = is03Excel ? new HSSFWorkbook(fileInputStream) : new XSSFWorkbook(fileInputStream);
-//            Sheet sheet = workbook.getSheetAt(0);
-//            Project project = new Project();
-//            for(int j=1; j<((year==2015)?132:98); ++j){
-//                Row row = sheet.getRow(j);
-//                String name = row.getCell(1).getStringCellValue().trim();
-//                String salary_id = teacherMapper.getSalaryIdFromName(name);
-//                if(salary_id == null){
-//                    continue;
-//                }
-//                System.out.println(name+" salaryId"+salary_id);
-//                for(int i = 0; i<=3; ++i){
-//                    if(row.getCell(i)!=null) {
-//                        row.getCell(i).setCellType(Cell.CELL_TYPE_STRING);
-//                    }
-//                }
-//                project.setSalary_id(salary_id);
-//                project.setName(name);
-//                String budget_in_acc = row.getCell(2).getStringCellValue();
-//                if(budget_in_acc == null || "".equals(budget_in_acc)){
-//                    System.out.println(year + name + "budget_in_all null");
-//                    continue;
-//                }
-//                project.setBudget_in_acc(Float.valueOf(budget_in_acc));
-//                String V_or_H = row.getCell(3).getStringCellValue();
-//                System.out.println("get v_or_h "+V_or_H );
-//                int v_or_h_num = Integer.valueOf(V_or_H);
-//                project.setV_or_H(v_or_h_num==0?Boolean.FALSE:Boolean.TRUE);
-//                System.out.println(project);
-//                if (year == 2015){
-//                    projectMapper.insert2015(project);
-//                } else {
-//                    projectMapper.insert2016(project);
-//                }
-//            }
-//            System.out.println(year + "ok");
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            FileInputStream fileInputStream = new FileInputStream(excel);
+            boolean is03Excel = fileType.equals("xls");
+            Workbook workbook = is03Excel ? new HSSFWorkbook(fileInputStream) : new XSSFWorkbook(fileInputStream);
+            Sheet sheet = workbook.getSheetAt(0);
+            Project project = new Project();
+            DataFormatter formatter = new DataFormatter();
+            for(int j=1; j<sheet.getPhysicalNumberOfRows(); ++j){
+                Row row = sheet.getRow(j);
+                if(row == null) {
+                    break;
+                }
+                Cell cellName = row.getCell(1);
+                Cell cellBugdet = row.getCell(2);
+                Cell cellType = row.getCell(3);
+
+                String name = formatter.formatCellValue(cellName);
+                String budget = formatter.formatCellValue(cellBugdet);
+                String type = formatter.formatCellValue(cellType);
+
+                String salaryId = teacherMapper.getSalaryIdFromName(name);
+                if(salaryId == null) {
+                    continue;
+                }
+
+                project.setSalary_id(salaryId);
+                project.setName(name);
+                project.setType((type==null||"".equals(type))?null:("0".equals(type)?Boolean.FALSE:Boolean.TRUE));
+                project.setBudget_in_acc((budget==null||"".equals(budget))?0:Float.valueOf(budget));
+
+                System.out.println(project);
+                projectSysMapper.insertDynamic(project, "projects"+year);
+            }
+            System.out.println(year + "ok");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

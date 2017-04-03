@@ -2,6 +2,7 @@ package com.data_analyze.paper.service.impl;
 
 import com.data_analyze.core.entity.Page;
 import com.data_analyze.paper.dao.PaperMapper;
+import com.data_analyze.paper.dao.PaperSysMapper;
 import com.data_analyze.paper.entity.Paper;
 import com.data_analyze.paper.service.PaperService;
 import com.data_analyze.teacher.dao.TeacherMapper;
@@ -31,6 +32,9 @@ public class PaperServiceImpl implements PaperService {
 
     @Autowired
     private PaperMapper paperMapper;
+
+    @Autowired
+    private PaperSysMapper paperSysMapper;
 
     @Autowired
     private TeacherMapper teacherMapper;
@@ -83,32 +87,26 @@ public class PaperServiceImpl implements PaperService {
 
                 Row row = sheet.getRow(j);
 
-//                System.out.println(j+" : "+row.getCell(0).getStringCellValue()+":"+row.getCell(1).getStringCellValue()+":"+row.getCell(2).getStringCellValue()+":"+row.getCell(3).getStringCellValue()+":"+row.getCell(4).getStringCellValue()+":"+row.getCell(5).getStringCellValue()+":"+row.getCell(6).getStringCellValue()+":"+row.getCell(7).getStringCellValue());
-                String name = row.getCell(2).getStringCellValue().trim();
-                String salaryId = teacherMapper.getSalaryIdFromName(name);
-                // 可能无法找到salaryId 如果找不到salaryId则跳过
-                if(salaryId == null){
-                    System.out.println("\ncan't find "+name+'\n');
+                String ids_num = row.getCell(1)==null?null:row.getCell(1).getStringCellValue().trim();
+                String name = row.getCell(3)==null?null:row.getCell(3).getStringCellValue().trim();
+                String level = row.getCell(4)==null?null:row.getCell(4).getStringCellValue().trim();
+                String title = row.getCell(5)==null?null:row.getCell(5).getStringCellValue().trim();
+
+                String salary_id = teacherMapper.getSalaryIdFromName(name);
+                if(salary_id == null) {
                     continue;
                 }
-                paper.setSalary_id(salaryId);
-                paper.setIds_num(row.getCell(0).getStringCellValue().trim());
-                paper.setYear(
-                        DateTimeHelper.ordinaryStringToTimestamp(row.getCell(5).getStringCellValue().trim())
-                );
-                paper.setAuthor(name);
-                paper.setLevel(row.getCell(6).getStringCellValue().trim());
-                String gotAge = row.getCell(3).getStringCellValue().trim();
-                System.out.println(gotAge);
-                paper.setTitle(row.getCell(4).getStringCellValue().trim());
-//                System.out.println(paper);
-                if(year == 2015){
-                    paperMapper.insert2015(paper);
-                } else {
-                    paperMapper.insert2016(paper);
-                }
-            }
 
+                paper.setIds_num(ids_num);
+                paper.setYear(DateTimeHelper.ordinaryStringToTimestamp(year+""));
+                paper.setSalary_id(salary_id);
+                paper.setAuthor(name);
+                paper.setLevel(level);
+                paper.setTitle(title);
+                System.out.println(paper);
+                paperSysMapper.insertDynamic(paper, "papers"+year);
+
+            }
             workbook.close();
 
             fileInputStream.close();
