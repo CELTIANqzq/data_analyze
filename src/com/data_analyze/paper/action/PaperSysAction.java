@@ -120,7 +120,7 @@ public class PaperSysAction {
 
         page.setPage(pageIndex);
         page.setKeyWord("%"+keyWord+"%");
-        page.setRows(2);
+        page.setRows(10);
 
         paperSysService.selectPageListDynamic(page,"papers"+tableName);
 

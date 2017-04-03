@@ -51,4 +51,15 @@ public class HomeAction{
         return "forward:/sys/WEB-INF/error.jsp";
     }
 
+    @RequestMapping("/front_home")
+    public String showFrontHome() {
+        return "/WEB-INF/front/index.jsp";
+    }
+
+    @RequestMapping("/work_data_select")
+    public String workDataSelect() {
+        return "/WEB-INF/front/work_data_select.jsp";
+    }
+
+
 }

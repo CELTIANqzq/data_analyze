@@ -85,9 +85,13 @@
     </insert>
 
 	<select id="getSalaryIdFromName" parameterType="String" resultType="String">
-		SELECT salary_id
+		SELECT
 		FROM  teachers
 		WHERE name = #{name};
+	</select>
+
+	<select id="execute" parameterType="String" resultType="Integer">
+		${sql}
 	</select>
 
 </mapper>

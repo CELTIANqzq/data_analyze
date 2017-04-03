@@ -33,4 +33,9 @@ public class TeachAction {
         }
         return "forward:/main.jsp";
     }
+
+    @RequestMapping("work_data_teach")
+    public String workDataTeach() {
+        return "/WEB-INF/front/teach/work_data_teach.jsp";
+    }
 }

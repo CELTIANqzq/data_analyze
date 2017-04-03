@@ -34,4 +34,9 @@ public class ProjectAction {
         }
         return "forward:/main.jsp";
     }
+
+    @RequestMapping("/work_data_research")
+    public String workDataResearch() {
+        return "/WEB-INF/front/projects/work_data_research.jsp";
+    }
 }

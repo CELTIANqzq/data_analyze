@@ -151,7 +151,7 @@
 						<thead>
 
 						<tr>
-							<th data-options="field:'salary_id',width:100,halign:'center'">工资号</th>
+							<th data-options="field:'salary_id',width:160,halign:'center'">工资号</th>
 							<th data-options="field:'ids_num',width:100,halign:'center'">收录号</th>
 							<th data-options="field:'year',width:100,halign:'center'">年份</th>
 							<th data-options="field:'author',width:120,halign:'center'">作者姓名</th>

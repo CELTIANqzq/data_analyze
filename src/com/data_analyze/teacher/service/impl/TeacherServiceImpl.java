@@ -21,7 +21,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by liujie on 2017/3/17.
@@ -276,5 +278,16 @@ public class TeacherServiceImpl implements TeacherService {
     @Override
     public int updateDynamic(@Param("tableName") String tableName, @Param("items") Teacher entity) {
         return 0;
+    }
+
+
+    @Override
+    public Map<String, Integer> queryPostData(String office) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("教师岗位", teacherMapper.execute("select count(*) from teachers where office='"+office+"' and job='教师岗位'"));
+        map.put("其他专业技术岗位", teacherMapper.execute("select count(*) from teachers where office='"+office+"' and job='其他专业技术岗位'"));
+        map.put("工勤岗位", teacherMapper.execute("select count(*) from teachers where office='"+office+"' and job='工勤岗位'"));
+        map.put("管理岗位", teacherMapper.execute("select count(*) from teachers where office='"+office+"' and job='管理岗位'"));
+        return map;
     }
 }

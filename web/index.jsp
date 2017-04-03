@@ -11,10 +11,11 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
 
+  <%--<a href="account/loginUI.do">后台</a> <br/>--%>
+  <%--<a href="front_home.do">数据分析</a>--%>
   <%
-     response.sendRedirect(request.getContextPath()+"/account/loginUI.do");
+     response.sendRedirect(request.getContextPath()+"/front_home.do");
   %>
 
   </body>
