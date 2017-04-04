@@ -65,7 +65,7 @@
           <div class="navbar-header"> 
             <!-- Mobile Toggle Menu Button -->
             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-            <a class="navbar-brand" href="${pageContext.request.contextPath}/work_data_select.do">返回</a>
+            <a class="navbar-brand" href="${pageContext.request.contextPath}/">返回主页</a>
           </div>
           <div id="fh5co-navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -102,14 +102,60 @@
     </div>
   </div>
 
-
   <main role="main" id="fh5co-main">
 
-	<div class="copyrights">copy right @ <a href="#" >UP-VAMS工作室</a></div>
     <section class="grid-gallery">
       <div class="container">
 
+          <div class="row gallery-row">
+              <div class="col-md-12 col-sm-6">
 
+
+                  <div id="canvas-holder4">
+                      <canvas id="chart-area4" />
+                  </div>
+
+              </div>
+
+          </div>
+
+          <br/>
+          <hr/>
+          <br/>
+
+          <div class="row gallery-row">
+              <div class="col-md-12 col-sm-6">
+
+
+                  <div id="canvas-holder5">
+                      <canvas id="chart-area5" />
+                  </div>
+
+              </div>
+
+          </div>
+
+
+
+
+          <div class="row gallery-row">
+
+              <div class="col-md-12">
+
+
+                  <ul class="resp-tabs-list hor_1">
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2010</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2011</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2012</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2013</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2014</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2015</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2016</a></li>
+                  </ul>
+
+              </div>
+          </div>
+          <hr/>
 
 
         <div class="row gallery-row">
@@ -144,21 +190,21 @@
         <br>
 
 
-        <div class="row gallery-row">
-          <div class="col-md-12">
+        <%--<div class="row gallery-row">--%>
+          <%--<div class="col-md-12">--%>
 
-            <h5 style="text-align: center">2015年学院不同单位不同年龄段教师科研进账分布</h5>
+            <%--<h5 style="text-align: center">2015年学院不同单位不同年龄段教师科研进账分布</h5>--%>
 
-            <div id="canvas-holder2">
-              <canvas id="chart-area2" />
-            </div>
+            <%--<div id="canvas-holder2">--%>
+              <%--<canvas id="chart-area2" />--%>
+            <%--</div>--%>
 
-          </div>
-        </div>
+          <%--</div>--%>
+        <%--</div>--%>
 
-        <br/>
-        <hr/>
-        <br/>
+        <%--<br/>--%>
+        <%--<hr/>--%>
+        <%--<br/>--%>
 
 
         <div class="row gallery-row">
@@ -383,43 +429,249 @@
         }
     };
 
+//      2010-2016人均科研进账数据
+
+      var config4 = {
+          type: 'line',
+          data: {
+              labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+              datasets: [
+
+                  {
+                      label: "学院总人均科研进账",
+                      backgroundColor: window.chartColors.red,
+                      borderColor: window.chartColors.red,
+                      data: [
+                          3,2,3,4,5,6,4
+                      ],
+                      fill: false,
+                  }
+
+                  , {
+                      label: "计算机科学与技术系人均科研进账",
+                      fill: false,
+                      backgroundColor: window.chartColors.blue,
+                      borderColor: window.chartColors.blue,
+                      data: [
+                          2,4,1,5,6,4,2,1
+                      ],}
+
+                  , {
+                      label: "电子信息工程系人均科研进账",
+                      fill: false,
+                      backgroundColor: window.chartColors.green,
+                      borderColor: window.chartColors.green,
+                      data: [
+                          2,4,1,3,2,4,2,1
+                      ],}
+
+                  , {
+                      label: "电气与自动化系人均科研进账",
+                      fill: false,
+                      backgroundColor: window.chartColors.yellow,
+                      borderColor: window.chartColors.yellow,
+                      data: [
+                          2,2,1,5,6,6,3,1
+                      ],}
+
+                  , {
+                      label: "计算中心人均科研进账",
+                      fill: false,
+                      backgroundColor: window.chartColors.purple,
+                      borderColor: window.chartColors.purple,
+                      data: [
+                          2,4,3,5,6,4,2,1
+                      ],}
+
+                  , {
+                      label: "电工电子实验中心人均科研进账",
+                      fill: false,
+                      backgroundColor: window.chartColors.color8,
+                      borderColor: window.chartColors.color8,
+                      data: [
+                          2,4,1,1,2,4,4,1
+                      ],}
+
+
+              ]
+          },
+          options: {
+              responsive: true,
+              title:{
+                  display:true,
+                  text:'2010-2016全学院人均科研进账数据整体分析'
+              },
+              tooltips: {
+                  mode: 'index',
+                  intersect: false,
+              },
+              hover: {
+                  mode: 'nearest',
+                  intersect: true
+              },
+              scales: {
+                  xAxes: [{
+                      display: true,
+                      scaleLabel: {
+                          display: true,
+                          labelString: '年份：'
+                      }
+                  }],
+                  yAxes: [{
+                      display: true,
+                      scaleLabel: {
+                          display: true,
+                          labelString: '时间（小时）：'
+                      }
+                  }]
+              }
+          }
+      };
+
+
+      //      2010-2016人均SCI论文数据
+
+      var config5 = {
+          type: 'line',
+          data: {
+              labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+              datasets: [
+
+                  {
+                      label: "学院平均SCI论文发表数",
+                      backgroundColor: window.chartColors.red,
+                      borderColor: window.chartColors.red,
+                      data: [
+                          3,2,3,4,5,6,4
+                      ],
+                      fill: false,
+                  }
+
+                  , {
+                      label: "计算机科学与技术系SCI论文发表总数",
+                      fill: false,
+                      backgroundColor: window.chartColors.blue,
+                      borderColor: window.chartColors.blue,
+                      data: [
+                          2,4,1,5,6,4,2,1
+                      ],}
+
+                  , {
+                      label: "电子信息工程系SCI论文发表总数",
+                      fill: false,
+                      backgroundColor: window.chartColors.green,
+                      borderColor: window.chartColors.green,
+                      data: [
+                          2,4,1,3,2,4,2,1
+                      ],}
+
+                  , {
+                      label: "电气与自动化系SCI论文发表总数",
+                      fill: false,
+                      backgroundColor: window.chartColors.yellow,
+                      borderColor: window.chartColors.yellow,
+                      data: [
+                          2,2,1,5,6,6,3,1
+                      ],}
+
+                  , {
+                      label: "计算中心SCI论文发表总数",
+                      fill: false,
+                      backgroundColor: window.chartColors.purple,
+                      borderColor: window.chartColors.purple,
+                      data: [
+                          2,4,3,5,6,4,2,1
+                      ],}
+
+                  , {
+                      label: "电工电子实验中心SCI论文发表总数",
+                      fill: false,
+                      backgroundColor: window.chartColors.color8,
+                      borderColor: window.chartColors.color8,
+                      data: [
+                          2,4,1,1,2,4,4,1
+                      ],}
+
+
+              ]
+          },
+          options: {
+              responsive: true,
+              title:{
+                  display:true,
+                  text:'2010-2016全学院SCI论文发表总数数据整体分析'
+              },
+              tooltips: {
+                  mode: 'index',
+                  intersect: false,
+              },
+              hover: {
+                  mode: 'nearest',
+                  intersect: true
+              },
+              scales: {
+                  xAxes: [{
+                      display: true,
+                      scaleLabel: {
+                          display: true,
+                          labelString: '年份：'
+                      }
+                  }],
+                  yAxes: [{
+                      display: true,
+                      scaleLabel: {
+                          display: true,
+                          labelString: '时间（小时）：'
+                      }
+                  }]
+              }
+          }
+      };
 
 
 
 
-    window.onload = function () {
+
+      window.onload = function () {
 
           var ctx = document.getElementById("chart-area").getContext("2d");
           var ctx1 = document.getElementById("chart-area1").getContext("2d");
-          var ctx2 = document.getElementById("chart-area2").getContext("2d");
+//          var ctx2 = document.getElementById("chart-area2").getContext("2d");
           var ctx3 = document.getElementById("chart-area3").getContext("2d");
+          var ctx4 = document.getElementById("chart-area4").getContext("2d");
+          var ctx5 = document.getElementById("chart-area5").getContext("2d");
+
 
 
           window.myRadar = new Chart(ctx,config);
           window.myRadar = new Chart(ctx1,config1);
           window.myRadar = new Chart(ctx3,config3);
 
+
+          window.Line = new Chart(ctx4,config4);
+          window.Line = new Chart(ctx5,config5);
+
         //各单位不同年龄段科研进账分布
-        window.myHorizontalBar4 = new Chart(ctx2, {
-            type: 'horizontalBar',
-            data: horizontalBarChartData4,
-            options: {
-                // Elements options apply to all of the options unless overridden in a dataset
-                // In this case, we are setting the border of each horizontal bar to be 2px wide
-                elements: {
-                    rectangle: {
-                        borderWidth: 1,
-                    }
-                },
-                responsive: true,
-                legend: {
-                    position: 'right',
-                },
-                title: {
-                    display: true,
-                }
-            }
-        });
+//        window.myHorizontalBar4 = new Chart(ctx2, {
+//            type: 'horizontalBar',
+//            data: horizontalBarChartData4,
+//            options: {
+//                // Elements options apply to all of the options unless overridden in a dataset
+//                // In this case, we are setting the border of each horizontal bar to be 2px wide
+//                elements: {
+//                    rectangle: {
+//                        borderWidth: 1,
+//                    }
+//                },
+//                responsive: true,
+//                legend: {
+//                    position: 'right',
+//                },
+//                title: {
+//                    display: true,
+//                }
+//            }
+//        });
 
 
 

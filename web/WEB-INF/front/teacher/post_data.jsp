@@ -109,7 +109,43 @@
 	<div class="copyrights">copy right @ <a href="#" >UP-VAMS工作室</a></div>
     <section class="grid-gallery">
       <div class="container">
-        
+
+
+          <div class="row gallery-row">
+              <div class="col-md-12">
+
+                  <h5 style="text-align: center">学院教学岗位数据对比分析</h5>
+
+
+
+                  <div id="canvas-holder10">
+                      <canvas id="chart-area10" />
+                  </div>
+
+              </div>
+          </div>
+
+          <br/>
+          <hr/>
+          <br/>
+
+          <div class="row gallery-row">
+              <div class="col-md-12 col-sm-6">
+
+                  <h5 style="text-align: center">人员编织核定及现状</h5>
+
+
+
+                  <div id="canvas-holder9">
+                      <canvas id="chart-area9" />
+                  </div>
+
+              </div>
+          </div>
+
+          <br/>
+          <hr/>
+          <br/>
 
 
         <div class="row gallery-row">
@@ -194,123 +230,93 @@
           </div>
           <div class="col-md-6 col-sm-6">
 
-            <h5>科研办</h5>
+            <%--<h5>科研办</h5>--%>
 
 
-            <div id="canvas-holder5" style="width: 400px;height: 400px">
-              <canvas id="chart-area5" />
-            </div>
+            <%--<div id="canvas-holder5" style="width: 400px;height: 400px">--%>
+              <%--<canvas id="chart-area5" />--%>
+            <%--</div>--%>
 
 
           </div>
         </div>
+
+        <%--<br/>--%>
+        <%--<hr/>--%>
+        <%--<br/>--%>
+
+
+        <%--<div class="row gallery-row">--%>
+        <%--<div class="col-md-6 col-sm-6">--%>
+
+
+          <%--&lt;%&ndash;<h5>学工办</h5>&ndash;%&gt;--%>
+
+
+          <%--&lt;%&ndash;<div id="canvas-holder6" style="width: 400px;height: 400px">&ndash;%&gt;--%>
+            <%--&lt;%&ndash;<canvas id="chart-area6" />&ndash;%&gt;--%>
+          <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+
+
+
+        <%--</div>--%>
+        <%--<div class="col-md-6 col-sm-6">--%>
+
+          <%--&lt;%&ndash;<h5>教学办</h5>&ndash;%&gt;--%>
+
+
+          <%--&lt;%&ndash;<div id="canvas-holder7" style="width: 400px;height: 400px">&ndash;%&gt;--%>
+            <%--&lt;%&ndash;<canvas id="chart-area7" />&ndash;%&gt;--%>
+          <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+
+
+        <%--</div>--%>
+      <%--</div>--%>
+
+        <%--<br/>--%>
+        <%--<hr/>--%>
+        <%--<br/>--%>
+
+
+        <%--<div class="row gallery-row">--%>
+          <%--<div class="col-md-6 col-sm-6">--%>
+
+
+            <%--&lt;%&ndash;<h5>党政办</h5>&ndash;%&gt;--%>
+
+
+            <%--&lt;%&ndash;<div id="canvas-holder8" style="width: 400px;height: 400px">&ndash;%&gt;--%>
+              <%--&lt;%&ndash;<canvas id="chart-area8" />&ndash;%&gt;--%>
+            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+
+
+
+          <%--</div>--%>
+          <%--<div class="col-md-6 col-sm-6">--%>
+
+            <%--<!--<h5>教学办</h5>-->--%>
+
+
+            <%--<!--<div id="canvas-holder9" style="width: 400px;height: 400px">-->--%>
+              <%--<!--<canvas id="chart-area9" />-->--%>
+            <%--<!--</div>-->--%>
+            <%--<!--<h5>人员编织核定及现状</h5>-->--%>
+
+
+            <%--<!--<div id="canvas-holder9" style="width: 400px;height: 400px">-->--%>
+              <%--<!--<canvas id="chart-area9" />-->--%>
+            <%--<!--</div>-->--%>
+
+
+          <%--</div>--%>
+        <%--</div>--%>
+
 
         <br/>
         <hr/>
         <br/>
 
 
-        <div class="row gallery-row">
-        <div class="col-md-6 col-sm-6">
-
-
-          <h5>学工办</h5>
-
-
-          <div id="canvas-holder6" style="width: 400px;height: 400px">
-            <canvas id="chart-area6" />
-          </div>
-
-
-
-        </div>
-        <div class="col-md-6 col-sm-6">
-
-          <h5>教学办</h5>
-
-
-          <div id="canvas-holder7" style="width: 400px;height: 400px">
-            <canvas id="chart-area7" />
-          </div>
-
-
-        </div>
-      </div>
-
-        <br/>
-        <hr/>
-        <br/>
-
-
-        <div class="row gallery-row">
-          <div class="col-md-6 col-sm-6">
-
-
-            <h5>党政办</h5>
-
-
-            <div id="canvas-holder8" style="width: 400px;height: 400px">
-              <canvas id="chart-area8" />
-            </div>
-
-
-
-          </div>
-          <div class="col-md-6 col-sm-6">
-
-            <!--<h5>教学办</h5>-->
-
-
-            <!--<div id="canvas-holder9" style="width: 400px;height: 400px">-->
-              <!--<canvas id="chart-area9" />-->
-            <!--</div>-->
-            <!--<h5>人员编织核定及现状</h5>-->
-
-
-            <!--<div id="canvas-holder9" style="width: 400px;height: 400px">-->
-              <!--<canvas id="chart-area9" />-->
-            <!--</div>-->
-
-
-          </div>
-        </div>
-
-
-        <br/>
-        <hr/>
-        <br/>
-
-        <div class="row gallery-row">
-          <div class="col-md-12">
-
-            <h5 style="text-align: center">学院教学岗位数据对比分析</h5>
-
-
-
-            <div id="canvas-holder10">
-              <canvas id="chart-area10" />
-            </div>
-
-          </div>
-        </div>
-
-        <br/>
-        <hr/>
-        <br/>
-
-        <div class="row gallery-row">
-          <div class="col-md-12 col-sm-6">
-
-            <h5 style="text-align: center">人员编织核定及现状</h5>
-
-
-
-            <div id="canvas-holder9">
-              <canvas id="chart-area9" />
-            </div>
-
-          </div>
-        </div>
 
 
       </div>
@@ -535,162 +541,162 @@
       //      ==========================================================================================
 
 
-      var config5 = {
-          type: 'doughnut',
-          data: {
-              datasets: [{
-                  data: [
-                      1,
-                      1,
-                      2
-
-                  ],
-                  backgroundColor: [
-                      window.chartColors.blue,
-                      window.chartColors.purple,
-                      window.chartColors.green
-                  ],
-                  label: '人数'
-              }],
-              labels: [
-                  "科长",
-                  "管理岗",
-                  "非专技"
-
-              ]
-          },
-          options: {
-              responsive: true,
-              legend: {
-                  position: 'top',
-              },
-              title: {
-                  display: true,
-              },
-              animation: {
-                  animateScale: true,
-                  animateRotate: true
-              }
-          }
-      };
-      //      ==========================================================================================
-
-
-      var config6 = {
-          type: 'doughnut',
-          data: {
-              datasets: [{
-                  data: [
-                      2,
-                      9
-                  ],
-                  backgroundColor: [
-                      window.chartColors.blue,
-                      window.chartColors.purple,
-                      window.chartColors.green
-                  ],
-                  label: '人数'
-              }],
-              labels: [
-                  "管理岗",
-                  "专职辅导员"
-              ]
-          },
-          options: {
-              responsive: true,
-              legend: {
-                  position: 'top',
-              },
-              title: {
-                  display: true,
-              },
-              animation: {
-                  animateScale: true,
-                  animateRotate: true
-              }
-          }
-      };
-
-      //      ==========================================================================================
-
-      var config7 = {
-          type: 'doughnut',
-          data: {
-              datasets: [{
-                  data: [
-                      1,
-                      2,
-                      1
-
-                  ],
-                  backgroundColor: [
-                      window.chartColors.blue,
-                      window.chartColors.purple,
-                      window.chartColors.green
-                  ],
-                  label: '人数'
-              }],
-              labels: [
-                  "主任",
-                  "管理岗",
-                  "专职辅导员"
-
-              ]
-          },
-          options: {
-              responsive: true,
-              legend: {
-                  position: 'top',
-              },
-              title: {
-                  display: true,
-              },
-              animation: {
-                  animateScale: true,
-                  animateRotate: true
-              }
-          }
-      };
-      //      ==========================================================================================
-
-      var config8 = {
-          type: 'doughnut',
-          data: {
-              datasets: [{
-                  data: [
-                      2,
-                      1,
-                      2
-
-                  ],
-                  backgroundColor: [
-                      window.chartColors.blue,
-                      window.chartColors.purple,
-                      window.chartColors.green
-                  ],
-                  label: '人数'
-              }],
-              labels: [
-                  "副主任",
-                  "管理岗",
-                  "其他专技"
-
-              ]
-          },
-          options: {
-              responsive: true,
-              legend: {
-                  position: 'top',
-              },
-              title: {
-                  display: true,
-              },
-              animation: {
-                  animateScale: true,
-                  animateRotate: true
-              }
-          }
-      };
+//      var config5 = {
+//          type: 'doughnut',
+//          data: {
+//              datasets: [{
+//                  data: [
+//                      1,
+//                      1,
+//                      2
+//
+//                  ],
+//                  backgroundColor: [
+//                      window.chartColors.blue,
+//                      window.chartColors.purple,
+//                      window.chartColors.green
+//                  ],
+//                  label: '人数'
+//              }],
+//              labels: [
+//                  "科长",
+//                  "管理岗",
+//                  "非专技"
+//
+//              ]
+//          },
+//          options: {
+//              responsive: true,
+//              legend: {
+//                  position: 'top',
+//              },
+//              title: {
+//                  display: true,
+//              },
+//              animation: {
+//                  animateScale: true,
+//                  animateRotate: true
+//              }
+//          }
+//      };
+//      //      ==========================================================================================
+//
+//
+//      var config6 = {
+//          type: 'doughnut',
+//          data: {
+//              datasets: [{
+//                  data: [
+//                      2,
+//                      9
+//                  ],
+//                  backgroundColor: [
+//                      window.chartColors.blue,
+//                      window.chartColors.purple,
+//                      window.chartColors.green
+//                  ],
+//                  label: '人数'
+//              }],
+//              labels: [
+//                  "管理岗",
+//                  "专职辅导员"
+//              ]
+//          },
+//          options: {
+//              responsive: true,
+//              legend: {
+//                  position: 'top',
+//              },
+//              title: {
+//                  display: true,
+//              },
+//              animation: {
+//                  animateScale: true,
+//                  animateRotate: true
+//              }
+//          }
+//      };
+//
+//      //      ==========================================================================================
+//
+//      var config7 = {
+//          type: 'doughnut',
+//          data: {
+//              datasets: [{
+//                  data: [
+//                      1,
+//                      2,
+//                      1
+//
+//                  ],
+//                  backgroundColor: [
+//                      window.chartColors.blue,
+//                      window.chartColors.purple,
+//                      window.chartColors.green
+//                  ],
+//                  label: '人数'
+//              }],
+//              labels: [
+//                  "主任",
+//                  "管理岗",
+//                  "专职辅导员"
+//
+//              ]
+//          },
+//          options: {
+//              responsive: true,
+//              legend: {
+//                  position: 'top',
+//              },
+//              title: {
+//                  display: true,
+//              },
+//              animation: {
+//                  animateScale: true,
+//                  animateRotate: true
+//              }
+//          }
+//      };
+//      //      ==========================================================================================
+//
+//      var config8 = {
+//          type: 'doughnut',
+//          data: {
+//              datasets: [{
+//                  data: [
+//                      2,
+//                      1,
+//                      2
+//
+//                  ],
+//                  backgroundColor: [
+//                      window.chartColors.blue,
+//                      window.chartColors.purple,
+//                      window.chartColors.green
+//                  ],
+//                  label: '人数'
+//              }],
+//              labels: [
+//                  "副主任",
+//                  "管理岗",
+//                  "其他专技"
+//
+//              ]
+//          },
+//          options: {
+//              responsive: true,
+//              legend: {
+//                  position: 'top',
+//              },
+//              title: {
+//                  display: true,
+//              },
+//              animation: {
+//                  animateScale: true,
+//                  animateRotate: true
+//              }
+//          }
+//      };
       //      ==========================================================================================
 
 
@@ -780,7 +786,7 @@
 
       var color = Chart.helpers.color;
       var horizontalBarChartData = {
-          labels: ["教师岗位", "其他专业技术岗位", "管理岗位"],
+          labels: ["教师岗位", "其他专业技术岗位"],
           datasets: [
          //     1
               {
@@ -790,9 +796,7 @@
               borderWidth: 1,
               data: [
                   ${cs['教师岗位']},
-                  ${cs['其他专业技术岗位']},
-                  ${cs['管理岗位']}
-                  <%--${cs['工勤岗位']}--%>
+                  ${cs['其他专业技术岗位']}
                 ]
               }
           ,
@@ -803,9 +807,7 @@
               borderColor: window.chartColors.green,
               data: [
                   ${ee['教师岗位']},
-                  ${ee['其他专业技术岗位']},
-                  ${ee['管理岗位']}
-                  <%--${ee['工勤岗位']}--%>
+                  ${ee['其他专业技术岗位']}
               ]},
               //              3 color(dsColor).alpha(0.5).rgbString()
               {
@@ -814,9 +816,8 @@
                   borderColor: window.chartColors.grey,
                   data: [
                       ${auto['教师岗位']},
-                      ${auto['其他专业技术岗位']},
-                      ${auto['管理岗位']}
-                      <%--${auto['工勤岗位']}--%>
+                      ${auto['其他专业技术岗位']}
+
              ]},
 
               //              4
@@ -826,9 +827,8 @@
                   borderColor: window.chartColors.blue,
                   data: [
                       ${caculateCenter['教师岗位']},
-                      ${caculateCenter['其他专业技术岗位']},
-                      ${caculateCenter['管理岗位']}
-                      <%--${caculateCenter['工勤岗位']}--%>
+                      ${caculateCenter['其他专业技术岗位']}
+
 
                   ]},
 
@@ -839,9 +839,8 @@
                   borderColor: window.chartColors.orange,
                   data: [
                   ${eleExperience['教师岗位']},
-                  ${eleExperience['其他专业技术岗位']},
-                  ${eleExperience['管理岗位']}
-                  <%--${eleExperience['工勤岗位']}--%>
+                  ${eleExperience['其他专业技术岗位']}
+
                   ]}
 
 
@@ -857,10 +856,10 @@
           var ctx2 = document.getElementById("chart-area2").getContext("2d");
           var ctx3 = document.getElementById("chart-area3").getContext("2d");
           var ctx4 = document.getElementById("chart-area4").getContext("2d");
-          var ctx5 = document.getElementById("chart-area5").getContext("2d");
-          var ctx6 = document.getElementById("chart-area6").getContext("2d");
-          var ctx7 = document.getElementById("chart-area7").getContext("2d");
-          var ctx8 = document.getElementById("chart-area8").getContext("2d");
+//          var ctx5 = document.getElementById("chart-area5").getContext("2d");
+//          var ctx6 = document.getElementById("chart-area6").getContext("2d");
+//          var ctx7 = document.getElementById("chart-area7").getContext("2d");
+//          var ctx8 = document.getElementById("chart-area8").getContext("2d");
           var ctx9 = document.getElementById("chart-area9").getContext("2d");
 
           var ctx10 = document.getElementById("chart-area10").getContext("2d");
@@ -892,10 +891,10 @@
           window.myDoughnut = new Chart(ctx2, config2);
           window.myDoughnut = new Chart(ctx3, config3);
           window.myDoughnut = new Chart(ctx4, config4);
-          window.myDoughnut = new Chart(ctx5, config5);
-          window.myDoughnut = new Chart(ctx6, config6);
-          window.myDoughnut = new Chart(ctx7, config7);
-          window.myDoughnut = new Chart(ctx8, config8);
+//          window.myDoughnut = new Chart(ctx5, config5);
+//          window.myDoughnut = new Chart(ctx6, config6);
+//          window.myDoughnut = new Chart(ctx7, config7);
+//          window.myDoughnut = new Chart(ctx8, config8);
           window.myLine = new Chart(ctx9, config9);
 
 

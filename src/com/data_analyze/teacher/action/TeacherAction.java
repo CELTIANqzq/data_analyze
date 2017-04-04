@@ -46,9 +46,9 @@ public class TeacherAction {
 //        <!--专任教师职称结构-->
         try {
 
-            Map<String, Integer> teacherJobLeveStructure = teacherService.getJobLeveData();
-
-            model.addAttribute("teacherJobLeveStructure",teacherJobLeveStructure);
+//            Map<String, Integer> teacherJobLeveStructure = teacherService.getJobLeveData();
+//
+//            model.addAttribute("teacherJobLeveStructure",teacherJobLeveStructure);
 
         }catch (Exception e){
 

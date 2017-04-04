@@ -107,6 +107,69 @@
     <section class="grid-gallery">
       <div class="container">
 
+
+          <div class="row gallery-row">
+              <div class="col-md-12 col-sm-6">
+
+
+                  <h5>学院自2003年至今人才引进情况</h5>
+
+
+                  <div id="canvas-holder6">
+                      <canvas id="chart-area6" />
+                  </div>
+
+
+
+              </div>
+
+          </div>
+
+          <br/>
+          <hr/>
+          <br/>
+
+
+          <div class="row gallery-row">
+              <div class="col-md-12 col-sm-6">
+
+
+                  <h5>学院未来9年退休情况</h5>
+
+
+                  <div id="canvas-holder8">
+                      <canvas id="chart-area8"/>
+                  </div>
+
+
+              </div>
+
+          </div>
+
+
+          <br/>
+          <hr/>
+          <br/>
+
+          <div class="row gallery-row">
+              <div class="col-md-12">
+
+                  <h5 style="text-align: center">学院人才队伍博士比例</h5>
+
+
+
+                  <div id="canvas-holder10">
+                      <canvas id="chart-area10" />
+                  </div>
+
+              </div>
+          </div>
+
+          <br/>
+          <hr/>
+          <br/>
+
+
         <div class="row gallery-row">
           
           <div class="col-md-6 col-sm-6">
@@ -210,66 +273,7 @@
         <br/>
 
 
-        <div class="row gallery-row">
-        <div class="col-md-12 col-sm-6">
 
-
-          <h5>学院自2003年至今人才引进情况</h5>
-
-
-          <div id="canvas-holder6">
-            <canvas id="chart-area6" />
-          </div>
-
-
-
-        </div>
-
-      </div>
-
-        <br/>
-        <hr/>
-        <br/>
-
-
-        <div class="row gallery-row">
-          <div class="col-md-12 col-sm-6">
-
-
-            <h5>学院未来9年退休情况</h5>
-
-
-            <div id="canvas-holder8">
-              <canvas id="chart-area8"/>
-            </div>
-
-
-          </div>
-
-        </div>
-
-
-        <br/>
-        <hr/>
-        <br/>
-
-        <div class="row gallery-row">
-          <div class="col-md-12">
-
-            <h5 style="text-align: center">学院人才队伍博士比例</h5>
-
-
-
-            <div id="canvas-holder10">
-              <canvas id="chart-area10" />
-            </div>
-
-          </div>
-        </div>
-
-        <br/>
-        <hr/>
-        <br/>
 
 
       </div>
@@ -616,19 +620,19 @@
                   borderColor: window.chartColors.red,
                   data: [
                       1,
-                      1,
-                      2,
-                      5,
-                      3,
-                      0,
-                      3,
-                      2,
-                      2,
-                      6,
                       2,
                       4,
-                      8,
-                      5
+                      9,
+                      13,
+                      13,
+                      16,
+                      18,
+                      20,
+                      26,
+                      28,
+                      32,
+                      40,
+                      45
                   ],
                   fill: false,
               },
@@ -640,19 +644,19 @@
                   borderColor: window.chartColors.blue,
                   data: [
                       1,
-                      7,
-                      7,
                       8,
-                      1,
-                      0,
-                      0,
-                      1,
-                      1,
-                      1,
-                      1,
-                      1,
-                      1,
-                      2
+                      15,
+                      23,
+                      24,
+                      24,
+                      24,
+                      25,
+                      26,
+                      27,
+                      28,
+                      29,
+                      30,
+                      32
                   ],},
 
                   {
@@ -662,19 +666,19 @@
                       borderColor: window.chartColors.yellow,
                       data: [
                           2,
-                          3,
-                          7,
-                          6,
-                          0,
-                          0,
-                          0,
-                          0,
-                          0,
-                          0,
-                          0,
-                          0,
-                          0,
-                          0
+                          5,
+                          12,
+                          18,
+                          18,
+                          18,
+                          18,
+                          18,
+                          18,
+                          18,
+                          18,
+                          18,
+                          18,
+                          18
                       ],}
 
               ]
@@ -725,14 +729,14 @@
                   borderColor: window.chartColors.red,
                   data: [
                       1,
-                      1,
-                      1,
                       2,
                       3,
-                      2,
-                      3,
-                      3,
-                      7
+                      5,
+                      8,
+                      10,
+                      13,
+                      16,
+                      23
                   ],
                   fill: false,
               },
@@ -744,14 +748,14 @@
                       borderColor: window.chartColors.blue,
                       data: [
                           2,
-                          3,
-                          1,
-                          3,
-                          0,
-                          2,
-                          3,
-                          2,
-                          2
+                          5,
+                          6,
+                          9,
+                          9,
+                          11,
+                          14,
+                          16,
+                          18
                       ],},
 
                   {
@@ -763,12 +767,12 @@
                           0,
                           0,
                           3,
-                          0,
-                          0,
-                          0,
-                          0,
-                          2,
-                          2
+                          3,
+                          3,
+                          3,
+                          3,
+                          5,
+                          7
 
                       ],}
 

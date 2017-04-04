@@ -222,29 +222,26 @@
           <div class="col-md-6 col-sm-6">
             <a href="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data.png" target="_blank" class="img image-popup">
 
-              <a href="work_data_select.do">
+              <a href="teach/work_data_teach.do">
                 <img src="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data.png" alt="Image" class="img-responsive">
               </a>
 
-
-
               <div class="text">
-                <h5 style="font-size: 25px;font-weight: 100;color: #b0b29f;text-align: center">学院历年教学、科研数据分析</h5>
+                <h5 style="font-size: 25px;font-weight: 100;color: #b0b29f;text-align: center">学院历年教学工作量数据分析</h5>
               </div>
 
             </a>
           </div>
 
             <div class="col-md-6 col-sm-6">
-              <a href="${pageContext.request.contextPath}/resource/front/lib_one/images/hr_data_detail.png" target="_blank" class="img image-popup">
+              <a href="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data.png" target="_blank" class="img image-popup">
 
-                  <a href="teacher/hr_detail_data.do">
-                  <img src="${pageContext.request.contextPath}/resource/front/lib_one/images/hr_data_detail.png" alt="Image" class="img-responsive">
+                  <a href="project/work_data_research.do">
+                  <img src="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data.png" alt="Image" class="img-responsive">
                 </a>
 
-
                 <div class="text">
-                  <h5 style="font-size: 25px;font-weight: 100;color: #b0b29f;text-align: center">各单位人力资源现状</h5>
+                  <h5 style="font-size: 25px;font-weight: 100;color: #b0b29f;text-align: center">学院历年科研数据分析</h5>
                 </div>
 
               </a>

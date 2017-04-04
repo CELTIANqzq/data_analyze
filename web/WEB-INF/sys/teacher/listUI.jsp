@@ -143,14 +143,6 @@
 
 				<div class="g_12">
 
-					<%--<p style="text-align: right;color: red">--%>
-					<%--${sessionScope.message}--%>
-					<%--</p>--%>
-
-					<%--<form id="form" method="post">--%>
-
-
-					<%--</form>--%>
 
 						<table class="easyui-datagrid" title="教师信息维护" style="width:100%;height:458px">
 						<thead>
@@ -195,6 +187,11 @@
 							<th data-options="field:'remark',width:100,halign:'center'">备注</th>
 							<th data-options="field:'mentorType',width:80,halign:'center'">导师类型</th>
 							<th data-options="field:'major',width:160,halign:'center'">专业</th>
+
+							<th data-options="field:'post_type',width:120,halign:'center'">岗位类型</th>
+							<th data-options="field:'graduate_provence',width:120,halign:'center'">毕业学校省份</th>
+
+
 
 							<th data-options="field:'op',width:120,halign:'center'">
 								操作
@@ -273,7 +270,8 @@
 							<td>${item.remark}</td>
 							<td>${item.mentor_type}</td>
 							<td>${item.major}</td>
-
+							<td>${item.post_type}</td>
+							<td>${item.graduate_province}</td>
 
 							<td>
 								<a class="l-btn" href="${pageContext.request.contextPath}/sys_teacher/editUI.do?salary_id=${item.salary_id}"> 编辑</a>

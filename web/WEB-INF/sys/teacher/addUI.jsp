@@ -284,6 +284,14 @@
 								<input class="easyui-textbox" name="major" style="width:100%" data-options="label:'专业:',required:true">
 							</div>
 
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="post_type" style="width:100%" data-options="label:'岗位类型:',required:true">
+							</div>
+
+							<div style="margin-bottom:20px">
+								<input class="easyui-textbox" name="graduate_province" style="width:100%" data-options="label:'毕业学校省份:',required:true">
+							</div>
+
 							<div style="text-align:center;padding:5px 0">
 								<input type="submit" class="easyui-linkbutton" style="width:80px"/>
 							</div>

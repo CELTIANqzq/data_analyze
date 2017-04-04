@@ -48,6 +48,12 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/front/lib_one/css/style.css">
 
 
+    <%--<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">--%>
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
     <!-- FOR IE9 below -->
     <!--[if lte IE 9]>
     <script src="${pageContext.request.contextPath}/resource/front/lib_one/js/modernizr-2.6.2.min.js"></script>
@@ -69,7 +75,7 @@
           <div class="navbar-header"> 
             <!-- Mobile Toggle Menu Button -->
             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-            <a class="navbar-brand" href="${pageContext.request.contextPath}/work_data_select.do">返回</a>
+            <a class="navbar-brand" href="${pageContext.request.contextPath}/">返回主页</a>
           </div>
           <div id="fh5co-navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -78,7 +84,6 @@
             <ul class="nav navbar-nav navbar-right">
 
               <li>
-
 
               </li>
               <li>&nbsp;&nbsp;</li>
@@ -113,9 +118,49 @@
       <div class="container">
 
 
-        <div class="row gallery-row">
+          <div class="row gallery-row">
+              <div class="col-md-12 col-sm-6">
+
+
+                  <div id="canvas-holder6">
+                      <canvas id="chart-area6" />
+                  </div>
+
+              </div>
+
+          </div>
+
+
+
+
+
+
+          <div class="row gallery-row">
+
+              <div class="col-md-12">
+
+
+              <ul class="resp-tabs-list hor_1">
+                 <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2010</a></li>
+                 <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2011</a></li>
+                 <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2012</a></li>
+                  <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2013</a></li>
+                  <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2014</a></li>
+                  <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2015</a></li>
+                  <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2016</a></li>
+              </ul>
+
+              </div>
+          </div>
+          <hr/>
+
+
+          <div class="row gallery-row">
           
           <div class="col-md-6 col-sm-6">
+
+
+
 
             <h5 style="text-align: center">学院各单位专任教师总教学工作量数据</h5>
 
@@ -124,6 +169,41 @@
               <canvas id="chart-area" />
             </div>
 
+              <br/>
+
+              <center>
+
+              <button type="button" class="btn btn-success" title="数据列表"
+                      data-container="body" data-toggle="popover" data-placement="right"
+                      data-content="2000.4">
+                      信息工程学院总教学工作量
+              </button>
+
+              </center>
+
+              <br/>
+
+              <center>
+
+                  <button type="button" class="btn btn-success" title="数据列表"
+                          data-container="body" data-toggle="popover" data-placement="right"
+                          data-content="张三109.2   李四102.4">
+                      计算机科学与技术教学工作量前五
+                  </button>
+
+              </center>
+
+              <br/>
+
+              <center>
+
+                  <button type="button" class="btn btn-success" title="数据列表"
+                          data-container="body" data-toggle="popover" data-placement="right"
+                          data-content="张三109.2   李四102.4">
+                      电工电子实验中心教学工作量前五
+                  </button>
+
+              </center>
 
           </div>
 
@@ -137,71 +217,107 @@
             </div>
 
 
+              <br/>
 
-          </div>
-        </div>
-        <br/>
-        <hr/>
-        <br/>
+              <center>
 
-        <div class="row gallery-row">
-          <div class="col-md-12">
+                  <button type="button" class="btn btn-success" title="数据列表"
+                          data-container="body" data-toggle="popover" data-placement="right"
+                          data-content="张三109.2   李四102.4">
+                      电气与自动化系教学工作量前五
+                  </button>
 
-            <h5 style="text-align: center">学院不同单位不同年龄段专任教师工作量比例分布</h5>
+              </center>
 
-            <div id="canvas-holder2">
-              <canvas id="chart-area2" />
-            </div>
+              <br/>
 
-          </div>
-        </div>
+              <center>
 
-        <br/>
-        <hr/>
-        <br/>
+                  <button type="button" class="btn btn-success" title="数据列表"
+                          data-container="body" data-toggle="popover" data-placement="right"
+                          data-content="张三109.2   李四102.4">
+                      计算中心教学工作量前五
+                  </button>
 
-        <div class="row gallery-row">
+              </center>
 
-          <div class="col-md-6 col-sm-6">
+              <br/>
+              <center>
 
-            <h5 style="text-align: center">学院各单位实验人员工作量数据</h5>
+                  <button type="button" class="btn btn-success" title="数据列表"
+                          data-container="body" data-toggle="popover" data-placement="right"
+                          data-content="张三109.2   李四102.4">
+                      电子信息工程教学工作量前五
+                  </button>
 
+              </center>
 
-            <div id="canvas-holder3">
-              <canvas id="chart-area3" />
-            </div>
-
-
-          </div>
-
-          <div class="col-md-6 col-sm-6">
-
-            <h5 style="text-align: center">学院各单位实验人员平均工作量数据</h5>
-
-
-            <div id="canvas-holder4">
-              <canvas id="chart-area4" />
-            </div>
 
 
           </div>
         </div>
+        <%--<br/>--%>
+        <%--<hr/>--%>
+        <%--<br/>--%>
 
-        <br>
-        <hr>
-        <br>
+        <%--<div class="row gallery-row">--%>
+          <%--<div class="col-md-12">--%>
 
-        <div class="row gallery-row">
-          <div class="col-md-12">
+            <%--<h5 style="text-align: center">学院不同单位不同年龄段专任教师工作量比例分布</h5>--%>
 
-            <h5 style="text-align: center">学院不同单位不同年龄段实验人员工作量比例分布</h5>
+            <%--<div id="canvas-holder2">--%>
+              <%--<canvas id="chart-area2" />--%>
+            <%--</div>--%>
 
-            <div id="canvas-holder5">
-              <canvas id="chart-area5" />
-            </div>
+          <%--</div>--%>
+        <%--</div>--%>
 
-          </div>
-        </div>
+        <%--<br/>--%>
+        <%--<hr/>--%>
+        <%--<br/>--%>
+
+        <%--<div class="row gallery-row">--%>
+
+          <%--<div class="col-md-6 col-sm-6">--%>
+
+            <%--<h5 style="text-align: center">学院各单位实验人员工作量数据</h5>--%>
+
+
+            <%--<div id="canvas-holder3">--%>
+              <%--<canvas id="chart-area3" />--%>
+            <%--</div>--%>
+
+
+          <%--</div>--%>
+
+          <%--<div class="col-md-6 col-sm-6">--%>
+
+            <%--<h5 style="text-align: center">学院各单位实验人员平均工作量数据</h5>--%>
+
+
+            <%--<div id="canvas-holder4">--%>
+              <%--<canvas id="chart-area4" />--%>
+            <%--</div>--%>
+
+
+          <%--</div>--%>
+        <%--</div>--%>
+
+        <%--<br>--%>
+        <%--<hr>--%>
+        <%--<br>--%>
+
+        <%--<div class="row gallery-row">--%>
+          <%--<div class="col-md-12">--%>
+
+            <%--<h5 style="text-align: center">学院不同单位不同年龄段实验人员工作量比例分布</h5>--%>
+
+            <%--<div id="canvas-holder5">--%>
+              <%--<canvas id="chart-area5" />--%>
+            <%--</div>--%>
+
+          <%--</div>--%>
+        <%--</div>--%>
 
       </div>
     </section>
@@ -371,214 +487,314 @@
 
     };
 
-//学院各单位实验人员工作量数据
+////学院各单位实验人员工作量数据
+//
+//
+//      var config3 = {
+//        type: 'radar',
+//        data: {
+//            labels: ["计算机科学与技术系",  "电子信息工程系", "电气与自动化工程系", "计算中心","电工电子实验中心"],
+//            datasets: [
+//
+//                {
+//                    label: "总教学工作量(小时)",
+//                    backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
+//                    borderColor: window.chartColors.yellow,
+//                    pointBackgroundColor: window.chartColors.yellow,
+//                    data: [
+//                        2877.52,
+//                        4881.5,
+//                        5050.7,
+//                        5009.506,
+//                        2813.9
+//
+//                    ]
+//                }
+//
+//
+//            ]
+//        },
+//        options: {
+//            legend: {
+//                position: 'bottom',
+//            },
+//            title: {
+//                display: true,
+//            },
+//            scale: {
+//                ticks: {
+//                    beginAtZero: true
+//                }
+//            }
+//        }
+//    };
+//
+//
+////学院各单位实验人员平均工作量数据
+//
+//
+//      var config4 = {
+//        type: 'radar',
+//        data: {
+//            labels: ["计算机科学与技术系",  "电子信息工程系", "电气与自动化工程系", "计算中心","电工电子实验中心"],
+//            datasets: [
+//
+//                {
+//                    label: "人均教学工作量(小时)",
+//                    backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
+//                    borderColor: window.chartColors.yellow,
+//                    pointBackgroundColor: window.chartColors.yellow,
+//                    data: [
+//                        719.38,
+//                        542.39,
+//                        1262.675,
+//                        357.7897,
+//                        281.39
+//                    ]
+//                }
+//
+//
+//            ]
+//        },
+//        options: {
+//            legend: {
+//                position: 'bottom',
+//            },
+//            title: {
+//                display: true,
+//            },
+//            scale: {
+//                ticks: {
+//                    beginAtZero: true
+//                }
+//            }
+//        }
+//    };
+//
+//
+////      学院不同单位不同年龄段实验人员工作量比例分布
+//
+//
+//
+//      var horizontalBarChartData1 = {
+//        labels: ["35岁以下", "36-44岁", "45岁以上"],
+//        datasets: [
+//            //     1
+//            {
+//                label: '计算机科学与技术(%)',
+//                backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
+//                borderColor: window.chartColors.purple,
+//                borderWidth: 1,
+//                data: [
+//                    0,
+//                    50.70,
+//                    49.30
+//                ]
+//            }
+//            ,
+////              2
+//            {
+//                label: '电子信息工程(%)',
+//                backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
+//                borderColor: window.chartColors.green,
+//                data: [
+//                    1.15,
+//                    26.15,
+//                    72.70
+//                ]},
+//
+//            {
+//                label: '电气与自动化工程系(%)',
+//                backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+//                borderColor: window.chartColors.blue,
+//                data: [
+//                    10.19,
+//                    0,
+//                    89.81
+//                ]},
+//
+//
+//            {
+//                label: '计算中心(%)',
+//                backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+//                borderColor: window.chartColors.orange,
+//                data: [
+//                    7.63,
+//                    15.25,
+//                    77.12
+//                ]},
+//
+//            {
+//                label: '电工电子实验中心(%)',
+//                backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+//                borderColor: window.chartColors.red,
+//                data: [
+//                    11.73,
+//                    12.97,
+//                    75.30
+//                ]}
+//
+//
+//        ]
+//
+//    };
+
+      //学院总体教学量数据分析
+      var config6 = {
+          type: 'line',
+          data: {
+              labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+              datasets: [
+
+                  {
+                  label: "学院总人均教学工作量",
+                  backgroundColor: window.chartColors.red,
+                  borderColor: window.chartColors.red,
+                  data: [
+                          3,2,3,4,5,6,4
+                  ],
+                  fill: false,
+              }
+
+                  , {
+                  label: "计算机科学与技术系人均教学工作量",
+                  fill: false,
+                  backgroundColor: window.chartColors.blue,
+                  borderColor: window.chartColors.blue,
+                  data: [
+                          2,4,1,5,6,4,2,1
+                  ],}
+
+                  , {
+                      label: "电子信息工程系人均教学工作量",
+                      fill: false,
+                      backgroundColor: window.chartColors.green,
+                      borderColor: window.chartColors.green,
+                      data: [
+                          2,4,1,3,2,4,2,1
+                      ],}
+
+                  , {
+                      label: "电气与自动化系人均教学工作量",
+                      fill: false,
+                      backgroundColor: window.chartColors.yellow,
+                      borderColor: window.chartColors.yellow,
+                      data: [
+                          2,2,1,5,6,6,3,1
+                      ],}
+
+                  , {
+                      label: "计算中心人均教学工作量",
+                      fill: false,
+                      backgroundColor: window.chartColors.purple,
+                      borderColor: window.chartColors.purple,
+                      data: [
+                          2,4,3,5,6,4,2,1
+                      ],}
+
+                  , {
+                      label: "电工电子实验中心人均教学工作量",
+                      fill: false,
+                      backgroundColor: window.chartColors.color8,
+                      borderColor: window.chartColors.color8,
+                      data: [
+                          2,4,1,1,2,4,4,1
+                      ],}
 
 
-      var config3 = {
-        type: 'radar',
-        data: {
-            labels: ["计算机科学与技术系",  "电子信息工程系", "电气与自动化工程系", "计算中心","电工电子实验中心"],
-            datasets: [
-
-                {
-                    label: "总教学工作量(小时)",
-                    backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
-                    borderColor: window.chartColors.yellow,
-                    pointBackgroundColor: window.chartColors.yellow,
-                    data: [
-                        2877.52,
-                        4881.5,
-                        5050.7,
-                        5009.506,
-                        2813.9
-
-                    ]
-                }
-
-
-            ]
-        },
-        options: {
-            legend: {
-                position: 'bottom',
-            },
-            title: {
-                display: true,
-            },
-            scale: {
-                ticks: {
-                    beginAtZero: true
-                }
-            }
-        }
-    };
-
-
-//学院各单位实验人员平均工作量数据
-
-
-      var config4 = {
-        type: 'radar',
-        data: {
-            labels: ["计算机科学与技术系",  "电子信息工程系", "电气与自动化工程系", "计算中心","电工电子实验中心"],
-            datasets: [
-
-                {
-                    label: "人均教学工作量(小时)",
-                    backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
-                    borderColor: window.chartColors.yellow,
-                    pointBackgroundColor: window.chartColors.yellow,
-                    data: [
-                        719.38,
-                        542.39,
-                        1262.675,
-                        357.7897,
-                        281.39
-                    ]
-                }
-
-
-            ]
-        },
-        options: {
-            legend: {
-                position: 'bottom',
-            },
-            title: {
-                display: true,
-            },
-            scale: {
-                ticks: {
-                    beginAtZero: true
-                }
-            }
-        }
-    };
-
-
-//      学院不同单位不同年龄段实验人员工作量比例分布
-
-
-
-      var horizontalBarChartData1 = {
-        labels: ["35岁以下", "36-44岁", "45岁以上"],
-        datasets: [
-            //     1
-            {
-                label: '计算机科学与技术(%)',
-                backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.purple,
-                borderWidth: 1,
-                data: [
-                    0,
-                    50.70,
-                    49.30
-                ]
-            }
-            ,
-//              2
-            {
-                label: '电子信息工程(%)',
-                backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.green,
-                data: [
-                    1.15,
-                    26.15,
-                    72.70
-                ]},
-
-            {
-                label: '电气与自动化工程系(%)',
-                backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.blue,
-                data: [
-                    10.19,
-                    0,
-                    89.81
-                ]},
-
-
-            {
-                label: '计算中心(%)',
-                backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.orange,
-                data: [
-                    7.63,
-                    15.25,
-                    77.12
-                ]},
-
-            {
-                label: '电工电子实验中心(%)',
-                backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.red,
-                data: [
-                    11.73,
-                    12.97,
-                    75.30
-                ]}
-
-
-        ]
-
-    };
+              ]
+          },
+          options: {
+              responsive: true,
+              title:{
+                  display:true,
+                  text:'2010-2016全学院人均教学工作量数据整体分析'
+              },
+              tooltips: {
+                  mode: 'index',
+                  intersect: false,
+              },
+              hover: {
+                  mode: 'nearest',
+                  intersect: true
+              },
+              scales: {
+                  xAxes: [{
+                      display: true,
+                      scaleLabel: {
+                          display: true,
+                          labelString: '年份：'
+                      }
+                  }],
+                  yAxes: [{
+                      display: true,
+                      scaleLabel: {
+                          display: true,
+                          labelString: '时间（小时）：'
+                      }
+                  }]
+              }
+          }
+      };
 
 
     window.onload = function () {
 
           var ctx = document.getElementById("chart-area").getContext("2d");
           var ctx1 = document.getElementById("chart-area1").getContext("2d");
-          var ctx2 = document.getElementById("chart-area2").getContext("2d");
-          var ctx3 = document.getElementById("chart-area3").getContext("2d");
-          var ctx4 = document.getElementById("chart-area4").getContext("2d");
-          var ctx5 = document.getElementById("chart-area5").getContext("2d");
+//          var ctx2 = document.getElementById("chart-area2").getContext("2d");
+//          var ctx3 = document.getElementById("chart-area3").getContext("2d");
+//          var ctx4 = document.getElementById("chart-area4").getContext("2d");
+//          var ctx5 = document.getElementById("chart-area5").getContext("2d");
+          var ctx6 = document.getElementById("chart-area6").getContext("2d");
 
-        window.myHorizontalBar = new Chart(ctx2, {
-              type: 'horizontalBar',
-              data: horizontalBarChartData,
-              options: {
-                  // Elements options apply to all of the options unless overridden in a dataset
-                  // In this case, we are setting the border of each horizontal bar to be 2px wide
-                  elements: {
-                      rectangle: {
-                          borderWidth: 1,
-                      }
-                  },
-                  responsive: true,
-                  legend: {
-                      position: 'right',
-                  },
-                  title: {
-                      display: true,
-                  }
-              }
-          });
 
-          window.myHorizontalBar1 = new Chart(ctx5, {
-              type: 'horizontalBar',
-              data: horizontalBarChartData1,
-              options: {
+//        window.myHorizontalBar = new Chart(ctx2, {
+//              type: 'horizontalBar',
+//              data: horizontalBarChartData,
+//              options: {
+//                  // Elements options apply to all of the options unless overridden in a dataset
+//                  // In this case, we are setting the border of each horizontal bar to be 2px wide
+//                  elements: {
+//                      rectangle: {
+//                          borderWidth: 1,
+//                      }
+//                  },
+//                  responsive: true,
+//                  legend: {
+//                      position: 'right',
+//                  },
+//                  title: {
+//                      display: true,
+//                  }
+//              }
+//          });
 
-                  elements: {
-                      rectangle: {
-                          borderWidth: 1,
-                      }
-                  },
-                  responsive: true,
-                  legend: {
-                      position: 'right',
-                  },
-                  title: {
-                      display: true,
-                  }
-              }
-          });
+//          window.myHorizontalBar1 = new Chart(ctx5, {
+//              type: 'horizontalBar',
+//              data: horizontalBarChartData1,
+//              options: {
+//
+//                  elements: {
+//                      rectangle: {
+//                          borderWidth: 1,
+//                      }
+//                  },
+//                  responsive: true,
+//                  legend: {
+//                      position: 'right',
+//                  },
+//                  title: {
+//                      display: true,
+//                  }
+//              }
+//          });
 
           window.myRadar = new Chart(ctx, config);
           window.myRadar = new Chart(ctx1,config1);
-          window.myRadar = new Chart(ctx3, config3);
-          window.myRadar = new Chart(ctx4,config4);
-
+//          window.myRadar = new Chart(ctx3, config3);
+//          window.myRadar = new Chart(ctx4,config4);
+          window.myLine = new Chart(ctx6,config6);
     }
 
   </script>
@@ -674,15 +890,24 @@
     </div>
   </footer>
 
+
+  <script>
+      $(function () {
+          $("[data-toggle='popover']").popover();
+      });
+  </script>
+
+
+
   <!-- Go To Top -->
     <a href="#" class="fh5co-gotop"><i class="ti-shift-left"></i></a>
 
   <!-- jQuery -->
-  <script src="${pageContext.request.contextPath}/resource/front/lib_one/js/jquery-1.10.2.min.js"></script>
+  <%--<script src="${pageContext.request.contextPath}/resource/front/lib_one/js/jquery-1.10.2.min.js"></script>--%>
   <!-- jQuery Easing -->
   <script src="${pageContext.request.contextPath}/resource/front/lib_one/js/jquery.easing.1.3.js"></script>
   <!-- Bootstrap -->
-  <script src="${pageContext.request.contextPath}/resource/front/lib_one/js/bootstrap.js"></script>
+  <%--<script src="${pageContext.request.contextPath}/resource/front/lib_one/js/bootstrap.js"></script>--%>
   <!-- Owl carousel -->
   <script src="${pageContext.request.contextPath}/resource/front/lib_one/js/owl.carousel.min.js"></script>
   <!-- Magnific Popup -->
