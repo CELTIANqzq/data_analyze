@@ -25,8 +25,18 @@ public interface TeacherService extends BaseService<Teacher>{
 
     public void hello();
 
+
     Map<String, Integer> queryPostData(String office);
 
+    /**
+     *
+     *   @return
+     *    String 是专任教师职称名字   教授   副教授   讲师
+     *    Integer 他们分别的数量无参数传入
+     *
+     */
+
     Map<String,Integer> getJobLeveData();
+
 
 }
