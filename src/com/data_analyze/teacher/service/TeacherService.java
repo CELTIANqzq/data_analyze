@@ -27,4 +27,6 @@ public interface TeacherService extends BaseService<Teacher>{
 
     Map<String, Integer> queryPostData(String office);
 
+    Map<String,Integer> getJobLeveData();
+
 }

@@ -41,7 +41,19 @@ public class TeacherAction {
     }
 
     @RequestMapping("/hr_data")
-    public String hrData() {
+    public String hrData(Model model) {
+
+//        <!--专任教师职称结构-->
+        try {
+
+            Map<String, Integer> teacherJobLeveStructure = teacherService.getJobLeveData();
+
+            model.addAttribute("teacherJobLeveStructure",teacherJobLeveStructure);
+
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
         return "/WEB-INF/front/teacher/hr_data.jsp";
     }
     @RequestMapping("hr_detail_data")
