@@ -135,8 +135,8 @@
 		subject = #{subject},
 		remark = #{remark},
 		mentor_type = #{mentor_type},
-		major = #{major}
-		post_type = #{post_type}
+		major = #{major},
+		post_type = #{post_type},
 		graduate_province = #{graduate_province}
 	    WHERE
 
