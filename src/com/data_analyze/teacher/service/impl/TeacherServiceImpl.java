@@ -73,6 +73,7 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
 
+    @Deprecated
     public void importTeacherTable(File excel , String fileType){
 
         try {
@@ -132,6 +133,7 @@ public class TeacherServiceImpl implements TeacherService {
         return null;
     }
 
+    @Deprecated
     public void importTeacher(File excel , String fileType){
 
         try {
@@ -289,5 +291,12 @@ public class TeacherServiceImpl implements TeacherService {
         map.put("工勤岗位", teacherMapper.execute("select count(*) from teachers where office='"+office+"' and job='工勤岗位'"));
         map.put("管理岗位", teacherMapper.execute("select count(*) from teachers where office='"+office+"' and job='管理岗位'"));
         return map;
+    }
+
+    @Override
+    public Map<String, Integer> getJobLeveData() {
+        Map<String, Integer> map = new HashMap<>();
+//        map.put()
+        return null;
     }
 }

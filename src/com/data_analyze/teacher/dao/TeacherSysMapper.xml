@@ -68,6 +68,10 @@
 
 		<result property="major" column="major"/>
 
+		<result property="post_type" column="post_type"/>
+
+		<result property="graduate_province" column="graduate_province"/>
+
 	</resultMap>
 
 	<insert id="insert" parameterType="Teacher">
@@ -75,11 +79,11 @@
 		insert into
 		teachers(salary_id,name,gender,office,birthday,race,identity,hometown,politics_status,join_time,join_school_time,join_job_time,
 		job,job_status,authorized,on_status,department,join_reason,attendance_category,job_level,administrative_post,prof_and_tech_post,special_experience,
-		last_edu_background,degree,degree_time,last_degree,subject,remark,mentor_type,major)
+		last_edu_background,degree,degree_time,last_degree,subject,remark,mentor_type,major,post_type,graduate_province)
 		values(
 		#{salary_id},#{name},#{gender},#{office},#{birthday},#{race},#{identity},#{hometown},#{politics_status},#{join_time},#{join_school_time},#{join_job_time},
 		#{job},#{job_status},#{authorized},#{on_status},#{department},#{join_reason},#{attendance_category},#{job_level},#{administrative_post},#{prof_and_tech_post},
-		#{special_experience},#{last_edu_background},#{degree},#{degree_time},#{last_degree},#{subject},#{remark},#{mentor_type},#{major}
+		#{special_experience},#{last_edu_background},#{degree},#{degree_time},#{last_degree},#{subject},#{remark},#{mentor_type},#{major},#{post_type}, #{graduate_province}
 		);
 
 	</insert>
@@ -132,7 +136,8 @@
 		remark = #{remark},
 		mentor_type = #{mentor_type},
 		major = #{major}
-
+		post_type = #{post_type}
+		graduate_province = #{graduate_province}
 	    WHERE
 
 	    salary_id = #{salary_id}

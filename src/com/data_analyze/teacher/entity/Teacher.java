@@ -1,6 +1,5 @@
 package com.data_analyze.teacher.entity;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 
 /**
@@ -70,7 +69,14 @@ public class Teacher {
 
     private String major;
 
-    public Teacher(String salary_id, String name, Boolean gender, String office, Timestamp birthday, String race, String identity, String hometown, String politics_status, Timestamp join_time, Timestamp join_school_time, Timestamp join_job_time, String job, String job_status, Boolean authorized, String on_status, String department, String join_reason, String attendance_category, String job_level, String administrative_post, String prof_and_tech_post, String special_experience, String last_edu_background, String degree, Timestamp degree_time, String last_degree, String subject, String remark, String mentor_type, String major) {
+    private String post_type;
+
+    private String graduate_province;
+
+    public Teacher() {
+    }
+
+    public Teacher(String salary_id, String name, Boolean gender, String office, Timestamp birthday, String race, String identity, String hometown, String politics_status, Timestamp join_time, Timestamp join_school_time, Timestamp join_job_time, String job, String job_status, Boolean authorized, String on_status, String department, String join_reason, String attendance_category, String job_level, String administrative_post, String prof_and_tech_post, String special_experience, String last_edu_background, String degree, Timestamp degree_time, String last_degree, String subject, String remark, String mentor_type, String major, String post_type, String graduate_province) {
         this.salary_id = salary_id;
         this.name = name;
         this.gender = gender;
@@ -102,9 +108,8 @@ public class Teacher {
         this.remark = remark;
         this.mentor_type = mentor_type;
         this.major = major;
-    }
-
-    public Teacher() {
+        this.post_type = post_type;
+        this.graduate_province = graduate_province;
     }
 
     public String getSalary_id() {
@@ -355,6 +360,22 @@ public class Teacher {
         this.major = major;
     }
 
+    public String getPost_type() {
+        return post_type;
+    }
+
+    public void setPost_type(String post_type) {
+        this.post_type = post_type;
+    }
+
+    public String getGraduate_province() {
+        return graduate_province;
+    }
+
+    public void setGraduate_province(String graduate_province) {
+        this.graduate_province = graduate_province;
+    }
+
     @Override
     public String toString() {
         return "Teacher{" +
@@ -389,6 +410,8 @@ public class Teacher {
                 ", remark='" + remark + '\'' +
                 ", mentor_type='" + mentor_type + '\'' +
                 ", major='" + major + '\'' +
+                ", post_type='" + post_type + '\'' +
+                ", graduate_province='" + graduate_province + '\'' +
                 '}';
     }
 }
