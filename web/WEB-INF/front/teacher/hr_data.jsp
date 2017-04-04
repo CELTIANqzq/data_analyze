@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/front/lib_one/css/style.css">
 
 
+
     <!-- FOR IE9 below -->
     <!--[if lte IE 9]>
     <script src="${pageContext.request.contextPath}/resource/front/lib_one/js/modernizr-2.6.2.min.js"></script>
@@ -57,15 +58,17 @@
   <script src="${pageContext.request.contextPath}/resource/front/chart_lib/Chart.bundle.js"></script>
   <script src="${pageContext.request.contextPath}/resource/front/chart_lib/samples/utils.js"></script>
 
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+
 
 </head>
 
 <body class="fh5co-outer">
   <header id="fh5co-header" role="banner">
-    
+
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-          <div class="navbar-header"> 
+          <div class="navbar-header">
             <!-- Mobile Toggle Menu Button -->
             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
             <a class="navbar-brand" href="${pageContext.request.contextPath}/">返回主页</a>
@@ -109,6 +112,16 @@
 
 
           <div class="row gallery-row">
+              <div class="col-md-12 col-sm-6">
+
+
+                  <div id="main" style="height:600px;width: 100%"></div>
+
+
+              </div>
+              </div>
+
+              <div class="row gallery-row">
               <div class="col-md-12 col-sm-6">
 
 
@@ -171,7 +184,7 @@
 
 
         <div class="row gallery-row">
-          
+
           <div class="col-md-6 col-sm-6">
 
             <h5>专任教师职称结构</h5>
@@ -283,8 +296,170 @@
 
   <script>
 
+      // 路径配置
+      require.config({
+          paths: {
+              echarts: 'http://echarts.baidu.com/build/dist'
+          }
+      });
 
-//      ==========================================================================================
+      // 使用
+      require(
+              [
+                  'echarts',
+                  'echarts/chart/map' // 使用柱状图就加载bar模块，按需加载
+              ],
+
+              function (ec) {
+                  // 基于准备好的dom，初始化echarts图表
+                  var myChart = ec.init(document.getElementById('main'));
+
+                  option = {
+                      title : {
+                          text: '师资力量',
+                          subtext: '地域分布',
+                          x:'center'
+                      },
+                      tooltip : {
+                          trigger: 'item'
+                      },
+                      legend: {
+                          orient: 'vertical',
+                          x:'left',
+                          data:['博士','硕士','学士']
+                      },
+                      dataRange: {
+                          min: 0,
+                          max: 2500,
+                          x: 'left',
+                          y: 'bottom',
+                          text:['高','低'],           // 文本，默认为数值文本
+                          calculable : true
+                      },
+                      toolbox: {
+                          show: true,
+                          orient : 'vertical',
+                          x: 'right',
+                          y: 'center',
+                          feature : {
+                              mark : {show: true},
+                              dataView : {show: true, readOnly: false},
+                              restore : {show: true},
+                              saveAsImage : {show: true}
+                          }
+                      },
+                      roamController: {
+                          show: true,
+                          x: 'right',
+                          mapTypeControl: {
+                              'china': true
+                          }
+                      },
+                      series : [
+                          {
+                              name: '博士',
+                              type: 'map',
+                              mapType: 'china',
+                              roam: false,
+                              itemStyle:{
+                                  normal:{label:{show:true}},
+                                  emphasis:{label:{show:true}}
+                              },
+                              data:[
+                                  {name: '北京',value: Math.round(Math.random()*1000)},
+                                  {name: '天津',value: Math.round(Math.random()*1000)},
+                                  {name: '上海',value: Math.round(Math.random()*1000)},
+                                  {name: '重庆',value: Math.round(Math.random()*1000)},
+                                  {name: '河北',value: Math.round(Math.random()*1000)},
+                                  {name: '河南',value: Math.round(Math.random()*1000)},
+                                  {name: '云南',value: Math.round(Math.random()*1000)},
+                                  {name: '辽宁',value: Math.round(Math.random()*1000)},
+                                  {name: '黑龙江',value: Math.round(Math.random()*1000)},
+                                  {name: '湖南',value: Math.round(Math.random()*1000)},
+                                  {name: '安徽',value: Math.round(Math.random()*1000)},
+                                  {name: '山东',value: Math.round(Math.random()*1000)},
+                                  {name: '新疆',value: Math.round(Math.random()*1000)},
+                                  {name: '江苏',value: Math.round(Math.random()*1000)},
+                                  {name: '浙江',value: Math.round(Math.random()*1000)},
+                                  {name: '江西',value: Math.round(Math.random()*1000)},
+                                  {name: '湖北',value: Math.round(Math.random()*1000)},
+                                  {name: '广西',value: Math.round(Math.random()*1000)},
+                                  {name: '甘肃',value: Math.round(Math.random()*1000)},
+                                  {name: '山西',value: Math.round(Math.random()*1000)},
+                                  {name: '内蒙古',value: Math.round(Math.random()*1000)},
+                                  {name: '陕西',value: Math.round(Math.random()*1000)},
+                                  {name: '吉林',value: Math.round(Math.random()*1000)},
+                                  {name: '福建',value: Math.round(Math.random()*1000)},
+                                  {name: '贵州',value: Math.round(Math.random()*1000)},
+                                  {name: '广东',value: Math.round(Math.random()*1000)},
+                                  {name: '青海',value: Math.round(Math.random()*1000)},
+                                  {name: '西藏',value: Math.round(Math.random()*1000)},
+                                  {name: '四川',value: Math.round(Math.random()*1000)},
+                                  {name: '宁夏',value: Math.round(Math.random()*1000)},
+                                  {name: '海南',value: Math.round(Math.random()*1000)},
+                                  {name: '台湾',value: Math.round(Math.random()*1000)},
+                                  {name: '香港',value: Math.round(Math.random()*1000)},
+                                  {name: '澳门',value: Math.round(Math.random()*1000)}
+                              ]
+                          },
+                          {
+                              name: '硕士',
+                              type: 'map',
+                              mapType: 'china',
+                              itemStyle:{
+                                  normal:{label:{show:true}},
+                                  emphasis:{label:{show:true}}
+                              },
+                              data:[
+                                  {name: '北京',value: Math.round(Math.random()*1000)},
+                                  {name: '天津',value: Math.round(Math.random()*1000)},
+                                  {name: '上海',value: Math.round(Math.random()*1000)},
+                                  {name: '重庆',value: Math.round(Math.random()*1000)},
+                                  {name: '河北',value: Math.round(Math.random()*1000)},
+                                  {name: '安徽',value: Math.round(Math.random()*1000)},
+                                  {name: '新疆',value: Math.round(Math.random()*1000)},
+                                  {name: '浙江',value: Math.round(Math.random()*1000)},
+                                  {name: '江西',value: Math.round(Math.random()*1000)},
+                                  {name: '山西',value: Math.round(Math.random()*1000)},
+                                  {name: '内蒙古',value: Math.round(Math.random()*1000)},
+                                  {name: '吉林',value: Math.round(Math.random()*1000)},
+                                  {name: '福建',value: Math.round(Math.random()*1000)},
+                                  {name: '广东',value: Math.round(Math.random()*1000)},
+                                  {name: '西藏',value: Math.round(Math.random()*1000)},
+                                  {name: '四川',value: Math.round(Math.random()*1000)},
+                                  {name: '宁夏',value: Math.round(Math.random()*1000)},
+                                  {name: '香港',value: Math.round(Math.random()*1000)},
+                                  {name: '澳门',value: Math.round(Math.random()*1000)}
+                              ]
+                          },
+                          {
+                              name: '学士',
+                              type: 'map',
+                              mapType: 'china',
+                              itemStyle:{
+                                  normal:{label:{show:true}},
+                                  emphasis:{label:{show:true}}
+                              },
+                              data:[
+                                  {name: '北京',value: Math.round(Math.random()*1000)},
+                                  {name: '天津',value: Math.round(Math.random()*1000)},
+                                  {name: '上海',value: Math.round(Math.random()*1000)},
+                                  {name: '广东',value: Math.round(Math.random()*1000)},
+                                  {name: '台湾',value: Math.round(Math.random()*1000)},
+                                  {name: '香港',value: Math.round(Math.random()*1000)},
+                                  {name: '澳门',value: Math.round(Math.random()*1000)}
+                              ]
+                          }
+                      ]
+                  };
+
+                  // 为echarts对象加载数据
+                  myChart.setOption(option);
+              }
+      );
+
+
+      //      ==========================================================================================
 
 
       <!--专任教师职称结构-->
@@ -916,7 +1091,7 @@
                我们是信息工程学院教学数据信息开发的团队。
             </p>
           </div>
-          
+
             <h3 class="footer-heading">订阅</h3>
             <form action="#" class="form-subscribe">
               <div class="field">
@@ -925,17 +1100,17 @@
               </div>
             </form>
             <div class="fh5co-spacer fh5co-spacer-sm"></div>
-          
+
         </div>
         <div class="col-md-3 col-sm-6">
-          
+
             <h3 class="footer-heading">正在开发的项目</h3>
             <ul class="footer-list">
               <li><a href="#">项目一</a></li>
               <li><a href="#">项目二</a></li>
               <li><a href="#">项目三</a></li>
             </ul>
-          
+
         </div>
 
 
@@ -943,7 +1118,7 @@
 
 
         <div class="col-md-3 col-sm-6">
-          
+
             <h3 class="footer-heading">初步成果</h3>
             <ul class="footer-list">
               <li><a href="#"><abbr title="Hypertext Markup Language 5">成果一</abbr></a></li>
@@ -951,7 +1126,7 @@
               <li><a href="#">成果三</a></li>
               <li><a href="#">成果四</a></li>
             </ul>
-          
+
         </div>
 
 
@@ -965,7 +1140,7 @@
                   <li><a href="#">我们的主页</a></li>
                   <li><a href="#">给我们留言</a></li>
                   <li><a href="#">关于我们</a></li>
-                  
+
                 </ul>
               </div>
             </div>
@@ -979,9 +1154,9 @@
               </div>
             </div>
           </div>
-          
+
         </div>
-        
+
       </div>
     </div>
     <div class="container">
