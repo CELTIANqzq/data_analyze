@@ -26,7 +26,24 @@ public interface ProjectService extends BaseService<Project> {
      * Integer
      * 各单位科研进账数
      */
-    Map<String,Float> getAveProjectData(String year);
+    Map<String,Float> getAveProjectMoneyData(String year);
+
+
+    /**
+     *
+     * @param year 年份
+     * @return
+     *
+     * <String,Float>
+     *
+     * String : 不同单位名：首字母大写
+     *
+     * Float ； 各单位总科研经费
+     *
+     */
+
+    Map<String,Float> getSumProjectMoneyData(String year);
+
 
 
 }
