@@ -39,4 +39,14 @@ public interface TeacherService extends BaseService<Teacher>{
     Map<String,Integer> getJobLeveData();
 
 
+    /**
+     *
+     * @return
+     * Sting 是不同单位对应的名字（计算机系、电子系、自动化系、计算中心）
+     * Map<String , Integer>
+     *  这里面的String表示（教师岗位、其它专技） Integer是他们对应的数量
+     *
+     */
+
+    Map<String,Map<String,Integer>> getAllPostData();
 }

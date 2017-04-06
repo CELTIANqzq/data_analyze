@@ -25,17 +25,24 @@ public class TeacherAction {
 
     @RequestMapping("/post_data")
     public String postData(Model model) {
-        Map<String,Integer> cs = teacherService.queryPostData("计算机科学与技术系");
-        Map<String,Integer> ee = teacherService.queryPostData("电子信息工程系");
-        Map<String,Integer> auto = teacherService.queryPostData("电气与自动化工程系");
-        Map<String,Integer> caculateCenter = teacherService.queryPostData("计算中心");
-        Map<String,Integer> eleExperience = teacherService.queryPostData("电工电子实验中心");
+//        Map<String,Integer> cs = teacherService.queryPostData("计算机科学与技术系");
+//        Map<String,Integer> ee = teacherService.queryPostData("电子信息工程系");
+//        Map<String,Integer> auto = teacherService.queryPostData("电气与自动化工程系");
+//        Map<String,Integer> caculateCenter = teacherService.queryPostData("计算中心");
+//        Map<String,Integer> eleExperience = teacherService.queryPostData("电工电子实验中心");
+//
+//        model.addAttribute("cs", cs);
+//        model.addAttribute("ee", ee);
+//        model.addAttribute("auto", auto);
+//        model.addAttribute("caculateCenter", caculateCenter);
+//        model.addAttribute("eleExperience", eleExperience);
 
-        model.addAttribute("cs", cs);
-        model.addAttribute("ee", ee);
-        model.addAttribute("auto", auto);
-        model.addAttribute("caculateCenter", caculateCenter);
-        model.addAttribute("eleExperience", eleExperience);
+        //学院各单位岗位数据对比
+        Map<String,Map<String , Integer>> allPostData = teacherService.getAllPostData();
+
+
+
+        model.addAttribute("AllPostData",allPostData);
 
         return "/WEB-INF/front/teacher/post_data.jsp";
     }

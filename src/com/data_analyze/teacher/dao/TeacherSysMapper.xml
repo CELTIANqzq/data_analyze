@@ -142,7 +142,6 @@
 
 	    salary_id = #{salary_id}
 
-
 	</update>
 
 	<!--查询单个实体-->

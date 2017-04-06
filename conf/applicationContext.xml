@@ -21,6 +21,8 @@
           <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/data_analyze?characterEncoding=utf8"/>
           <property name="user" value="root"/>
           <property name="password" value="root"/>
+
+
      </bean>
 
 
