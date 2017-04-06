@@ -340,6 +340,7 @@ public class TeacherServiceImpl implements TeacherService {
         officeNum.put("DZXXGCX", teacherMapper.execute(
                 "select count(*) from teachers where office='电子信息工程系' and job='其他专业技术岗位';"
         ));
+        postMap.put("QTZYJSGW",officeNum);
         return postMap;
     }
 }
