@@ -20,6 +20,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -160,7 +161,21 @@ public class PaperServiceImpl implements PaperService {
     @Override
     public Map<String, Integer> getPaperNumber(String year) {
         // 只算SCI
-//        int all = paperMapper
-        return null;
+        int all = paperMapper.queryAll(year,"SCI").size(); // 全院
+        int cs = paperMapper.queryAllInOffice(year, "计算机科学与技术系", "SCI").size();  // 计算机科学与技术系
+        int caculateCenter = paperMapper.queryAllInOffice(year, "计算中心", "SCI").size();  // 计算中心
+        int auto = paperMapper.queryAllInOffice(year, "电气与自动化工程系", "SCI").size();  // 电气与自动化工程系
+        int expCenter = paperMapper.queryAllInOffice(year, "电工电子实验中心", "SCI").size();  // 电工电子实验中心
+        int ee = paperMapper.queryAllInOffice(year, "电子信息工程系", "SCI").size();  // 电子信息工程系
+
+        Map<String, Integer> result = new HashMap<>();
+        result.put("QY", all);
+        result.put("JSJKXYJSX", cs);
+        result.put("JSZX", caculateCenter);
+        result.put("DQYZDHGCX", auto);
+        result.put("DGDZSYZX", expCenter);
+        result.put("DZXXGCX", ee);
+
+        return result;
     }
 }

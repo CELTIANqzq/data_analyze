@@ -17,6 +17,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -45,6 +46,7 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
+    @Deprecated
     public void importProject(File excel, String fileType, int year) {
         try {
             FileInputStream fileInputStream = new FileInputStream(excel);
@@ -139,11 +141,48 @@ public class ProjectServiceImpl implements ProjectService {
 
     @Override
     public Map<String, Float> getAveProjectMoneyData(String year) {
-        return null;
+        Map<String, Float> result = new HashMap<>();
+        int allPeopleNumber = teacherMapper.execute("select count(*) from teachers;");
+        int csPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算机科学与技术系';");
+        int caculateCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算中心';");
+        int autoPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电气与自动化工程系';");
+        int expCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电工电子实验中心';");
+        int eePeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电子信息工程系';");
+
+        float all = projectMapper.getAllBudget(year);
+        float csBudget = projectMapper.getBudgetInOffice(year, "计算机科学与技术系");
+        float caculateCenterBudget = projectMapper.getBudgetInOffice(year, "计算中心");
+        float autoBudget = projectMapper.getBudgetInOffice(year, "电气与自动化工程系");
+        float expCenterBudget = projectMapper.getBudgetInOffice(year, "电工电子实验中心");
+        float eeBudget = projectMapper.getBudgetInOffice(year, "电子信息工程系");
+
+        result.put("QY", all/allPeopleNumber);
+        result.put("JSJKXYJSX", csBudget/csPeopleNumber);
+        result.put("JSZX", caculateCenterBudget/caculateCenterPeopleNumber);
+        result.put("DQYZDHGCX", autoBudget/autoPeopleNumber);
+        result.put("DGDZSYZX", expCenterBudget/expCenterPeopleNumber);
+        result.put("DZXXGCX", eeBudget/eePeopleNumber);
+
+        return result;
     }
 
     @Override
     public Map<String, Float> getSumProjectMoneyData(String year) {
-        return null;
+        Map<String, Float> result = new HashMap<>();
+        float all = projectMapper.getAllBudget(year);
+        float csBudget = projectMapper.getBudgetInOffice(year, "计算机科学与技术系");
+        float caculateCenterBudget = projectMapper.getBudgetInOffice(year, "计算中心");
+        float autoBudget = projectMapper.getBudgetInOffice(year, "电气与自动化工程系");
+        float expCenterBudget = projectMapper.getBudgetInOffice(year, "电工电子实验中心");
+        float eeBudget = projectMapper.getBudgetInOffice(year, "电子信息工程系");
+
+        result.put("QY", all);
+        result.put("JSJKXYJSX", csBudget);
+        result.put("JSZX", caculateCenterBudget);
+        result.put("DQYZDHGCX", autoBudget);
+        result.put("DGDZSYZX", expCenterBudget);
+        result.put("DZXXGCX", eeBudget);
+
+        return result;
     }
 }

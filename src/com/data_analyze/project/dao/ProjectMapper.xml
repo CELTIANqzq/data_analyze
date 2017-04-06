@@ -26,4 +26,25 @@
         VALUES (#{salary_id}, #{name}, #{type}, #{budget_in_acc});
     </insert>
 
+    <select id="getAllBudget" parameterType="String" resultType="Float">
+        <bind name="tableName" value="'projects'+year"/>
+        SELECT
+          sum(budget_in_acc)
+        FROM
+          ${tableName}
+    </select>
+
+    <select id="getBudgetInOffice" parameterType="String" resultType="Float">
+        <bind name="tableName" value="'projects'+year"/>
+        SELECT
+          sum(budget_in_acc)
+        FROM
+          ${tableName} as projects
+        INNER JOIN
+          teachers
+        ON
+          projects.salary_id = teachers.salary_id AND
+          teachers.office = #{office}
+    </select>
+
 </mapper>
