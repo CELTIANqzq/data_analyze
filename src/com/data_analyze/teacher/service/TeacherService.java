@@ -81,7 +81,7 @@ public interface TeacherService extends BaseService<Teacher>{
      * Integer:人数
      *
      */
-     Map<String,Map<String,Integer>> getAllHrProvinceData();
+//     Map<String,Map<String,Integer>> getAllHrProvinceData();
 
 
 

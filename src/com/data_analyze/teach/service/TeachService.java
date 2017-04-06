@@ -21,20 +21,20 @@ public interface TeachService extends BaseService<Teach> {
      * 年份：2010-2016
      *
      * @return
-     * <String,Integer>
+     * <String,Float>
      * String
      * (学院人均工作量、计算机科学与技术系人均教学工作量、
      * 电子信息工程系人均教学工作量、电气与自动化系人均教学工作量、
      * 计算中心人均教学工作量、电工电子实验中心人均教学工作量)
      *
-     * Integer
+     * Float
      * 具体教学工作量的值
      *
      * 注意是平均工作量
      *
      */
 
-    Map<String,Integer> getAveTeachData(String year);
+    Map<String,Float> getAveTeachData(String year);
 
     /**
      *
@@ -42,19 +42,19 @@ public interface TeachService extends BaseService<Teach> {
      *
      * 年份 2010-2016
      * @return
-     * <String,Integer>
+     * <String,Float>
      *
      *  String
      * (计算机科学与技术系总教学工作量、电子信息工程系总教学工作量、
      *  电气与自动化系总教学工作量、计算中心总教学工作量、电工电子实验中心总教学工作量)
-     * Integer
+     * Float
      * 具体的工作量的数值
      *
      * 注意：是总的教学工作量
      *
      */
 
-    Map<String,Integer> getSumTeachData(String year);
+    Map<String,Float> getSumTeachData(String year);
 
     /**
      *
@@ -64,15 +64,16 @@ public interface TeachService extends BaseService<Teach> {
      *  注意：传入的时候用拼英首字母大写
      *
      * @return
-     * <String,Integer>
+     * <String,Float>
      *  String：人名
-     *  Integer：工作量的值
+     *  Float：工作量的值
      */
 
-    Map<String,Integer> getFirstToFiveTeachData(String year,String officeName);
+    Map<String,Float> getFirstToFiveTeachData(String year,String officeName);
 
 
     /**
+     *全学院最高的5个
      *
      * @param year 年份 2010-2016
      *
@@ -80,9 +81,9 @@ public interface TeachService extends BaseService<Teach> {
      *
      * String:教师名
      *
-     * Integer:工作量的值
+     * Float:工作量的值
      *
      */
-    Map<String,Integer> getFirstToFiveFromAllTeachData(String year);
+    Map<String,Float> getFirstToFiveFromAllTeachData(String year);
 
 }

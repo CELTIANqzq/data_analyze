@@ -117,6 +117,25 @@
     <section class="grid-gallery">
       <div class="container">
 
+          <div class="row gallery-row">
+
+              <div class="col-md-12">
+
+
+                  <ul class="resp-tabs-list hor_1">
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2010</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2011</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2012</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2013</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2014</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2015</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2016</a></li>
+                  </ul>
+
+              </div>
+          </div>
+          <hr/>
+
 
           <div class="row gallery-row">
               <div class="col-md-12 col-sm-6">
@@ -135,24 +154,7 @@
 
 
 
-          <div class="row gallery-row">
 
-              <div class="col-md-12">
-
-
-              <ul class="resp-tabs-list hor_1">
-                 <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2010</a></li>
-                 <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2011</a></li>
-                 <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2012</a></li>
-                  <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2013</a></li>
-                  <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2014</a></li>
-                  <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2015</a></li>
-                  <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2016</a></li>
-              </ul>
-
-              </div>
-          </div>
-          <hr/>
 
 
           <div class="row gallery-row">

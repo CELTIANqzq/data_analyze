@@ -25,17 +25,6 @@ public class TeacherAction {
 
     @RequestMapping("/post_data")
     public String postData(Model model) {
-//        Map<String,Integer> cs = teacherService.queryPostData("计算机科学与技术系");
-//        Map<String,Integer> ee = teacherService.queryPostData("电子信息工程系");
-//        Map<String,Integer> auto = teacherService.queryPostData("电气与自动化工程系");
-//        Map<String,Integer> caculateCenter = teacherService.queryPostData("计算中心");
-//        Map<String,Integer> eleExperience = teacherService.queryPostData("电工电子实验中心");
-//
-//        model.addAttribute("cs", cs);
-//        model.addAttribute("ee", ee);
-//        model.addAttribute("auto", auto);
-//        model.addAttribute("caculateCenter", caculateCenter);
-//        model.addAttribute("eleExperience", eleExperience);
 
         //学院各单位岗位数据对比
         Map<String,Map<String , Integer>> allPostData = teacherService.getAllPostData();
@@ -51,11 +40,16 @@ public class TeacherAction {
 
         System.out.println(JSJKXYJSX_POST_DATA+"-"+DZXXGCX_POST_DATA+"-"+DQYZDHX_POST_DATA+"-"+JSZX_POST_DATA+"-"+DGDZSYZX_POST_DATA);
 
+        //不同单位教师岗位数据
         Map<String,Integer> JSGW = allPostData.get("JSGW");
 
+        //不同单位专任教师数据
+        Map<String,Integer> QTZYJSGW = allPostData.get("QTZYJSGW");
 
         //教师岗位数据
         model.addAttribute("JSGW",JSGW);
+        model.addAttribute("QTZYJSGW",QTZYJSGW);
+
 
         model.addAttribute("JSJKXYJSX_POST_DATA",JSJKXYJSX_POST_DATA);
 
@@ -73,12 +67,22 @@ public class TeacherAction {
     @RequestMapping("/hr_data")
     public String hrData(Model model) {
 
-//        <!--专任教师职称结构-->
         try {
 
-//            Map<String, Integer> teacherJobLeveStructure = teacherService.getJobLeveData();
-//
-//            model.addAttribute("teacherJobLeveStructure",teacherJobLeveStructure);
+            //拿到数据
+            Map<String,Map<String,Integer>> hrProvinceData = null;
+
+            Map<String,Integer> SingleProvinceDataBS = hrProvinceData.get("BS");
+
+            Map<String,Integer> SingleProvinceDataSS = hrProvinceData.get("SS");
+
+            Map<String,Integer> SingleProvinceDataXS = hrProvinceData.get("XS");
+
+            model.addAttribute("SingleProvinceDataBS",SingleProvinceDataBS);
+
+            model.addAttribute("SingleProvinceDataSS",SingleProvinceDataSS);
+
+            model.addAttribute("SingleProvinceDataXS",SingleProvinceDataXS);
 
         }catch (Exception e){
 

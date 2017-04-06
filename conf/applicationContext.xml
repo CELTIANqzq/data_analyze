@@ -18,7 +18,7 @@
      <!-- 采用c3p0连接池，预先把c3p0的jar包复制到工程目录下 -->
      <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
           <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-          <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/data_analyze?characterEncoding=utf8"/>
+          <property name="jdbcUrl" value="jdbc:mysql://127.0.1.1:3306/data_analyze?characterEncoding=utf8"/>
           <property name="user" value="root"/>
           <property name="password" value="root"/>
 

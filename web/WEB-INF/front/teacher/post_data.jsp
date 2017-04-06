@@ -340,14 +340,11 @@
           data: {
               datasets: [{
                   data: [
-                      <%--${cs['教师岗位']},--%>
-                      <%--${cs['其他专业技术岗位']},--%>
-                      <%--${cs['管理岗位']},--%>
-                      <%--${cs['工勤岗位']}--%>
-                          4,
-                          5,
-                          6,
-                          2
+
+                          ${JSJKXYJSX_POST_DATA["JCJXX"]},
+                          ${JSJKXYJSX_POST_DATA["JXKYBZX"]},
+                          0,
+                          ${JSJKXYJSX_POST_DATA["SHFWX"]}
 
                   ],
                   backgroundColor: [
@@ -386,11 +383,10 @@
           data: {
               datasets: [{
                   data: [
-                      <%--${ee['教师岗位']},--%>
-                      <%--${ee['其他专业技术岗位']},--%>
-                      <%--${ee['管理岗位']},--%>
-                      <%--${ee['工勤岗位']}--%>
-                          2,3,2,1
+                      ${DZXXGCX_POST_DATA["JCJXX"]},
+                      ${DZXXGCX_POST_DATA["JXKYBZX"]},
+                      0,
+                      ${DZXXGCX_POST_DATA["SHFWX"]}
                   ],
                   backgroundColor: [
                       window.chartColors.blue,
@@ -428,8 +424,10 @@
           data: {
               datasets: [{
                   data: [
-                      2,3,2,1
-
+                      ${DQYZDHX_POST_DATA["JCJXX"]},
+                      ${DQYZDHX_POST_DATA["JXKYBZX"]},
+                      0,
+                      ${DQYZDHX_POST_DATA["SHFWX"]}
                   ],
                   backgroundColor: [
                       window.chartColors.blue,
@@ -468,8 +466,10 @@
           data: {
               datasets: [{
                   data: [
-                      2,3,2,1
-
+                      ${JSZX_POST_DATA["JCJXX"]},
+                      ${JSZX_POST_DATA["JXKYBZX"]},
+                      0,
+                      ${JSZX_POST_DATA["SHFWX"]}
 
                   ],
                   backgroundColor: [
@@ -510,9 +510,10 @@
           data: {
               datasets: [{
                   data: [
-                      2,3,2,1
-
-
+                      ${DGDZSYZX_POST_DATA["JCJXX"]},
+                      ${DGDZSYZX_POST_DATA["JXKYBZX"]},
+                      0,
+                      ${DGDZSYZX_POST_DATA["SHFWX"]}
                   ],
                   backgroundColor: [
                       window.chartColors.blue,
@@ -543,165 +544,6 @@
               }
           }
       };
-      //      ==========================================================================================
-
-
-//      var config5 = {
-//          type: 'doughnut',
-//          data: {
-//              datasets: [{
-//                  data: [
-//                      1,
-//                      1,
-//                      2
-//
-//                  ],
-//                  backgroundColor: [
-//                      window.chartColors.blue,
-//                      window.chartColors.purple,
-//                      window.chartColors.green
-//                  ],
-//                  label: '人数'
-//              }],
-//              labels: [
-//                  "科长",
-//                  "管理岗",
-//                  "非专技"
-//
-//              ]
-//          },
-//          options: {
-//              responsive: true,
-//              legend: {
-//                  position: 'top',
-//              },
-//              title: {
-//                  display: true,
-//              },
-//              animation: {
-//                  animateScale: true,
-//                  animateRotate: true
-//              }
-//          }
-//      };
-//      //      ==========================================================================================
-//
-//
-//      var config6 = {
-//          type: 'doughnut',
-//          data: {
-//              datasets: [{
-//                  data: [
-//                      2,
-//                      9
-//                  ],
-//                  backgroundColor: [
-//                      window.chartColors.blue,
-//                      window.chartColors.purple,
-//                      window.chartColors.green
-//                  ],
-//                  label: '人数'
-//              }],
-//              labels: [
-//                  "管理岗",
-//                  "专职辅导员"
-//              ]
-//          },
-//          options: {
-//              responsive: true,
-//              legend: {
-//                  position: 'top',
-//              },
-//              title: {
-//                  display: true,
-//              },
-//              animation: {
-//                  animateScale: true,
-//                  animateRotate: true
-//              }
-//          }
-//      };
-//
-//      //      ==========================================================================================
-//
-//      var config7 = {
-//          type: 'doughnut',
-//          data: {
-//              datasets: [{
-//                  data: [
-//                      1,
-//                      2,
-//                      1
-//
-//                  ],
-//                  backgroundColor: [
-//                      window.chartColors.blue,
-//                      window.chartColors.purple,
-//                      window.chartColors.green
-//                  ],
-//                  label: '人数'
-//              }],
-//              labels: [
-//                  "主任",
-//                  "管理岗",
-//                  "专职辅导员"
-//
-//              ]
-//          },
-//          options: {
-//              responsive: true,
-//              legend: {
-//                  position: 'top',
-//              },
-//              title: {
-//                  display: true,
-//              },
-//              animation: {
-//                  animateScale: true,
-//                  animateRotate: true
-//              }
-//          }
-//      };
-//      //      ==========================================================================================
-//
-//      var config8 = {
-//          type: 'doughnut',
-//          data: {
-//              datasets: [{
-//                  data: [
-//                      2,
-//                      1,
-//                      2
-//
-//                  ],
-//                  backgroundColor: [
-//                      window.chartColors.blue,
-//                      window.chartColors.purple,
-//                      window.chartColors.green
-//                  ],
-//                  label: '人数'
-//              }],
-//              labels: [
-//                  "副主任",
-//                  "管理岗",
-//                  "其他专技"
-//
-//              ]
-//          },
-//          options: {
-//              responsive: true,
-//              legend: {
-//                  position: 'top',
-//              },
-//              title: {
-//                  display: true,
-//              },
-//              animation: {
-//                  animateScale: true,
-//                  animateRotate: true
-//              }
-//          }
-//      };
       //      ==========================================================================================
 
 
@@ -801,8 +643,8 @@
               borderColor: window.chartColors.purple,
               borderWidth: 1,
               data: [
-                  ${JSGW.["JSJKXYJSX"]},
-                  10
+                  ${JSGW["JSJKXYJSX"]},
+                  ${QTZYJSGW["JSJKXYJSX"]}
                 ]
               }
           ,
@@ -812,8 +654,8 @@
               backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
               borderColor: window.chartColors.green,
               data: [
-                  2,
-                  3
+                  ${JSGW["DZXXGCX"]},
+                  ${QTZYJSGW["DZXXGCX"]}
               ]},
               //              3 color(dsColor).alpha(0.5).rgbString()
               {
@@ -821,8 +663,8 @@
                   backgroundColor: color(window.chartColors.grey).alpha(0.5).rgbString(),
                   borderColor: window.chartColors.grey,
                   data: [
-                      3,
-                      5
+                      ${JSGW["DQYZDHGCX"]},
+                      ${QTZYJSGW["DQYZDHGCX"]}
 
              ]},
 
@@ -832,9 +674,8 @@
                   backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
                   borderColor: window.chartColors.blue,
                   data: [
-                      5,
-                      9
-
+                      ${JSGW["JSZX"]},
+                      ${QTZYJSGW["JSZX"]}
 
                   ]},
 
@@ -844,8 +685,8 @@
                   backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
                   borderColor: window.chartColors.orange,
                   data: [
-                  3,
-                  7
+                      ${JSGW["DGDZSYZX"]},
+                      ${QTZYJSGW["DGDZSYZX"]}
 
                   ]}
 
