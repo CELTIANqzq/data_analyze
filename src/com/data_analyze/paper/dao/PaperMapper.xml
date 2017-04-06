@@ -14,27 +14,31 @@
 		<result property="title" column="title"/>
 	</resultMap>
 
-	<!--<select id="selectAccount" parameterType="Integer" resultMap="accountResultMap">-->
 
+	<select id="queryAll" parameterType="String" resultType="Paper">
+		<bind name="columnName" value="'papers'+year"/>
+		SELECT
+			*
+		FROM
+			${columnName} as papers
+		WHERE
+			level LIKE #{levelPattern}
+	</select>
 
-	<!--</select>-->
+	<select id="queryAllInOffice" parameterType="String" resultType="Paper">
+		<bind name="columnName" value="'papers'+year"/>
+		SELECT
+			*
+		FROM
+			${columnName} as papers
+		INNER JOIN
+			teachers
+		ON
+			papers.salary_id = teachers.salary_id AND
+			teachers.office = #{office} AND
+			papers.level LIKE #{levelPattern}
+	</select>
 
-
-	<!--<insert id="insert2015" parameterType="Paper">-->
-
-		<!--insert into papers2015(salary_id,ids_num,year,author,level,title)-->
-
-		<!--values(#{salary_id},#{ids_num},#{year},#{author},#{level},#{title});-->
-
-	<!--</insert>-->
-
-	<!--<insert id="insert2016" parameterType="Paper">-->
-
-		<!--insert into papers2016(salary_id,ids_num,year,author,level,department,age,title)-->
-
-		<!--values(#{salary_id},#{ids_num},#{year},#{author},#{level},#{department},#{age},#{title});-->
-
-    <!--</insert>-->
 
 
 </mapper>

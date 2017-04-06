@@ -159,6 +159,8 @@ public class PaperServiceImpl implements PaperService {
 
     @Override
     public Map<String, Integer> getPaperNumber(String year) {
+        // 只算SCI
+//        int all = paperMapper
         return null;
     }
 }

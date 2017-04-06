@@ -3,6 +3,8 @@ package com.data_analyze.teach.dao;
 import com.data_analyze.teach.entity.Teach;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 /**
  * Created by jiacheng on 17-3-19.
  */
@@ -34,4 +36,22 @@ public interface TeachMapper {
      */
     float getOfficeWork(@Param("year") String year, @Param("office") String office);
 
+    /**
+     * 根据工作量排序，分页查询科室
+     * @param year
+     * @param office
+     * @param beforeBegin
+     * @param limit
+     * @return
+     */
+    List<Teach> queryTeachByPageInOffice(@Param("year") String year, @Param("office") String office, @Param("beforeBegin") String beforeBegin, @Param("limit") String limit);
+
+    /**
+     * 根据工作量排序，分页查询全院
+     * @param year
+     * @param beforeBegin
+     * @param limit
+     * @return
+     */
+    List<Teach> queryTeachByPage(@Param("year") String year, @Param("beforeBegin") String beforeBegin, @Param("limit") String limit);
 }

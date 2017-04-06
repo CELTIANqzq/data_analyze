@@ -19,4 +19,22 @@ public class TeachServiceTest extends BaseTest{
         Map<String, Float> map = teachService.getAveTeachData("2016");
         System.out.println(map);
     }
+
+    @Test
+    public void getSumTeachDataTest() {
+        Map<String, Float> map = teachService.getSumTeachData("2016");
+        System.out.println(map);
+    }
+
+    @Test
+    public void getFirstToFiveTeachDataTest() {
+        Map<String, Float> map = teachService.getFirstToFiveTeachData("2016","计算机科学与技术系");
+        System.out.println(map);
+    }
+
+    @Test
+    public void getFirstToFiveFromAllTeachData() {
+        Map<String, Float> map = teachService.getFirstToFiveFromAllTeachData("2016");
+        System.out.println(map);
+    }
 }

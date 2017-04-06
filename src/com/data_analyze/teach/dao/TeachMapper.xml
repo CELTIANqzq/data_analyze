@@ -66,4 +66,31 @@
         on teach.salary_id=teachers.salary_id AND teachers.office=#{office};
     </select>
 
+    <select id="queryTeachByPageInOffice" parameterType="String" resultType="Teach">
+        <bind name="tableName" value="'teach'+year"/>
+        SELECT
+          *
+        FROM
+          ${tableName} as teach
+        INNER JOIN
+          teachers
+        ON
+          teach.salary_id=teachers.salary_id and teachers.office=#{office}
+        ORDER BY
+          year_sum
+        DESC
+        LIMIT ${beforeBegin}, ${limit};
+    </select>
+
+    <select id="queryTeachByPage" parameterType="String" resultType="Teach">
+        <bind name="tableName" value="'teach'+year"/>
+        SELECT
+          *
+        FROM
+          ${tableName} as teach
+        ORDER BY
+          year_sum
+        DESC
+        LIMIT ${beforeBegin}, ${limit};
+    </select>
 </mapper>

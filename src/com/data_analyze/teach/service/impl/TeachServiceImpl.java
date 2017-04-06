@@ -18,6 +18,8 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -200,16 +202,43 @@ public class TeachServiceImpl implements TeachService {
 
     @Override
     public Map<String, Float> getSumTeachData(String year) {
-        return null;
+        Map<String, Float> result = new HashMap<>();
+
+        float allWork = teachMapper.getAllWork(year);
+        float csWork =  teachMapper.getOfficeWork(year, "计算机科学与技术系");
+        float caculateCenterWork =  teachMapper.getOfficeWork(year, "计算中心");
+        float autoWork =  teachMapper.getOfficeWork(year, "电气与自动化工程系");
+        float expCenterWork =  teachMapper.getOfficeWork(year, "电工电子实验中心");
+        float eeWork =  teachMapper.getOfficeWork(year, "电子信息工程系");
+
+        result.put("XY", allWork);  // 学院总
+        result.put("JSJKXYJSX", csWork); // 计算机科学与技术系总
+        result.put("JSZX", caculateCenterWork); // 计算中心总
+        result.put("DQYZDHGCX", autoWork); // 电气与自动化工程系总
+        result.put("DGDZSYZX", expCenterWork); // 电工电子实验中心总
+        result.put("DZXXGCX", eeWork); // 电子信息工程系总
+        return result;
     }
 
     @Override
     public Map<String, Float> getFirstToFiveTeachData(String year, String officeName) {
-        return null;
+        List<Teach> teachList = teachMapper.queryTeachByPageInOffice(year, officeName, "0","5");
+        Map<String, Float> result = new HashMap<>();
+        for(Iterator<Teach> it = teachList.iterator(); it.hasNext(); ) {
+            Teach teach = it.next();
+            result.put(teach.getName(), teach.getYear_sum());
+        }
+        return result;
     }
 
     @Override
     public Map<String, Float> getFirstToFiveFromAllTeachData(String year) {
-        return null;
+        List<Teach> teachList = teachMapper.queryTeachByPage(year, "0","5");
+        Map<String, Float> result = new HashMap<>();
+        for(Iterator<Teach> it = teachList.iterator(); it.hasNext(); ) {
+            Teach teach = it.next();
+            result.put(teach.getName(), teach.getYear_sum());
+        }
+        return result;
     }
 }
