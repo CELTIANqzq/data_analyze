@@ -17,7 +17,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by jiacheng on 17-3-19.
@@ -169,7 +170,46 @@ public class TeachServiceImpl implements TeachService {
         }
     }
 
+    @Override
+    public Map<String, Float> getAveTeachData(String year) {
+        Map<String, Float> result = new HashMap<>();
+        int allPeopleNumber = teacherMapper.execute("select count(*) from teachers;");
+        int csPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算机科学与技术系';");
+        int caculateCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算中心';");
+        int autoPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电气与自动化工程系';");
+        int expCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电工电子实验中心';");
+        int eePeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电子信息工程系';");
 
 
+        float allWork = teachMapper.getAllWork(year);
+        float csWork =  teachMapper.getOfficeWork(year, "计算机科学与技术系");
+        float caculateCenterWork =  teachMapper.getOfficeWork(year, "计算中心");
+        float autoWork =  teachMapper.getOfficeWork(year, "电气与自动化工程系");
+        float expCenterWork =  teachMapper.getOfficeWork(year, "电工电子实验中心");
+        float eeWork =  teachMapper.getOfficeWork(year, "电子信息工程系");
 
+        result.put("XY", allWork/allPeopleNumber);  // 学院平均
+        result.put("JSJKXYJSX", csWork/csPeopleNumber); // 计算机科学与技术系平均
+        result.put("JSZX", caculateCenterWork/caculateCenterPeopleNumber); // 计算中心平均
+        result.put("DQYZDHGCX", autoWork/autoPeopleNumber); // 电气与自动化工程系平均
+        result.put("DGDZSYZX", expCenterWork/expCenterPeopleNumber); // 电工电子实验中心平均
+        result.put("DZXXGCX", eeWork/eePeopleNumber); // 电子信息工程系平均
+
+        return result;
+    }
+
+    @Override
+    public Map<String, Float> getSumTeachData(String year) {
+        return null;
+    }
+
+    @Override
+    public Map<String, Float> getFirstToFiveTeachData(String year, String officeName) {
+        return null;
+    }
+
+    @Override
+    public Map<String, Float> getFirstToFiveFromAllTeachData(String year) {
+        return null;
+    }
 }

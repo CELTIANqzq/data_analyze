@@ -2,12 +2,12 @@ package test.dao;
 
 import com.data_analyze.teacher.dao.TeacherMapper;
 import com.data_analyze.teacher.entity.Teacher;
-import com.data_analyze.teacher.service.TeacherService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import test.BaseTest;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -42,8 +42,36 @@ public class TeacherDaoTest extends BaseTest {
         maps.put("office","计算机科学与技术系");
         maps.put("job","教师岗位");
         List<Teacher> teacherList = teacherMapper.queryByColumns(maps);
-        System.out.println(teacherList);
+        for(Iterator<Teacher> iterable = teacherList.iterator(); iterable.hasNext(); ) {
+            System.out.println(iterable.next());
+        }
     }
+
+    @Test
+    public void testLikeQueryByColumns() {
+        Map<String, String> maps = new HashMap<>();
+        maps.put("office","计算");
+        maps.put("job","教师");
+        List<Teacher> teacherList = teacherMapper.likeQueryByColumns(maps);
+        for(Iterator<Teacher> iterable = teacherList.iterator(); iterable.hasNext(); ) {
+            System.out.println(iterable.next());
+        }
+    }
+
+    @Test
+    public void getAllTest() {
+        List<Teacher> teacherList = teacherMapper.getAll();
+        for(Iterator<Teacher> iterable = teacherList.iterator(); iterable.hasNext(); ) {
+            System.out.println(iterable.next());
+        }
+    }
+
+    @Test
+    public void executeTest() {
+        int a = teacherMapper.execute("select count(*) from teachers;");
+        System.out.println(a);
+    }
+
 
 
 

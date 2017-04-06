@@ -21,6 +21,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by liujie on 2017/3/17.
@@ -154,5 +155,10 @@ public class PaperServiceImpl implements PaperService {
     @Override
     public int updateDynamic(@Param("tableName") String tableName, @Param("items") Paper entity) {
         return 0;
+    }
+
+    @Override
+    public Map<String, Integer> getPaperNumber(String year) {
+        return null;
     }
 }

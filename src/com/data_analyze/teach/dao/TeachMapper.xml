@@ -43,4 +43,27 @@
         VALUES (#{salary_id}, #{name}, #{rank}, #{duty}, #{theory_fs}, #{profession_fs}, #{ready_fs}, #{guide_fs}, #{graduation_fs}, #{first_sum}, #{theory_ss}, #{profession_ss}, #{ready_ss}, #{guide_ss}, #{graduation_ss}, #{second_sum}, #{remark_job}, #{year_sum}, #{second_etc}, #{innovative_course}, #{college_workload});
     </insert>
 
+    <select id="execute" parameterType="String" resultType="Integer">
+        ${sql}
+    </select>
+
+    <select id="getAllWork" parameterType="String" resultType="Float">
+      <bind name="tableName" value="'teach'+year"/>
+        SELECT
+          sum(year_sum)
+        FROM
+          ${tableName};
+    </select>
+
+    <select id="getOfficeWork" parameterType="String" resultType="Float">
+        <bind name="tableName" value="'teach'+year"/>
+        SELECT
+          sum(year_sum)
+        FROM
+          ${tableName} as teach
+        INNER JOIN
+          teachers
+        on teach.salary_id=teachers.salary_id AND teachers.office=#{office};
+    </select>
+
 </mapper>

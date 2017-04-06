@@ -22,6 +22,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -290,14 +291,22 @@ public class TeacherServiceImpl implements TeacherService {
         map.put("SHFWX", teacherMapper.execute("select count(*) from teachers where office='"+officeName+"' and post_type='社会服务型'"));
         map.put("JXKYBZX", teacherMapper.execute("select count(*) from teachers where office='"+officeName+"' and post_type='教学科研并重型'"));
         map.put("JCJXX", teacherMapper.execute("select count(*) from teachers where office='"+officeName+"' and post_type='基础教学型'"));
+        map.put("JXX", teacherMapper.execute("select count(*) from teachers where office='"+officeName+"' and post_type='教学型'"));
+        map.put("KYX", teacherMapper.execute("select count(*) from teachers where office='"+officeName+"' and post_type='科研型'"));
         return map;
     }
 
     @Override
     public Map<String, Integer> getJobLeveData() {
+        List<Teacher> professor = teacherMapper.likeQueryByOneColumn("job_level", "正高");
+        List<Teacher> associateProfessor = teacherMapper.likeQueryByOneColumn("job_level", "副高");
+        List<Teacher> lecturer = teacherMapper.likeQueryByOneColumn("job_level","中级");
+
         Map<String, Integer> map = new HashMap<>();
-//        map.put()
-        return null;
+        map.put("JS", professor.size()); //教授
+        map.put("FJS", associateProfessor.size());
+        map.put("JangS", lecturer.size()); // 讲师
+        return map;
     }
 
     @Override
@@ -341,5 +350,33 @@ public class TeacherServiceImpl implements TeacherService {
         ));
         postMap.put("QTZYJSGW",officeNum2);
         return postMap;
+    }
+
+    @Override
+    public Map<String, Map<String, Integer>> getAllHrProvinceData() {
+        // 学位-<省-人数>
+        Map<String, Map<String, Integer>> result = new HashMap<>();
+        Map<String, Integer> doctor = new HashMap<>();
+        Map<String, Integer> master = new HashMap<>();
+        Map<String, Integer> bachelor = new HashMap<>();
+        result.put("BS", doctor);
+        result.put("SS", master);
+        result.put("XS", bachelor);
+
+        List<Teacher> teacherList = teacherMapper.getAll();
+
+        for(Iterator it = teacherList.iterator(); it.hasNext(); ) {
+            Teacher teacher = (Teacher) it.next();
+            String graduate_province = teacher.getGraduate_province();
+            if("博士".equals(teacher.getDegree())) {
+                doctor.put(graduate_province, doctor.get(graduate_province)==null?1:doctor.get(graduate_province)+1);
+            } else if("硕士".equals(teacher.getDegree())) {
+                master.put(graduate_province, master.get(graduate_province)==null?1:master.get(graduate_province)+1);
+            } else if("学士".equals(teacher.getDegree())) {
+                bachelor.put(graduate_province, bachelor.get(graduate_province)==null?1:bachelor.get(graduate_province)+1);
+            }
+        }
+
+        return result;
     }
 }

@@ -18,6 +18,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by jiacheng on 17-3-19.
@@ -134,5 +135,15 @@ public class ProjectServiceImpl implements ProjectService {
     @Override
     public int updateDynamic(@Param("tableName") String tableName, @Param("items") Project entity) {
         return 0;
+    }
+
+    @Override
+    public Map<String, Float> getAveProjectMoneyData(String year) {
+        return null;
+    }
+
+    @Override
+    public Map<String, Float> getSumProjectMoneyData(String year) {
+        return null;
     }
 }
