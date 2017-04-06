@@ -15,4 +15,11 @@ public interface TeacherMapper extends BaseMapper<Teacher> {
     public String getSalaryIdFromName(String name);
 
     int execute(@Param("sql") String sql);
+
+    List<Teacher> queryByOneColumn(@Param("columnName") String columnName, @Param("val") String val);
+
+    List<Teacher> likeQueryByOneColumn(@Param("columnName") String columnName, @Param("val") String val);
+
+    @Deprecated
+    List<Teacher> queryByColumns(@Param("columnNameAndVal") Map<String, String> columnNameAndVal);
 }

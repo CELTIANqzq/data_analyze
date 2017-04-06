@@ -1,9 +1,11 @@
 package com.data_analyze.teachsum.entity;
 
+import java.io.Serializable;
+
 /**
  * Created by liujie on 2017/3/17.
  */
-public class Teachsum {
+public class Teachsum implements Serializable{
     private Integer _id ;
     private String department;
     private String salary_id ;

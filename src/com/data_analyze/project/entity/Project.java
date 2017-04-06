@@ -1,9 +1,11 @@
 package com.data_analyze.project.entity;
 
+import java.io.Serializable;
+
 /**
  * Created by liujie on 2017/3/17.
  */
-public class Project {
+public class Project implements Serializable{
     private Integer _id ;
     private String salary_id ;
     private String name ;

@@ -71,7 +71,7 @@
         的地方通过@Autowired方式将可以注入接口实例 -->
 
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
         <property name="basePackage" value="com.data_analyze.*.dao" />
     </bean>
 

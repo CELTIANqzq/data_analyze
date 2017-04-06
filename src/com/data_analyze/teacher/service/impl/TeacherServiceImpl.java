@@ -253,6 +253,7 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
+    @Deprecated
     public void hello() {
         System.out.println("hello");
     }
@@ -298,5 +299,47 @@ public class TeacherServiceImpl implements TeacherService {
         Map<String, Integer> map = new HashMap<>();
 //        map.put()
         return null;
+    }
+
+    @Override
+    public Map<String, Map<String, Integer>> getAllPostData() {
+        // 岗位名-<系名-人数>
+        Map<String, Map<String, Integer>> postMap = new HashMap<>();
+        Map<String, Integer> officeNum = new HashMap<>();
+        officeNum.put("JSJKXYJSX", teacherMapper.execute(
+                "select count(*) from teachers where office='计算机科学与技术系' and job='教师岗位';"
+                ));
+        officeNum.put("JSZX", teacherMapper.execute(
+                "select count(*) from teachers where office='计算中心' and job='教师岗位';"
+        ));
+        officeNum.put("DQYZDHGCX", teacherMapper.execute(
+                "select count(*) from teachers where office='电气与自动化工程系' and job='教师岗位';"
+        ));
+        officeNum.put("DGDZSYZX", teacherMapper.execute(
+                "select count(*) from teachers where office='电工电子实验中心' and job='教师岗位';"
+        ));
+        officeNum.put("DZXXGCX", teacherMapper.execute(
+                "select count(*) from teachers where office='电子信息工程系' and job='教师岗位';"
+        ));
+
+        postMap.put("JSGW",officeNum);
+        officeNum.clear();
+
+        officeNum.put("JSJKXYJSX", teacherMapper.execute(
+                "select count(*) from teachers where office='计算机科学与技术系' and job='其他专业技术岗位';"
+        ));
+        officeNum.put("JSZX", teacherMapper.execute(
+                "select count(*) from teachers where office='计算中心' and job='其他专业技术岗位';"
+        ));
+        officeNum.put("DQYZDHGCX", teacherMapper.execute(
+                "select count(*) from teachers where office='电气与自动化工程系' and job='其他专业技术岗位';"
+        ));
+        officeNum.put("DGDZSYZX", teacherMapper.execute(
+                "select count(*) from teachers where office='电工电子实验中心' and job='其他专业技术岗位';"
+        ));
+        officeNum.put("DZXXGCX", teacherMapper.execute(
+                "select count(*) from teachers where office='电子信息工程系' and job='其他专业技术岗位';"
+        ));
+        return postMap;
     }
 }
