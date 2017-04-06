@@ -26,7 +26,20 @@ public interface TeacherService extends BaseService<Teacher>{
     public void hello();
 
 
-    Map<String, Integer> queryPostData(String office);
+    /**
+     *
+     * @param office
+     * office是不同单位名
+     * (计算机科学与技术系，电子信息工程系，电气与自动化工程系，计算中心，电工电子实验中心)
+     * @return
+     *
+     * Map<String,Integer>
+     * String (基础教学，教学与科研并重，科研型，社会服务型)
+     * Integer 不同类型岗位的老师的人数
+     */
+
+
+    Map<String, Integer> queryPostData(String officeName);
 
     /**
      *
