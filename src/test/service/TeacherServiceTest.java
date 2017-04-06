@@ -15,8 +15,16 @@ public class TeacherServiceTest extends BaseTest {
     @Autowired
     private TeacherService teacherService;
     @Test
+    public void testQueryPostData() {
+        Map<String,Integer> map = teacherService.queryPostData("电子信息工程系");
+        System.out.println(map);
+    }
+
+    @Test
     public void testGetAllPostData() {
         Map<String, Map<String, Integer>> postMap = teacherService.getAllPostData();
         System.out.println(postMap.get("QTZYJSGW"));
+        System.out.println(postMap.get("JSGW"));
     }
+
 }

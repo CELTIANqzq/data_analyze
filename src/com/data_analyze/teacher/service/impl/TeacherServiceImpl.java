@@ -285,12 +285,11 @@ public class TeacherServiceImpl implements TeacherService {
 
 
     @Override
-    public Map<String, Integer> queryPostData(String office) {
+    public Map<String, Integer> queryPostData(String officeName) {
         Map<String, Integer> map = new HashMap<>();
-        map.put("教师岗位", teacherMapper.execute("select count(*) from teachers where office='"+office+"' and job='教师岗位'"));
-        map.put("其他专业技术岗位", teacherMapper.execute("select count(*) from teachers where office='"+office+"' and job='其他专业技术岗位'"));
-        map.put("工勤岗位", teacherMapper.execute("select count(*) from teachers where office='"+office+"' and job='工勤岗位'"));
-        map.put("管理岗位", teacherMapper.execute("select count(*) from teachers where office='"+office+"' and job='管理岗位'"));
+        map.put("SHFWX", teacherMapper.execute("select count(*) from teachers where office='"+officeName+"' and post_type='社会服务型'"));
+        map.put("JXKYBZX", teacherMapper.execute("select count(*) from teachers where office='"+officeName+"' and post_type='教学科研并重型'"));
+        map.put("JCJXX", teacherMapper.execute("select count(*) from teachers where office='"+officeName+"' and post_type='基础教学型'"));
         return map;
     }
 
@@ -323,24 +322,24 @@ public class TeacherServiceImpl implements TeacherService {
         ));
 
         postMap.put("JSGW",officeNum);
-        officeNum.clear();
 
-        officeNum.put("JSJKXYJSX", teacherMapper.execute(
+        Map<String, Integer> officeNum2 = new HashMap<>();
+        officeNum2.put("JSJKXYJSX", teacherMapper.execute(
                 "select count(*) from teachers where office='计算机科学与技术系' and job='其他专业技术岗位';"
         ));
-        officeNum.put("JSZX", teacherMapper.execute(
+        officeNum2.put("JSZX", teacherMapper.execute(
                 "select count(*) from teachers where office='计算中心' and job='其他专业技术岗位';"
         ));
-        officeNum.put("DQYZDHGCX", teacherMapper.execute(
+        officeNum2.put("DQYZDHGCX", teacherMapper.execute(
                 "select count(*) from teachers where office='电气与自动化工程系' and job='其他专业技术岗位';"
         ));
-        officeNum.put("DGDZSYZX", teacherMapper.execute(
+        officeNum2.put("DGDZSYZX", teacherMapper.execute(
                 "select count(*) from teachers where office='电工电子实验中心' and job='其他专业技术岗位';"
         ));
-        officeNum.put("DZXXGCX", teacherMapper.execute(
+        officeNum2.put("DZXXGCX", teacherMapper.execute(
                 "select count(*) from teachers where office='电子信息工程系' and job='其他专业技术岗位';"
         ));
-        postMap.put("QTZYJSGW",officeNum);
+        postMap.put("QTZYJSGW",officeNum2);
         return postMap;
     }
 }
