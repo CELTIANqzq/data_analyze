@@ -49,6 +49,9 @@ public class TeacherAction {
 
         model.addAttribute("AllPostData",allPostData);
 
+
+
+
         return "/WEB-INF/front/teacher/post_data.jsp";
     }
 
