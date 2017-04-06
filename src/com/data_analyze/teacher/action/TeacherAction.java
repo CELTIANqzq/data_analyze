@@ -47,10 +47,25 @@ public class TeacherAction {
         Map<String,Integer> DGDZSYZX_POST_DATA = teacherService.queryPostData("电工电子实验中心");
 
 
-        model.addAttribute("AllPostData",allPostData);
+        System.out.println(allPostData);
+
+        System.out.println(JSJKXYJSX_POST_DATA+"-"+DZXXGCX_POST_DATA+"-"+DQYZDHX_POST_DATA+"-"+JSZX_POST_DATA+"-"+DGDZSYZX_POST_DATA);
+
+        Map<String,Integer> JSGW = allPostData.get("JSGW");
 
 
+        //教师岗位数据
+        model.addAttribute("JSGW",JSGW);
 
+        model.addAttribute("JSJKXYJSX_POST_DATA",JSJKXYJSX_POST_DATA);
+
+        model.addAttribute("DZXXGCX_POST_DATA",DZXXGCX_POST_DATA);
+
+        model.addAttribute("DQYZDHX_POST_DATA",DQYZDHX_POST_DATA);
+
+        model.addAttribute("JSZX_POST_DATA",JSZX_POST_DATA);
+
+        model.addAttribute("DGDZSYZX_POST_DATA",DGDZSYZX_POST_DATA);
 
         return "/WEB-INF/front/teacher/post_data.jsp";
     }

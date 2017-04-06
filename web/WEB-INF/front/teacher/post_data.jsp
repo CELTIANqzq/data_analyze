@@ -801,8 +801,8 @@
               borderColor: window.chartColors.purple,
               borderWidth: 1,
               data: [
-                  ${cs['教师岗位']},
-                  ${cs['其他专业技术岗位']}
+                  ${JSGW.["JSJKXYJSX"]},
+                  10
                 ]
               }
           ,
@@ -812,8 +812,8 @@
               backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
               borderColor: window.chartColors.green,
               data: [
-                  ${ee['教师岗位']},
-                  ${ee['其他专业技术岗位']}
+                  2,
+                  3
               ]},
               //              3 color(dsColor).alpha(0.5).rgbString()
               {
@@ -821,8 +821,8 @@
                   backgroundColor: color(window.chartColors.grey).alpha(0.5).rgbString(),
                   borderColor: window.chartColors.grey,
                   data: [
-                      ${auto['教师岗位']},
-                      ${auto['其他专业技术岗位']}
+                      3,
+                      5
 
              ]},
 
@@ -832,8 +832,8 @@
                   backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
                   borderColor: window.chartColors.blue,
                   data: [
-                      ${caculateCenter['教师岗位']},
-                      ${caculateCenter['其他专业技术岗位']}
+                      5,
+                      9
 
 
                   ]},
@@ -844,11 +844,10 @@
                   backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
                   borderColor: window.chartColors.orange,
                   data: [
-                  ${eleExperience['教师岗位']},
-                  ${eleExperience['其他专业技术岗位']}
+                  3,
+                  7
 
                   ]}
-
 
                   ]
 

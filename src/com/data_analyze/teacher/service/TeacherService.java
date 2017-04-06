@@ -55,11 +55,34 @@ public interface TeacherService extends BaseService<Teacher>{
     /**
      *
      * @return
-     * Sting 是不同单位对应的名字（计算机系、电子系、自动化系、计算中心）
-     * Map<String , Integer>
-     *  这里面的String表示（教师岗位、其它专技） Integer是他们对应的数量
+     *  这里面的String表示（教师岗位、其它专技）
+     *
+     *  Map<String , Integer>
+     *
+     *  Sting 是不同单位对应的名字（计算机系、电子系、自动化系、计算中心）
+     *
+     *  Integer是他们对应的数量
      *
      */
 
     Map<String,Map<String,Integer>> getAllPostData();
+
+    /**
+     * @return
+     *
+     *用拼英首字母
+     *
+     * String : 教师类型(博士，硕士，学士)
+     *
+     * Map<String , Integer>
+     *
+     * String省份名 ： 参见地图上的省份名
+     *
+     * Integer:人数
+     *
+     */
+     Map<String,Map<String,Integer>> getAllHrProvinceData();
+
+
+
 }
