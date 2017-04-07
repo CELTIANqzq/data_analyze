@@ -20,6 +20,7 @@
           <element id="library" level="project" name="spring-web-4.2.4.RELEASE" />
           <element id="library" level="application" name="lib" />
           <element id="library" level="project" name="poi-3.11-20141221" />
+          <element id="library" level="module" name="JUnit4" module-name="data_analyze" />
         </element>
       </element>
     </root>
