@@ -220,10 +220,10 @@
         <div class="row gallery-row">
 
           <div class="col-md-6 col-sm-6">
-            <a href="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data.png" target="_blank" class="img image-popup">
+            <a href="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data1.png" target="_blank" class="img image-popup">
 
               <a href="teach/work_data_teach.do">
-                <img src="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data.png" alt="Image" class="img-responsive">
+                <img src="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data1.png" alt="Image" class="img-responsive">
               </a>
 
               <div class="text">
@@ -234,11 +234,12 @@
           </div>
 
             <div class="col-md-6 col-sm-6">
-              <a href="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data.png" target="_blank" class="img image-popup">
+              <a href="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data2.png" target="_blank" class="img image-popup">
 
                   <a href="project/work_data_research.do">
-                  <img src="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data.png" alt="Image" class="img-responsive">
+                  <img src="${pageContext.request.contextPath}/resource/front/lib_one/images/work_data2.png" alt="Image" class="img-responsive">
                 </a>
+
 
                 <div class="text">
                   <h5 style="font-size: 25px;font-weight: 100;color: #b0b29f;text-align: center">学院历年科研数据分析</h5>

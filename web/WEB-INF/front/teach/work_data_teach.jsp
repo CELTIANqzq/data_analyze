@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -7,7 +8,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>2010教学数据 </title>
+  <title>学院${YEAR}教学工作量数据分析 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
     <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -123,13 +124,13 @@
 
 
                   <ul class="resp-tabs-list hor_1">
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2010</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2011</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2012</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2013</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2014</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2015</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2016</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/teach/work_data_teach.do?YEAR=2010" style="text-decoration: none;color: blue">2010</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/teach/work_data_teach.do?YEAR=2011" style="text-decoration: none;color: blue">2011</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/teach/work_data_teach.do?YEAR=2012" style="text-decoration: none;color: blue">2012</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/teach/work_data_teach.do?YEAR=2013" style="text-decoration: none;color: blue">2013</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/teach/work_data_teach.do?YEAR=2014" style="text-decoration: none;color: blue">2014</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/teach/work_data_teach.do?YEAR=2015" style="text-decoration: none;color: blue">2015</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/teach/work_data_teach.do?YEAR=2016" style="text-decoration: none;color: blue">2016</a></li>
                   </ul>
 
               </div>
@@ -164,7 +165,7 @@
 
 
 
-            <h5 style="text-align: center">学院各单位专任教师总教学工作量数据</h5>
+            <h3 style="text-align: center">${YEAR}学院各单位专任教师总教学工作量数据</h3>
 
 
             <div id="canvas-holder">
@@ -177,8 +178,8 @@
 
               <button type="button" class="btn btn-success" title="数据列表"
                       data-container="body" data-toggle="popover" data-placement="right"
-                      data-content="2000.4">
-                      信息工程学院总教学工作量
+                      data-content="${SumTeachData["XY"]}">
+                      ${YEAR}信息工程学院总教学工作量
               </button>
 
               </center>
@@ -189,8 +190,8 @@
 
                   <button type="button" class="btn btn-success" title="数据列表"
                           data-container="body" data-toggle="popover" data-placement="right"
-                          data-content="张三109.2   李四102.4">
-                      计算机科学与技术教学工作量前五
+                          data-content="<c:forEach var="items" items="${JSJKXYJS_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">
+                      ${YEAR}计算机科学与技术教学工作量前五
                   </button>
 
               </center>
@@ -201,8 +202,8 @@
 
                   <button type="button" class="btn btn-success" title="数据列表"
                           data-container="body" data-toggle="popover" data-placement="right"
-                          data-content="张三109.2   李四102.4">
-                      电工电子实验中心教学工作量前五
+                          data-content="<c:forEach var="items" items="${DGDZSYZX_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">
+                      ${YEAR}电工电子实验中心教学工作量前五
                   </button>
 
               </center>
@@ -211,7 +212,7 @@
 
           <div class="col-md-6 col-sm-6">
 
-            <h5 style="text-align: center">学院各单位专任教师平均教学工作量数据</h5>
+            <h3 style="text-align: center">${YEAR}学院各单位专任教师平均教学工作量数据</h3>
 
 
             <div id="canvas-holder1">
@@ -225,8 +226,8 @@
 
                   <button type="button" class="btn btn-success" title="数据列表"
                           data-container="body" data-toggle="popover" data-placement="right"
-                          data-content="张三109.2   李四102.4">
-                      电气与自动化系教学工作量前五
+                          data-content="<c:forEach var="items" items="${DQYZDHGCX_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">
+                      ${YEAR}电气与自动化系教学工作量前五
                   </button>
 
               </center>
@@ -237,8 +238,8 @@
 
                   <button type="button" class="btn btn-success" title="数据列表"
                           data-container="body" data-toggle="popover" data-placement="right"
-                          data-content="张三109.2   李四102.4">
-                      计算中心教学工作量前五
+                          data-content="<c:forEach var="items" items="${JSZX_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">
+                      ${YEAR}计算中心教学工作量前五
                   </button>
 
               </center>
@@ -248,8 +249,8 @@
 
                   <button type="button" class="btn btn-success" title="数据列表"
                           data-container="body" data-toggle="popover" data-placement="right"
-                          data-content="张三109.2   李四102.4">
-                      电子信息工程教学工作量前五
+                          data-content="<c:forEach var="items" items="${DZXXGCX_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">
+                      ${YEAR}电子信息工程教学工作量前五
                   </button>
 
               </center>
@@ -348,11 +349,13 @@
                       borderColor: window.chartColors.red,
                       pointBackgroundColor: window.chartColors.red,
                       data: [
-                          15949.26,
-                          21913.01,
-                          24957.4,
-                          15942.64,
-                          8384.684
+
+                           ${SumTeachData["JSJKXYJSX"]},
+                           ${SumTeachData["DZXXGCX"]},
+                           ${SumTeachData["DQYZDHGCX"]},
+                           ${SumTeachData["JSZX"]},
+                          ${SumTeachData["DGDZSYZX"]},
+
 
                       ]
                   }
@@ -392,11 +395,11 @@
                     borderColor: window.chartColors.red,
                     pointBackgroundColor: window.chartColors.red,
                     data: [
-                        346.723,
-                        384.4388,
-                        639.9333,
-                        408.7856,
-                        558.979
+                        ${AveTeachData["JSJKXYJSX"]},
+                        ${AveTeachData["DZXXGCX"]},
+                        ${AveTeachData["DQYZDHGCX"]},
+                        ${AveTeachData["JSZX"]},
+                        ${AveTeachData["DGDZSYZX"]}
                     ]
                 }
 
@@ -419,75 +422,73 @@
         }
     };
 
-//      学院不同单位不同年龄段专任教师工作量比例分布
-
-
-
-      var horizontalBarChartData = {
-        labels: ["35岁以下", "36-44岁", "45岁以上"],
-        datasets: [
-            //     1
-            {
-                label: '计算机科学与技术(%)',
-                backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.purple,
-                borderWidth: 1,
-                data: [
-                    4.16,
-                    44.42,
-                    51.41
-                ]
-            }
-            ,
-//              2
-            {
-                label: '电子信息工程(%)',
-                backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.green,
-                data: [
-                    13.93,
-                    37.50,
-                    48.57
-             ]},
-
-            //              3 color(dsColor).alpha(0.5).rgbString()
-            {
-                label: '电气与自动化工程系(%)',
-                backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.blue,
-                data: [
-                    10.47,
-                    28.30,
-                    61.23
-            ]},
-
-
-            {
-                label: '计算中心(%)',
-                backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.orange,
-                data: [
-                    5.04,
-                    48.16,
-                    46.80
-                ]},
-
-
-            //              3 color(dsColor).alpha(0.5).rgbString()
-            {
-                label: '电工电子实验中心(%)',
-                backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.red,
-                data: [
-                    19.79,
-                    45.35,
-                    34.86
-            ]}
-
-
-            ]
-
-    };
+////      学院不同单位不同年龄段专任教师工作量比例分布
+//
+//      var horizontalBarChartData = {
+//        labels: ["35岁以下", "36-44岁", "45岁以上"],
+//        datasets: [
+//            //     1
+//            {
+//                label: '计算机科学与技术(%)',
+//                backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
+//                borderColor: window.chartColors.purple,
+//                borderWidth: 1,
+//                data: [
+//                    4.16,
+//                    44.42,
+//                    51.41
+//                ]
+//            }
+//            ,
+////              2
+//            {
+//                label: '电子信息工程(%)',
+//                backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
+//                borderColor: window.chartColors.green,
+//                data: [
+//                    13.93,
+//                    37.50,
+//                    48.57
+//             ]},
+//
+//            //              3 color(dsColor).alpha(0.5).rgbString()
+//            {
+//                label: '电气与自动化工程系(%)',
+//                backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+//                borderColor: window.chartColors.blue,
+//                data: [
+//                    10.47,
+//                    28.30,
+//                    61.23
+//            ]},
+//
+//
+//            {
+//                label: '计算中心(%)',
+//                backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
+//                borderColor: window.chartColors.orange,
+//                data: [
+//                    5.04,
+//                    48.16,
+//                    46.80
+//                ]},
+//
+//
+//            //              3 color(dsColor).alpha(0.5).rgbString()
+//            {
+//                label: '电工电子实验中心(%)',
+//                backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+//                borderColor: window.chartColors.red,
+//                data: [
+//                    19.79,
+//                    45.35,
+//                    34.86
+//            ]}
+//
+//
+//            ]
+//
+//    };
 
 ////学院各单位实验人员工作量数据
 //
@@ -653,7 +654,13 @@
                   backgroundColor: window.chartColors.red,
                   borderColor: window.chartColors.red,
                   data: [
-                          3,2,3,4,5,6,4
+                          ${TeachData2010["XY"]},
+                          ${TeachData2011["XY"]},
+                          ${TeachData2012["XY"]},
+                          ${TeachData2013["XY"]},
+                          ${TeachData2014["XY"]},
+                          ${TeachData2015["XY"]},
+                          ${TeachData2016["XY"]}
                   ],
                   fill: false,
               }
@@ -664,7 +671,13 @@
                   backgroundColor: window.chartColors.blue,
                   borderColor: window.chartColors.blue,
                   data: [
-                          2,4,1,5,6,4,2,1
+                      ${TeachData2010["JSJKXYJSX"]},
+                      ${TeachData2011["JSJKXYJSX"]},
+                      ${TeachData2012["JSJKXYJSX"]},
+                      ${TeachData2013["JSJKXYJSX"]},
+                      ${TeachData2014["JSJKXYJSX"]},
+                      ${TeachData2015["JSJKXYJSX"]},
+                      ${TeachData2016["JSJKXYJSX"]}
                   ],}
 
                   , {
@@ -673,7 +686,13 @@
                       backgroundColor: window.chartColors.green,
                       borderColor: window.chartColors.green,
                       data: [
-                          2,4,1,3,2,4,2,1
+                          ${TeachData2010["DZXXGCX"]},
+                          ${TeachData2011["DZXXGCX"]},
+                          ${TeachData2012["DZXXGCX"]},
+                          ${TeachData2013["DZXXGCX"]},
+                          ${TeachData2014["DZXXGCX"]},
+                          ${TeachData2015["DZXXGCX"]},
+                          ${TeachData2016["DZXXGCX"]}
                       ],}
 
                   , {
@@ -682,7 +701,13 @@
                       backgroundColor: window.chartColors.yellow,
                       borderColor: window.chartColors.yellow,
                       data: [
-                          2,2,1,5,6,6,3,1
+                          ${TeachData2010["DQYZDHGCX"]},
+                          ${TeachData2011["DQYZDHGCX"]},
+                          ${TeachData2012["DQYZDHGCX"]},
+                          ${TeachData2013["DQYZDHGCX"]},
+                          ${TeachData2014["DQYZDHGCX"]},
+                          ${TeachData2015["DQYZDHGCX"]},
+                          ${TeachData2016["DQYZDHGCX"]}
                       ],}
 
                   , {
@@ -691,7 +716,13 @@
                       backgroundColor: window.chartColors.purple,
                       borderColor: window.chartColors.purple,
                       data: [
-                          2,4,3,5,6,4,2,1
+                          ${TeachData2010["JSZX"]},
+                          ${TeachData2011["JSZX"]},
+                          ${TeachData2012["JSZX"]},
+                          ${TeachData2013["JSZX"]},
+                          ${TeachData2014["JSZX"]},
+                          ${TeachData2015["JSZX"]},
+                          ${TeachData2016["JSZX"]}
                       ],}
 
                   , {
@@ -700,7 +731,13 @@
                       backgroundColor: window.chartColors.color8,
                       borderColor: window.chartColors.color8,
                       data: [
-                          2,4,1,1,2,4,4,1
+                          ${TeachData2010["DGDZSYZX"]},
+                          ${TeachData2011["DGDZSYZX"]},
+                          ${TeachData2012["DGDZSYZX"]},
+                          ${TeachData2013["DGDZSYZX"]},
+                          ${TeachData2014["DGDZSYZX"]},
+                          ${TeachData2015["DGDZSYZX"]},
+                          ${TeachData2016["DGDZSYZX"]}
                       ],}
 
 

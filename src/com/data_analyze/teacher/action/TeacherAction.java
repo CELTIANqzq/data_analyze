@@ -70,19 +70,24 @@ public class TeacherAction {
         try {
 
             //拿到数据
-            Map<String,Map<String,Integer>> hrProvinceData = null;
+            Map<String,Map<String,Integer>> hrProvinceData = teacherService.getAllHrProvinceData();
 
-            Map<String,Integer> SingleProvinceDataBS = hrProvinceData.get("BS");
+            Map<String,Integer> singleProvinceDataBS = hrProvinceData.get("BS");
 
-            Map<String,Integer> SingleProvinceDataSS = hrProvinceData.get("SS");
+            Map<String,Integer> singleProvinceDataSS = hrProvinceData.get("SS");
 
-            Map<String,Integer> SingleProvinceDataXS = hrProvinceData.get("XS");
+            Map<String,Integer> singleProvinceDataXS = hrProvinceData.get("XS");
 
-            model.addAttribute("SingleProvinceDataBS",SingleProvinceDataBS);
+            model.addAttribute("SingleProvinceDataBS",singleProvinceDataBS);
 
-            model.addAttribute("SingleProvinceDataSS",SingleProvinceDataSS);
+            model.addAttribute("SingleProvinceDataSS",singleProvinceDataSS);
 
-            model.addAttribute("SingleProvinceDataXS",SingleProvinceDataXS);
+            model.addAttribute("SingleProvinceDataXS",singleProvinceDataXS);
+
+            System.out.println(hrProvinceData);
+
+            System.out.println(singleProvinceDataBS+"-"+singleProvinceDataSS+"-"+singleProvinceDataXS);
+
 
         }catch (Exception e){
 

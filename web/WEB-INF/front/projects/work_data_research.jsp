@@ -95,7 +95,7 @@
     <div class="container">
       <div class="text">
         <h1>
-          学院2010科研工作量分析
+          学院${YEAR}科研工作量分析
         </h1>
       </div>
 
@@ -114,13 +114,13 @@
 
 
                   <ul class="resp-tabs-list hor_1">
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2010</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2011</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2012</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2013</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2014</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2015</a></li>
-                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="" style="text-decoration: none;color: blue">2016</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/project/work_data_research.do?YEAR=2010" style="text-decoration: none;color: blue">2010</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/project/work_data_research.do?YEAR=2011" style="text-decoration: none;color: blue">2011</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/project/work_data_research.do?YEAR=2012" style="text-decoration: none;color: blue">2012</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/project/work_data_research.do?YEAR=2013" style="text-decoration: none;color: blue">2013</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/project/work_data_research.do?YEAR=2014" style="text-decoration: none;color: blue">2014</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/project/work_data_research.do?YEAR=2015" style="text-decoration: none;color: blue">2015</a></li>
+                      <li><i class="fh5co-tab-menu-icon ti-alarm-clock"></i><a href="${pageContext.request.contextPath}/project/work_data_research.do?YEAR=2016" style="text-decoration: none;color: blue">2016</a></li>
                   </ul>
 
               </div>
@@ -166,7 +166,7 @@
 
           <div class="col-md-6 col-sm-6">
 
-            <h5 style="text-align: center">2015学院各单位总科研进账数据</h5>
+            <h3 style="text-align: center">${YEAR}学院各单位总科研进账数据</h3>
 
 
             <div id="canvas-holder">
@@ -178,7 +178,7 @@
 
           <div class="col-md-6 col-sm-6">
 
-            <h5 style="text-align: center">2015学院各单位平均科研进账数据</h5>
+            <h3 style="text-align: center">${YEAR}学院各单位平均科研进账数据</h3>
 
 
             <div id="canvas-holder1">
@@ -194,28 +194,14 @@
         <br>
 
 
-        <%--<div class="row gallery-row">--%>
-          <%--<div class="col-md-12">--%>
 
-            <%--<h5 style="text-align: center">2015年学院不同单位不同年龄段教师科研进账分布</h5>--%>
-
-            <%--<div id="canvas-holder2">--%>
-              <%--<canvas id="chart-area2" />--%>
-            <%--</div>--%>
-
-          <%--</div>--%>
-        <%--</div>--%>
-
-        <%--<br/>--%>
-        <%--<hr/>--%>
-        <%--<br/>--%>
 
 
         <div class="row gallery-row">
 
           <div class="col-md-6 col-sm-6">
 
-            <h5 style="text-align: center">2015学院各单位总发表论文(中文核心、ei、sci期刊)</h5>
+            <h3 style="text-align: center">${YEAR}学院各单位总发表论文(SCI)</h3>
 
 
             <div id="canvas-holder3">
@@ -256,11 +242,11 @@
                     borderColor: window.chartColors.yellow,
                     pointBackgroundColor: window.chartColors.yellow,
                     data: [
-                        210.86,
-                        625.25,
-                        481.9333,
-                        109.975,
-                        5
+                        ${SumProjectMoneyData["JSJKXYJSX"]},
+                        ${SumProjectMoneyData["DZXXGCX"]},
+                        ${SumProjectMoneyData["DQYZDHGCX"]},
+                        ${SumProjectMoneyData["JSZX"]},
+                        ${SumProjectMoneyData["DGDZSYZX"]}
 
                     ]
                 }
@@ -298,11 +284,11 @@
                     borderColor: window.chartColors.yellow,
                     pointBackgroundColor: window.chartColors.yellow,
                     data: [
-                        4.58,
-                        10.97,
-                        12.36,
-                        2.82,
-                        0.34
+                        ${AveProjectMoneyData["JSJKXYJSX"]},
+                        ${AveProjectMoneyData["DZXXGCX"]},
+                        ${AveProjectMoneyData["DQYZDHGCX"]},
+                        ${AveProjectMoneyData["JSZX"]},
+                        ${AveProjectMoneyData["DGDZSYZX"]}
                     ]
                 }
 
@@ -324,72 +310,6 @@
         }
     };
 
-    // 学院不同单位不同年龄段教职工科研进账分布
-    var horizontalBarChartData4 = {
-        labels: ["35岁以下", "36-44岁", "45岁以上"],
-        datasets: [
-            //     1
-            {
-                label: '计算机科学与技术(万元)',
-                backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.purple,
-                borderWidth: 1,
-                data: [
-                    23.5,
-                    21.4,
-                    165.96
-                ]
-            }
-            ,
-//              2
-            {
-                label: '电子信息工程(万元)',
-                backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.green,
-                data: [
-                    217,
-                    249.5,
-                    158.75
-                ]},
-
-            //              3 color(dsColor).alpha(0.5).rgbString()
-            {
-                label: '电气与自动化工程系(万元)',
-                backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.blue,
-                data: [
-                    25.5,
-                    107.2,
-                    349.2333
-                ]},
-
-
-            {
-                label: '计算中心(万元)',
-                backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.orange,
-                data: [
-                    20,
-                    60.975,
-                    29
-                ]},
-
-
-            //              3 color(dsColor).alpha(0.5).rgbString()
-            {
-                label: '电工电子实验中心(万元)',
-                backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-                borderColor: window.chartColors.red,
-                data: [
-                    0,
-                    5,
-                    0
-                ]}
-
-
-        ]
-
-    };
 
 
 
@@ -406,11 +326,11 @@
                     borderColor: window.chartColors.blue,
                     pointBackgroundColor: window.chartColors.blue,
                     data: [
-                        26,
-                        57,
-                        70,
-                        9,
-                        7
+                        ${PaperNumber["JSJKXYJSX"]},
+                        ${PaperNumber["DZXXGCX"]},
+                        ${PaperNumber["DQYZDHGCX"]},
+                        ${PaperNumber["JSZX"]},
+                        ${PaperNumber["DGDZSYZX"]}
 
                     ]
                 }
@@ -446,7 +366,13 @@
                       backgroundColor: window.chartColors.red,
                       borderColor: window.chartColors.red,
                       data: [
-                          3,2,3,4,5,6,4
+                          ${AveProjectMoneyData2010["QY"]},
+                          ${AveProjectMoneyData2011["QY"]},
+                          ${AveProjectMoneyData2012["QY"]},
+                          ${AveProjectMoneyData2013["QY"]},
+                          ${AveProjectMoneyData2014["QY"]},
+                          ${AveProjectMoneyData2015["QY"]},
+                          ${AveProjectMoneyData2016["QY"]}
                       ],
                       fill: false,
                   }
@@ -457,7 +383,13 @@
                       backgroundColor: window.chartColors.blue,
                       borderColor: window.chartColors.blue,
                       data: [
-                          2,4,1,5,6,4,2,1
+                          ${AveProjectMoneyData2010["JSJKXYJSX"]},
+                          ${AveProjectMoneyData2011["JSJKXYJSX"]},
+                          ${AveProjectMoneyData2012["JSJKXYJSX"]},
+                          ${AveProjectMoneyData2013["JSJKXYJSX"]},
+                          ${AveProjectMoneyData2014["JSJKXYJSX"]},
+                          ${AveProjectMoneyData2015["JSJKXYJSX"]},
+                          ${AveProjectMoneyData2016["JSJKXYJSX"]}
                       ],}
 
                   , {
@@ -466,7 +398,13 @@
                       backgroundColor: window.chartColors.green,
                       borderColor: window.chartColors.green,
                       data: [
-                          2,4,1,3,2,4,2,1
+                          ${AveProjectMoneyData2010["DZXXGCX"]},
+                          ${AveProjectMoneyData2011["DZXXGCX"]},
+                          ${AveProjectMoneyData2012["DZXXGCX"]},
+                          ${AveProjectMoneyData2013["DZXXGCX"]},
+                          ${AveProjectMoneyData2014["DZXXGCX"]},
+                          ${AveProjectMoneyData2015["DZXXGCX"]},
+                          ${AveProjectMoneyData2016["DZXXGCX"]}
                       ],}
 
                   , {
@@ -475,7 +413,13 @@
                       backgroundColor: window.chartColors.yellow,
                       borderColor: window.chartColors.yellow,
                       data: [
-                          2,2,1,5,6,6,3,1
+                          ${AveProjectMoneyData2010["DQYZDHGCX"]},
+                          ${AveProjectMoneyData2011["DQYZDHGCX"]},
+                          ${AveProjectMoneyData2012["DQYZDHGCX"]},
+                          ${AveProjectMoneyData2013["DQYZDHGCX"]},
+                          ${AveProjectMoneyData2014["DQYZDHGCX"]},
+                          ${AveProjectMoneyData2015["DQYZDHGCX"]},
+                          ${AveProjectMoneyData2016["DQYZDHGCX"]}
                       ],}
 
                   , {
@@ -484,7 +428,13 @@
                       backgroundColor: window.chartColors.purple,
                       borderColor: window.chartColors.purple,
                       data: [
-                          2,4,3,5,6,4,2,1
+                          ${AveProjectMoneyData2010["JSZX"]},
+                          ${AveProjectMoneyData2011["JSZX"]},
+                          ${AveProjectMoneyData2012["JSZX"]},
+                          ${AveProjectMoneyData2013["JSZX"]},
+                          ${AveProjectMoneyData2014["JSZX"]},
+                          ${AveProjectMoneyData2015["JSZX"]},
+                          ${AveProjectMoneyData2016["JSZX"]}
                       ],}
 
                   , {
@@ -493,7 +443,13 @@
                       backgroundColor: window.chartColors.color8,
                       borderColor: window.chartColors.color8,
                       data: [
-                          2,4,1,1,2,4,4,1
+                          ${AveProjectMoneyData2010["DGDZSYZX"]},
+                          ${AveProjectMoneyData2011["DGDZSYZX"]},
+                          ${AveProjectMoneyData2012["DGDZSYZX"]},
+                          ${AveProjectMoneyData2013["DGDZSYZX"]},
+                          ${AveProjectMoneyData2014["DGDZSYZX"]},
+                          ${AveProjectMoneyData2015["DGDZSYZX"]},
+                          ${AveProjectMoneyData2016["DGDZSYZX"]}
                       ],}
 
 
@@ -542,11 +498,17 @@
               datasets: [
 
                   {
-                      label: "学院平均SCI论文发表数",
+                      label: "学院总SCI论文发表数",
                       backgroundColor: window.chartColors.red,
                       borderColor: window.chartColors.red,
                       data: [
-                          3,2,3,4,5,6,4
+                          ${PaperNumber2010["QY"]},
+                          ${PaperNumber2011["QY"]},
+                          ${PaperNumber2012["QY"]},
+                          ${PaperNumber2013["QY"]},
+                          ${PaperNumber2014["QY"]},
+                          ${PaperNumber2015["QY"]},
+                          ${PaperNumber2016["QY"]}
                       ],
                       fill: false,
                   }
@@ -557,7 +519,13 @@
                       backgroundColor: window.chartColors.blue,
                       borderColor: window.chartColors.blue,
                       data: [
-                          2,4,1,5,6,4,2,1
+                          ${PaperNumber2010["JSJKXYJSX"]},
+                          ${PaperNumber2011["JSJKXYJSX"]},
+                          ${PaperNumber2012["JSJKXYJSX"]},
+                          ${PaperNumber2013["JSJKXYJSX"]},
+                          ${PaperNumber2014["JSJKXYJSX"]},
+                          ${PaperNumber2015["JSJKXYJSX"]},
+                          ${PaperNumber2016["JSJKXYJSX"]}
                       ],}
 
                   , {
@@ -566,7 +534,13 @@
                       backgroundColor: window.chartColors.green,
                       borderColor: window.chartColors.green,
                       data: [
-                          2,4,1,3,2,4,2,1
+                          ${PaperNumber2010["DZXXGCX"]},
+                          ${PaperNumber2011["DZXXGCX"]},
+                          ${PaperNumber2012["DZXXGCX"]},
+                          ${PaperNumber2013["DZXXGCX"]},
+                          ${PaperNumber2014["DZXXGCX"]},
+                          ${PaperNumber2015["DZXXGCX"]},
+                          ${PaperNumber2016["DZXXGCX"]}
                       ],}
 
                   , {
@@ -575,7 +549,13 @@
                       backgroundColor: window.chartColors.yellow,
                       borderColor: window.chartColors.yellow,
                       data: [
-                          2,2,1,5,6,6,3,1
+                          ${PaperNumber2010["DQYZDHGCX"]},
+                          ${PaperNumber2011["DQYZDHGCX"]},
+                          ${PaperNumber2012["DQYZDHGCX"]},
+                          ${PaperNumber2013["DQYZDHGCX"]},
+                          ${PaperNumber2014["DQYZDHGCX"]},
+                          ${PaperNumber2015["DQYZDHGCX"]},
+                          ${PaperNumber2016["DQYZDHGCX"]}
                       ],}
 
                   , {
@@ -584,7 +564,13 @@
                       backgroundColor: window.chartColors.purple,
                       borderColor: window.chartColors.purple,
                       data: [
-                          2,4,3,5,6,4,2,1
+                          ${PaperNumber2010["JSZX"]},
+                          ${PaperNumber2011["JSZX"]},
+                          ${PaperNumber2012["JSZX"]},
+                          ${PaperNumber2013["JSZX"]},
+                          ${PaperNumber2014["JSZX"]},
+                          ${PaperNumber2015["JSZX"]},
+                          ${PaperNumber2016["JSZX"]}
                       ],}
 
                   , {
@@ -593,7 +579,13 @@
                       backgroundColor: window.chartColors.color8,
                       borderColor: window.chartColors.color8,
                       data: [
-                          2,4,1,1,2,4,4,1
+                          ${PaperNumber2010["DGDZSYZX"]},
+                          ${PaperNumber2011["DGDZSYZX"]},
+                          ${PaperNumber2012["DGDZSYZX"]},
+                          ${PaperNumber2013["DGDZSYZX"]},
+                          ${PaperNumber2014["DGDZSYZX"]},
+                          ${PaperNumber2015["DGDZSYZX"]},
+                          ${PaperNumber2016["DGDZSYZX"]}
                       ],}
 
 

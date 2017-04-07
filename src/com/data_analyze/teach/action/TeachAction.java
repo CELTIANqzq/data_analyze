@@ -1,11 +1,17 @@
 package com.data_analyze.teach.action;
 
 import com.data_analyze.teach.service.TeachService;
+import com.sun.org.apache.regexp.internal.RE;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.HttpRequestHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.io.File;
+import java.util.Map;
 
 /**
  * Created by jiacheng on 17-3-19.
@@ -34,8 +40,88 @@ public class TeachAction {
         return "forward:/main.jsp";
     }
 
+    @RequestMapping("/getAveTeachData")
+    public String getAveTeachData(){
+
+
+
+        return "forward:/teach/work_data_teach.do";
+    }
+
+
     @RequestMapping("work_data_teach")
-    public String workDataTeach() {
+    public String workDataTeach(Model model , HttpServletRequest request) {
+
+        String year = request.getParameter("YEAR");
+
+        if (year == null || year.equals("")){
+            year = "2010";
+        }
+
+        model.addAttribute("YEAR",year);
+
+        //动态选择的数据
+        Map<String,Float> aveTeachData = teachService.getAveTeachData(year);
+
+        model.addAttribute("aveTeachData",aveTeachData);
+
+        System.out.println(aveTeachData);
+
+        //全部的数据
+
+        Map<String,Float> TeachData2010 = teachService.getAveTeachData("2010");
+
+        Map<String,Float> TeachData2011 = teachService.getAveTeachData("2011");
+
+        Map<String,Float> TeachData2012 = teachService.getAveTeachData("2012");
+
+        Map<String,Float> TeachData2013 = teachService.getAveTeachData("2013");
+
+        Map<String,Float> TeachData2014 = teachService.getAveTeachData("2014");
+
+        Map<String,Float> TeachData2015 = teachService.getAveTeachData("2015");
+
+        Map<String,Float> TeachData2016 = teachService.getAveTeachData("2016");
+
+        model.addAttribute("TeachData2010",TeachData2010);
+
+        model.addAttribute("TeachData2011",TeachData2011);
+
+        model.addAttribute("TeachData2012",TeachData2012);
+
+        model.addAttribute("TeachData2013",TeachData2013);
+
+        model.addAttribute("TeachData2014",TeachData2014);
+
+        model.addAttribute("TeachData2015",TeachData2015);
+
+        model.addAttribute("TeachData2016",TeachData2016);
+
+        model.addAttribute("TeachData2010",TeachData2010);
+
+        model.addAttribute("AveTeachData",aveTeachData);
+
+        //    Map<String,Float> getSumTeachData(String year);
+
+        //总的
+        Map<String,Float> SumTeachData = teachService.getSumTeachData(year);
+
+        model.addAttribute("SumTeachData",SumTeachData);
+
+        //排名前五的
+        //    Map<String,Float> getFirstToFiveTeachData(String year,String officeName);
+        Map<String,Float> JSJKXYJS_FirstToFiveTeachData = teachService.getFirstToFiveTeachData(year,"计算机科学与技术系");
+        Map<String,Float> DQYZDHGCX_FirstToFiveTeachData = teachService.getFirstToFiveTeachData(year,"电气与自动化工程系");
+        Map<String,Float> DZXXGCX_FirstToFiveTeachData = teachService.getFirstToFiveTeachData(year,"电子信息工程系");
+        Map<String,Float> JSZX_FirstToFiveTeachData = teachService.getFirstToFiveTeachData(year,"计算中心");
+        Map<String,Float> DGDZSYZX_FirstToFiveTeachData = teachService.getFirstToFiveTeachData(year,"电工电子实验中心");
+
+        model.addAttribute("JSJKXYJS_FirstToFiveTeachData",JSJKXYJS_FirstToFiveTeachData);
+        model.addAttribute("DQYZDHGCX_FirstToFiveTeachData",DQYZDHGCX_FirstToFiveTeachData);
+        model.addAttribute("DZXXGCX_FirstToFiveTeachData",DZXXGCX_FirstToFiveTeachData);
+        model.addAttribute("JSZX_FirstToFiveTeachData",JSZX_FirstToFiveTeachData);
+        model.addAttribute("DGDZSYZX_FirstToFiveTeachData",DGDZSYZX_FirstToFiveTeachData);
+
         return "/WEB-INF/front/teach/work_data_teach.jsp";
     }
 }

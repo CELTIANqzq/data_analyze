@@ -44,6 +44,4 @@ public interface ProjectService extends BaseService<Project> {
 
     Map<String,Float> getSumProjectMoneyData(String year);
 
-
-
 }
