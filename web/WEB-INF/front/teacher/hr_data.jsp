@@ -331,12 +331,29 @@
                       },
                       dataRange: {
                           min: 0,
-                          max: 2500,
+                          max: 150,
                           x: 'left',
                           y: 'bottom',
                           text:['高','低'],           // 文本，默认为数值文本
-                          calculable : true
+                          calculable : true,
+//                          inRange: {
+//
+//                          }
+                          color: ['orangered','yellow','lightskyblue']
+
                       },
+
+//                      visualMap: {
+//                          min: 0,
+//                          max: 150,
+//                          text:['高','低'],
+//                          realtime: false,
+//                          calculable: true,
+//                          inRange: {
+//                              color: ['lightskyblue','yellow', 'orangered']
+//                          }
+//                      },
+
                       toolbox: {
                           show: true,
                           orient : 'vertical',
@@ -946,7 +963,7 @@
           datasets: [
          //     1
               {
-              label: '教授(%)',
+              label: '教授',
               backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
               borderColor: window.chartColors.purple,
               borderWidth: 1,
@@ -960,7 +977,7 @@
           ,
 //              2
               {
-              label: '副教授(%)',
+              label: '副教授',
               backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
               borderColor: window.chartColors.green,
               data: [
@@ -971,7 +988,7 @@
               ]},
               //              3 color(dsColor).alpha(0.5).rgbString()
               {
-                  label: '讲师(%)',
+                  label: '讲师',
                   backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
                   borderColor: window.chartColors.grey,
                   data: [

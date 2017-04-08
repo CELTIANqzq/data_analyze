@@ -83,6 +83,16 @@ public interface TeacherService extends BaseService<Teacher>{
      */
      Map<String,Map<String,Integer>> getAllHrProvinceData();
 
+    /**
+     *
+     * @return
+     *
+     * 第一个String : 省份名
+     *
+     * 第二个String : 博士名字
+     *
+     */
 
+     Map<String,String> getAllDoctorName();
 
 }

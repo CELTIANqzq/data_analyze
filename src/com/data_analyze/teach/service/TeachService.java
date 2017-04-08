@@ -40,6 +40,28 @@ public interface TeachService extends BaseService<Teach> {
      *
      * @param year
      *
+     * 年份：2010-2016
+     *
+     * @return
+     * <String,Float>
+     * String
+     * (学院人均工作量、计算机科学与技术系人均教学工作量、
+     * 电子信息工程系人均教学工作量、电气与自动化系人均教学工作量、
+     * 计算中心人均教学工作量、电工电子实验中心人均教学工作量)
+     *
+     * Float
+     * 具体教学工作量的值 = (上下半年) 理论 + 指导实验
+     *
+     * 注意是平均工作量
+     *
+     */
+
+    Map<String,Float> getAveRealTeachData(String year);
+
+    /**
+     *
+     * @param year
+     *
      * 年份 2010-2016
      * @return
      * <String,Float>
