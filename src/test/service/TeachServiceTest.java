@@ -37,4 +37,12 @@ public class TeachServiceTest extends BaseTest{
         Map<String, Float> map = teachService.getFirstToFiveFromAllTeachData("2016");
         System.out.println(map);
     }
+
+    @Test
+    public void getAveRealTeachData() {
+        Map<String, Float> map15 = teachService.getAveRealTeachData("2015");
+        Map<String, Float> map12 = teachService.getAveRealTeachData("2012");
+        System.out.println(map15);
+        System.out.println(map12);
+    }
 }

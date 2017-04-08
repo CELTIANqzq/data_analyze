@@ -185,4 +185,14 @@ public class ProjectServiceImpl implements ProjectService {
 
         return result;
     }
+
+    @Override
+    public Map<String, Float> getFirstToFiveFromAllMoneyData(String year) {
+        List<Project> peopleProjectList = projectMapper.getPeopleAndBudget(year);
+        Map<String, Float> result = new HashMap<>();
+        for(int i=0; i<5; ++i) {
+            result.put(peopleProjectList.get(i).getName(), peopleProjectList.get(i).getBudget_in_acc());
+        }
+        return result;
+    }
 }

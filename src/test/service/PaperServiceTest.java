@@ -19,4 +19,6 @@ public class PaperServiceTest extends BaseTest {
         Map<String, Integer> map = paperService.getPaperNumber("2016");
         System.out.println(map);
     }
+
+
 }

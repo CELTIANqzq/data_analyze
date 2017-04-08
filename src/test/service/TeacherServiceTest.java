@@ -44,4 +44,9 @@ public class TeacherServiceTest extends BaseTest {
         System.out.println(bachelor);
     }
 
+    @Test
+    public void getAllDoctorName() {
+        Map<String, String> map = teacherService.getAllDoctorName();
+        System.out.println(map);
+    }
 }

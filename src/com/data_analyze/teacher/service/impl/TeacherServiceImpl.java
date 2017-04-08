@@ -1,6 +1,7 @@
 package com.data_analyze.teacher.service.impl;
 
 import com.data_analyze.core.entity.Page;
+import com.data_analyze.teach.entity.Teach;
 import com.data_analyze.teacher.dao.TeacherMapper;
 import com.data_analyze.teacher.dao.TeacherSysMapper;
 import com.data_analyze.teacher.entity.Teacher;
@@ -377,6 +378,17 @@ public class TeacherServiceImpl implements TeacherService {
             }
         }
 
+        return result;
+    }
+
+    @Override
+    public Map<String, String> getAllDoctorName() {
+        Map<String, String> result = new HashMap<>();
+        List<Teacher> doctorList = teacherMapper.likeQueryByOneColumn("degree","博士");
+        for(Iterator<Teacher> it = doctorList.iterator(); it.hasNext(); ) {
+            Teacher teacher = it.next();
+            result.put(teacher.getName(), teacher.getGraduate_province());
+        }
         return result;
     }
 }

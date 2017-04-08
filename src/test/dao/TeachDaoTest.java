@@ -48,4 +48,18 @@ public class TeachDaoTest extends BaseTest{
             System.out.println(it.next());
         }
     }
+
+    @Test
+    public void getAllRealWork() {
+        Float all16 = teachMapper.getAllRealWork("2016");
+        Float all12 = teachMapper.getAllRealWork("2012");
+        System.out.println(all16);
+        System.out.println(all12);
+    }
+
+    @Test
+    public void getOfficeRealWork() {
+        float csWork = teachMapper.getOfficeRealWork("2016","计算机科学与技术系");
+        System.out.println(csWork);
+    }
 }

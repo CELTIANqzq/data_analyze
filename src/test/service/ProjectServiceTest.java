@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import test.BaseTest;
 
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -23,6 +24,12 @@ public class ProjectServiceTest extends BaseTest {
     @Test
     public void getSumProjectMoneyData() {
         Map<String, Float> map = projectService.getSumProjectMoneyData("2016");
+        System.out.println(map);
+    }
+
+    @Test
+    public void getFirstToFiveFromAllMoneyData() {
+        Map<String, Float> map = projectService.getFirstToFiveFromAllMoneyData("2015");
         System.out.println(map);
     }
 }

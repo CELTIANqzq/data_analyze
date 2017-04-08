@@ -3,6 +3,9 @@ package com.data_analyze.project.dao;
 import com.data_analyze.project.entity.Project;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * Created by jiacheng on 17-3-19.
  */
@@ -26,4 +29,9 @@ public interface ProjectMapper {
      * @return
      */
     Float getBudgetInOffice(@Param("year") String year, @Param("office")String office);
+
+    /**
+     * 得到每个人获取
+     */
+    List<Project> getPeopleAndBudget(@Param("year") String year);
 }

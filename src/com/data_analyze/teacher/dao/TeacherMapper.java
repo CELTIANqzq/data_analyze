@@ -47,7 +47,6 @@ public interface TeacherMapper extends BaseMapper<Teacher> {
      * @param columnNameAndVal
      * @return
      */
-    @Deprecated
     List<Teacher> queryByColumns(@Param("columnNameAndVal") Map<String, String> columnNameAndVal);
 
     /**

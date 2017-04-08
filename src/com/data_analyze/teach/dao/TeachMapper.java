@@ -29,12 +29,27 @@ public interface TeachMapper {
     float getAllWork(@Param("year") String year);
 
     /**
+     * 全年用第二种算法算出的全员的工作量总量(本科生教学 + 本科生实验 + 研究生教学)
+     * @param year
+     * @return
+     */
+    float getAllRealWork(@Param("year") String year);
+
+    /**
      * 某个科室的年度工作总量
      * @param year
      * @param office
      * @return
      */
     float getOfficeWork(@Param("year") String year, @Param("office") String office);
+
+    /**
+     * 全年用第二种算法算出的某个科室工作量总量(本科生教学 + 本科生实验 + 研究生教学)
+     * @param year
+     * @param office
+     * @return
+     */
+    float getOfficeRealWork(@Param("year") String year, @Param("office") String office);
 
     /**
      * 根据工作量排序，分页查询科室
