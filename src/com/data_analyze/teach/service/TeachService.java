@@ -94,7 +94,7 @@ public interface TeachService extends BaseService<Teach> {
      *  Float：工作量的值
      */
 
-    Map<String,Float> getFirstToTenTeachData(String year,String officeName);
+    Map<String,Float> getFirstTenTeachData(String year,String officeName);
 
 
     /**
@@ -131,5 +131,21 @@ public interface TeachService extends BaseService<Teach> {
      */
 
     Map<String,Float> getRealSumTeachData(String year);
+
+    /**
+     * 第二种模型算出来的数据老师的排名
+     * @param year  传入的年份
+     * @param officeName  单位名称 (计算机科学与技术系、
+     * 电子信息工程系、电气与自动化系、计算中心、电工电子实验中心)
+     *  注意：传入的时候用拼英首字母大写
+     *  注意：！！！只要换下接口实现方法名字
+     * @return
+     * <String,Float>
+     *  String：人名
+     *  Float：工作量的值
+     */
+
+    Map<String,Float> getNewFirstToTenTeachData(String year,String officeName);
+
 
 }

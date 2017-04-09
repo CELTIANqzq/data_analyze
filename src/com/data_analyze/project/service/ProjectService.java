@@ -55,8 +55,10 @@ public interface ProjectService extends BaseService<Project> {
      *
      * Float:项目经费值
      *
+     * 这个方法可保留先不要实现
+     *
      */
-    Map<String,Float> getFirstToFiveFromAllMoneyData(String year);
+    Map<String,Float> getFirstTenFromAllMoneyData(String year);
 
     /**
      *
@@ -77,6 +79,5 @@ public interface ProjectService extends BaseService<Project> {
      * Float：进账金额
      */
     Map<String,Float> getAllYearSumMoneyData();
-
 
 }
