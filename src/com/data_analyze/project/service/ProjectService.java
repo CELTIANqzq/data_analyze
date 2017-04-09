@@ -58,4 +58,25 @@ public interface ProjectService extends BaseService<Project> {
      */
     Map<String,Float> getFirstToFiveFromAllMoneyData(String year);
 
+    /**
+     *
+     * @param year 年份
+     * @return
+     * String 老师名
+     *
+     * Float 进账的金额
+     *
+     */
+    Map<String,Float> getEveryYearMoneyData(String year);
+
+    /**
+     *
+     * @return
+     *
+     * String：老师名
+     * Float：进账金额
+     */
+    Map<String,Float> getAllYearSumMoneyData();
+
+
 }

@@ -87,14 +87,14 @@ public interface TeachService extends BaseService<Teach> {
      * @param officeName  单位名称 (计算机科学与技术系、
      * 电子信息工程系、电气与自动化系、计算中心、电工电子实验中心)
      *  注意：传入的时候用拼英首字母大写
-     *
+     *  注意：！！！只要换下接口实现方法名字
      * @return
      * <String,Float>
      *  String：人名
      *  Float：工作量的值
      */
 
-    Map<String,Float> getFirstToFiveTeachData(String year,String officeName);
+    Map<String,Float> getFirstToTenTeachData(String year,String officeName);
 
 
     /**
@@ -109,7 +109,27 @@ public interface TeachService extends BaseService<Teach> {
      * Float:工作量的值
      *
      */
-    Map<String,Float> getFirstToFiveFromAllTeachData(String year);
+    Map<String,Float> getFirstToTenFromAllTeachData(String year);
 
+    /**
+     *
+     * @param year
+     *
+     * 年份 2010-2016
+     * @return
+     * <String,Float>
+     *
+     *  String
+     * (计算机科学与技术系总教学工作量、电子信息工程系总教学工作量、
+     *  电气与自动化系总教学工作量、计算中心总教学工作量、电工电子实验中心总教学工作量)
+     * Float
+     *
+     * 具体的工作量的数值第二种算法
+     *
+     * 注意：是总的教学工作量
+     *
+     */
+
+    Map<String,Float> getRealSumTeachData(String year);
 
 }

@@ -206,132 +206,6 @@
           <hr/>
           <br/>
 
-          <%--<div class="row gallery-row">--%>
-              <%--<div class="col-md-12 col-sm-6">--%>
-
-
-                  <%--<center>--%>
-
-                      <%--<!-- 按钮触发模态框 -->--%>
-                      <%--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">--%>
-                          <%--查看详细信息--%>
-                      <%--</button>--%>
-                  <%--</center>--%>
-                  <%--<!-- 模态框（Modal） -->--%>
-                  <%--<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">--%>
-                      <%--<div class="modal-dialog">--%>
-                          <%--<div class="modal-content">--%>
-                              <%--<div class="modal-header">--%>
-                                  <%--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">--%>
-                                      <%--&times;--%>
-                                  <%--</button>--%>
-                                  <%--<h4 class="modal-title" id="myModalLabel1">--%>
-                                      <%--学院自2003年至今人才引进情况--%>
-                                  <%--</h4>--%>
-                              <%--</div>--%>
-                              <%--<div class="modal-body">--%>
-
-
-                                  <%--<table class="table table-bordered">--%>
-                                      <%--<thead>--%>
-                                      <%--<tr>--%>
-                                          <%--<th>类别</th>--%>
-                                          <%--<th>2003</th>--%>
-                                          <%--<th>2004</th>--%>
-                                          <%--<th>2005</th>--%>
-                                          <%--<th>2006</th>--%>
-                                          <%--<th>2007</th>--%>
-                                          <%--<th>2008</th>--%>
-                                          <%--<th>2009</th>--%>
-                                          <%--<th>2010</th>--%>
-                                          <%--<th>2011</th>--%>
-                                          <%--<th>2012</th>--%>
-                                          <%--<th>2013</th>--%>
-                                          <%--<th>2014</th>--%>
-                                          <%--<th>2015</th>--%>
-                                          <%--<th>2016</th>--%>
-
-                                      <%--</tr>--%>
-                                      <%--</thead>--%>
-                                      <%--<tbody>--%>
-
-                                      <%--<tr>--%>
-                                         <%--<td>博士</td>--%>
-                                          <%--<td>1</td>--%>
-                                          <%--<td>2</td>--%>
-                                          <%--<td>4</td>--%>
-                                          <%--<td>9</td>--%>
-                                          <%--<td>13</td>--%>
-                                          <%--<td>13</td>--%>
-                                          <%--<td>16</td>--%>
-                                          <%--<td>18</td>--%>
-                                          <%--<td>20</td>--%>
-                                          <%--<td>26</td>--%>
-                                          <%--<td>28</td>--%>
-                                          <%--<td>32</td>--%>
-                                          <%--<td>40</td>--%>
-                                          <%--<td>45</td>--%>
-                                      <%--</tr>--%>
-
-                                      <%--<tr>--%>
-                                          <%--<td>硕士</td>--%>
-                                          <%--<td>1</td>--%>
-                                          <%--<td>8</td>--%>
-                                          <%--<td>15</td>--%>
-                                          <%--<td>23</td>--%>
-                                          <%--<td>24</td>--%>
-                                          <%--<td>24</td>--%>
-                                          <%--<td>24</td>--%>
-                                          <%--<td>25</td>--%>
-                                          <%--<td>26</td>--%>
-                                          <%--<td>27</td>--%>
-                                          <%--<td>28</td>--%>
-                                          <%--<td>29</td>--%>
-                                          <%--<td>30</td>--%>
-                                          <%--<td>32</td>--%>
-                                      <%--</tr>--%>
-
-                                      <%--<tr>--%>
-                                          <%--<td>学士</td>--%>
-                                          <%--<td>2</td>--%>
-                                          <%--<td>5</td>--%>
-                                          <%--<td>12</td>--%>
-                                          <%--<td>18</td>--%>
-                                          <%--<td>18</td>--%>
-                                          <%--<td>18</td>--%>
-                                          <%--<td>18</td>--%>
-                                          <%--<td>18</td>--%>
-                                          <%--<td>18</td>--%>
-                                          <%--<td>18</td>--%>
-                                          <%--<td>18</td>--%>
-                                          <%--<td>18</td>--%>
-                                          <%--<td>18</td>--%>
-                                          <%--<td>18</td>--%>
-                                      <%--</tr>--%>
-
-                                      <%--</tbody>--%>
-                                  <%--</table>--%>
-
-
-
-                              <%--</div>--%>
-                              <%--<div class="modal-footer">--%>
-                                  <%--<button type="button" class="btn btn-default" data-dismiss="modal">关闭--%>
-                                  <%--</button>--%>
-
-                              <%--</div>--%>
-                          <%--</div><!-- /.modal-content -->--%>
-                      <%--</div><!-- /.modal -->--%>
-                  <%--</div>--%>
-
-
-              <%--</div>--%>
-
-          <%--</div>--%>
-
-          <%--<br/>--%>
-          <%--<hr/>--%>
-          <%--<br/>--%>
 
 
           <div class="row gallery-row">
@@ -540,20 +414,10 @@
 //                          inRange: {
 //
 //                          }
-                          color: ['orangered','yellow','lightskyblue']
+                          color: ['orangered','yellow','#FFFFFF']
 
                       },
 
-//                      visualMap: {
-//                          min: 0,
-//                          max: 150,
-//                          text:['高','低'],
-//                          realtime: false,
-//                          calculable: true,
-//                          inRange: {
-//                              color: ['lightskyblue','yellow', 'orangered']
-//                          }
-//                      },
 
                       toolbox: {
                           show: true,

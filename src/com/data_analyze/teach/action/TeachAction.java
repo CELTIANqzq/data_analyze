@@ -1,7 +1,9 @@
 package com.data_analyze.teach.action;
 
 import com.data_analyze.teach.service.TeachService;
+import com.data_analyze.utils.MapHelper;
 import com.sun.org.apache.regexp.internal.RE;
+import org.omg.CORBA.MARSHAL;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -153,11 +156,12 @@ public class TeachAction {
         Map<String,Float> JSZX_FirstToFiveTeachData = teachService.getFirstToFiveTeachData(year,"计算中心");
         Map<String,Float> DGDZSYZX_FirstToFiveTeachData = teachService.getFirstToFiveTeachData(year,"电工电子实验中心");
 
-        model.addAttribute("JSJKXYJS_FirstToFiveTeachData",JSJKXYJS_FirstToFiveTeachData);
-        model.addAttribute("DQYZDHGCX_FirstToFiveTeachData",DQYZDHGCX_FirstToFiveTeachData);
-        model.addAttribute("DZXXGCX_FirstToFiveTeachData",DZXXGCX_FirstToFiveTeachData);
-        model.addAttribute("JSZX_FirstToFiveTeachData",JSZX_FirstToFiveTeachData);
-        model.addAttribute("DGDZSYZX_FirstToFiveTeachData",DGDZSYZX_FirstToFiveTeachData);
+
+        model.addAttribute("JSJKXYJS_FirstToFiveTeachData", MapHelper.sortMapByValue(JSJKXYJS_FirstToFiveTeachData));
+        model.addAttribute("DQYZDHGCX_FirstToFiveTeachData",MapHelper.sortMapByValue(DQYZDHGCX_FirstToFiveTeachData));
+        model.addAttribute("DZXXGCX_FirstToFiveTeachData",MapHelper.sortMapByValue(DZXXGCX_FirstToFiveTeachData));
+        model.addAttribute("JSZX_FirstToFiveTeachData",MapHelper.sortMapByValue(JSZX_FirstToFiveTeachData));
+        model.addAttribute("DGDZSYZX_FirstToFiveTeachData",MapHelper.sortMapByValue(DGDZSYZX_FirstToFiveTeachData));
 
         return "/WEB-INF/front/teach/work_data_teach.jsp";
     }
