@@ -24,18 +24,18 @@ public class TeachDaoTest extends BaseTest{
 
     @Test
     public void testGetAllWork() {
-        float all = teachMapper.getAllWork("2016");
+        float all = teachMapper.getAllWork("2012");
         System.out.println(all);
     }
     @Test
     public void testGetOfficeWork() {
-        float csWork = teachMapper.getOfficeWork("2016","计算机科学与技术系");
+        float csWork = teachMapper.getOfficeWork("2012","计算机科学与技术系");
         System.out.println(csWork);
     }
 
     @Test
     public void queryTeachByPageInOffice() {
-        List<Teach> list = teachMapper.queryTeachByPageInOffice("2016", "计算机科学与技术系", "0", "5");
+        List<Teach> list = teachMapper.queryTeachByPageInOffice("2012", "计算机科学与技术系", "0", "5");
         for(Iterator it = list.iterator(); it.hasNext(); ) {
             System.out.println(it.next());
         }
@@ -43,7 +43,7 @@ public class TeachDaoTest extends BaseTest{
 
     @Test
     public void queryTeachByPage() {
-        List<Teach> list = teachMapper.queryTeachByPage("2016",  "0", "5");
+        List<Teach> list = teachMapper.queryTeachByPage("2012",  "0", "5");
         for(Iterator it = list.iterator(); it.hasNext(); ) {
             System.out.println(it.next());
         }
@@ -59,7 +59,7 @@ public class TeachDaoTest extends BaseTest{
 
     @Test
     public void getOfficeRealWork() {
-        float csWork = teachMapper.getOfficeRealWork("2016","计算机科学与技术系");
+        float csWork = teachMapper.getOfficeRealWork("2012","计算机科学与技术系");
         System.out.println(csWork);
     }
 }
