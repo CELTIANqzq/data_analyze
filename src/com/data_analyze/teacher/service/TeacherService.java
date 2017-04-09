@@ -87,9 +87,9 @@ public interface TeacherService extends BaseService<Teacher>{
      *
      * @return
      *
-     * 第一个String : 省份名
+     * 第一个String : 博士名
      *
-     * 第二个String : 博士名字
+     * 第二个String : 省份名
      *
      */
 

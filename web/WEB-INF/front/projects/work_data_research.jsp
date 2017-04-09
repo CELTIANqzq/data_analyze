@@ -43,6 +43,8 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/front/lib_one/css/style.css">
 
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 
     <!-- FOR IE9 below -->
     <!--[if lte IE 9]>
@@ -134,7 +136,7 @@
 
 
                   <div id="canvas-holder4">
-                      <canvas id="chart-area4" />
+                      <%--<canvas id="chart-area4" />--%>
                   </div>
 
               </div>
@@ -173,6 +175,40 @@
               <canvas id="chart-area" />
             </div>
 
+              <table class="table table-bordered">
+                  <caption><center>${YEAR}学院各单位总科研进账数据</center> </caption>
+                  <thead>
+                  <tr>
+                      <th>单位名</th>
+                      <th>科研进账(万元)</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+
+                      <tr>
+                          <td>计算机科学与技术系</td>
+                          <td>${SumProjectMoneyData["JSJKXYJSX"]}</td>
+                      </tr>
+                      <tr>
+                          <td>电子信息工程系</td>
+                          <td>${SumProjectMoneyData["DZXXGCX"]}</td>
+                      </tr>
+                      <tr>
+                          <td>电气与自动化系</td>
+                          <td>${SumProjectMoneyData["DQYZDHGCX"]}</td>
+                      </tr>
+                      <tr>
+                          <td>计算中心</td>
+                          <td>${SumProjectMoneyData["JSZX"]}</td>
+                      </tr>
+                      <tr>
+                          <td>电工电子实验中心</td>
+                          <td>${SumProjectMoneyData["DGDZSYZX"]}</td>
+                      </tr>
+
+                  </tbody>
+              </table>
+
 
           </div>
 
@@ -184,6 +220,41 @@
             <div id="canvas-holder1">
               <canvas id="chart-area1" />
             </div>
+
+              <table class="table table-bordered">
+                  <caption><center>${YEAR}学院各单位人均科研进账数据</center> </caption>
+                  <thead>
+                  <tr>
+                      <th>单位名</th>
+                      <th>科研进账(万元)</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+
+                  <tr>
+                      <td>计算机科学与技术系</td>
+                      <td>${AveProjectMoneyData["JSJKXYJSX"]}</td>
+                  </tr>
+                  <tr>
+                      <td>电子信息工程系</td>
+                      <td>${AveProjectMoneyData["DZXXGCX"]}</td>
+                  </tr>
+                  <tr>
+                      <td>电气与自动化系</td>
+                      <td>${AveProjectMoneyData["DQYZDHGCX"]}</td>
+                  </tr>
+                  <tr>
+                      <td>计算中心</td>
+                      <td>${AveProjectMoneyData["JSZX"]}</td>
+                  </tr>
+                  <tr>
+                      <td>电工电子实验中心</td>
+                      <td>${AveProjectMoneyData["DGDZSYZX"]}</td>
+                  </tr>
+
+                  </tbody>
+              </table>
+
 
 
           </div>
@@ -211,6 +282,55 @@
 
           </div>
 
+            <div class="col-md-6 col-sm-6">
+
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+
+                <table class="table table-bordered">
+                    <caption><center>${YEAR}学院各单位总发表论文(SCI)</center> </caption>
+                    <thead>
+                    <tr>
+                        <th>单位名</th>
+                        <th>论文篇数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <td>计算机科学与技术系</td>
+                        <td>${PaperNumber["JSJKXYJSX"]}</td>
+                    </tr>
+                    <tr>
+                        <td>电子信息工程系</td>
+                        <td>${PaperNumber["DZXXGCX"]}</td>
+                    </tr>
+                    <tr>
+                        <td>电气与自动化系</td>
+                        <td>${PaperNumber["DQYZDHGCX"]}</td>
+                    </tr>
+                    <tr>
+                        <td>计算中心</td>
+                        <td>${PaperNumber["JSZX"]}</td>
+                    </tr>
+                    <tr>
+                        <td>电工电子实验中心</td>
+                        <td> ${PaperNumber["DGDZSYZX"]}</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+
+
+            </div>
+
         </div>
 
         <br>
@@ -223,6 +343,10 @@
   </main>
 
   <script>
+
+
+
+
 
       //      ==========================================================================================
 
@@ -237,7 +361,7 @@
             datasets: [
 
                 {
-                    label: "总科研进账(万元)",
+                    label: "单位总科研进账(万元)",
                     backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
                     borderColor: window.chartColors.yellow,
                     pointBackgroundColor: window.chartColors.yellow,
@@ -248,6 +372,20 @@
                         ${SumProjectMoneyData["JSZX"]},
                         ${SumProjectMoneyData["DGDZSYZX"]}
 
+                    ]
+                },
+
+                {
+                    label: "学院平均总科研进账(万元)",
+                    backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+                    borderColor: window.chartColors.blue,
+                    pointBackgroundColor: window.chartColors.blue,
+                    data: [
+                        ${(SumProjectMoneyData["JSJKXYJSX"] + SumProjectMoneyData["DZXXGCX"] + SumProjectMoneyData["DQYZDHGCX"] +SumProjectMoneyData["JSZX"] + SumProjectMoneyData["DGDZSYZX"]) / 5 },
+                        ${(SumProjectMoneyData["JSJKXYJSX"] + SumProjectMoneyData["DZXXGCX"] + SumProjectMoneyData["DQYZDHGCX"] +SumProjectMoneyData["JSZX"] + SumProjectMoneyData["DGDZSYZX"]) / 5 },
+                        ${(SumProjectMoneyData["JSJKXYJSX"] + SumProjectMoneyData["DZXXGCX"] + SumProjectMoneyData["DQYZDHGCX"] +SumProjectMoneyData["JSZX"] + SumProjectMoneyData["DGDZSYZX"]) / 5 },
+                        ${(SumProjectMoneyData["JSJKXYJSX"] + SumProjectMoneyData["DZXXGCX"] + SumProjectMoneyData["DQYZDHGCX"] +SumProjectMoneyData["JSZX"] + SumProjectMoneyData["DGDZSYZX"]) / 5 },
+                        ${(SumProjectMoneyData["JSJKXYJSX"] + SumProjectMoneyData["DZXXGCX"] + SumProjectMoneyData["DQYZDHGCX"] +SumProjectMoneyData["JSZX"] + SumProjectMoneyData["DGDZSYZX"]) / 5 }
                     ]
                 }
 
@@ -279,7 +417,7 @@
             datasets: [
 
                 {
-                    label: "人均科研进账(万元)",
+                    label: "单位人均科研进账(万元)",
                     backgroundColor: color(window.chartColors.yellow).alpha(0.2).rgbString(),
                     borderColor: window.chartColors.yellow,
                     pointBackgroundColor: window.chartColors.yellow,
@@ -289,6 +427,19 @@
                         ${AveProjectMoneyData["DQYZDHGCX"]},
                         ${AveProjectMoneyData["JSZX"]},
                         ${AveProjectMoneyData["DGDZSYZX"]}
+                    ]
+                },
+                {
+                    label: "学院人均科研进账(万元)",
+                    backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+                    borderColor: window.chartColors.blue,
+                    pointBackgroundColor: window.chartColors.blue,
+                    data: [
+                        ${AveProjectMoneyData["QY"]},
+                        ${AveProjectMoneyData["QY"]},
+                        ${AveProjectMoneyData["QY"]},
+                        ${AveProjectMoneyData["QY"]},
+                        ${AveProjectMoneyData["QY"]}
                     ]
                 }
 
@@ -353,7 +504,133 @@
         }
     };
 
-//      2010-2016人均科研进账数据
+//
+
+
+
+      //  2010-2016人均科研进账数据
+
+      //去水印
+      var credits = {
+          enabled: false
+      };
+
+      //=======================
+      var title = {
+          text: '2010-2016全学院人均科研进据数据分析'
+      };
+
+
+      var xAxis = {
+          categories: ['2010年', '2011年', '2012年', '2013年', '2014年', '2015年',
+              '2016年']
+      };
+      var yAxis = {
+          title: {
+              text: '人均科研进账（万元）'
+          },
+          tickPositions: [0,1,2,3,4,5,6,7,8,9,10,11,12,13] // 指定竖轴坐标点的值
+      };
+
+      var plotOptions = {
+          line: {
+              dataLabels: {
+                  enabled: true
+              },
+              enableMouseTracking: false
+          }
+      };
+      var series= [
+
+          {
+              name: '学院总',
+              data: [
+                  ${AveProjectMoneyData2010["QY"]},
+                  ${AveProjectMoneyData2011["QY"]},
+                  ${AveProjectMoneyData2012["QY"]},
+                  ${AveProjectMoneyData2013["QY"]},
+                  ${AveProjectMoneyData2014["QY"]},
+                  ${AveProjectMoneyData2015["QY"]},
+                  ${AveProjectMoneyData2016["QY"]}
+
+              ]
+          },
+          {
+              name: '计算机科学与技术系',
+              data: [
+                  ${AveProjectMoneyData2010["JSJKXYJSX"]},
+                  ${AveProjectMoneyData2011["JSJKXYJSX"]},
+                  ${AveProjectMoneyData2012["JSJKXYJSX"]},
+                  ${AveProjectMoneyData2013["JSJKXYJSX"]},
+                  ${AveProjectMoneyData2014["JSJKXYJSX"]},
+                  ${AveProjectMoneyData2015["JSJKXYJSX"]},
+                  ${AveProjectMoneyData2016["JSJKXYJSX"]}
+              ]
+          },
+          {
+              name: '电子信息工程系',
+              data: [
+                  ${AveProjectMoneyData2010["DZXXGCX"]},
+                  ${AveProjectMoneyData2011["DZXXGCX"]},
+                  ${AveProjectMoneyData2012["DZXXGCX"]},
+                  ${AveProjectMoneyData2013["DZXXGCX"]},
+                  ${AveProjectMoneyData2014["DZXXGCX"]},
+                  ${AveProjectMoneyData2015["DZXXGCX"]},
+                  ${AveProjectMoneyData2016["DZXXGCX"]}
+              ]
+          },
+
+          {
+              name: '电气与自动化系',
+              data: [
+                  ${AveProjectMoneyData2010["DQYZDHGCX"]},
+                  ${AveProjectMoneyData2011["DQYZDHGCX"]},
+                  ${AveProjectMoneyData2012["DQYZDHGCX"]},
+                  ${AveProjectMoneyData2013["DQYZDHGCX"]},
+                  ${AveProjectMoneyData2014["DQYZDHGCX"]},
+                  ${AveProjectMoneyData2015["DQYZDHGCX"]},
+                  ${AveProjectMoneyData2016["DQYZDHGCX"]}
+              ]
+          },
+          {
+              name: '计算中心',
+              data: [
+                  ${AveProjectMoneyData2010["JSZX"]},
+                  ${AveProjectMoneyData2011["JSZX"]},
+                  ${AveProjectMoneyData2012["JSZX"]},
+                  ${AveProjectMoneyData2013["JSZX"]},
+                  ${AveProjectMoneyData2014["JSZX"]},
+                  ${AveProjectMoneyData2015["JSZX"]},
+                  ${AveProjectMoneyData2016["JSZX"]}
+              ]
+          }
+          ,
+          {
+              name: '电工电子实验中心',
+              data: [
+                  ${AveProjectMoneyData2010["DGDZSYZX"]},
+                  ${AveProjectMoneyData2011["DGDZSYZX"]},
+                  ${AveProjectMoneyData2012["DGDZSYZX"]},
+                  ${AveProjectMoneyData2013["DGDZSYZX"]},
+                  ${AveProjectMoneyData2014["DGDZSYZX"]},
+                  ${AveProjectMoneyData2015["DGDZSYZX"]},
+                  ${AveProjectMoneyData2016["DGDZSYZX"]}
+              ]
+          },
+      ];
+
+      var json = {};
+
+      json.title = title;
+      json.xAxis = xAxis;
+      json.yAxis = yAxis;
+      json.series = series;
+      json.credits = credits;
+      json.plotOptions = plotOptions;
+      $('#canvas-holder4').highcharts(json);
+      //===========
+
+
 
       var config4 = {
           type: 'line',
@@ -498,7 +775,7 @@
               datasets: [
 
                   {
-                      label: "学院总SCI论文发表数",
+                      label: "学院总",
                       backgroundColor: window.chartColors.red,
                       borderColor: window.chartColors.red,
                       data: [
@@ -514,7 +791,7 @@
                   }
 
                   , {
-                      label: "计算机科学与技术系SCI论文发表总数",
+                      label: "计算机科学与技术系",
                       fill: false,
                       backgroundColor: window.chartColors.blue,
                       borderColor: window.chartColors.blue,
@@ -529,7 +806,7 @@
                       ],}
 
                   , {
-                      label: "电子信息工程系SCI论文发表总数",
+                      label: "电子信息工程系",
                       fill: false,
                       backgroundColor: window.chartColors.green,
                       borderColor: window.chartColors.green,
@@ -544,7 +821,7 @@
                       ],}
 
                   , {
-                      label: "电气与自动化系SCI论文发表总数",
+                      label: "电气与自动化系",
                       fill: false,
                       backgroundColor: window.chartColors.yellow,
                       borderColor: window.chartColors.yellow,
@@ -559,7 +836,7 @@
                       ],}
 
                   , {
-                      label: "计算中心SCI论文发表总数",
+                      label: "计算中心",
                       fill: false,
                       backgroundColor: window.chartColors.purple,
                       borderColor: window.chartColors.purple,
@@ -574,7 +851,7 @@
                       ],}
 
                   , {
-                      label: "电工电子实验中心SCI论文发表总数",
+                      label: "电工电子实验中心",
                       fill: false,
                       backgroundColor: window.chartColors.color8,
                       borderColor: window.chartColors.color8,
@@ -593,6 +870,9 @@
           },
           options: {
               responsive: true,
+              legend: {
+                  position: 'bottom',
+              },
               title:{
                   display:true,
                   text:'2010-2016全学院SCI论文发表总数数据整体分析'
@@ -617,7 +897,7 @@
                       display: true,
                       scaleLabel: {
                           display: true,
-                          labelString: '时间（小时）：'
+                          labelString: 'SCI论文发表篇数'
                       }
                   }]
               }
@@ -634,7 +914,7 @@
           var ctx1 = document.getElementById("chart-area1").getContext("2d");
 //          var ctx2 = document.getElementById("chart-area2").getContext("2d");
           var ctx3 = document.getElementById("chart-area3").getContext("2d");
-          var ctx4 = document.getElementById("chart-area4").getContext("2d");
+//          var ctx4 = document.getElementById("chart-area4").getContext("2d");
           var ctx5 = document.getElementById("chart-area5").getContext("2d");
 
 
@@ -644,7 +924,7 @@
           window.myRadar = new Chart(ctx3,config3);
 
 
-          window.Line = new Chart(ctx4,config4);
+//          window.Line = new Chart(ctx4,config4);
           window.Line = new Chart(ctx5,config5);
 
         //各单位不同年龄段科研进账分布
@@ -701,9 +981,10 @@
           
             <h3 class="footer-heading">正在开发的项目</h3>
             <ul class="footer-list">
-              <li><a href="#">项目一</a></li>
-              <li><a href="#">项目二</a></li>
-              <li><a href="#">项目三</a></li>
+                <li><a href="${pageContext.request.contextPath}/teacher/post_data.do">学院岗位数据分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/teacher/hr_data.do">学院人力资源现状分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/teach/work_data_teach.do">学院历年教学工作量分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/project/work_data_research.do">学院历年科研数据分析</a></li>
             </ul>
           
         </div>

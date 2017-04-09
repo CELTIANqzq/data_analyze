@@ -49,6 +49,8 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/front/lib_one/css/style.css">
 
 
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 
     <!-- FOR IE9 below -->
     <!--[if lte IE 9]>
@@ -120,7 +122,68 @@
 
 
               </div>
+
+
+              <br/>
+              <br/>
+
+              <center>
+
+              <!-- 按钮触发模态框 -->
+              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                  所有博士来源信息
+              </button>
+              </center>
+              <!-- 模态框（Modal） -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                  &times;
+                              </button>
+                              <h4 class="modal-title" id="myModalLabel">
+                                  所有博士来源信息
+                              </h4>
+                          </div>
+                          <div class="modal-body">
+
+
+                                  <table class="table table-bordered">
+                                      <caption><center>博士信息列表</center> </caption>
+                                      <thead>
+                                      <tr>
+                                          <th>姓名</th>
+                                          <th>来自</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <c:forEach var="items" items="${DoctorList}">
+
+                                      <tr>
+                                          <td>${items.key}</td>
+                                          <td>${items.value}</td>
+                                      </tr>
+                                      </c:forEach>
+
+                                      </tbody>
+                                  </table>
+
+
+
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                              </button>
+
+                          </div>
+                      </div><!-- /.modal-content -->
+                  </div><!-- /.modal -->
               </div>
+
+              </div>
+
+
 
               <div class="row gallery-row">
               <div class="col-md-12 col-sm-6">
@@ -142,6 +205,133 @@
           <br/>
           <hr/>
           <br/>
+
+          <%--<div class="row gallery-row">--%>
+              <%--<div class="col-md-12 col-sm-6">--%>
+
+
+                  <%--<center>--%>
+
+                      <%--<!-- 按钮触发模态框 -->--%>
+                      <%--<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">--%>
+                          <%--查看详细信息--%>
+                      <%--</button>--%>
+                  <%--</center>--%>
+                  <%--<!-- 模态框（Modal） -->--%>
+                  <%--<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">--%>
+                      <%--<div class="modal-dialog">--%>
+                          <%--<div class="modal-content">--%>
+                              <%--<div class="modal-header">--%>
+                                  <%--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">--%>
+                                      <%--&times;--%>
+                                  <%--</button>--%>
+                                  <%--<h4 class="modal-title" id="myModalLabel1">--%>
+                                      <%--学院自2003年至今人才引进情况--%>
+                                  <%--</h4>--%>
+                              <%--</div>--%>
+                              <%--<div class="modal-body">--%>
+
+
+                                  <%--<table class="table table-bordered">--%>
+                                      <%--<thead>--%>
+                                      <%--<tr>--%>
+                                          <%--<th>类别</th>--%>
+                                          <%--<th>2003</th>--%>
+                                          <%--<th>2004</th>--%>
+                                          <%--<th>2005</th>--%>
+                                          <%--<th>2006</th>--%>
+                                          <%--<th>2007</th>--%>
+                                          <%--<th>2008</th>--%>
+                                          <%--<th>2009</th>--%>
+                                          <%--<th>2010</th>--%>
+                                          <%--<th>2011</th>--%>
+                                          <%--<th>2012</th>--%>
+                                          <%--<th>2013</th>--%>
+                                          <%--<th>2014</th>--%>
+                                          <%--<th>2015</th>--%>
+                                          <%--<th>2016</th>--%>
+
+                                      <%--</tr>--%>
+                                      <%--</thead>--%>
+                                      <%--<tbody>--%>
+
+                                      <%--<tr>--%>
+                                         <%--<td>博士</td>--%>
+                                          <%--<td>1</td>--%>
+                                          <%--<td>2</td>--%>
+                                          <%--<td>4</td>--%>
+                                          <%--<td>9</td>--%>
+                                          <%--<td>13</td>--%>
+                                          <%--<td>13</td>--%>
+                                          <%--<td>16</td>--%>
+                                          <%--<td>18</td>--%>
+                                          <%--<td>20</td>--%>
+                                          <%--<td>26</td>--%>
+                                          <%--<td>28</td>--%>
+                                          <%--<td>32</td>--%>
+                                          <%--<td>40</td>--%>
+                                          <%--<td>45</td>--%>
+                                      <%--</tr>--%>
+
+                                      <%--<tr>--%>
+                                          <%--<td>硕士</td>--%>
+                                          <%--<td>1</td>--%>
+                                          <%--<td>8</td>--%>
+                                          <%--<td>15</td>--%>
+                                          <%--<td>23</td>--%>
+                                          <%--<td>24</td>--%>
+                                          <%--<td>24</td>--%>
+                                          <%--<td>24</td>--%>
+                                          <%--<td>25</td>--%>
+                                          <%--<td>26</td>--%>
+                                          <%--<td>27</td>--%>
+                                          <%--<td>28</td>--%>
+                                          <%--<td>29</td>--%>
+                                          <%--<td>30</td>--%>
+                                          <%--<td>32</td>--%>
+                                      <%--</tr>--%>
+
+                                      <%--<tr>--%>
+                                          <%--<td>学士</td>--%>
+                                          <%--<td>2</td>--%>
+                                          <%--<td>5</td>--%>
+                                          <%--<td>12</td>--%>
+                                          <%--<td>18</td>--%>
+                                          <%--<td>18</td>--%>
+                                          <%--<td>18</td>--%>
+                                          <%--<td>18</td>--%>
+                                          <%--<td>18</td>--%>
+                                          <%--<td>18</td>--%>
+                                          <%--<td>18</td>--%>
+                                          <%--<td>18</td>--%>
+                                          <%--<td>18</td>--%>
+                                          <%--<td>18</td>--%>
+                                          <%--<td>18</td>--%>
+                                      <%--</tr>--%>
+
+                                      <%--</tbody>--%>
+                                  <%--</table>--%>
+
+
+
+                              <%--</div>--%>
+                              <%--<div class="modal-footer">--%>
+                                  <%--<button type="button" class="btn btn-default" data-dismiss="modal">关闭--%>
+                                  <%--</button>--%>
+
+                              <%--</div>--%>
+                          <%--</div><!-- /.modal-content -->--%>
+                      <%--</div><!-- /.modal -->--%>
+                  <%--</div>--%>
+
+
+              <%--</div>--%>
+
+          <%--</div>--%>
+
+          <%--<br/>--%>
+          <%--<hr/>--%>
+          <%--<br/>--%>
 
 
           <div class="row gallery-row">
@@ -168,12 +358,12 @@
           <div class="row gallery-row">
               <div class="col-md-12">
 
-                  <h5 style="text-align: center">学院人才队伍博士比例</h5>
+                  <h5 style="text-align: center"></h5>
 
 
 
                   <div id="canvas-holder10">
-                      <canvas id="chart-area10" />
+                      <%--<canvas id="chart-area10" />--%>
                   </div>
 
               </div>
@@ -198,18 +388,20 @@
 
           </div>
 
-          <div class="col-md-6 col-sm-6">
-
-            <h5>专任教师学历结构</h5>
+            <div class="col-md-6 col-sm-6">
 
 
-            <div id="canvas-holder1" style="width: 400px;height: 400px">
-              <canvas id="chart-area1" />
+                <h5>专任教师年龄结构</h5>
+
+
+                <div id="canvas-holder2" style="width: 400px;height: 400px">
+                    <canvas id="chart-area2" />
+                </div>
+
+
+
             </div>
 
-
-
-          </div>
         </div>
         <br/>
         <hr/>
@@ -217,41 +409,45 @@
 
         <!-- Gallery Row -->
 
-        <div class="row gallery-row">
-          <div class="col-md-6 col-sm-6">
+        <%--<div class="row gallery-row">--%>
+
+            <%--&lt;%&ndash;<div class="col-md-6 col-sm-6">&ndash;%&gt;--%>
+
+                <%--&lt;%&ndash;<h5>专任教师学历结构</h5>&ndash;%&gt;--%>
 
 
-            <h5>专任教师年龄结构</h5>
-
-
-            <div id="canvas-holder2" style="width: 400px;height: 400px">
-              <canvas id="chart-area2" />
-            </div>
-
-
-
-          </div>
-		  <div class="col-md-6 col-sm-6">
+                <%--&lt;%&ndash;<div id="canvas-holder1" style="width: 400px;height: 400px">&ndash;%&gt;--%>
+                    <%--&lt;%&ndash;<canvas id="chart-area1" />&ndash;%&gt;--%>
+                <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
 
 
 
-            <h5>学院不同年龄阶段博士比例</h5>
-
-            <br/>
-            <br/>
-            <br/>
-
-            <div id="canvas-holder3">
-              <canvas id="chart-area3" style="width: 300px;height: 180px"/>
-            </div>
+            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
 
 
-          </div>
-        </div>
 
-        <br/>
-        <hr/>
-        <br/>
+            <%--&lt;%&ndash;<div class="col-md-6 col-sm-6">&ndash;%&gt;--%>
+
+
+
+
+            <%--&lt;%&ndash;<h5>学院不同年龄阶段博士比例</h5>&ndash;%&gt;--%>
+
+            <%--&lt;%&ndash;<br/>&ndash;%&gt;--%>
+            <%--&lt;%&ndash;<br/>&ndash;%&gt;--%>
+            <%--&lt;%&ndash;<br/>&ndash;%&gt;--%>
+
+            <%--&lt;%&ndash;<div id="canvas-holder3">&ndash;%&gt;--%>
+              <%--&lt;%&ndash;<canvas id="chart-area3" style="width: 300px;height: 180px"/>&ndash;%&gt;--%>
+            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+
+
+          <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+        <%--</div>--%>
+
+        <%--<br/>--%>
+        <%--<hr/>--%>
+        <%--<br/>--%>
 
         <!-- Gallery Row -->
 
@@ -296,6 +492,11 @@
   </main>
 
   <script>
+
+      //去水印
+      var credits = {
+          enabled: false
+      };
 
       // 路径配置
       require.config({
@@ -956,91 +1157,174 @@
 
 //      ==========================================================================================
 
+      //===============================================================
+
+
+      var chart = {
+          type: 'column'
+      };
+      var title = {
+          text: '学院人才队伍学历分布'
+      };
+      var xAxis = {
+          categories: ['35岁以下', '35岁到45岁', '45岁到50岁', '50岁以上']
+      };
+      var yAxis ={
+          min: 0,
+          title: {
+              text: '人数'
+          },
+          stackLabels: {
+              enabled: true,
+              style: {
+                  fontWeight: 'bold',
+                  color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+              }
+          }
+      };
+      var legend = {
+          align: 'right',
+          x: -30,
+          verticalAlign: 'top',
+          y: 25,
+          floating: true,
+          backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+          borderColor: '#CCC',
+          borderWidth: 1,
+          shadow: false
+      };
+      var tooltip = {
+          formatter: function () {
+              return '<b>' + this.x + '</b><br/>' +
+                      this.series.name + ': ' + this.y + '<br/>' +
+                      'Total: ' + this.point.stackTotal;
+          }
+      };
+      var plotOptions = {
+          column: {
+              stacking: 'normal',
+              dataLabels: {
+                  enabled: true,
+                  color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                  style: {
+                      textShadow: '0 0 3px black'
+                  }
+              }
+          }
+      };
+
+      var series= [{
+          name: '博士',
+          data: [24,32,10,11]
+      }, {
+          name: '硕士',
+          data: [8,32,10,16]
+      }, {
+          name: '学士',
+          data: [8,19,16,37]
+      },
+      ];
+
+      var json = {};
+      json.chart = chart;
+      json.title = title;
+      json.xAxis = xAxis;
+      json.yAxis = yAxis;
+      json.legend = legend;
+      json.tooltip = tooltip;
+      json.plotOptions = plotOptions;
+      json.credits = credits;
+      json.series = series;
+      $('#canvas-holder10').highcharts(json);
+
+      //===========================================
+
+
 //  学院博士比例现状
 
-      var horizontalBarChartData = {
-          labels: ["35岁以下", "36-44岁", "45-49岁", "50岁以上"],
-          datasets: [
-         //     1
-              {
-              label: '教授',
-              backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
-              borderColor: window.chartColors.purple,
-              borderWidth: 1,
-              data: [
-                  0,
-                  88.89,
-                  75.00,
-                  23.53
-                ]
-              }
-          ,
-//              2
-              {
-              label: '副教授',
-              backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
-              borderColor: window.chartColors.green,
-              data: [
-                  100,
-                  45.16,
-                  18.75,
-                  8.33
-              ]},
-              //              3 color(dsColor).alpha(0.5).rgbString()
-              {
-                  label: '讲师',
-                  backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
-                  borderColor: window.chartColors.grey,
-                  data: [
-                      81.82,
-                      26.67,
-                      36.36,
-                      25.00
-
-             ]}]
-
-      };
+//      var horizontalBarChartData = {
+//          labels: ["35岁以下", "36-44岁", "45-49岁", "50岁以上"],
+//          datasets: [
+//         //     1
+//              {
+//              label: '教授',
+//              backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
+//              borderColor: window.chartColors.purple,
+//              borderWidth: 1,
+//              data: [
+//                  0,
+//                  88.89,
+//                  75.00,
+//                  23.53
+//                ]
+//              }
+//          ,
+////              2
+//              {
+//              label: '副教授',
+//              backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
+//              borderColor: window.chartColors.green,
+//              data: [
+//                  100,
+//                  45.16,
+//                  18.75,
+//                  8.33
+//              ]},
+//              //              3 color(dsColor).alpha(0.5).rgbString()
+//              {
+//                  label: '讲师',
+//                  backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
+//                  borderColor: window.chartColors.grey,
+//                  data: [
+//                      81.82,
+//                      26.67,
+//                      36.36,
+//                      25.00
+//
+//             ]}]
+//
+//      };
 
 
       window.onload = function() {
 
           var ctx = document.getElementById("chart-area").getContext("2d");
-          var ctx1 = document.getElementById("chart-area1").getContext("2d");
+//          var ctx1 = document.getElementById("chart-area1").getContext("2d");
           var ctx2 = document.getElementById("chart-area2").getContext("2d");
-          var ctx3 = document.getElementById("chart-area3").getContext("2d");
+//          var ctx3 = document.getElementById("chart-area3").getContext("2d");
           var ctx4 = document.getElementById("chart-area4").getContext("2d");
           var ctx5 = document.getElementById("chart-area5").getContext("2d");
           var ctx6 = document.getElementById("chart-area6").getContext("2d");
           var ctx8 = document.getElementById("chart-area8").getContext("2d");
-          var ctx10 = document.getElementById("chart-area10").getContext("2d");
+//          var ctx10 = document.getElementById("chart-area10").getContext("2d");
 
 
-          window.myHorizontalBar = new Chart(ctx10, {
-              type: 'horizontalBar',
-              data: horizontalBarChartData,
-              options: {
-                  // Elements options apply to all of the options unless overridden in a dataset
-                  // In this case, we are setting the border of each horizontal bar to be 2px wide
-                  elements: {
-                      rectangle: {
-                          borderWidth: 1,
-                      }
-                  },
-                  responsive: true,
-                  legend: {
-                      position: 'right',
-                  },
-                  title: {
-                      display: true,
-                  }
-              }
-          });
+//          window.myHorizontalBar = new Chart(ctx10, {
+//              type: 'horizontalBar',
+//              data: horizontalBarChartData,
+//              options: {
+//                  // Elements options apply to all of the options unless overridden in a dataset
+//                  // In this case, we are setting the border of each horizontal bar to be 2px wide
+//                  elements: {
+//                      rectangle: {
+//                          borderWidth: 1,
+//                      }
+//                  },
+//                  responsive: true,
+//                  legend: {
+//                      position: 'right',
+//                  },
+//                  title: {
+//                      display: true,
+//                  }
+//              }
+//          });
 
 
           window.myPie = new Chart(ctx, config);
-          window.myPie = new Chart(ctx1, config1);
+//          window.myPie = new Chart(ctx1, config1);
           window.myPie = new Chart(ctx2, config2);
-          window.myDoughnut = new Chart(ctx3, config3);
+//          window.myDoughnut = new Chart(ctx3, config3);
           window.myRadar = new Chart(ctx4, config4);
           window.myRadar = new Chart(ctx5, config5);
           window.myLine = new Chart(ctx6, config6);
@@ -1075,9 +1359,10 @@
 
             <h3 class="footer-heading">正在开发的项目</h3>
             <ul class="footer-list">
-              <li><a href="#">项目一</a></li>
-              <li><a href="#">项目二</a></li>
-              <li><a href="#">项目三</a></li>
+                <li><a href="${pageContext.request.contextPath}/teacher/post_data.do">学院岗位数据分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/teacher/hr_data.do">学院人力资源现状分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/teach/work_data_teach.do">学院历年教学工作量分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/project/work_data_research.do">学院历年科研数据分析</a></li>
             </ul>
 
         </div>

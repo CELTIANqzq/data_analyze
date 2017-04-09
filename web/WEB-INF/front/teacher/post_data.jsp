@@ -58,6 +58,8 @@
   <script src="${pageContext.request.contextPath}/resource/front/chart_lib/samples/utils.js"></script>
 
 
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 
 </head>
 
@@ -116,12 +118,10 @@
           <div class="row gallery-row">
               <div class="col-md-12">
 
-                  <h5 style="text-align: center">学院教学岗位数据对比分析</h5>
-
-
+                  <h5 style="text-align: center"></h5>
 
                   <div id="canvas-holder10">
-                      <canvas id="chart-area10" />
+                      <%--<canvas id="chart-area10" />--%>
                   </div>
 
               </div>
@@ -149,16 +149,114 @@
           <hr/>
           <br/>
 
+          <div class="row gallery-row">
+              <div class="col-md-12 col-sm-6">
+
+                  <center>
+                  <!-- 按钮触发模态框 -->
+                  <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                      查看详细数据信息
+                  </button>
+                  </center>
+                  <!-- 模态框（Modal） -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                      &times;
+                                  </button>
+                                  <h4 class="modal-title" id="myModalLabel">
+                                      人员编织核定及现状
+                                  </h4>
+                              </div>
+                              <div class="modal-body">
+
+
+                                  <table class="table table-bordered">
+                                      <caption><center>人员编织核定及现状信息表</center> </caption>
+                                      <thead>
+                                      <tr>
+                                          <th>类别</th>
+                                          <th>核定科室及人员</th>
+                                          <th>领导配置</th>
+                                          <th>处级</th>
+                                          <th>科级</th>
+                                          <th>一般管理岗</th>
+                                          <th>教学科研</th>
+                                          <th>其他专技岗位</th>
+                                          <th>专制辅导员</th>
+                                          <th>工勤</th>
+                                          <th>合计</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+
+                                          <tr>
+                                              <td>核定编制</td>
+                                              <td>21</td>
+                                              <td>9</td>
+                                              <td>4</td>
+                                              <td>7</td>
+                                              <td>6</td>
+                                              <td>215</td>
+                                              <td>21</td>
+                                              <td>10</td>
+                                              <td>0</td>
+                                              <td>263</td>
+
+                                          </tr>
+
+
+                                          <tr>
+                                              <td>人力资源现状</td>
+                                              <td>19</td>
+                                              <td>9</td>
+                                              <td>4</td>
+                                              <td>4</td>
+                                              <td>8</td>
+                                              <td>196</td>
+                                              <td>40</td>
+                                              <td>9</td>
+                                              <td>1</td>
+                                              <td>262</td>
+
+                                          </tr>
+
+
+
+                                      </tbody>
+                                  </table>
+
+
+
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                                  </button>
+
+                              </div>
+                          </div><!-- /.modal-content -->
+                      </div><!-- /.modal -->
+                  </div>
+
+              </div>
+          </div>
+
+          <br/>
+          <hr/>
+          <br/>
+
 
         <div class="row gallery-row">
           
           <div class="col-md-6 col-sm-6">
 
-            <h5>计算机系</h5>
+            <%--<h5>计算机科学与技术系</h5>--%>
 
 
-            <div id="canvas-holder" style="width: 400px;height: 400px">
-              <canvas id="chart-area" />
+            <div id="canvas-holder">
+              <%--<canvas id="chart-area" />--%>
             </div>
 
 
@@ -166,11 +264,11 @@
 
           <div class="col-md-6 col-sm-6">
 
-            <h5>电子系</h5>
+            <%--<h5>电子信息工程系</h5>--%>
 
 
-            <div id="canvas-holder1" style="width: 400px;height: 400px">
-              <canvas id="chart-area1" />
+            <div id="canvas-holder1">
+              <%--<canvas id="chart-area1" />--%>
             </div>
 
 
@@ -187,11 +285,11 @@
           <div class="col-md-6 col-sm-6">
 
 
-            <h5>自动化系</h5>
+            <%--<h5>电气与自动化工程系</h5>--%>
 
 
-            <div id="canvas-holder2" style="width: 400px;height: 400px">
-              <canvas id="chart-area2" />
+            <div id="canvas-holder2">
+              <%--<canvas id="chart-area2" />--%>
             </div>
 
 
@@ -199,11 +297,11 @@
           </div>
 		  <div class="col-md-6 col-sm-6">
 
-            <h5>计算中心</h5>
+            <%--<h5>计算中心</h5>--%>
 
 
-            <div id="canvas-holder3" style="width: 400px;height: 400px">
-              <canvas id="chart-area3" />
+            <div id="canvas-holder3">
+              <%--<canvas id="chart-area3" />--%>
             </div>
 
 
@@ -220,11 +318,11 @@
           <div class="col-md-6 col-sm-6">
 
 
-            <h5>电工电子实验中心</h5>
+            <%--<h5>电工电子实验中心</h5>--%>
 
 
-            <div id="canvas-holder4" style="width: 400px;height: 400px">
-              <canvas id="chart-area4" />
+            <div id="canvas-holder4">
+              <%--<canvas id="chart-area4" />--%>
             </div>
 
 
@@ -243,75 +341,7 @@
           </div>
         </div>
 
-        <%--<br/>--%>
-        <%--<hr/>--%>
-        <%--<br/>--%>
 
-
-        <%--<div class="row gallery-row">--%>
-        <%--<div class="col-md-6 col-sm-6">--%>
-
-
-          <%--&lt;%&ndash;<h5>学工办</h5>&ndash;%&gt;--%>
-
-
-          <%--&lt;%&ndash;<div id="canvas-holder6" style="width: 400px;height: 400px">&ndash;%&gt;--%>
-            <%--&lt;%&ndash;<canvas id="chart-area6" />&ndash;%&gt;--%>
-          <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-
-
-
-        <%--</div>--%>
-        <%--<div class="col-md-6 col-sm-6">--%>
-
-          <%--&lt;%&ndash;<h5>教学办</h5>&ndash;%&gt;--%>
-
-
-          <%--&lt;%&ndash;<div id="canvas-holder7" style="width: 400px;height: 400px">&ndash;%&gt;--%>
-            <%--&lt;%&ndash;<canvas id="chart-area7" />&ndash;%&gt;--%>
-          <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-
-
-        <%--</div>--%>
-      <%--</div>--%>
-
-        <%--<br/>--%>
-        <%--<hr/>--%>
-        <%--<br/>--%>
-
-
-        <%--<div class="row gallery-row">--%>
-          <%--<div class="col-md-6 col-sm-6">--%>
-
-
-            <%--&lt;%&ndash;<h5>党政办</h5>&ndash;%&gt;--%>
-
-
-            <%--&lt;%&ndash;<div id="canvas-holder8" style="width: 400px;height: 400px">&ndash;%&gt;--%>
-              <%--&lt;%&ndash;<canvas id="chart-area8" />&ndash;%&gt;--%>
-            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-
-
-
-          <%--</div>--%>
-          <%--<div class="col-md-6 col-sm-6">--%>
-
-            <%--<!--<h5>教学办</h5>-->--%>
-
-
-            <%--<!--<div id="canvas-holder9" style="width: 400px;height: 400px">-->--%>
-              <%--<!--<canvas id="chart-area9" />-->--%>
-            <%--<!--</div>-->--%>
-            <%--<!--<h5>人员编织核定及现状</h5>-->--%>
-
-
-            <%--<!--<div id="canvas-holder9" style="width: 400px;height: 400px">-->--%>
-              <%--<!--<canvas id="chart-area9" />-->--%>
-            <%--<!--</div>-->--%>
-
-
-          <%--</div>--%>
-        <%--</div>--%>
 
 
         <br/>
@@ -329,221 +359,313 @@
   <script>
 
 
+//去水印
+      var credits = {
+          enabled: false
+      };
+
+
+      //      ==========================================================================================
+
+      var chartJSJKXYJS = {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false
+      };
+      var title1 = {
+          text: '计算机科学与技术系'
+      };
+      var tooltip1 = {
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      };
+      var plotOptions1 = {
+          pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              colors:[
+                  'blue', 'red', 'green' , '#f7a35c'
+              ],
+              dataLabels: {
+                  enabled: true,
+                  format: '<b>{point.name}</b>: {point.percentage:.1f}% ',
+                  style: {
+                      color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                  }
+              }
+          }
+      };
+      var series1= [{
+          type: 'pie',
+          name: '占比',
+          data: [
+
+              ['基础教学',  ${JSJKXYJSX_POST_DATA["JCJXX"]}],
+              ['教学与科研并重',  ${JSJKXYJSX_POST_DATA["JXKYBZX"]}],
+              ['科研型',   0],
+              ['社会服务型', ${JSJKXYJSX_POST_DATA["SHFWX"]}]
+          ]
+      }];
+
+      var json1 = {};
+      json1.chart = chartJSJKXYJS;
+      json1.title = title1;
+      json1.tooltip = tooltip1;
+      json1.series = series1;
+      json1.credits = credits;
+      json1.plotOptions = plotOptions1;
+      $('#canvas-holder').highcharts(json1);
 
 
 
       //      ==========================================================================================
 
+      //      ==========================================================================================
 
-      var config = {
-          type: 'doughnut',
-          data: {
-              datasets: [{
-                  data: [
+      var chartDZXXGCX = {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false,
+      };
+      var title2 = {
+          text: '电子信息工程系'
+      };
+      var tooltip2 = {
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      };
+      var plotOptions2 = {
+          pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
 
-                          ${JSJKXYJSX_POST_DATA["JCJXX"]},
-                          ${JSJKXYJSX_POST_DATA["JXKYBZX"]},
-                          0,
-                          ${JSJKXYJSX_POST_DATA["SHFWX"]}
+              /**
+               * colors: ['#7cb5ec', '#434348', '#90ed7d', '#f7a35c', '#8085e9',
+               '#f15c80', '#e4d354', '#8085e8', '#8d4653', '#91e8e1']
+               */
 
-                  ],
-                  backgroundColor: [
-                      window.chartColors.red,
-                      window.chartColors.orange,
-                      window.chartColors.yellow
-                  ],
-                  label: '人数'
-              }],
-              labels: [
-                  "基础教学",
-                  "教学科研并重",
-                  "科研型",
-                  "社会服务型"
-              ]
-          },
-          options: {
-              responsive: true,
-              legend: {
-                  position: 'top',
-              },
-              title: {
-                  display: true,
-              },
-              animation: {
-                  animateScale: true,
-                  animateRotate: true
+              colors:[
+                  'blue', 'red', 'green' , '#f7a35c'
+              ],
+
+              dataLabels: {
+                  enabled: true,
+                  format: '<b>{point.name}</b>: {point.percentage:.1f}% ',
+                  style: {
+                      color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                  }
               }
           }
       };
+      var series2= [{
+          type: 'pie',
+          name: '占比',
+          data: [
+
+              ['基础教学',  ${DZXXGCX_POST_DATA["JCJXX"]}],
+              ['教学与科研并重',  ${DZXXGCX_POST_DATA["JXKYBZX"]}],
+              ['科研型',   0],
+              ['社会服务型', ${DZXXGCX_POST_DATA["SHFWX"]}]
+          ]
+      }];
+
+
+
+      var json2 = {};
+      json2.chart = chartDZXXGCX;
+      json2.title = title2;
+      json2.tooltip = tooltip2;
+      json2.series = series2;
+      json2.credits = credits;
+      json2.plotOptions = plotOptions2;
+      $('#canvas-holder1').highcharts(json2);
+
+      //============================================================
+
 
       //      ==========================================================================================
 
-      var config1 = {
-          type: 'doughnut',
-          data: {
-              datasets: [{
-                  data: [
-                      ${DZXXGCX_POST_DATA["JCJXX"]},
-                      ${DZXXGCX_POST_DATA["JXKYBZX"]},
-                      0,
-                      ${DZXXGCX_POST_DATA["SHFWX"]}
-                  ],
-                  backgroundColor: [
-                      window.chartColors.blue,
-                      window.chartColors.purple,
-                      window.chartColors.green
-                  ],
-                  label: '人数'
-              }],
-              labels: [
-                  "基础教学",
-                  "教学科研并重",
-                  "科研型",
-                  "社会服务型"
-              ]
-          },
-          options: {
-              responsive: true,
-              legend: {
-                  position: 'top',
-              },
-              title: {
-                  display: true,
-              },
-              animation: {
-                  animateScale: true,
-                  animateRotate: true
+      var chartDQYZDHX = {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false,
+      };
+      var title3 = {
+          text: '电气与自动化系'
+      };
+      var tooltip3 = {
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      };
+      var plotOptions3 = {
+          pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+
+              /**
+               * colors: ['#7cb5ec', '#434348', '#90ed7d', '#f7a35c', '#8085e9',
+               '#f15c80', '#e4d354', '#8085e8', '#8d4653', '#91e8e1']
+               */
+
+              colors:[
+                  'blue', 'red', 'green' , '#f7a35c'
+              ],
+
+              dataLabels: {
+                  enabled: true,
+                  format: '<b>{point.name}</b>: {point.percentage:.1f}% ',
+                  style: {
+                      color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                  }
               }
           }
       };
+      var series3= [{
+          type: 'pie',
+          name: '占比',
+          data: [
+
+              ['基础教学',  ${DQYZDHX_POST_DATA["JCJXX"]}],
+              ['教学与科研并重',  ${DQYZDHX_POST_DATA["JXKYBZX"]}],
+              ['科研型',   0],
+              ['社会服务型', ${DQYZDHX_POST_DATA["SHFWX"]}]
+          ]
+      }];
+
+
+
+      var json3 = {};
+      json3.chart = chartDQYZDHX;
+      json3.title = title3;
+      json3.tooltip = tooltip3;
+      json3.series = series3;
+      json3.credits = credits;
+
+      json3.plotOptions = plotOptions3;
+      $('#canvas-holder2').highcharts(json3);
+
+      //============================================================
+
+
 
       //      ==========================================================================================
 
-      var config2 = {
-          type: 'doughnut',
-          data: {
-              datasets: [{
-                  data: [
-                      ${DQYZDHX_POST_DATA["JCJXX"]},
-                      ${DQYZDHX_POST_DATA["JXKYBZX"]},
-                      0,
-                      ${DQYZDHX_POST_DATA["SHFWX"]}
-                  ],
-                  backgroundColor: [
-                      window.chartColors.blue,
-                      window.chartColors.purple,
-                      window.chartColors.green
-                  ],
-                  label: '人数'
-              }],
-              labels: [
-                  "基础教学",
-                  "教学科研并重",
-                  "科研型",
-                  "社会服务型"
-              ]
-          },
-          options: {
-              responsive: true,
-              legend: {
-                  position: 'top',
-              },
-              title: {
-                  display: true,
-              },
-              animation: {
-                  animateScale: true,
-                  animateRotate: true
+      var chartJSZX = {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false,
+      };
+      var title4 = {
+          text: '计算中心'
+      };
+      var tooltip4 = {
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      };
+      var plotOptions4 = {
+          pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+
+              /**
+               * colors: ['#7cb5ec', '#434348', '#90ed7d', '#f7a35c', '#8085e9',
+               '#f15c80', '#e4d354', '#8085e8', '#8d4653', '#91e8e1']
+               */
+
+              colors:[
+                  'blue', 'red', 'green' , '#f7a35c'
+              ],
+
+              dataLabels: {
+                  enabled: true,
+                  format: '<b>{point.name}</b>: {point.percentage:.1f}% ',
+                  style: {
+                      color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                  }
               }
           }
       };
+      var series4= [{
+          type: 'pie',
+          name: '占比',
+          data: [
+
+              ['基础教学',  ${JSZX_POST_DATA["JCJXX"]}],
+              ['教学与科研并重',  ${JSZX_POST_DATA["JXKYBZX"]}],
+              ['科研型',   0],
+              ['社会服务型', ${JSZX_POST_DATA["SHFWX"]}]
+          ]
+      }];
+
+
+
+      var json4 = {};
+      json4.chart = chartJSZX;
+      json4.title = title4;
+      json4.tooltip = tooltip4;
+      json4.credits = credits;
+      json4.series = series4;
+      json4.plotOptions = plotOptions4;
+      $('#canvas-holder3').highcharts(json4);
 
       //      ==========================================================================================
 
-
-      var config3 = {
-          type: 'doughnut',
-          data: {
-              datasets: [{
-                  data: [
-                      ${JSZX_POST_DATA["JCJXX"]},
-                      ${JSZX_POST_DATA["JXKYBZX"]},
-                      0,
-                      ${JSZX_POST_DATA["SHFWX"]}
-
-                  ],
-                  backgroundColor: [
-                      window.chartColors.blue,
-                      window.chartColors.purple,
-                      window.chartColors.green,
-                      window.chartColors.yellow
-                  ],
-                  label: '人数'
-              }],
-              labels: [
-                  "基础教学",
-                  "教学科研并重",
-                  "科研型",
-                  "社会服务型"
-              ]
-          },
-          options: {
-              responsive: true,
-              legend: {
-                  position: 'top',
-              },
-              title: {
-                  display: true,
-              },
-              animation: {
-                  animateScale: true,
-                  animateRotate: true
-              }
-          }
-      };
-
       //      ==========================================================================================
 
+      var chartDGDZSYZX = {
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          plotShadow: false,
+      };
+      var title5 = {
+          text: '电工电子实验中心'
+      };
+      var tooltip5 = {
+          pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      };
+      var plotOptions5 = {
+          pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
 
-      var config4 = {
-          type: 'doughnut',
-          data: {
-              datasets: [{
-                  data: [
-                      ${DGDZSYZX_POST_DATA["JCJXX"]},
-                      ${DGDZSYZX_POST_DATA["JXKYBZX"]},
-                      0,
-                      ${DGDZSYZX_POST_DATA["SHFWX"]}
-                  ],
-                  backgroundColor: [
-                      window.chartColors.blue,
-                      window.chartColors.purple,
-                      window.chartColors.green,
-                      window.chartColors.yellow
-                  ],
-                  label: '人数'
-              }],
-              labels: [
-                  "基础教学",
-                  "教学科研并重",
-                  "科研型",
-                  "社会服务型"
-              ]
-          },
-          options: {
-              responsive: true,
-              legend: {
-                  position: 'top',
-              },
-              title: {
-                  display: true,
-              },
-              animation: {
-                  animateScale: true,
-                  animateRotate: true
+              /**
+               * colors: ['#7cb5ec', '#434348', '#90ed7d', '#f7a35c', '#8085e9',
+               '#f15c80', '#e4d354', '#8085e8', '#8d4653', '#91e8e1']
+               */
+
+              colors:[
+                  'blue', 'red', 'green' , '#f7a35c'
+              ],
+
+              dataLabels: {
+                  enabled: true,
+                  format: '<b>{point.name}</b>: {point.percentage:.1f}% ',
+                  style: {
+                      color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                  }
               }
           }
       };
+      var series5= [{
+          type: 'pie',
+          name: '占比',
+          data: [
+
+              ['基础教学',  ${DGDZSYZX_POST_DATA["JCJXX"]}],
+              ['教学与科研并重',  ${DGDZSYZX_POST_DATA["JXKYBZX"]}],
+              ['科研型',  0],
+              ['社会服务型', ${DGDZSYZX_POST_DATA["SHFWX"]}]
+          ]
+      }];
+
+
+
+      var json5 = {};
+      json5.chart = chartDGDZSYZX;
+      json5.title = title5;
+      json5.tooltip = tooltip5;
+      json5.series = series5;
+      json5.credits = credits;
+
+      json5.plotOptions = plotOptions5;
+      $('#canvas-holder4').highcharts(json5);
+
       //      ==========================================================================================
 
 
@@ -629,118 +751,87 @@
 
       //      ==========================================================================================
 
+      //学院岗位数据对比分析
 
-//
 
-      var color = Chart.helpers.color;
-      var horizontalBarChartData = {
-          labels: ["教师岗位", "其他专业技术岗位"],
-          datasets: [
-         //     1
-              {
-              label: '计算机系',
-              backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
-              borderColor: window.chartColors.purple,
-              borderWidth: 1,
-              data: [
-                  ${JSGW["JSJKXYJSX"]},
-                  ${QTZYJSGW["JSJKXYJSX"]}
-                ]
-              }
-          ,
-//              2
-              {
-              label: '电子系',
-              backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
-              borderColor: window.chartColors.green,
-              data: [
-                  ${JSGW["DZXXGCX"]},
-                  ${QTZYJSGW["DZXXGCX"]}
-              ]},
-              //              3 color(dsColor).alpha(0.5).rgbString()
-              {
-                  label: '自动化系',
-                  backgroundColor: color(window.chartColors.grey).alpha(0.5).rgbString(),
-                  borderColor: window.chartColors.grey,
-                  data: [
-                      ${JSGW["DQYZDHGCX"]},
-                      ${QTZYJSGW["DQYZDHGCX"]}
-
-             ]},
-
-              //              4
-              {
-                  label: '计算中心',
-                  backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-                  borderColor: window.chartColors.blue,
-                  data: [
-                      ${JSGW["JSZX"]},
-                      ${QTZYJSGW["JSZX"]}
-
-                  ]},
-
-              //              5
-              {
-                  label: '电工电子实验中心',
-                  backgroundColor: color(window.chartColors.orange).alpha(0.5).rgbString(),
-                  borderColor: window.chartColors.orange,
-                  data: [
-                      ${JSGW["DGDZSYZX"]},
-                      ${QTZYJSGW["DGDZSYZX"]}
-
-                  ]}
-
-                  ]
-
+      var chart = {
+          type: 'column'
       };
+      var title = {
+          text: '学院教学岗位数据对比分析'
+      };
+      var xAxis = {
+          categories: ['计算机科学与技术系', '电子信息工程系', '电气与自动化系', '计算中心', '电工电子实验中心']
+      };
+      var yAxis ={
+          min: 0,
+          title: {
+              text: '人数'
+          },
+          stackLabels: {
+              enabled: true,
+              style: {
+                  fontWeight: 'bold',
+                  color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+              }
+          }
+      };
+      var legend = {
+          align: 'right',
+          x: -30,
+          verticalAlign: 'top',
+          y: 25,
+          floating: true,
+          backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+          borderColor: '#CCC',
+          borderWidth: 1,
+          shadow: false
+      };
+      var tooltip = {
+          formatter: function () {
+              return '<b>' + this.x + '</b><br/>' +
+                      this.series.name + ': ' + this.y + '<br/>' +
+                      'Total: ' + this.point.stackTotal;
+          }
+      };
+      var plotOptions = {
+          column: {
+              stacking: 'normal',
+              dataLabels: {
+                  enabled: true,
+                  color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                  style: {
+                      textShadow: '0 0 3px black'
+                  }
+              }
+          }
+      };
+
+      var series= [{
+          name: '教师岗位',
+          data: [${JSGW["JSJKXYJSX"]}, ${JSGW["DZXXGCX"]}, ${JSGW["DQYZDHGCX"]}, ${JSGW["JSZX"]}, ${JSGW["DGDZSYZX"]}]
+      }, {
+          name: '其它专业技术',
+          data: [${QTZYJSGW["JSJKXYJSX"]}, ${QTZYJSGW["DZXXGCX"]}, ${QTZYJSGW["DQYZDHGCX"]}, ${QTZYJSGW["JSZX"]}, ${QTZYJSGW["DGDZSYZX"]}]
+      }];
+
+      var json = {};
+      json.chart = chart;
+      json.title = title;
+      json.xAxis = xAxis;
+      json.yAxis = yAxis;
+      json.legend = legend;
+      json.tooltip = tooltip;
+      json.plotOptions = plotOptions;
+      json.credits = credits;
+      json.series = series;
+      $('#canvas-holder10').highcharts(json);
 
 
       window.onload = function() {
 
-          var ctx = document.getElementById("chart-area").getContext("2d");
-          var ctx1 = document.getElementById("chart-area1").getContext("2d");
-          var ctx2 = document.getElementById("chart-area2").getContext("2d");
-          var ctx3 = document.getElementById("chart-area3").getContext("2d");
-          var ctx4 = document.getElementById("chart-area4").getContext("2d");
-//          var ctx5 = document.getElementById("chart-area5").getContext("2d");
-//          var ctx6 = document.getElementById("chart-area6").getContext("2d");
-//          var ctx7 = document.getElementById("chart-area7").getContext("2d");
-//          var ctx8 = document.getElementById("chart-area8").getContext("2d");
           var ctx9 = document.getElementById("chart-area9").getContext("2d");
 
-          var ctx10 = document.getElementById("chart-area10").getContext("2d");
-          window.myHorizontalBar = new Chart(ctx10, {
-              type: 'horizontalBar',
-              data: horizontalBarChartData,
-              options: {
-                  // Elements options apply to all of the options unless overridden in a dataset
-                  // In this case, we are setting the border of each horizontal bar to be 2px wide
-                  elements: {
-                      rectangle: {
-                          borderWidth: 1,
-                      }
-                  },
-                  responsive: true,
-                  legend: {
-                      position: 'right',
-                  },
-                  title: {
-                      display: true,
-//                      text: 'Chart.js Horizontal Bar Chart'
-                  }
-              }
-          });
-
-
-          window.myDoughnut = new Chart(ctx, config);
-          window.myDoughnut = new Chart(ctx1, config1);
-          window.myDoughnut = new Chart(ctx2, config2);
-          window.myDoughnut = new Chart(ctx3, config3);
-          window.myDoughnut = new Chart(ctx4, config4);
-//          window.myDoughnut = new Chart(ctx5, config5);
-//          window.myDoughnut = new Chart(ctx6, config6);
-//          window.myDoughnut = new Chart(ctx7, config7);
-//          window.myDoughnut = new Chart(ctx8, config8);
           window.myLine = new Chart(ctx9, config9);
 
 
@@ -777,9 +868,10 @@
           
             <h3 class="footer-heading">正在开发的项目</h3>
             <ul class="footer-list">
-              <li><a href="#">项目一</a></li>
-              <li><a href="#">项目二</a></li>
-              <li><a href="#">项目三</a></li>
+                <li><a href="${pageContext.request.contextPath}/teacher/post_data.do">学院岗位数据分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/teacher/hr_data.do">学院人力资源现状分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/teach/work_data_teach.do">学院历年教学工作量分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/project/work_data_research.do">学院历年科研数据分析</a></li>
             </ul>
           
         </div>

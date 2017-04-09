@@ -54,6 +54,9 @@
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
 
     <!-- FOR IE9 below -->
     <!--[if lte IE 9]>
@@ -139,21 +142,26 @@
 
 
           <div class="row gallery-row">
-              <div class="col-md-12 col-sm-6">
+              <div class="col-md-12">
 
 
                   <div id="canvas-holder6">
-                      <canvas id="chart-area6" />
                   </div>
 
               </div>
 
           </div>
 
+          <div class="row gallery-row">
+              <div class="col-md-12">
 
 
+                  <div id="canvas-holder7">
+                  </div>
 
+              </div>
 
+          </div>
 
 
 
@@ -174,13 +182,35 @@
 
               <br/>
 
+
+
               <center>
 
-              <button type="button" class="btn btn-success" title="数据列表"
-                      data-container="body" data-toggle="popover" data-placement="right"
-                      data-content="${SumTeachData["XY"]}">
-                      ${YEAR}信息工程学院总教学工作量
-              </button>
+                  <table class="table table-bordered">
+                      <caption><center>${YEAR}计算机科学与技术系教学工作量前十</center> </caption>
+                      <thead>
+                      <tr>
+                          <th>姓名</th>
+                          <th>教学工作量</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+
+                      <c:forEach var="items" varStatus="st" items="${JSJKXYJS_FirstToFiveTeachData}">
+                          <tr>
+                              <td>${items.key}</td>
+                              <td>${items.value}</td>
+                          </tr>
+                      </c:forEach>
+
+
+
+                      </tbody>
+                  </table>
+
+
+
+
 
               </center>
 
@@ -188,23 +218,29 @@
 
               <center>
 
-                  <button type="button" class="btn btn-success" title="数据列表"
-                          data-container="body" data-toggle="popover" data-placement="right"
-                          data-content="<c:forEach var="items" items="${JSJKXYJS_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">
-                      ${YEAR}计算机科学与技术教学工作量前五
-                  </button>
 
-              </center>
+                  <table class="table table-bordered">
+                      <caption><center>${YEAR}电工电子实验中心教学工作量前十</center> </caption>
+                      <thead>
+                      <tr>
+                          <th>姓名</th>
+                          <th>教学工作量</th>
+                      </tr>
+                      </thead>
+                      <tbody>
 
-              <br/>
+                      <c:forEach var="items" items="${DGDZSYZX_FirstToFiveTeachData}" varStatus="st" >
+                          <tr>
+                              <td>${items.key}</td>
+                              <td>${items.value}</td>
+                          </tr>
+                      </c:forEach>
 
-              <center>
+                      </tbody>
+                  </table>
 
-                  <button type="button" class="btn btn-success" title="数据列表"
-                          data-container="body" data-toggle="popover" data-placement="right"
-                          data-content="<c:forEach var="items" items="${DGDZSYZX_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">
-                      ${YEAR}电工电子实验中心教学工作量前五
-                  </button>
+
+
 
               </center>
 
@@ -224,11 +260,33 @@
 
               <center>
 
-                  <button type="button" class="btn btn-success" title="数据列表"
-                          data-container="body" data-toggle="popover" data-placement="right"
-                          data-content="<c:forEach var="items" items="${DQYZDHGCX_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">
-                      ${YEAR}电气与自动化系教学工作量前五
-                  </button>
+                  <%--<button type="button" class="btn btn-success" title="数据列表"--%>
+                          <%--data-container="body" data-toggle="popover" data-placement="right"--%>
+                          <%--data-content="<c:forEach var="items" items="${DQYZDHGCX_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">--%>
+                      <%--${YEAR}电气与自动化系教学工作量前五--%>
+                  <%--</button>--%>
+
+                  <table class="table table-bordered">
+                      <caption><center>${YEAR}电气与自动化系教学工作量前十</center> </caption>
+                      <thead>
+                      <tr>
+                          <th>姓名</th>
+                          <th>教学工作量</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+
+                      <c:forEach var="items" items="${DQYZDHGCX_FirstToFiveTeachData}" varStatus="st" >
+                          <tr>
+                              <td>${items.key}</td>
+                              <td>${items.value}</td>
+                          </tr>
+                      </c:forEach>
+
+
+                      </tbody>
+                  </table>
+
 
               </center>
 
@@ -236,22 +294,60 @@
 
               <center>
 
-                  <button type="button" class="btn btn-success" title="数据列表"
-                          data-container="body" data-toggle="popover" data-placement="right"
-                          data-content="<c:forEach var="items" items="${JSZX_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">
-                      ${YEAR}计算中心教学工作量前五
-                  </button>
+                  <%--<button type="button" class="btn btn-success" title="数据列表"--%>
+                          <%--data-container="body" data-toggle="popover" data-placement="right"--%>
+                          <%--data-content="<c:forEach var="items" items="${JSZX_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">--%>
+                      <%--${YEAR}计算中心教学工作量前五--%>
+                  <%--</button>--%>
+
+                  <table class="table table-bordered">
+                      <caption><center>${YEAR}计算中心教学工作量前十</center> </caption>
+                      <thead>
+                      <tr>
+                          <th>姓名</th>
+                          <th>教学工作量</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+
+                      <c:forEach var="items" items="${JSZX_FirstToFiveTeachData}" varStatus="st">
+                          <tr>
+                              <td>${items.key}</td>
+                              <td>${items.value}</td>
+                          </tr>
+                      </c:forEach>
+
+
+                      </tbody>
+                  </table>
+
 
               </center>
 
               <br/>
               <center>
 
-                  <button type="button" class="btn btn-success" title="数据列表"
-                          data-container="body" data-toggle="popover" data-placement="right"
-                          data-content="<c:forEach var="items" items="${DZXXGCX_FirstToFiveTeachData}">${items.key}:${items.value}  </c:forEach>">
-                      ${YEAR}电子信息工程教学工作量前五
-                  </button>
+
+                  <table class="table table-bordered">
+                      <caption><center>${YEAR}电子信息工程系教学工作量前十</center> </caption>
+                      <thead>
+                      <tr>
+                          <th>姓名</th>
+                          <th>教学工作量</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+
+                      <c:forEach var="items" items="${DZXXGCX_FirstToFiveTeachData}" varStatus="st">
+                          <tr>
+                              <td>${items.key}</td>
+                              <td>${items.value}</td>
+                          </tr>
+                      </c:forEach>
+
+                      </tbody>
+                  </table>
+
 
               </center>
 
@@ -335,8 +431,6 @@
 
 //      学院各单位专任教师总教学工作量数据 图一
 
-
-
       var config = {
           type: 'radar',
           data: {
@@ -344,7 +438,7 @@
               datasets: [
 
                   {
-                      label: "总教学工作量(小时)",
+                      label: "单位总教学工作量(小时)",
                       backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
                       borderColor: window.chartColors.red,
                       pointBackgroundColor: window.chartColors.red,
@@ -354,7 +448,23 @@
                            ${SumTeachData["DZXXGCX"]},
                            ${SumTeachData["DQYZDHGCX"]},
                            ${SumTeachData["JSZX"]},
-                          ${SumTeachData["DGDZSYZX"]},
+                           ${SumTeachData["DGDZSYZX"]},
+
+
+                      ]
+                  },
+                  {
+                      label: "学院各单位平均总教学工作量(小时)",
+                      backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+                      borderColor: window.chartColors.blue,
+                      pointBackgroundColor: window.chartColors.blue,
+                      data: [
+
+                          ${SumTeachData["XY"]/5},
+                          ${SumTeachData["XY"]/5},
+                          ${SumTeachData["XY"]/5},
+                          ${SumTeachData["XY"]/5},
+                          ${SumTeachData["XY"]/5},
 
 
                       ]
@@ -390,7 +500,7 @@
             datasets: [
 
                 {
-                    label: "人均教学工作量(小时)",
+                    label: "单位人均教学工作量(小时)",
                     backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
                     borderColor: window.chartColors.red,
                     pointBackgroundColor: window.chartColors.red,
@@ -400,6 +510,23 @@
                         ${AveTeachData["DQYZDHGCX"]},
                         ${AveTeachData["JSZX"]},
                         ${AveTeachData["DGDZSYZX"]}
+                    ]
+                }
+                ,
+                {
+                    label: "学院人均总教学工作量(小时)",
+                    backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
+                    borderColor: window.chartColors.blue,
+                    pointBackgroundColor: window.chartColors.blue,
+                    data: [
+
+                        ${AveTeachData["XY"]},
+                        ${AveTeachData["XY"]},
+                        ${AveTeachData["XY"]},
+                        ${AveTeachData["XY"]},
+                        ${AveTeachData["XY"]},
+
+
                     ]
                 }
 
@@ -421,6 +548,8 @@
             }
         }
     };
+
+
 
 ////      学院不同单位不同年龄段专任教师工作量比例分布
 //
@@ -642,6 +771,238 @@
 //
 //    };
 
+      //去水印
+      var credits = {
+          enabled: false
+      };
+
+      //=======================
+      var title = {
+          text: '2010-2016全学院人均教学工作量数据整体分析'
+      };
+
+
+      var xAxis = {
+          categories: ['2010年', '2011年', '2012年', '2013年', '2014年', '2015年',
+              '2016年']
+      };
+      var yAxis = {
+          title: {
+              text: '人均教学工作量（小时）'
+          },
+          tickPositions: [200,300, 400,500,600,700,800,900,1000] // 指定竖轴坐标点的值
+      };
+
+
+
+      var plotOptions = {
+          line: {
+              dataLabels: {
+                  enabled: true
+              },
+              enableMouseTracking: false
+          }
+      };
+      var series= [
+
+          {
+          name: '学院总',
+          data: [
+              ${TeachData2010["XY"]},
+              ${TeachData2011["XY"]},
+              ${TeachData2012["XY"]},
+              ${TeachData2013["XY"]},
+              ${TeachData2014["XY"]},
+              ${TeachData2015["XY"]},
+              ${TeachData2016["XY"]}]
+          },
+          {
+          name: '计算机科学与技术系',
+          data: [
+              ${TeachData2010["JSJKXYJSX"]},
+              ${TeachData2011["JSJKXYJSX"]},
+              ${TeachData2012["JSJKXYJSX"]},
+              ${TeachData2013["JSJKXYJSX"]},
+              ${TeachData2014["JSJKXYJSX"]},
+              ${TeachData2015["JSJKXYJSX"]},
+              ${TeachData2016["JSJKXYJSX"]}]
+        },
+          {
+              name: '电子信息工程系',
+              data: [
+              ${TeachData2010["DZXXGCX"]},
+              ${TeachData2011["DZXXGCX"]},
+              ${TeachData2012["DZXXGCX"]},
+              ${TeachData2013["DZXXGCX"]},
+              ${TeachData2014["DZXXGCX"]},
+              ${TeachData2015["DZXXGCX"]},
+              ${TeachData2016["DZXXGCX"]}
+              ]
+          },
+
+          {
+              name: '电气与自动化系',
+              data: [
+                  ${TeachData2010["DQYZDHGCX"]},
+                  ${TeachData2011["DQYZDHGCX"]},
+                  ${TeachData2012["DQYZDHGCX"]},
+                  ${TeachData2013["DQYZDHGCX"]},
+                  ${TeachData2014["DQYZDHGCX"]},
+                  ${TeachData2015["DQYZDHGCX"]},
+              ${TeachData2016["DQYZDHGCX"]}]
+          },
+          {
+              name: '计算中心',
+              data: [
+                  ${TeachData2010["JSZX"]},
+                  ${TeachData2011["JSZX"]},
+                  ${TeachData2012["JSZX"]},
+                  ${TeachData2013["JSZX"]},
+                  ${TeachData2014["JSZX"]},
+                  ${TeachData2015["JSZX"]},
+                ${TeachData2016["JSZX"]}]
+          }
+          ,
+          {
+              name: '电工电子实验中心',
+              data: [
+                  ${TeachData2010["DGDZSYZX"]},
+                  ${TeachData2011["DGDZSYZX"]},
+                  ${TeachData2012["DGDZSYZX"]},
+                  ${TeachData2013["DGDZSYZX"]},
+                  ${TeachData2014["DGDZSYZX"]},
+                  ${TeachData2015["DGDZSYZX"]},
+                  ${TeachData2016["DGDZSYZX"]}]
+          },
+      ];
+
+      var json = {};
+
+      json.title = title;
+      json.xAxis = xAxis;
+      json.yAxis = yAxis;
+      json.series = series;
+      json.credits = credits;
+      json.plotOptions = plotOptions;
+      $('#canvas-holder6').highcharts(json);
+      //===========
+
+      //=====算法二
+
+      //=======================
+      var title1 = {
+          text: '2010-2016全学院人均教学工作量数据整体分析（算法二）'
+      };
+
+      var xAxis1 = {
+          categories: ['2010年', '2011年', '2012年', '2013年', '2014年', '2015年',
+              '2016年']
+      };
+      var yAxis1 = {
+          title: {
+              text: '人均教学工作量（小时）'
+          },
+          tickPositions: [0,50,100,150,200,250,300] // 指定竖轴坐标点的值
+      };
+
+
+
+      var plotOptions1 = {
+          line: {
+              dataLabels: {
+                  enabled: true
+              },
+              enableMouseTracking: false
+          }
+      };
+      var series1= [
+
+          {
+              name: '学院总',
+              data: [
+                  ${RealTeachData2010["XY"]},
+                  ${RealTeachData2011["XY"]},
+                  ${RealTeachData2012["XY"]},
+                  ${RealTeachData2013["XY"]},
+                  ${RealTeachData2014["XY"]},
+                  ${RealTeachData2015["XY"]},
+                  ${RealTeachData2016["XY"]}]
+          },
+          {
+              name: '计算机科学与技术系',
+              data: [
+                  ${RealTeachData2010["JSJKXYJSX"]},
+                  ${RealTeachData2011["JSJKXYJSX"]},
+                  ${RealTeachData2012["JSJKXYJSX"]},
+                  ${RealTeachData2013["JSJKXYJSX"]},
+                  ${RealTeachData2014["JSJKXYJSX"]},
+                  ${RealTeachData2015["JSJKXYJSX"]},
+                  ${RealTeachData2016["JSJKXYJSX"]}]
+          },
+          {
+              name: '电子信息工程系',
+              data: [
+                  ${RealTeachData2010["DZXXGCX"]},
+                  ${RealTeachData2011["DZXXGCX"]},
+                  ${RealTeachData2012["DZXXGCX"]},
+                  ${RealTeachData2013["DZXXGCX"]},
+                  ${RealTeachData2014["DZXXGCX"]},
+                  ${RealTeachData2015["DZXXGCX"]},
+                  ${RealTeachData2016["DZXXGCX"]}
+              ]
+          },
+
+          {
+              name: '电气与自动化系',
+              data: [
+                  ${RealTeachData2010["DQYZDHGCX"]},
+                  ${RealTeachData2011["DQYZDHGCX"]},
+                  ${RealTeachData2012["DQYZDHGCX"]},
+                  ${RealTeachData2013["DQYZDHGCX"]},
+                  ${RealTeachData2014["DQYZDHGCX"]},
+                  ${RealTeachData2015["DQYZDHGCX"]},
+                  ${RealTeachData2016["DQYZDHGCX"]}]
+          },
+          {
+              name: '计算中心',
+              data: [
+                  ${RealTeachData2010["JSZX"]},
+                  ${RealTeachData2011["JSZX"]},
+                  ${RealTeachData2012["JSZX"]},
+                  ${RealTeachData2013["JSZX"]},
+                  ${RealTeachData2014["JSZX"]},
+                  ${RealTeachData2015["JSZX"]},
+                  ${RealTeachData2016["JSZX"]}]
+          }
+          ,
+          {
+              name: '电工电子实验中心',
+              data: [
+                  ${RealTeachData2010["DGDZSYZX"]},
+                  ${RealTeachData2011["DGDZSYZX"]},
+                  ${RealTeachData2012["DGDZSYZX"]},
+                  ${RealTeachData2013["DGDZSYZX"]},
+                  ${RealTeachData2014["DGDZSYZX"]},
+                  ${RealTeachData2015["DGDZSYZX"]},
+                  ${RealTeachData2016["DGDZSYZX"]}]
+          },
+      ];
+
+      var json1 = {};
+
+      json1.title = title1;
+      json1.xAxis = xAxis1;
+      json1.yAxis = yAxis1;
+      json1.series = series1;
+      json1.credits = credits;
+      json1.plotOptions = plotOptions1;
+      $('#canvas-holder7').highcharts(json1);
+      //===========
+
+
+      //====================
+
+
       //学院总体教学量数据分析
       var config6 = {
           type: 'line',
@@ -781,59 +1142,10 @@
 
           var ctx = document.getElementById("chart-area").getContext("2d");
           var ctx1 = document.getElementById("chart-area1").getContext("2d");
-//          var ctx2 = document.getElementById("chart-area2").getContext("2d");
-//          var ctx3 = document.getElementById("chart-area3").getContext("2d");
-//          var ctx4 = document.getElementById("chart-area4").getContext("2d");
-//          var ctx5 = document.getElementById("chart-area5").getContext("2d");
-          var ctx6 = document.getElementById("chart-area6").getContext("2d");
-
-
-//        window.myHorizontalBar = new Chart(ctx2, {
-//              type: 'horizontalBar',
-//              data: horizontalBarChartData,
-//              options: {
-//                  // Elements options apply to all of the options unless overridden in a dataset
-//                  // In this case, we are setting the border of each horizontal bar to be 2px wide
-//                  elements: {
-//                      rectangle: {
-//                          borderWidth: 1,
-//                      }
-//                  },
-//                  responsive: true,
-//                  legend: {
-//                      position: 'right',
-//                  },
-//                  title: {
-//                      display: true,
-//                  }
-//              }
-//          });
-
-//          window.myHorizontalBar1 = new Chart(ctx5, {
-//              type: 'horizontalBar',
-//              data: horizontalBarChartData1,
-//              options: {
-//
-//                  elements: {
-//                      rectangle: {
-//                          borderWidth: 1,
-//                      }
-//                  },
-//                  responsive: true,
-//                  legend: {
-//                      position: 'right',
-//                  },
-//                  title: {
-//                      display: true,
-//                  }
-//              }
-//          });
 
           window.myRadar = new Chart(ctx, config);
           window.myRadar = new Chart(ctx1,config1);
-//          window.myRadar = new Chart(ctx3, config3);
-//          window.myRadar = new Chart(ctx4,config4);
-          window.myLine = new Chart(ctx6,config6);
+
     }
 
   </script>
@@ -864,9 +1176,10 @@
           
             <h3 class="footer-heading">正在开发的项目</h3>
             <ul class="footer-list">
-              <li><a href="#">项目一</a></li>
-              <li><a href="#">项目二</a></li>
-              <li><a href="#">项目三</a></li>
+                <li><a href="${pageContext.request.contextPath}/teacher/post_data.do">学院岗位数据分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/teacher/hr_data.do">学院人力资源现状分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/teach/work_data_teach.do">学院历年教学工作量分析</a></li>
+                <li><a href="${pageContext.request.contextPath}/project/work_data_research.do">学院历年科研数据分析</a></li>
             </ul>
           
         </div>

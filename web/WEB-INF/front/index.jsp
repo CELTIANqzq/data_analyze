@@ -282,9 +282,10 @@
           
             <h3 class="footer-heading">正在开发的项目</h3>
             <ul class="footer-list">
-              <li><a href="#">项目一</a></li>
-              <li><a href="#">项目二</a></li>
-              <li><a href="#">项目三</a></li>
+              <li><a href="${pageContext.request.contextPath}/teacher/post_data.do">学院岗位数据分析</a></li>
+              <li><a href="${pageContext.request.contextPath}/teacher/hr_data.do">学院人力资源现状分析</a></li>
+              <li><a href="${pageContext.request.contextPath}/teach/work_data_teach.do">学院历年教学工作量分析</a></li>
+              <li><a href="${pageContext.request.contextPath}/project/work_data_research.do">学院历年科研数据分析</a></li>
             </ul>
           
         </div>

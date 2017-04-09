@@ -58,6 +58,9 @@ public interface TeachService extends BaseService<Teach> {
 
     Map<String,Float> getAveRealTeachData(String year);
 
+
+
+
     /**
      *
      * @param year
@@ -107,5 +110,6 @@ public interface TeachService extends BaseService<Teach> {
      *
      */
     Map<String,Float> getFirstToFiveFromAllTeachData(String year);
+
 
 }

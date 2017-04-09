@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Created by liujie on 2017/3/17.
@@ -83,6 +84,14 @@ public class TeacherAction {
             model.addAttribute("SingleProvinceDataSS",singleProvinceDataSS);
 
             model.addAttribute("SingleProvinceDataXS",singleProvinceDataXS);
+
+            Map<String ,String> doctorListHash = teacherService.getAllDoctorName();
+
+            TreeMap <String,String> doctorList = new TreeMap<>(doctorListHash);
+
+            model.addAttribute("DoctorList",doctorList);
+
+            System.out.println(doctorList);
 
             System.out.println(hrProvinceData);
 

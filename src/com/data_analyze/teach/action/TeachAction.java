@@ -67,6 +67,44 @@ public class TeachAction {
 
         System.out.println(aveTeachData);
 
+
+
+        //算法二
+        Map<String,Float> aveRealTeachData = teachService.getAveRealTeachData(year);
+
+        model.addAttribute("RealAveTeachData",aveRealTeachData);
+
+        Map<String,Float> RealTeachData2010 = teachService.getAveRealTeachData("2010");
+
+        Map<String,Float> RealTeachData2011 = teachService.getAveRealTeachData("2011");
+
+        Map<String,Float> RealTeachData2012 = teachService.getAveRealTeachData("2012");
+
+        Map<String,Float> RealTeachData2013 = teachService.getAveRealTeachData("2013");
+
+        Map<String,Float> RealTeachData2014 = teachService.getAveRealTeachData("2014");
+
+        Map<String,Float> RealTeachData2015 = teachService.getAveRealTeachData("2015");
+
+        Map<String,Float> RealTeachData2016 = teachService.getAveRealTeachData("2016");
+
+        model.addAttribute("RealTeachData2010",RealTeachData2010);
+
+        model.addAttribute("RealTeachData2011",RealTeachData2011);
+
+        model.addAttribute("RealTeachData2012",RealTeachData2012);
+
+        model.addAttribute("RealTeachData2013",RealTeachData2013);
+
+        model.addAttribute("RealTeachData2014",RealTeachData2014);
+
+        model.addAttribute("RealTeachData2015",RealTeachData2015);
+
+        model.addAttribute("RealTeachData2016",RealTeachData2016);
+
+        model.addAttribute("RealTeachData2010",RealTeachData2010);
+
+
         //全部的数据
 
         Map<String,Float> TeachData2010 = teachService.getAveTeachData("2010");
@@ -101,14 +139,13 @@ public class TeachAction {
 
         model.addAttribute("AveTeachData",aveTeachData);
 
-        //    Map<String,Float> getSumTeachData(String year);
 
         //总的
         Map<String,Float> SumTeachData = teachService.getSumTeachData(year);
 
         model.addAttribute("SumTeachData",SumTeachData);
 
-        //排名前五的
+        //排名前10的
         //    Map<String,Float> getFirstToFiveTeachData(String year,String officeName);
         Map<String,Float> JSJKXYJS_FirstToFiveTeachData = teachService.getFirstToFiveTeachData(year,"计算机科学与技术系");
         Map<String,Float> DQYZDHGCX_FirstToFiveTeachData = teachService.getFirstToFiveTeachData(year,"电气与自动化工程系");
