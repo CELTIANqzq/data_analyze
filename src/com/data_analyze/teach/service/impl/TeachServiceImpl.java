@@ -175,12 +175,19 @@ public class TeachServiceImpl implements TeachService {
     @Override
     public Map<String, Float> getAveTeachData(String year) {
         Map<String, Float> result = new HashMap<>();
-        int allPeopleNumber = teacherMapper.execute("select count(*) from teachers where teachers.prof_and_tech_post not like '%实验%';");
-        int csPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算机科学与技术系' and teachers.prof_and_tech_post not like '%实验%';");
-        int caculateCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算中心' and teachers.prof_and_tech_post not like '%实验%';");
-        int autoPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电气与自动化工程系' and teachers.prof_and_tech_post not like '%实验%';");
-        int expCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电工电子实验中心' and teachers.prof_and_tech_post not like '%实验%';");
-        int eePeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电子信息工程系' and teachers.prof_and_tech_post not like '%实验%';");
+//        int allPeopleNumber = teacherMapper.execute("select count(*) from teachers where teachers.prof_and_tech_post not like '%实验%';");
+//        int csPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算机科学与技术系' and teachers.prof_and_tech_post not like '%实验%';");
+//        int caculateCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算中心' and teachers.prof_and_tech_post not like '%实验%';");
+//        int autoPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电气与自动化工程系' and teachers.prof_and_tech_post not like '%实验%';");
+//        int expCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电工电子实验中心' and teachers.prof_and_tech_post not like '%实验%';");
+//        int eePeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电子信息工程系' and teachers.prof_and_tech_post not like '%实验%';");
+
+        int allPeopleNumber = teacherMapper.execute("select count(*) from teachers;");
+        int csPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算机科学与技术系';");
+        int caculateCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算中心';");
+        int autoPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电气与自动化工程系';");
+        int expCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电工电子实验中心';");
+        int eePeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电子信息工程系';");
 
 
         float allWork = teachMapper.getAllWork(year);
@@ -246,12 +253,12 @@ public class TeachServiceImpl implements TeachService {
     public Map<String, Float> getAveRealTeachData(String year) {
         // 本科生理论课 + 实验课 + 研究生理论课
         Map<String, Float> result = new HashMap<>();
-        int allPeopleNumber = teacherMapper.execute("select count(*) from teachers where teachers.prof_and_tech_post not like '%实验%';");
-        int csPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算机科学与技术系' and teachers.prof_and_tech_post not like '%实验%';");
-        int caculateCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算中心' and teachers.prof_and_tech_post not like '%实验%';");
-        int autoPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电气与自动化工程系' and teachers.prof_and_tech_post not like '%实验%';");
-        int expCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电工电子实验中心' and teachers.prof_and_tech_post not like '%实验%';");
-        int eePeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电子信息工程系' and teachers.prof_and_tech_post not like '%实验%';");
+        int allPeopleNumber = teacherMapper.execute("select count(*) from teachers;");
+        int csPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算机科学与技术系';");
+        int caculateCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算中心';");
+        int autoPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电气与自动化工程系';");
+        int expCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电工电子实验中心';");
+        int eePeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电子信息工程系';");
 
 
         float allWork = teachMapper.getAllRealWork(year);
