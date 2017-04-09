@@ -229,7 +229,7 @@ public class TeachServiceImpl implements TeachService {
 
     @Override
     public Map<String, Float> getFirstToFiveTeachData(String year, String officeName) {
-        List<Teach> teachList = teachMapper.queryTeachByPageInOffice(year, officeName, "0","5");
+        List<Teach> teachList = teachMapper.queryTeachByPageInOffice(year, officeName, "0","10");
         Map<String, Float> result = new HashMap<>();
         for(Iterator<Teach> it = teachList.iterator(); it.hasNext(); ) {
             Teach teach = it.next();
@@ -240,7 +240,7 @@ public class TeachServiceImpl implements TeachService {
 
     @Override
     public Map<String, Float> getFirstToFiveFromAllTeachData(String year) {
-        List<Teach> teachList = teachMapper.queryTeachByPage(year, "0","5");
+        List<Teach> teachList = teachMapper.queryTeachByPage(year, "0","10");
         Map<String, Float> result = new HashMap<>();
         for(Iterator<Teach> it = teachList.iterator(); it.hasNext(); ) {
             Teach teach = it.next();
