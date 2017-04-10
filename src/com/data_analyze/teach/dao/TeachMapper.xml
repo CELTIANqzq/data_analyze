@@ -51,7 +51,7 @@
         <bind name="teachTableName" value="'teach'+year"/>
         <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-        sum(ifnull(t.college_workload,0)+if(t.sum_workload, 0))
+        sum(ifnull(t.college_workload,0)+ifnull(t.sum_workload, 0))
         FROM
         (
         SELECT ${teachTableName}.salary_id as salary_id, college_workload, sum_workload
@@ -76,7 +76,7 @@
         <bind name="teachTableName" value="'teach'+year"/>
         <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-        sum(ifnull(t.college_workload,0)+if(t.sum_workload, 0))
+        sum(ifnull(t.college_workload,0)+ifnull(t.sum_workload, 0))
         FROM
         (
         SELECT ${teachTableName}.salary_id as salary_id, college_workload, sum_workload
@@ -101,7 +101,7 @@
         <bind name="teachTableName" value="'teach'+year"/>
         <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-        (ifnull(t.college_workload,0)+if(sum_workload, 0)) as year_sum,
+        (ifnull(t.college_workload,0)+ifnull(sum_workload, 0)) as year_sum,
         t.name
         FROM
         (
@@ -120,7 +120,7 @@
         ON
         teachers.salary_id = t.salary_id
         WHERE
-        teachers.prof_and_tech_post NOT LIKE '%实验%' AND teachers.office=#{office};
+        teachers.prof_and_tech_post NOT LIKE '%实验%' AND teachers.office=#{office}
         ORDER BY
         year_sum
         DESC
@@ -131,7 +131,7 @@
         <bind name="teachTableName" value="'teach'+year"/>
         <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-        (ifnull(t.college_workload,0)+if(sum_workload, 0)) as year_sum,
+        (ifnull(t.college_workload,0)+ifnull(sum_workload, 0)) as year_sum,
         t.name
         FROM
         (
@@ -150,7 +150,7 @@
         ON
         teachers.salary_id = t.salary_id
         WHERE
-        teachers.prof_and_tech_post NOT LIKE '%实验%';
+        teachers.prof_and_tech_post NOT LIKE '%实验%'
         ORDER BY
         year_sum
         DESC
