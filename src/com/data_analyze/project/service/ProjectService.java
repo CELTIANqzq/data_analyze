@@ -69,6 +69,7 @@ public interface ProjectService extends BaseService<Project> {
      * Float 进账的金额
      *
      */
+
     Map<String,Float> getEveryYearMoneyData(String year);
 
     /**
@@ -77,6 +78,7 @@ public interface ProjectService extends BaseService<Project> {
      *
      * String：老师名
      * Float：进账金额
+     *
      */
     Map<String,Float> getAllYearSumMoneyData();
 

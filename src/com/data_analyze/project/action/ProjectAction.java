@@ -2,6 +2,7 @@ package com.data_analyze.project.action;
 
 import com.data_analyze.paper.service.PaperService;
 import com.data_analyze.project.service.ProjectService;
+import com.data_analyze.utils.MapHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -165,6 +166,26 @@ public class ProjectAction {
         model.addAttribute("PaperNumber2015",PaperNumber2015);
 
         model.addAttribute("PaperNumber2016",PaperNumber2016);
+
+
+        /**
+         * 每个老师的科研进账情况
+         * 几年一起
+         */
+        Map<String,Float> allTeacherSumMoneyData = projectService.getAllYearSumMoneyData();
+
+        System.out.println("==================================================================================");
+
+        System.out.println(allTeacherSumMoneyData);
+
+        model.addAttribute("AllTeacherSumMoneyData", MapHelper.sortMapByValue(allTeacherSumMoneyData));
+
+        /**
+         * 单年的
+         */
+        Map<String,Float> TeacherYearSumMoneyData = projectService.getEveryYearMoneyData(year);
+
+        model.addAttribute("TeacherYearSumMoneyData",MapHelper.sortMapByValue(TeacherYearSumMoneyData));
 
         return "/WEB-INF/front/projects/work_data_research.jsp";
     }

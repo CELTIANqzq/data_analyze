@@ -153,14 +153,16 @@
                                       <caption><center>博士信息列表</center> </caption>
                                       <thead>
                                       <tr>
+                                          <th>序号</th>
                                           <th>姓名</th>
                                           <th>来自</th>
                                       </tr>
                                       </thead>
                                       <tbody>
-                                      <c:forEach var="items" items="${DoctorList}">
+                                      <c:forEach var="items" varStatus="st" items="${DoctorList}">
 
                                       <tr>
+                                          <td>${st.count}</td>
                                           <td>${items.key}</td>
                                           <td>${items.value}</td>
                                       </tr>
@@ -237,7 +239,6 @@
 
 
                   <div id="canvas-holder10">
-                      <%--<canvas id="chart-area10" />--%>
                   </div>
 
               </div>
@@ -248,82 +249,39 @@
           <br/>
 
 
-        <div class="row gallery-row">
-
-          <div class="col-md-6 col-sm-6">
-
-            <h5>专任教师职称结构</h5>
-
-
-            <div id="canvas-holder" style="width: 400px;height: 400px">
-              <canvas id="chart-area" />
-            </div>
-
-
-          </div>
-
-            <div class="col-md-6 col-sm-6">
-
-
-                <h5>专任教师年龄结构</h5>
-
-
-                <div id="canvas-holder2" style="width: 400px;height: 400px">
-                    <canvas id="chart-area2" />
-                </div>
-
-
-
-            </div>
-
-        </div>
-        <br/>
-        <hr/>
-        <br/>
-
-        <!-- Gallery Row -->
-
         <%--<div class="row gallery-row">--%>
 
-            <%--&lt;%&ndash;<div class="col-md-6 col-sm-6">&ndash;%&gt;--%>
+          <%--<div class="col-md-6 col-sm-6">--%>
 
-                <%--&lt;%&ndash;<h5>专任教师学历结构</h5>&ndash;%&gt;--%>
-
-
-                <%--&lt;%&ndash;<div id="canvas-holder1" style="width: 400px;height: 400px">&ndash;%&gt;--%>
-                    <%--&lt;%&ndash;<canvas id="chart-area1" />&ndash;%&gt;--%>
-                <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+            <%--<h5>专任教师职称结构</h5>--%>
 
 
-
-            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-
-
-
-            <%--&lt;%&ndash;<div class="col-md-6 col-sm-6">&ndash;%&gt;--%>
+            <%--<div id="canvas-holder" style="width: 400px;height: 400px">--%>
+              <%--<canvas id="chart-area" />--%>
+            <%--</div>--%>
 
 
+          <%--</div>--%>
+
+            <%--<div class="col-md-6 col-sm-6">--%>
 
 
-            <%--&lt;%&ndash;<h5>学院不同年龄阶段博士比例</h5>&ndash;%&gt;--%>
-
-            <%--&lt;%&ndash;<br/>&ndash;%&gt;--%>
-            <%--&lt;%&ndash;<br/>&ndash;%&gt;--%>
-            <%--&lt;%&ndash;<br/>&ndash;%&gt;--%>
-
-            <%--&lt;%&ndash;<div id="canvas-holder3">&ndash;%&gt;--%>
-              <%--&lt;%&ndash;<canvas id="chart-area3" style="width: 300px;height: 180px"/>&ndash;%&gt;--%>
-            <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                <%--<h5>专任教师年龄结构</h5>--%>
 
 
-          <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+                <%--<div id="canvas-holder2" style="width: 400px;height: 400px">--%>
+                    <%--<canvas id="chart-area2" />--%>
+                <%--</div>--%>
+
+
+
+            <%--</div>--%>
+
         <%--</div>--%>
-
         <%--<br/>--%>
         <%--<hr/>--%>
         <%--<br/>--%>
 
-        <!-- Gallery Row -->
 
         <div class="row gallery-row">
           <div class="col-md-6 col-sm-6">
@@ -414,7 +372,9 @@
 //                          inRange: {
 //
 //                          }
-                          color: ['orangered','yellow','#FFFFFF']
+
+                          //orangered
+                          color: ['red','yellow']
 
                       },
 
@@ -1101,94 +1061,18 @@
       json.series = series;
       $('#canvas-holder10').highcharts(json);
 
-      //===========================================
-
-
-//  学院博士比例现状
-
-//      var horizontalBarChartData = {
-//          labels: ["35岁以下", "36-44岁", "45-49岁", "50岁以上"],
-//          datasets: [
-//         //     1
-//              {
-//              label: '教授',
-//              backgroundColor: color(window.chartColors.purple).alpha(0.5).rgbString(),
-//              borderColor: window.chartColors.purple,
-//              borderWidth: 1,
-//              data: [
-//                  0,
-//                  88.89,
-//                  75.00,
-//                  23.53
-//                ]
-//              }
-//          ,
-////              2
-//              {
-//              label: '副教授',
-//              backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
-//              borderColor: window.chartColors.green,
-//              data: [
-//                  100,
-//                  45.16,
-//                  18.75,
-//                  8.33
-//              ]},
-//              //              3 color(dsColor).alpha(0.5).rgbString()
-//              {
-//                  label: '讲师',
-//                  backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
-//                  borderColor: window.chartColors.grey,
-//                  data: [
-//                      81.82,
-//                      26.67,
-//                      36.36,
-//                      25.00
-//
-//             ]}]
-//
-//      };
-
-
       window.onload = function() {
 
-          var ctx = document.getElementById("chart-area").getContext("2d");
-//          var ctx1 = document.getElementById("chart-area1").getContext("2d");
-          var ctx2 = document.getElementById("chart-area2").getContext("2d");
-//          var ctx3 = document.getElementById("chart-area3").getContext("2d");
+//          var ctx = document.getElementById("chart-area").getContext("2d");
+//          var ctx2 = document.getElementById("chart-area2").getContext("2d");
           var ctx4 = document.getElementById("chart-area4").getContext("2d");
           var ctx5 = document.getElementById("chart-area5").getContext("2d");
           var ctx6 = document.getElementById("chart-area6").getContext("2d");
           var ctx8 = document.getElementById("chart-area8").getContext("2d");
-//          var ctx10 = document.getElementById("chart-area10").getContext("2d");
 
 
-//          window.myHorizontalBar = new Chart(ctx10, {
-//              type: 'horizontalBar',
-//              data: horizontalBarChartData,
-//              options: {
-//                  // Elements options apply to all of the options unless overridden in a dataset
-//                  // In this case, we are setting the border of each horizontal bar to be 2px wide
-//                  elements: {
-//                      rectangle: {
-//                          borderWidth: 1,
-//                      }
-//                  },
-//                  responsive: true,
-//                  legend: {
-//                      position: 'right',
-//                  },
-//                  title: {
-//                      display: true,
-//                  }
-//              }
-//          });
-
-
-          window.myPie = new Chart(ctx, config);
-//          window.myPie = new Chart(ctx1, config1);
-          window.myPie = new Chart(ctx2, config2);
-//          window.myDoughnut = new Chart(ctx3, config3);
+//          window.myPie = new Chart(ctx, config);
+//          window.myPie = new Chart(ctx2, config2);
           window.myRadar = new Chart(ctx4, config4);
           window.myRadar = new Chart(ctx5, config5);
           window.myLine = new Chart(ctx6, config6);

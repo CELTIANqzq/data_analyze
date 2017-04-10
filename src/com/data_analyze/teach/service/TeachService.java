@@ -19,7 +19,7 @@ public interface TeachService extends BaseService<Teach> {
      * @param year
      *
      * 年份：2010-2016
-     *
+     * model one
      * @return
      * <String,Float>
      * String
@@ -41,7 +41,7 @@ public interface TeachService extends BaseService<Teach> {
      * @param year
      *
      * 年份：2010-2016
-     *
+     * model two
      * @return
      * <String,Float>
      * String
@@ -68,7 +68,7 @@ public interface TeachService extends BaseService<Teach> {
      * 年份 2010-2016
      * @return
      * <String,Float>
-     *
+     *  model one
      *  String
      * (计算机科学与技术系总教学工作量、电子信息工程系总教学工作量、
      *  电气与自动化系总教学工作量、计算中心总教学工作量、电工电子实验中心总教学工作量)
@@ -82,7 +82,7 @@ public interface TeachService extends BaseService<Teach> {
     Map<String,Float> getSumTeachData(String year);
 
     /**
-     *
+     * model one
      * @param year  传入的年份
      * @param officeName  单位名称 (计算机科学与技术系、
      * 电子信息工程系、电气与自动化系、计算中心、电工电子实验中心)
@@ -98,7 +98,7 @@ public interface TeachService extends BaseService<Teach> {
 
 
     /**
-     *全学院最高的5个
+     *全学院最高的10个
      *
      * @param year 年份 2010-2016
      *
@@ -118,7 +118,7 @@ public interface TeachService extends BaseService<Teach> {
      * 年份 2010-2016
      * @return
      * <String,Float>
-     *
+     *  model two
      *  String
      * (计算机科学与技术系总教学工作量、电子信息工程系总教学工作量、
      *  电气与自动化系总教学工作量、计算中心总教学工作量、电工电子实验中心总教学工作量)
@@ -133,6 +133,7 @@ public interface TeachService extends BaseService<Teach> {
     Map<String,Float> getRealSumTeachData(String year);
 
     /**
+     * model two
      * 第二种模型算出来的数据老师的排名
      * @param year  传入的年份
      * @param officeName  单位名称 (计算机科学与技术系、
@@ -145,7 +146,6 @@ public interface TeachService extends BaseService<Teach> {
      *  Float：工作量的值
      */
 
-    Map<String,Float> getNewFirstToTenTeachData(String year,String officeName);
-
+      Map<String,Float> getNewFirstToTenTeachData(String year,String officeName);
 
 }

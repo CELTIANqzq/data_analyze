@@ -47,4 +47,18 @@
           teachers.office = #{office}
     </select>
 
+    <select id="getPeopleAndBudget" parameterType="String" resultType="Project">
+        <bind name="tableName" value="'projects'+year"/>
+        SELECT
+          salary_id,
+          sum(budget_in_acc) as budget_in_acc,
+          name
+        FROM
+          ${tableName} as projects
+        GROUP BY
+          name
+        ORDER BY
+          budget_in_acc DESC
+    </select>
+
 </mapper>

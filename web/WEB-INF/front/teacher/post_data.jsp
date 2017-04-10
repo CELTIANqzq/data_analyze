@@ -27,10 +27,6 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/resource/front/lib_one/favicon.ico">
 
-    <!-- Google Webfont -->
-    <!--
-    <link href='http://fonts.useso.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
-     -->
     <!-- Themify Icons -->
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resource/front/lib_one/css/themify-icons.css">
     <!-- Icomoon Icons -->
@@ -75,7 +71,6 @@
           </div>
           <div id="fh5co-navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <!--<li><a href="#">数据中心</a></li>-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
 
@@ -111,17 +106,12 @@
 	<div class="copyrights">copy right @ <a href="#" >UP-VAMS工作室</a></div>
     <section class="grid-gallery">
       <div class="container">
-
-
-
-
           <div class="row gallery-row">
               <div class="col-md-12">
 
                   <h5 style="text-align: center"></h5>
 
                   <div id="canvas-holder10">
-                      <%--<canvas id="chart-area10" />--%>
                   </div>
 
               </div>
@@ -252,11 +242,7 @@
           
           <div class="col-md-6 col-sm-6">
 
-            <%--<h5>计算机科学与技术系</h5>--%>
-
-
             <div id="canvas-holder">
-              <%--<canvas id="chart-area" />--%>
             </div>
 
 
@@ -264,11 +250,8 @@
 
           <div class="col-md-6 col-sm-6">
 
-            <%--<h5>电子信息工程系</h5>--%>
-
 
             <div id="canvas-holder1">
-              <%--<canvas id="chart-area1" />--%>
             </div>
 
 
@@ -285,11 +268,7 @@
           <div class="col-md-6 col-sm-6">
 
 
-            <%--<h5>电气与自动化工程系</h5>--%>
-
-
             <div id="canvas-holder2">
-              <%--<canvas id="chart-area2" />--%>
             </div>
 
 
@@ -297,11 +276,8 @@
           </div>
 		  <div class="col-md-6 col-sm-6">
 
-            <%--<h5>计算中心</h5>--%>
-
 
             <div id="canvas-holder3">
-              <%--<canvas id="chart-area3" />--%>
             </div>
 
 
@@ -318,24 +294,14 @@
           <div class="col-md-6 col-sm-6">
 
 
-            <%--<h5>电工电子实验中心</h5>--%>
-
 
             <div id="canvas-holder4">
-              <%--<canvas id="chart-area4" />--%>
             </div>
 
 
 
           </div>
           <div class="col-md-6 col-sm-6">
-
-            <%--<h5>科研办</h5>--%>
-
-
-            <%--<div id="canvas-holder5" style="width: 400px;height: 400px">--%>
-              <%--<canvas id="chart-area5" />--%>
-            <%--</div>--%>
 
 
           </div>
@@ -836,8 +802,6 @@
 
 
       };
-
-
 
 
   </script>

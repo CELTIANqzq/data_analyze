@@ -48,48 +48,191 @@
     </select>
 
     <select id="getAllWork" parameterType="String" resultType="Float">
-      <bind name="tableName" value="'teach'+year"/>
+        <bind name="teachTableName" value="'teach'+year"/>
+        <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-          sum(year_sum)
+        sum(ifnull(t.college_workload,0)+ifnull(t.sum_workload, 0))
         FROM
-          ${tableName};
+        (
+        SELECT ${teachTableName}.salary_id as salary_id, college_workload, sum_workload
+        from ${teachTableName}
+        LEFT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        UNION
+        SELECT ${teachsumTableName}.salary_id as salary_id, college_workload, sum_workload
+        from ${teachTableName}
+        RIGHT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        ) as t
+        INNER JOIN
+        teachers
+        ON
+        teachers.salary_id = t.salary_id
+        WHERE
+        teachers.prof_and_tech_post NOT LIKE '%实验%';
     </select>
 
     <select id="getOfficeWork" parameterType="String" resultType="Float">
-        <bind name="tableName" value="'teach'+year"/>
+        <bind name="teachTableName" value="'teach'+year"/>
+        <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-          sum(year_sum)
+        sum(ifnull(t.college_workload,0)+ifnull(t.sum_workload, 0))
         FROM
-          ${tableName} as teach
+        (
+        SELECT ${teachTableName}.salary_id as salary_id, college_workload, sum_workload
+        from ${teachTableName}
+        LEFT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        UNION
+        SELECT ${teachsumTableName}.salary_id as salary_id, college_workload, sum_workload
+        from ${teachTableName}
+        RIGHT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        ) as t
         INNER JOIN
-          teachers
-        on teach.salary_id=teachers.salary_id AND teachers.office=#{office};
+        teachers
+        ON
+        teachers.salary_id = t.salary_id
+        WHERE
+        teachers.prof_and_tech_post NOT LIKE '%实验%' AND teachers.office=#{office};
     </select>
 
     <select id="queryTeachByPageInOffice" parameterType="String" resultType="Teach">
-        <bind name="tableName" value="'teach'+year"/>
+        <bind name="teachTableName" value="'teach'+year"/>
+        <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-          *
+        (ifnull(t.college_workload,0)+ifnull(sum_workload, 0)) as year_sum,
+        t.name
         FROM
-          ${tableName} as teach
+        (
+        SELECT ${teachTableName}.salary_id as salary_id,${teachTableName}.name as name, college_workload, sum_workload
+        from ${teachTableName}
+        LEFT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        UNION
+        SELECT ${teachsumTableName}.salary_id as salary_id,${teachsumTableName}.name as name, college_workload, sum_workload
+        from ${teachTableName}
+        RIGHT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        ) as t
         INNER JOIN
-          teachers
+        teachers
         ON
-          teach.salary_id=teachers.salary_id and teachers.office=#{office}
+        teachers.salary_id = t.salary_id
+        WHERE
+        teachers.prof_and_tech_post NOT LIKE '%实验%' AND teachers.office=#{office}
         ORDER BY
-          year_sum
+        year_sum
         DESC
         LIMIT ${beforeBegin}, ${limit};
     </select>
 
     <select id="queryTeachByPage" parameterType="String" resultType="Teach">
-        <bind name="tableName" value="'teach'+year"/>
+        <bind name="teachTableName" value="'teach'+year"/>
+        <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-          *
+        (ifnull(t.college_workload,0)+ifnull(sum_workload, 0)) as year_sum,
+        t.name
         FROM
-          ${tableName} as teach
+        (
+        SELECT ${teachTableName}.salary_id as salary_id,${teachTableName}.name as name, college_workload, sum_workload
+        from ${teachTableName}
+        LEFT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        UNION
+        SELECT ${teachsumTableName}.salary_id as salary_id,${teachsumTableName}.name as name, college_workload, sum_workload
+        from ${teachTableName}
+        RIGHT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        ) as t
+        INNER JOIN
+        teachers
+        ON
+        teachers.salary_id = t.salary_id
+        WHERE
+        teachers.prof_and_tech_post NOT LIKE '%实验%'
         ORDER BY
-          year_sum
+        year_sum
+        DESC
+        LIMIT ${beforeBegin}, ${limit};
+    </select>
+
+    <select id="getAllRealWork" parameterType="String" resultType="Float">
+        <bind name="teachTableName" value="'teach'+year"/>
+        <bind name="teachsumTableName" value="'teachsum'+year"/>
+        SELECT
+        sum(ifnull(t.theory_fs,0)+ifnull(t.guide_fs, 0)+ifnull(t.theory_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.teach_workload,0))
+        FROM
+        (
+        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
+        LEFT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        UNION
+        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
+        RIGHT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        ) as t
+        INNER JOIN
+        teachers
+        ON
+        teachers.salary_id = t.salary_id
+        WHERE
+        teachers.prof_and_tech_post NOT LIKE '%实验%';
+    </select>
+
+    <select id="getOfficeRealWork" parameterType="String" resultType="Float">
+        <bind name="teachTableName" value="'teach'+year"/>
+        <bind name="teachsumTableName" value="'teachsum'+year"/>
+        SELECT
+        sum(ifnull(t.theory_fs,0)+ifnull(t.guide_fs, 0)+ifnull(t.theory_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.teach_workload,0))
+        FROM
+        (
+        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
+        LEFT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        UNION
+        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
+        RIGHT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        ) as t
+        INNER JOIN
+        teachers
+        ON
+        teachers.salary_id = t.salary_id
+        WHERE
+        teachers.prof_and_tech_post NOT LIKE '%实验%' AND teachers.office=#{office};
+    </select>
+
+    <select id="queryRealTeachByPageInOffice" parameterType="String" resultType="Teach">
+        <bind name="teachTableName" value="'teach'+year"/>
+        <bind name="teachsumTableName" value="'teachsum'+year"/>
+        SELECT
+        (ifnull(t.theory_fs,0)+ifnull(t.guide_fs,0)+ifnull(t.theory_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.teach_workload,0)) as year_sum,
+        t.name as name
+        FROM
+        (
+        SELECT ${teachTableName}.salary_id as salary_id,${teachTableName}.name as name, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
+        LEFT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        UNION
+        SELECT ${teachsumTableName}.salary_id as salary_id,${teachsumTableName}.name as name, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
+        RIGHT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        ) as t
+        INNER JOIN
+        teachers
+        ON
+        teachers.salary_id = t.salary_id
+        WHERE
+        teachers.prof_and_tech_post NOT LIKE '%实验%' AND teachers.office=#{office}
+        ORDER BY
+        year_sum
         DESC
         LIMIT ${beforeBegin}, ${limit};
     </select>

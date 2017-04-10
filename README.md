@@ -27,3 +27,6 @@ sql语句，orm映射配置，数据库基本操作
 - /WEB_INF/jsp(view)
 
 web视图层
+
+# 发布的log4j配置
+-log4j.appender.logfile.File=/usr/data_analyze_log201704/data_analyze.log

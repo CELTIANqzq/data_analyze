@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -65,13 +66,11 @@
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header"> 
-            <!-- Mobile Toggle Menu Button -->
             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
             <a class="navbar-brand" href="${pageContext.request.contextPath}/">返回主页</a>
           </div>
           <div id="fh5co-navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <!--<li><a href="#">数据中心</a></li>-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
 
@@ -81,9 +80,7 @@
               </li>
               <li>&nbsp;&nbsp;</li>
               <li>&nbsp;&nbsp;</li>
-              <li><button class="btn btn-primary">登录</button></li>
 
-              <!--<li><a href="#" class="btn btn-calltoaction btn-primary">快速注册</a></li>-->
             </ul>
           </div>
         </div>
@@ -136,7 +133,6 @@
 
 
                   <div id="canvas-holder4">
-                      <%--<canvas id="chart-area4" />--%>
                   </div>
 
               </div>
@@ -260,9 +256,113 @@
           </div>
         </div>
 
+          <br/>
+          <center>
+
+              <!-- 按钮触发模态框 -->
+              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                  所有老师科研进账（2010-2016）总和
+              </button>
+          </center>
+          <!-- 模态框（Modal） -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                              &times;
+                          </button>
+                          <h4 class="modal-title" id="myModalLabel">
+                              所有老师科研进账（2010-2016）总和
+                          </h4>
+                      </div>
+                      <div class="modal-body">
+
+                          <table class="table table-bordered">
+                              <caption><center>名单列表</center> </caption>
+                              <thead>
+                              <tr>
+                                  <th>序号</th>
+                                  <th>姓名</th>
+                                  <th>金额（万元）</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <c:forEach var="items" varStatus="st" items="${AllTeacherSumMoneyData}">
+                                  <tr>
+                                      <td>${st.count}</td>
+                                      <td>${items.key}</td>
+                                      <td>${items.value}</td>
+                                  </tr>
+                              </c:forEach>
+                              </tbody>
+                          </table>
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                          </button>
+
+                      </div>
+                  </div><!-- /.modal-content -->
+              </div><!-- /.modal -->
+          </div>
+          <br/>
+          <center>
+
+              <!-- 按钮触发模态框 -->
+              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+                  ${YEAR}-所有老师科研进账总和
+              </button>
+          </center>
+          <!-- 模态框（Modal） -->
+          <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                              &times;
+                          </button>
+                          <h4 class="modal-title" id="myModalLabel1">
+                              ${YEAR}-所有老师科研进账总和
+                          </h4>
+                      </div>
+                      <div class="modal-body">
+
+                          <table class="table table-bordered">
+                              <caption><center>名单列表</center> </caption>
+                              <thead>
+                              <tr>
+                                  <th>序号</th>
+                                  <th>姓名</th>
+                                  <th>金额（万元）</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              <c:forEach var="items" varStatus="st" items="${TeacherYearSumMoneyData}">
+                                  <tr>
+                                      <td>${st.count}</td>
+                                      <td>${items.key}</td>
+                                      <td>${items.value}</td>
+                                  </tr>
+                              </c:forEach>
+                              </tbody>
+                          </table>
+
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                          </button>
+                      </div>
+                  </div><!-- /.modal-content -->
+              </div><!-- /.modal -->
+          </div>
+
+
         <br>
         <hr>
         <br>
+
 
 
 
@@ -912,42 +1012,14 @@
 
           var ctx = document.getElementById("chart-area").getContext("2d");
           var ctx1 = document.getElementById("chart-area1").getContext("2d");
-//          var ctx2 = document.getElementById("chart-area2").getContext("2d");
           var ctx3 = document.getElementById("chart-area3").getContext("2d");
-//          var ctx4 = document.getElementById("chart-area4").getContext("2d");
           var ctx5 = document.getElementById("chart-area5").getContext("2d");
-
-
 
           window.myRadar = new Chart(ctx,config);
           window.myRadar = new Chart(ctx1,config1);
           window.myRadar = new Chart(ctx3,config3);
-
-
-//          window.Line = new Chart(ctx4,config4);
           window.Line = new Chart(ctx5,config5);
 
-        //各单位不同年龄段科研进账分布
-//        window.myHorizontalBar4 = new Chart(ctx2, {
-//            type: 'horizontalBar',
-//            data: horizontalBarChartData4,
-//            options: {
-//                // Elements options apply to all of the options unless overridden in a dataset
-//                // In this case, we are setting the border of each horizontal bar to be 2px wide
-//                elements: {
-//                    rectangle: {
-//                        borderWidth: 1,
-//                    }
-//                },
-//                responsive: true,
-//                legend: {
-//                    position: 'right',
-//                },
-//                title: {
-//                    display: true,
-//                }
-//            }
-//        });
 
 
 
