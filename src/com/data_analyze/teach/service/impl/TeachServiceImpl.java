@@ -98,6 +98,7 @@ public class TeachServiceImpl implements TeachService {
     }
 
     @Override
+    @Deprecated
     public void importTeach(File excel, String fileType, int year) {
         try {
             FileInputStream fileInputStream = new FileInputStream(excel);
@@ -228,7 +229,7 @@ public class TeachServiceImpl implements TeachService {
     }
 
     @Override
-    public Map<String, Float> getFirstToFiveTeachData(String year, String officeName) {
+    public Map<String, Float> getFirstTenTeachData(String year, String officeName) {
         List<Teach> teachList = teachMapper.queryTeachByPageInOffice(year, officeName, "0","10");
         Map<String, Float> result = new HashMap<>();
         for(Iterator<Teach> it = teachList.iterator(); it.hasNext(); ) {
@@ -239,7 +240,7 @@ public class TeachServiceImpl implements TeachService {
     }
 
     @Override
-    public Map<String, Float> getFirstToFiveFromAllTeachData(String year) {
+    public Map<String, Float> getFirstToTenFromAllTeachData(String year) {
         List<Teach> teachList = teachMapper.queryTeachByPage(year, "0","10");
         Map<String, Float> result = new HashMap<>();
         for(Iterator<Teach> it = teachList.iterator(); it.hasNext(); ) {
@@ -275,6 +276,37 @@ public class TeachServiceImpl implements TeachService {
         result.put("DGDZSYZX", expCenterWork/expCenterPeopleNumber); // 电工电子实验中心平均
         result.put("DZXXGCX", eeWork/eePeopleNumber); // 电子信息工程系平均
 
+        return result;
+    }
+
+    @Override
+    public Map<String, Float> getRealSumTeachData(String year) {
+        Map<String, Float> result = new HashMap<>();
+
+        float allWork = teachMapper.getAllRealWork(year);
+        float csWork =  teachMapper.getOfficeRealWork(year, "计算机科学与技术系");
+        float caculateCenterWork =  teachMapper.getOfficeRealWork(year, "计算中心");
+        float autoWork =  teachMapper.getOfficeRealWork(year, "电气与自动化工程系");
+        float expCenterWork =  teachMapper.getOfficeRealWork(year, "电工电子实验中心");
+        float eeWork =  teachMapper.getOfficeRealWork(year, "电子信息工程系");
+
+        result.put("XY", allWork);  // 学院平均
+        result.put("JSJKXYJSX", csWork); // 计算机科学与技术系平均
+        result.put("JSZX", caculateCenterWork); // 计算中心平均
+        result.put("DQYZDHGCX", autoWork); // 电气与自动化工程系平均
+        result.put("DGDZSYZX", expCenterWork); // 电工电子实验中心平均
+        result.put("DZXXGCX", eeWork); // 电子信息工程系平均
+
+        return result;
+    }
+
+    @Override
+    public Map<String, Float> getNewFirstToTenTeachData(String year, String officeName) {
+        List<Teach> teachList = teachMapper.queryRealTeachByPageInOffice(year,officeName,"0","10");
+        Map<String, Float> result = new HashMap<>();
+        for(int i=0; i<10&&i<teachList.size(); ++i) {
+            result.put(teachList.get(i).getName(), teachList.get(i).getYear_sum());
+        }
         return result;
     }
 }

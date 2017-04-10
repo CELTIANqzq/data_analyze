@@ -18,6 +18,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -187,11 +188,39 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public Map<String, Float> getFirstToFiveFromAllMoneyData(String year) {
+    public Map<String, Float> getFirstTenFromAllMoneyData(String year) {
         List<Project> peopleProjectList = projectMapper.getPeopleAndBudget(year);
         Map<String, Float> result = new HashMap<>();
-        for(int i=0; i<5; ++i) {
+        for(int i=0; i<10&&i<result.size(); ++i) {
             result.put(peopleProjectList.get(i).getName(), peopleProjectList.get(i).getBudget_in_acc());
+        }
+        return result;
+    }
+
+    @Override
+    public Map<String, Float> getEveryYearMoneyData(String year) {
+        List<Project> teachersProjectList = projectMapper.getPeopleAndBudget(year);
+        Map<String, Float> result = new HashMap<>();
+        for(Iterator<Project> it = teachersProjectList.iterator(); it.hasNext(); ) {
+            Project project = it.next();
+            result.put(project.getName(), project.getBudget_in_acc());
+        }
+        return result;
+    }
+
+    @Override
+    public Map<String, Float> getAllYearSumMoneyData() {
+        int beginYear = 2010;
+        int endYear = 2016;
+        Map<String, Float> result = new HashMap<>();
+        for(int i=beginYear; i<=endYear; ++i) {
+            String strYear = i+"";
+            List<Project> projectList = projectMapper.getPeopleAndBudget(strYear);
+            for(Iterator<Project> it = projectList.iterator(); it.hasNext(); ) {
+                Project project = it.next();
+                Float hadMoney = result.get(project.getName());
+                result.put(project.getName(), hadMoney==null?project.getBudget_in_acc():hadMoney+project.getBudget_in_acc());
+            }
         }
         return result;
     }

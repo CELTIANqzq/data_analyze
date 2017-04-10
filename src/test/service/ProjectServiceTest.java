@@ -28,8 +28,20 @@ public class ProjectServiceTest extends BaseTest {
     }
 
     @Test
-    public void getFirstToFiveFromAllMoneyData() {
-        Map<String, Float> map = projectService.getFirstToFiveFromAllMoneyData("2015");
+    public void getFirstTenFromAllMoneyData() {
+        Map<String, Float> map = projectService.getFirstTenFromAllMoneyData("2015");
+        System.out.println(map);
+    }
+
+    @Test
+    public void getEveryYearMoneyData() {
+        Map<String, Float> map = projectService.getEveryYearMoneyData("2010");
+        System.out.println(map);
+    }
+
+    @Test
+    public void getAllYearSumMoneyData() {
+        Map<String, Float> map = projectService.getAllYearSumMoneyData();
         System.out.println(map);
     }
 }

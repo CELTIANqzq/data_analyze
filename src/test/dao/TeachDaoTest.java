@@ -59,7 +59,15 @@ public class TeachDaoTest extends BaseTest{
 
     @Test
     public void getOfficeRealWork() {
-        float csWork = teachMapper.getOfficeRealWork("2012","计算机科学与技术系");
+        float csWork = teachMapper.getOfficeRealWork("2010","计算机科学与技术系");
         System.out.println(csWork);
+    }
+
+    @Test
+    public void queryRealTeachByPageInOffice() {
+        List<Teach> list = teachMapper.queryRealTeachByPageInOffice("2010", "计算机科学与技术系","0","10");
+        for(int i=0; i<list.size(); ++i) {
+            System.out.println(list.get(i));
+        }
     }
 }

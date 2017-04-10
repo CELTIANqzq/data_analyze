@@ -34,4 +34,5 @@ public interface ProjectMapper {
      * 得到每个人获取
      */
     List<Project> getPeopleAndBudget(@Param("year") String year);
+
 }

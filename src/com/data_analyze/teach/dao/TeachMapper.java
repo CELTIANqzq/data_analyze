@@ -69,4 +69,12 @@ public interface TeachMapper {
      * @return
      */
     List<Teach> queryTeachByPage(@Param("year") String year, @Param("beforeBegin") String beforeBegin, @Param("limit") String limit);
+
+    /**
+     * 按第二种算法算出某科室工作量最高的老师
+     * @param year
+     * @param office
+     * @return
+     */
+    List<Teach> queryRealTeachByPageInOffice(@Param("year") String year, @Param("office") String office, @Param("beforeBegin") String beforeBegin, @Param("limit") String limit);
 }

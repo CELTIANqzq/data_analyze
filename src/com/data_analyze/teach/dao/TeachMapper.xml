@@ -51,14 +51,16 @@
         <bind name="teachTableName" value="'teach'+year"/>
         <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-        sum(ifnull(t.theory_fs,0)+ifnull(t.profession_fs,0)+ifnull(t.ready_fs, 0)+ifnull(t.guide_fs, 0)+ifnull(t.graduation_fs,0)+ifnull(t.theory_ss,0)+ifnull(t.profession_ss,0)+ifnull(t.ready_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.graduation_ss,0)+ifnull(t.second_etc,0)+ifnull(t.innovative_course,0)+ifnull(t.college_workload,0)+ifnull(t.teach_workload,0)+ifnull(t.mentor_load,0)+ifnull(t.reform_workload,0))
+        sum(ifnull(t.college_workload,0)+if(t.sum_workload, 0))
         FROM
         (
-        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,profession_fs,ready_fs, guide_fs,graduation_fs,theory_ss,profession_ss,ready_ss,guide_ss,graduation_ss,second_etc,innovative_course,college_workload,teach_workload,mentor_load,reform_workload from ${teachTableName}
+        SELECT ${teachTableName}.salary_id as salary_id, college_workload, sum_workload
+        from ${teachTableName}
         LEFT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         UNION
-        SELECT ${teachsumTableName}.salary_id as salary_id, theory_fs,profession_fs,ready_fs, guide_fs,graduation_fs,theory_ss,profession_ss,ready_ss,guide_ss,graduation_ss,second_etc,innovative_course,college_workload,teach_workload,mentor_load,reform_workload from ${teachTableName}
+        SELECT ${teachsumTableName}.salary_id as salary_id, college_workload, sum_workload
+        from ${teachTableName}
         RIGHT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         ) as t
@@ -74,14 +76,16 @@
         <bind name="teachTableName" value="'teach'+year"/>
         <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-        sum(ifnull(t.theory_fs,0)+ifnull(t.profession_fs,0)+ifnull(t.ready_fs, 0)+ifnull(t.guide_fs, 0)+ifnull(t.graduation_fs,0)+ifnull(t.theory_ss,0)+ifnull(t.profession_ss,0)+ifnull(t.ready_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.graduation_ss,0)+ifnull(t.second_etc,0)+ifnull(t.innovative_course,0)+ifnull(t.college_workload,0)+ifnull(t.teach_workload,0)+ifnull(t.mentor_load,0)+ifnull(t.reform_workload,0))
+        sum(ifnull(t.college_workload,0)+if(t.sum_workload, 0))
         FROM
         (
-        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,profession_fs,ready_fs, guide_fs,graduation_fs,theory_ss,profession_ss,ready_ss,guide_ss,graduation_ss,second_etc,innovative_course,college_workload,teach_workload,mentor_load,reform_workload from ${teachTableName}
+        SELECT ${teachTableName}.salary_id as salary_id, college_workload, sum_workload
+        from ${teachTableName}
         LEFT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         UNION
-        SELECT ${teachsumTableName}.salary_id as salary_id, theory_fs,profession_fs,ready_fs, guide_fs,graduation_fs,theory_ss,profession_ss,ready_ss,guide_ss,graduation_ss,second_etc,innovative_course,college_workload,teach_workload,mentor_load,reform_workload from ${teachTableName}
+        SELECT ${teachsumTableName}.salary_id as salary_id, college_workload, sum_workload
+        from ${teachTableName}
         RIGHT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         ) as t
@@ -97,15 +101,17 @@
         <bind name="teachTableName" value="'teach'+year"/>
         <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-        ifnull(t.theory_fs,0)+ifnull(t.profession_fs,0)+ifnull(t.ready_fs, 0)+ifnull(t.guide_fs, 0)+ifnull(t.graduation_fs,0)+ifnull(t.theory_ss,0)+ifnull(t.profession_ss,0)+ifnull(t.ready_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.graduation_ss,0)+ifnull(t.second_etc,0)+ifnull(t.innovative_course,0)+ifnull(t.college_workload,0)+ifnull(t.teach_workload,0)+ifnull(t.mentor_load,0)+ifnull(t.reform_workload,0) as year_sum,
-        t.name as name
+        (ifnull(t.college_workload,0)+if(sum_workload, 0)) as year_sum,
+        t.name
         FROM
         (
-        SELECT ${teachTableName}.salary_id as salary_id,${teachTableName}.name as name, theory_fs,profession_fs,ready_fs, guide_fs,graduation_fs,theory_ss,profession_ss,ready_ss,guide_ss,graduation_ss,second_etc,innovative_course,college_workload,teach_workload,mentor_load,reform_workload from ${teachTableName}
+        SELECT ${teachTableName}.salary_id as salary_id,${teachTableName}.name as name, college_workload, sum_workload
+        from ${teachTableName}
         LEFT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         UNION
-        SELECT ${teachsumTableName}.salary_id as salary_id,${teachsumTableName}.name as name, theory_fs,profession_fs,ready_fs, guide_fs,graduation_fs,theory_ss,profession_ss,ready_ss,guide_ss,graduation_ss,second_etc,innovative_course,college_workload,teach_workload,mentor_load,reform_workload from ${teachTableName}
+        SELECT ${teachsumTableName}.salary_id as salary_id,${teachsumTableName}.name as name, college_workload, sum_workload
+        from ${teachTableName}
         RIGHT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         ) as t
@@ -114,7 +120,7 @@
         ON
         teachers.salary_id = t.salary_id
         WHERE
-        teachers.prof_and_tech_post NOT LIKE '%实验%' AND teachers.office=#{office}
+        teachers.prof_and_tech_post NOT LIKE '%实验%' AND teachers.office=#{office};
         ORDER BY
         year_sum
         DESC
@@ -125,15 +131,17 @@
         <bind name="teachTableName" value="'teach'+year"/>
         <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-        ifnull(t.theory_fs,0)+ifnull(t.profession_fs,0)+ifnull(t.ready_fs, 0)+ifnull(t.guide_fs, 0)+ifnull(t.graduation_fs,0)+ifnull(t.theory_ss,0)+ifnull(t.profession_ss,0)+ifnull(t.ready_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.graduation_ss,0)+ifnull(t.second_etc,0)+ifnull(t.innovative_course,0)+ifnull(t.college_workload,0)+ifnull(t.teach_workload,0)+ifnull(t.mentor_load,0)+ifnull(t.reform_workload,0) as year_sum,
-        t.name as name
+        (ifnull(t.college_workload,0)+if(sum_workload, 0)) as year_sum,
+        t.name
         FROM
         (
-        SELECT ${teachTableName}.salary_id as salary_id,${teachTableName}.name as name, theory_fs,profession_fs,ready_fs, guide_fs,graduation_fs,theory_ss,profession_ss,ready_ss,guide_ss,graduation_ss,second_etc,innovative_course,college_workload,teach_workload,mentor_load,reform_workload from ${teachTableName}
+        SELECT ${teachTableName}.salary_id as salary_id,${teachTableName}.name as name, college_workload, sum_workload
+        from ${teachTableName}
         LEFT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         UNION
-        SELECT ${teachsumTableName}.salary_id as salary_id,${teachsumTableName}.name as name, theory_fs,profession_fs,ready_fs, guide_fs,graduation_fs,theory_ss,profession_ss,ready_ss,guide_ss,graduation_ss,second_etc,innovative_course,college_workload,teach_workload,mentor_load,reform_workload from ${teachTableName}
+        SELECT ${teachsumTableName}.salary_id as salary_id,${teachsumTableName}.name as name, college_workload, sum_workload
+        from ${teachTableName}
         RIGHT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         ) as t
@@ -142,7 +150,7 @@
         ON
         teachers.salary_id = t.salary_id
         WHERE
-        teachers.prof_and_tech_post NOT LIKE '%实验%'
+        teachers.prof_and_tech_post NOT LIKE '%实验%';
         ORDER BY
         year_sum
         DESC
@@ -153,14 +161,16 @@
         <bind name="teachTableName" value="'teach'+year"/>
         <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-        sum(ifnull(t.theory_fs,0)+ifnull(t.ready_fs, 0)+ifnull(t.guide_fs, 0)+ifnull(t.theory_ss,0)+ifnull(t.ready_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.teach_workload,0))
+        sum(ifnull(t.theory_fs,0)+ifnull(t.guide_fs, 0)+ifnull(t.theory_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.teach_workload,0))
         FROM
         (
-        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,ready_fs,guide_fs,theory_ss,ready_ss,guide_ss,teach_workload from ${teachTableName}
+        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
         LEFT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         UNION
-        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,ready_fs,guide_fs,theory_ss,ready_ss,guide_ss,teach_workload from ${teachTableName}
+        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
         RIGHT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         ) as t
@@ -176,14 +186,16 @@
         <bind name="teachTableName" value="'teach'+year"/>
         <bind name="teachsumTableName" value="'teachsum'+year"/>
         SELECT
-        sum(ifnull(t.theory_fs,0)+ifnull(t.ready_fs, 0)+ifnull(t.guide_fs, 0)+ifnull(t.theory_ss,0)+ifnull(t.ready_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.teach_workload,0))
+        sum(ifnull(t.theory_fs,0)+ifnull(t.guide_fs, 0)+ifnull(t.theory_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.teach_workload,0))
         FROM
         (
-        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,ready_fs,guide_fs,theory_ss,ready_ss,guide_ss,teach_workload from ${teachTableName}
+        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
         LEFT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         UNION
-        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,ready_fs,guide_fs,theory_ss,ready_ss,guide_ss,teach_workload from ${teachTableName}
+        SELECT ${teachTableName}.salary_id as salary_id, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
         RIGHT JOIN ${teachsumTableName}
         ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
         ) as t
@@ -193,5 +205,35 @@
         teachers.salary_id = t.salary_id
         WHERE
         teachers.prof_and_tech_post NOT LIKE '%实验%' AND teachers.office=#{office};
+    </select>
+
+    <select id="queryRealTeachByPageInOffice" parameterType="String" resultType="Teach">
+        <bind name="teachTableName" value="'teach'+year"/>
+        <bind name="teachsumTableName" value="'teachsum'+year"/>
+        SELECT
+        (ifnull(t.theory_fs,0)+ifnull(t.guide_fs,0)+ifnull(t.theory_ss,0)+ifnull(t.guide_ss,0)+ifnull(t.teach_workload,0)) as year_sum,
+        t.name as name
+        FROM
+        (
+        SELECT ${teachTableName}.salary_id as salary_id,${teachTableName}.name as name, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
+        LEFT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        UNION
+        SELECT ${teachsumTableName}.salary_id as salary_id,${teachsumTableName}.name as name, theory_fs,guide_fs,theory_ss,guide_ss,teach_workload
+        from ${teachTableName}
+        RIGHT JOIN ${teachsumTableName}
+        ON ${teachTableName}.salary_id=${teachsumTableName}.salary_id
+        ) as t
+        INNER JOIN
+        teachers
+        ON
+        teachers.salary_id = t.salary_id
+        WHERE
+        teachers.prof_and_tech_post NOT LIKE '%实验%' AND teachers.office=#{office}
+        ORDER BY
+        year_sum
+        DESC
+        LIMIT ${beforeBegin}, ${limit};
     </select>
 </mapper>
