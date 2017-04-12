@@ -128,7 +128,7 @@
           </div>
           <hr/>
 
-          <%--模型一人均--%>
+          <%--模型旧人均--%>
 
           <div class="row gallery-row">
               <div class="col-md-12">
@@ -137,7 +137,7 @@
               </div>
           </div>
 
-          <%--模型一总--%>
+          <%--模型旧总--%>
           <div class="row gallery-row">
               <div class="col-md-12">
                   <div id="canvas-holder7">
@@ -172,11 +172,11 @@
               <canvas id="chart-area" />
             </div>
               <br/>
-              <%--模型一算的前10--%>
+              <%--模型旧算的前10--%>
 
               <center>
                   <table class="table table-bordered">
-                      <caption><center>${YEAR}计算机科学与技术系教学工作量前十（模型一）</center> </caption>
+                      <caption><center>${YEAR}计算机科学与技术系教学工作量前十（旧模型）</center> </caption>
                       <thead>
                       <tr>
                           <th>排名</th>
@@ -198,7 +198,7 @@
               <br/>
               <center>
                   <table class="table table-bordered">
-                      <caption><center>${YEAR}电工电子实验中心教学工作量前十（模型一）</center> </caption>
+                      <caption><center>${YEAR}电工电子实验中心教学工作量前十（旧模型）</center> </caption>
                       <thead>
                       <tr>
                           <th>排名</th>
@@ -220,7 +220,7 @@
               <br/>
               <center>
                   <table class="table table-bordered">
-                      <caption><center>${YEAR}电气与自动化系教学工作量前十（模型一）</center> </caption>
+                      <caption><center>${YEAR}电气与自动化系教学工作量前十（旧模型）</center> </caption>
                       <thead>
                       <tr>
                           <th>排名</th>
@@ -242,7 +242,7 @@
               <br/>
               <center>
                   <table class="table table-bordered">
-                      <caption><center>${YEAR}计算中心教学工作量前十（模型一）</center> </caption>
+                      <caption><center>${YEAR}计算中心教学工作量前十（旧模型）</center> </caption>
                       <thead>
                       <tr>
                           <th>排名</th>
@@ -266,7 +266,7 @@
               <br/>
               <center>
                   <table class="table table-bordered">
-                      <caption><center>${YEAR}电子信息工程系教学工作量前十（模型一）</center> </caption>
+                      <caption><center>${YEAR}电子信息工程系教学工作量前十（旧模型）</center> </caption>
                       <thead>
                       <tr>
                           <th>排名</th>
@@ -300,7 +300,7 @@
 
               <center>
                   <table class="table table-bordered">
-                      <caption><center>${YEAR}计算机科学与技术系教学工作量前十（模型二）</center> </caption>
+                      <caption><center>${YEAR}计算机科学与技术系教学工作量前十（新模型）</center> </caption>
                       <thead>
                       <tr>
                           <th>排名</th>
@@ -322,7 +322,7 @@
               <br/>
               <center>
                   <table class="table table-bordered">
-                      <caption><center>${YEAR}电工电子实验中心教学工作量前十（模型二）</center> </caption>
+                      <caption><center>${YEAR}电工电子实验中心教学工作量前十（新模型）</center> </caption>
                       <thead>
                       <tr>
                           <th>排名</th>
@@ -344,7 +344,7 @@
               <br/>
               <center>
                   <table class="table table-bordered">
-                      <caption><center>${YEAR}电气与自动化系教学工作量前十（模型二）</center> </caption>
+                      <caption><center>${YEAR}电气与自动化系教学工作量前十（新模型）</center> </caption>
                       <thead>
                       <tr>
                           <th>排名</th>
@@ -366,7 +366,7 @@
               <br/>
               <center>
                   <table class="table table-bordered">
-                      <caption><center>${YEAR}计算中心教学工作量前十（模型二）</center> </caption>
+                      <caption><center>${YEAR}计算中心教学工作量前十（新模型）</center> </caption>
                       <thead>
                       <tr>
                           <th>排名</th>
@@ -389,7 +389,7 @@
               <br/>
               <center>
                   <table class="table table-bordered">
-                      <caption><center>${YEAR}电子信息工程系教学工作量前十（模型二）</center> </caption>
+                      <caption><center>${YEAR}电子信息工程系教学工作量前十（新模型）</center> </caption>
                       <thead>
                       <tr>
                           <th>排名</th>
@@ -443,17 +443,17 @@
                       ]
                   },
                   {
-                      label: "学院各单位平均总教学工作量(小时)",
+                      label: "学院总教学工作量(小时)",
                       backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
                       borderColor: window.chartColors.blue,
                       pointBackgroundColor: window.chartColors.blue,
                       data: [
 
-                          ${SumTeachData["XY"]/5},
-                          ${SumTeachData["XY"]/5},
-                          ${SumTeachData["XY"]/5},
-                          ${SumTeachData["XY"]/5},
-                          ${SumTeachData["XY"]/5},
+                          ${SumTeachData["XY"]},
+                          ${SumTeachData["XY"]},
+                          ${SumTeachData["XY"]},
+                          ${SumTeachData["XY"]},
+                          ${SumTeachData["XY"]},
 
 
                       ]
@@ -547,7 +547,7 @@
        */
 
       var title = {
-          text: '2010-2016全学院人均教学工作量数据整体分析(模型一)'
+          text: '2010-2016全学院人均教学工作量数据整体分析(旧模型)'
       };
 
       var xAxis = {
@@ -660,7 +660,7 @@
        */
 
       var title1 = {
-          text: '2010-2016全学院人均教学工作量数据整体分析（模型二）'
+          text: '2010-2016全学院人均教学工作量数据整体分析（新模型）'
       };
 
       var xAxis1 = {
@@ -771,7 +771,7 @@
        */
 
       var title2 = {
-          text: '2010-2016全学院总教学工作量数据整体分析（模型一）'
+          text: '2010-2016全学院总教学工作量数据整体分析（旧模型）'
       };
 
       var xAxis2 = {
@@ -883,7 +883,7 @@
        */
 
       var title3 = {
-          text: '2010-2016全学院总教学工作量数据整体分析（模型二）'
+          text: '2010-2016全学院总教学工作量数据整体分析（新模型）'
       };
 
       var xAxis3 = {
