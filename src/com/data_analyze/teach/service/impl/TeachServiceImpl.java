@@ -183,20 +183,23 @@ public class TeachServiceImpl implements TeachService {
 //        int expCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电工电子实验中心' and teachers.prof_and_tech_post not like '%实验%';");
 //        int eePeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电子信息工程系' and teachers.prof_and_tech_post not like '%实验%';");
 
-        int allPeopleNumber = teacherMapper.execute("select count(*) from teachers;");
+//        int allPeopleNumber = teacherMapper.execute("select count(*) from teachers;");
         int csPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算机科学与技术系';");
         int caculateCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算中心';");
         int autoPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电气与自动化工程系';");
         int expCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电工电子实验中心';");
         int eePeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电子信息工程系';");
 
+        int allPeopleNumber = csPeopleNumber + caculateCenterPeopleNumber + autoPeopleNumber + expCenterPeopleNumber + eePeopleNumber;
 
-        float allWork = teachMapper.getAllWork(year);
+//        float allWork = teachMapper.getAllWork(year);
         float csWork =  teachMapper.getOfficeWork(year, "计算机科学与技术系");
         float caculateCenterWork =  teachMapper.getOfficeWork(year, "计算中心");
         float autoWork =  teachMapper.getOfficeWork(year, "电气与自动化工程系");
         float expCenterWork =  teachMapper.getOfficeWork(year, "电工电子实验中心");
         float eeWork =  teachMapper.getOfficeWork(year, "电子信息工程系");
+
+        float allWork = csWork + caculateCenterWork + autoWork + expCenterWork + eeWork;
 
         result.put("XY", allWork/allPeopleNumber);  // 学院平均
         result.put("JSJKXYJSX", csWork/csPeopleNumber); // 计算机科学与技术系平均
@@ -212,12 +215,14 @@ public class TeachServiceImpl implements TeachService {
     public Map<String, Float> getSumTeachData(String year) {
         Map<String, Float> result = new HashMap<>();
 
-        float allWork = teachMapper.getAllWork(year);
+//        float allWork = teachMapper.getAllWork(year);
         float csWork =  teachMapper.getOfficeWork(year, "计算机科学与技术系");
         float caculateCenterWork =  teachMapper.getOfficeWork(year, "计算中心");
         float autoWork =  teachMapper.getOfficeWork(year, "电气与自动化工程系");
         float expCenterWork =  teachMapper.getOfficeWork(year, "电工电子实验中心");
         float eeWork =  teachMapper.getOfficeWork(year, "电子信息工程系");
+
+        float allWork = csWork + caculateCenterWork + autoWork + expCenterWork + eeWork;
 
         result.put("XY", allWork);  // 学院总
         result.put("JSJKXYJSX", csWork); // 计算机科学与技术系总
@@ -254,20 +259,23 @@ public class TeachServiceImpl implements TeachService {
     public Map<String, Float> getAveRealTeachData(String year) {
         // 本科生理论课 + 实验课 + 研究生理论课
         Map<String, Float> result = new HashMap<>();
-        int allPeopleNumber = teacherMapper.execute("select count(*) from teachers;");
+//        int allPeopleNumber = teacherMapper.execute("select count(*) from teachers;");
         int csPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算机科学与技术系';");
         int caculateCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='计算中心';");
         int autoPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电气与自动化工程系';");
         int expCenterPeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电工电子实验中心';");
         int eePeopleNumber = teacherMapper.execute("select count(*) from teachers where office='电子信息工程系';");
 
+        int allPeopleNumber =  csPeopleNumber + caculateCenterPeopleNumber + autoPeopleNumber + expCenterPeopleNumber + eePeopleNumber;
 
-        float allWork = teachMapper.getAllRealWork(year);
+//        float allWork = teachMapper.getAllRealWork(year);
         float csWork =  teachMapper.getOfficeRealWork(year, "计算机科学与技术系");
         float caculateCenterWork =  teachMapper.getOfficeRealWork(year, "计算中心");
         float autoWork =  teachMapper.getOfficeRealWork(year, "电气与自动化工程系");
         float expCenterWork =  teachMapper.getOfficeRealWork(year, "电工电子实验中心");
         float eeWork =  teachMapper.getOfficeRealWork(year, "电子信息工程系");
+
+        float allWork = csWork + caculateCenterWork + autoWork + expCenterWork + eeWork;
 
         result.put("XY", allWork/allPeopleNumber);  // 学院平均
         result.put("JSJKXYJSX", csWork/csPeopleNumber); // 计算机科学与技术系平均
@@ -283,12 +291,14 @@ public class TeachServiceImpl implements TeachService {
     public Map<String, Float> getRealSumTeachData(String year) {
         Map<String, Float> result = new HashMap<>();
 
-        float allWork = teachMapper.getAllRealWork(year);
+//        float allWork = teachMapper.getAllRealWork(year);
         float csWork =  teachMapper.getOfficeRealWork(year, "计算机科学与技术系");
         float caculateCenterWork =  teachMapper.getOfficeRealWork(year, "计算中心");
         float autoWork =  teachMapper.getOfficeRealWork(year, "电气与自动化工程系");
         float expCenterWork =  teachMapper.getOfficeRealWork(year, "电工电子实验中心");
         float eeWork =  teachMapper.getOfficeRealWork(year, "电子信息工程系");
+
+        float allWork = csWork + caculateCenterWork + autoWork + expCenterWork + eeWork;
 
         result.put("XY", allWork);  // 学院平均
         result.put("JSJKXYJSX", csWork); // 计算机科学与技术系平均
